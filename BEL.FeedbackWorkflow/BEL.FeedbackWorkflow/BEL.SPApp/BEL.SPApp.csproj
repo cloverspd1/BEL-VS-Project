@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE70F061-8CE9-4502-A59B-86BA532AD7C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BEL.NPDSPApp</RootNamespace>
+    <AssemblyName>BEL.NPDSPApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{31a154b5-4a09-42f5-a03e-5c90460b35d7}</AppFeaturePartId>
+    <WspPartId>{7f7c6158-29d8-4481-8b4d-ffe5f9db7b01}</WspPartId>
+    <WorkflowPartId>{61fb1e03-4891-4962-a147-7117f883f6ad}</WorkflowPartId>
+    <CspkgPartId>{9b15516c-6803-4a2d-86b7-29180c6ed953}</CspkgPartId>
+    <SqlPackagePartId>{bbda8d0f-7043-40da-b79f-06326cd3458e}</SqlPackagePartId>
+    <ActivePublishProfile>Feedback_UAT_Publish</ActivePublishProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="BulkUpload\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="CacheListApp\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="FeedbackAdminForm\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="FeedbackForm\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="FeedbackReport\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="PowerBI\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BulkUpload\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50568f09-99f4-4ac3-928a-638a1f0133bb}</SharePointProjectItemId>
+    </None>
+    <None Include="CacheListApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eb7aa1bf-e284-44a7-ac97-a0f1f5c765f5}</SharePointProjectItemId>
+    </None>
+    <None Include="FeedbackAdminForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4cc5a95-a2fc-4be9-b6cc-8d955ef176a5}</SharePointProjectItemId>
+    </None>
+    <None Include="FeedbackForm\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab9a6ce9-76f3-4964-bb11-f3c38cfdb5fb}</SharePointProjectItemId>
+    </None>
+    <None Include="FeedbackReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6829ba49-3b7b-4393-b2e0-9a131c1a641a}</SharePointProjectItemId>
+    </None>
+    <None Include="PowerBI\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d8dffeb-dcd9-4e8e-ab5b-f9eaa6c09437}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow.csproj">
+      <Project>{5DFCF898-293B-43A1-8BD4-A39B161E69B3}</Project>
+      <Name>BEL.FeedbackWorkflow</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>NPD.Workflow</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

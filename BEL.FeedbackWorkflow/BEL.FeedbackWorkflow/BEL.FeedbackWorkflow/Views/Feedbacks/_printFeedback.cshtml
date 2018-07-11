@@ -1,0 +1,374 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks;
+@using BEL.FeedbackWorkflow.Models.Common;
+@using BEL.CommonDataContract;
+@using Newtonsoft.Json;
+@model FeedbacksContract
+@{
+
+    FeedbacksForm form = Model.Forms.FirstOrDefault() as FeedbacksForm;
+    ViewBag.Title = Html.ResourceValue("Page_Title", ResourceNames.Feedbacks);
+    FeedbacksDetailSection feedbacksDetailSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.FEEDBACKDETAILSECTION)) as FeedbacksDetailSection;
+    CCActingUserSection ccActingUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCACTINGUSERSECTION)) as CCActingUserSection;
+    CCQualityInchargeSection ccQualityInchargeSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCQUALITYINCHARGESECTION)) as CCQualityInchargeSection;
+
+}
+<div class="hidden">
+    <div id="divprint">
+        <!DOCTYPE HTML>
+
+        <html>
+        <head>
+
+            <title>Print Product Feedback</title>
+        </head>
+        <body>
+
+            <div id="printContent" class="col-md-12">
+                <style type="text/css">
+                    .modal-dialog {
+                        width: 75% !important;
+                    }
+                </style>
+                <div id="card1" class="col-md-12 card" style="border:1px solid black">
+                    <div class="row borderBottom">
+                        <div class="col-xs-6 col-sm-6 col-md-6 rightBorder" style="vertical-align:middle">
+                            <img id="logo" src="~/images/BajajPrintLogo.png" width="100%" />
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bold borderBottom">
+                        <div class="col-sm-6 bold" style="float:left">
+                            <div class="col-xs-4 text-left">
+                                Title:
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                Product Feedback
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.FeedbackNo, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.FeedbackNo != null)
+                                {
+                                    @feedbacksDetailSection.FeedbackNo
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row borderBottom">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.ItemCode, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.ItemCode != null)
+                                {
+                                    @feedbacksDetailSection.ItemCode
+                                }
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="vertical-align:top">
+                            <div class="col-md-4 col-xs-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.ItemDescription, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-md-8 col-xs-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.ItemDescription != null)
+                                {
+                                    @feedbacksDetailSection.ItemDescription
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row borderBottom">
+                        <div class="col-sm-6 bold" style="float:left">
+                            <div class="col-xs-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.BusinessUnits, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.BusinessUnits != null)
+                                {
+                                    @feedbacksDetailSection.BusinessUnits
+                                }
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.ProductGroup, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.ProductGroup != null)
+                                {
+                                    @feedbacksDetailSection.ProductGroup
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row borderBottom">
+                        <div class="col-sm-6 col-xs-6 col-md-6 rightBorder">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.SupplierCode, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.SupplierCode != null)
+                                {
+                                    @feedbacksDetailSection.SupplierCode
+                                }
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 col-md-6 borderLeft">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.Branch, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.Branch != null)
+                                {
+                                    @feedbacksDetailSection.Branch
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row borderBottom">
+                        <div class="col-sm-6 col-xs-6 col-md-6">
+                            <div class="col-sm-4 col-xs-4 col-md-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.FeedbackTitle, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-sm-8 col-xs-8 col-md-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.FeedbackTitle != null)
+                                {
+                                    @Html.Label(feedbacksDetailSection.FeedbackTitle)
+                                }
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 col-md-6">
+                            <div class="col-sm-4 col-xs-4 col-md-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.ProductSerial, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-sm-8 col-xs-8 col-md-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.ProductSerial != null)
+                                {
+                                    @Html.Label(feedbacksDetailSection.ProductSerial)
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row borderBottom">
+                        <div class="col-sm-6" style="vertical-align:top">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.DefectDescription, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.DefectDescription != null)
+                                {
+                                    @feedbacksDetailSection.DefectDescription
+                                }
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="vertical-align:top">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.FileNameList, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && !string.IsNullOrWhiteSpace(feedbacksDetailSection.FileNameList))
+                                {
+                                    foreach (FileDetails file in JsonConvert.DeserializeObject<List<FileDetails>>(feedbacksDetailSection.FileNameList))
+                                    {
+                                        @file.FileName
+                                        <div class="clearfix"></div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6" style="vertical-align:top">
+                            <div class="col-xs-4 col-md-4 col-sm-4 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.ProposedBy, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-8 col-md-8 col-sm-8 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.ProposedByName != null)
+                                {
+                                    @feedbacksDetailSection.ProposedByName
+                                }
+                            </div>
+                        </div>
+                        <div class="col-sm-6" style="vertical-align:top">
+                            <div class="col-xs-5 col-md-4 col-sm-5 text-left">
+                                @Html.LabelFor(m => feedbacksDetailSection.RequestDate, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-xs-7 col-md-8 col-sm-7 text-left">
+                                @if (feedbacksDetailSection != null && feedbacksDetailSection.RequestDate != null)
+                                {
+                                    @feedbacksDetailSection.RequestDate.Value.ToShortDateString()
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @if (ccActingUserSection != null)
+                {
+                    <div id="card2" class="col-md-12 card" style="border: 1px solid black">
+                        <div class="row borderBottom">
+                            <div class="col-sm-6">
+                                <div class="bold">
+                                    For CC Acting User
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="col-xs-4 col-sm-4 col-md-4 text-left">
+                                    @Html.LabelFor(m => ccActingUserSection.CurrentApprover.ApprovalDate, ResourceNames.Common)
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 text-left">
+                                    @if (ccActingUserSection != null && ccActingUserSection.CurrentApprover != null && ccActingUserSection.CurrentApprover.ApprovalDate != null)
+                                    {
+                                        @ccActingUserSection.CurrentApprover.ApprovalDate.Value.ToShortDateString()
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6 col-md-6">
+                                <div class="col-xs-4 col-sm-4 col-md-4 bold">
+                                    @Html.LabelFor(m => ccActingUserSection.CurrentApprover.Comments, ResourceNames.Feedbacks)
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                    @if (ccActingUserSection != null && ccActingUserSection.CurrentApprover != null && ccActingUserSection.CurrentApprover.Comments != null)
+                                    {
+                                        @ccActingUserSection.CurrentApprover.Comments
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 col-md-6">
+                                <div class="col-xs-4 col-sm-4 col-md-4 text-left">
+                                    @Html.LabelFor(m => ccActingUserSection.CCFileNameList, ResourceNames.Feedbacks)
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 text-left">
+                                    @if (ccActingUserSection != null && !string.IsNullOrWhiteSpace(ccActingUserSection.CCFileNameList))
+                                    {
+                                        foreach (FileDetails file in JsonConvert.DeserializeObject<List<FileDetails>>(ccActingUserSection.CCFileNameList))
+                                        {
+                                            @file.FileName
+                                            <div class="clearfix"></div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                @if (ccQualityInchargeSection != null && ccQualityInchargeSection.CurrentApprover != null && ccQualityInchargeSection.CurrentApprover.Comments != null)
+                {
+                    <div id="card3" class="col-md-12 card" style="border:1px solid black">
+                        <div class="row borderBottom">
+                            <div class="col-sm-6">
+                                <div class="bold">
+                                    For CC Quality Incharge
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="col-xs-4 col-sm-4 col-md-4 text-left">
+                                    @Html.LabelFor(m => ccQualityInchargeSection.CurrentApprover.ApprovalDate, ResourceNames.Common)
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 text-left">
+                                    @if (ccQualityInchargeSection != null && ccQualityInchargeSection.CurrentApprover != null && ccQualityInchargeSection.CurrentApprover.ApprovalDate != null)
+                                    {
+                                        @ccQualityInchargeSection.CurrentApprover.ApprovalDate.Value.ToShortDateString()
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row borderBottom">
+                            <div class="col-sm-6">
+                                @Html.LabelFor(m => ccQualityInchargeSection.CurrentApprover.Comments, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-sm-6 text-left">
+                                @if (ccQualityInchargeSection != null && ccQualityInchargeSection.CurrentApprover != null && ccQualityInchargeSection.CurrentApprover.Comments != null)
+                                {
+                                    @ccQualityInchargeSection.CurrentApprover.Comments
+                                }
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                @Html.LabelFor(m => ccQualityInchargeSection.CCQAInchargeFileNameList, ResourceNames.Feedbacks)
+                            </div>
+                            <div class="col-sm-6 text-left">
+
+                                @if (ccQualityInchargeSection != null && ccQualityInchargeSection.CCQAInchargeFileNameList != null)
+                                {
+                                    foreach (FileDetails file in JsonConvert.DeserializeObject<List<FileDetails>>(ccQualityInchargeSection.CCQAInchargeFileNameList))
+                                    {
+                                        @file.FileName
+                                        <div class="clearfix"></div>
+                                    }
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </body>
+    </html>
+</div>
+</div>
+<div class="modal fade" id="printModel" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><i class="fa fa-print"></i> Print Product Feedback</h4>
+
+            </div>
+            <div class="modal-body">
+                <p><span class="text-danger text-default-light">@Html.ResourceValue("Text_Print", ResourceNames.Common)</span></p>
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered someTable">
+                        <thead>
+                            <tr>
+                                <th>Attachment Name</th>
+                                <th>Print / Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Feedback Form
+                                </td>
+                                <td>
+                                    <a onclick="Print(this);" data-action="6" data-sendbackto="" data-sendtorole="" style="cursor:pointer !important">Print</a>&nbsp; | &nbsp;
+                                    <a onclick="PrintPreview(this);" data-action="6" data-sendbackto="" data-sendtorole="" style="cursor:pointer !important">Preview</a>
+                                </td>
+                            </tr>
+                            @if (feedbacksDetailSection!= null && feedbacksDetailSection.Files != null && feedbacksDetailSection.Files.Count != 0)
+                            {
+                                foreach (FileDetails item in feedbacksDetailSection.Files)
+                                {
+                                    <tr>
+                                        <td>@item.FileName</td>
+                                        <td>
+                                            <a data-url="@item.FileURL" onclick="DownloadUploadedFile(this);" style="cursor:pointer !important"> Download and Print </a>
+                                        </td>
+                                    </tr>
+                                } }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

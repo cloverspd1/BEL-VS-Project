@@ -1,0 +1,108 @@
+2018-06-09 11:09:55,427 [9] INFO  - MVC - Application_Start_Done, 
+2018-06-09 11:09:55,437 [11] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-09 11:12:56,831 [9] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-09 11:13:03,736 [12] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-09 11:13:03,736 [9] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=8, 
+2018-06-09 11:13:03,736 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-06-09 11:13:05,875 [12] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-09 11:14:33,855 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-09 11:14:48,796 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-09 11:20:15,301 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-06-09 11:21:32,494 [10] ERROR - Id: fd85bb73-4e9c-4fea-bd1a-7c257bd661b8
+2018-06-09 11:21:32,495 [10] ERROR - StatusCode: 200
+2018-06-09 11:21:32,495 [10] ERROR - Controller: 
+2018-06-09 11:21:32,496 [10] ERROR - Action: 
+2018-06-09 11:21:32,497 [10] ERROR - List 'Feedbacks' does not exist at site with URL 'https://bajajelect.sharepoint.com/sites/PriyaMail'.
+Microsoft.SharePoint.Client.ServerException: List 'Feedbacks' does not exist at site with URL 'https://bajajelect.sharepoint.com/sites/PriyaMail'.
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterDataOf(ClientContext context, Web web, IMaster master) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 92
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterData(ClientContext context, Web web, List`1 masters) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 52
+   at BEL.DataAccessLayer.BELDataAccessLayer.FillSectionFromList(ClientContext context, Web web, String applicationName, String formName, String role, Object actualSection, String userID, Dictionary`2 otherParamDictionary, List`1& approverMatrixFromList) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3211
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetData(ClientContext context, Web web, String applicationName, String formName, String role, ISection section, Boolean isActive, String userID, List`1& approverMatrixFromList, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2952
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form, String role, Dictionary`2 activeAndHiddenSections, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2872
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2473
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-06-09 11:21:32,620 [10] ERROR - List 'Feedbacks' does not exist at site with URL 'https://bajajelect.sharepoint.com/sites/PriyaMail'.
+Microsoft.SharePoint.Client.ServerException: List 'Feedbacks' does not exist at site with URL 'https://bajajelect.sharepoint.com/sites/PriyaMail'.
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterDataOf(ClientContext context, Web web, IMaster master) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 92
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterData(ClientContext context, Web web, List`1 masters) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 52
+   at BEL.DataAccessLayer.BELDataAccessLayer.FillSectionFromList(ClientContext context, Web web, String applicationName, String formName, String role, Object actualSection, String userID, Dictionary`2 otherParamDictionary, List`1& approverMatrixFromList) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3211
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetData(ClientContext context, Web web, String applicationName, String formName, String role, ISection section, Boolean isActive, String userID, List`1& approverMatrixFromList, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2952
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form, String role, Dictionary`2 activeAndHiddenSections, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2872
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2473
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

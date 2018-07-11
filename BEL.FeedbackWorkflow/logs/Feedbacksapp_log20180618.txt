@@ -1,0 +1,399 @@
+2018-06-18 14:19:11,423 [9] INFO  - MVC - Application_Start_Done, 
+2018-06-18 14:19:11,443 [10] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:20:01,060 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:21:03,906 [9] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:21:03,906 [9] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:21:03,906 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:21:03,906 [15] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:21:06,877 [9] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:21:06,901 [9] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-18 14:21:18,862 [10] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:21:20,749 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-18 14:21:20,749 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-06-18 14:21:20,749 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-06-18 14:21:20,749 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-18 14:21:20,765 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-06-18 14:21:20,765 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-06-18 14:21:20,765 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-18 14:21:20,765 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-18 14:21:21,913 [9] INFO  - WCF - Helper.GetAllButtons, 
+2018-06-18 14:21:21,913 [10] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-06-18 14:21:33,637 [9] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:22:53,241 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/617fe8d2bf9b45b4b94ef2eb2fcf536d?version=2, 
+2018-06-18 14:23:00,595 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:23:30,595 [15] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:23:33,115 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=640078&_=1529311971895, 
+2018-06-18 14:23:43,280 [16] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:23:43,800 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:23:43,800 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:23:43,800 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:23:43,800 [5] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:23:43,800 [16] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:23:48,617 [16] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:23:48,617 [5] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:23:48,617 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:23:49,193 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/0a2114dbdb384f959fae9be5d80b6453?version=2, 
+2018-06-18 14:23:54,664 [15] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:23:56,599 [5] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720010&_=1529312028818, 
+2018-06-18 14:24:05,913 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=88, 
+2018-06-18 14:24:07,568 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250888&_=1529312028819, 
+2018-06-18 14:30:03,238 [21] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:30:03,750 [21] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:30:03,750 [27] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:30:03,750 [22] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:30:03,750 [25] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:30:03,750 [24] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:30:11,297 [21] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:30:11,297 [22] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:30:11,297 [27] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:30:11,505 [22] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:30:11,753 [30] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:30:11,753 [32] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:30:11,753 [22] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:30:11,753 [19] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:30:11,753 [29] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:30:13,580 [24] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:30:13,580 [28] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:30:13,581 [27] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:30:50,818 [27] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/db2793d5e9944b99a5b75fbedef938b8?version=2, 
+2018-06-18 14:31:12,473 [28] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:31:12,877 [27] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:31:12,877 [21] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:31:12,877 [28] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:31:12,877 [27] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:31:12,877 [21] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:31:15,320 [21] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:31:15,328 [27] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:31:15,328 [29] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:31:16,160 [27] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/cc0ec474509a49fbb2721af2d113fbc0?version=2, 
+2018-06-18 14:31:19,583 [28] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:31:26,441 [29] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720010&_=1529312475622, 
+2018-06-18 14:31:38,370 [21] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:31:38,754 [27] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:31:38,754 [14] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:31:38,754 [29] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:31:38,754 [28] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:31:38,754 [21] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:31:40,958 [29] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:31:40,958 [14] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:31:40,958 [3] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:31:41,597 [21] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/6d931b00a24248efaac328dc12ec7fcb?version=2, 
+2018-06-18 14:32:06,019 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=98, 
+2018-06-18 14:32:07,975 [18] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=410198&_=1529312501077, 
+2018-06-18 14:33:27,616 [18] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:33:28,052 [4] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:33:28,052 [18] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:33:28,052 [28] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:33:28,052 [30] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:33:28,052 [14] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:33:30,235 [30] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:33:30,235 [4] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:33:30,255 [14] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:33:30,343 [25] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:33:30,663 [4] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:33:30,663 [25] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:33:30,663 [28] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:33:30,663 [30] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:33:30,663 [18] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:33:32,427 [4] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:33:32,427 [26] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:33:32,427 [30] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:33:37,634 [4] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/c40c822fffb24b8081d35fb2bd31117f?version=2, 
+2018-06-18 14:33:41,912 [4] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:33:43,944 [4] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=640077&_=1529312613010, 
+2018-06-18 14:33:56,305 [3] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=44, 
+2018-06-18 14:33:57,484 [18] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=840044&_=1529312613011, 
+2018-06-18 14:38:05,062 [21] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:38:07,017 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=640078&_=1529312613012, 
+2018-06-18 14:38:37,802 [16] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:38:38,258 [19] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:38:38,258 [19] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:38:38,258 [5] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:38:38,258 [16] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:38:38,258 [19] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:38:40,426 [16] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:38:40,426 [5] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:38:40,426 [19] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:38:41,537 [5] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/5920176f25984363a5c0720c5aa360b6?version=2, 
+2018-06-18 14:38:44,753 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:38:47,148 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720010&_=1529312920975, 
+2018-06-18 14:39:03,556 [18] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:39:03,972 [19] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:39:03,972 [19] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:39:03,972 [18] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:39:03,972 [22] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:39:03,972 [4] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:39:06,219 [4] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:39:06,223 [22] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:39:06,235 [24] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:39:06,899 [22] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/6b8543272e9141fb96ad92eab953d7fd?version=2, 
+2018-06-18 14:39:09,190 [22] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:39:11,218 [19] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720010&_=1529312946454, 
+2018-06-18 14:40:40,099 [4] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 14:40:41,835 [22] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=640078&_=1529312946455, 
+2018-06-18 14:41:00,299 [9] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=LoadingIndicator-128.png, 
+2018-06-18 14:41:17,381 [9] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","CCActingUser","CCActingUserName","ButtonCaption","X-Requested-With"], 
+2018-06-18 14:41:22,361 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:22,361 [3] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"23","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}
+2018-06-18 14:41:23,110 [28] INFO  - WCF - Saving Actual Section Properties, 
+2018-06-18 14:41:22,361 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:44,146 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:44,146 [3] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"23","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=SaveAsDraft, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":null,"Status":"Pending","Comments":null,"AssignDate":"2018-06-18T14:41:42.2200265+05:30","DueDate":"2018-06-27T14:41:42.2190271+05:30","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":"DCR DCN Management Sytem User 2","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"25","ApproverName":"Training Management Sytem User 1","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-06-18 14:41:44,150 [10] INFO  - WCF - condition true for => {"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}, 
+2018-06-18 14:41:44,158 [8] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"23","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=SaveAsDraft, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":"DCR DCN Management Sytem User 2","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"23","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"25","ApproverName":"Training Management Sytem User 1","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":49,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-06-18 14:41:44,166 [8] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="25"
+2018-06-18 14:41:44,146 [9] INFO  - WCF - End of form level assignment, 
+2018-06-18 14:41:44,146 [13] INFO  - WCF - 1==0 && Not Assigned==Not Assigned, 
+2018-06-18 14:41:44,146 [21] INFO  - WCF - -2==0 && Not Assigned==Not Assigned, 
+2018-06-18 14:41:44,146 [15] INFO  - WCF - 3==0 && Not Assigned==Not Assigned, 
+2018-06-18 14:41:44,146 [23] INFO  - WCF - 2==0 && Not Assigned==Not Assigned, 
+2018-06-18 14:41:44,154 [28] INFO  - WCF - 0==0 && Not Assigned==Not Assigned, 
+2018-06-18 14:41:44,178 [28] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='49', 
+2018-06-18 14:41:44,182 [28] INFO  - WCF - Set Viewer  Approver ID='23' and RequestId='49', 
+2018-06-18 14:41:44,158 [3] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:44,146 [22] INFO  - WCF - Case Action Performed 'SaveAsDraft', 
+2018-06-18 14:41:44,158 [24] INFO  - WCF - Save as draft condition => any approver=True, 
+2018-06-18 14:41:44,186 [22] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-1-49"
+2018-06-18 14:41:44,170 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:44,170 [8] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:44,174 [13] INFO  - WCF - Tasks Saved if any, 
+2018-06-18 14:41:44,170 [10] INFO  - WCF - Started form level assignment, 
+2018-06-18 14:41:44,174 [9] INFO  - WCF - Tasks approvers Saved if any, 
+2018-06-18 14:41:44,174 [21] INFO  - WCF - Set Viewer  Approver ID='25' and RequestId='49', 
+2018-06-18 14:41:44,178 [15] INFO  - WCF - Set Viewer  Approver ID='23' and RequestId='49', 
+2018-06-18 14:41:44,178 [23] INFO  - WCF - Set Viewer  Approver ID='23' and RequestId='49', 
+2018-06-18 14:41:44,182 [28] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-06-18 14:41:44,186 [3] INFO  - WCF - Reference Number Generated 'Feedback Form-1-49', 
+2018-06-18 14:41:44,190 [24] INFO  - WCF - Actual Section Properties Saved, Int32=49
+2018-06-18 14:41:44,190 [22] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-06-18 14:41:44,294 [26] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='49' with values = {"ReferenceNo":"Feedback Form-1-49","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":23,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":23,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":23,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":25,"LookupValue":null}],"Status":"Draft","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":23,"LookupValue":null}],"WorkflowStatus":"Draft"}, 
+2018-06-18 14:41:45,376 [25] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__57(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1742
+2018-06-18 14:41:46,168 [22] INFO  - WCF - Save Form Field Name='Status'='Draft', 
+2018-06-18 14:41:46,168 [24] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Draft', 
+2018-06-18 14:41:47,494 [28] INFO  - WCF - Helper.SaveAttachment FileName:LoadingIndicator-128.png, FileSize:26ee59c7-a4c6-41a4-a64e-ff1c76a7cd17.png, Status:New, 
+2018-06-18 14:41:50,853 [24] INFO  - WCF - Calling SetItemPermission -> itemid=49, listname=Feedbacks, {"23":"Contribute"}, 
+2018-06-18 14:41:50,853 [22] INFO  - WCF - Helper.SaveAttachment file saved, 
+2018-06-18 14:41:51,153 [22] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 23, 
+2018-06-18 14:41:51,153 [23] INFO  - WCF - item ResetRoleInheritance Called, 
+2018-06-18 14:41:51,153 [3] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2018-06-18 14:41:51,153 [9] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2018-06-18 14:41:51,429 [24] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2018-06-18 14:41:51,601 [24] INFO  - WCF - User Permission set for -> 23, 
+2018-06-18 14:41:52,084 [9] INFO  - WCF - Calling Activity Log -> {"UserID":"23","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, 
+2018-06-18 14:41:52,085 [3] INFO  - WCF - Called SetItemPermission Permission Assigned ->False, 
+2018-06-18 14:41:52,084 [28] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2018-06-18 14:41:52,103 [13] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=49, activityby=23, 
+2018-06-18 14:41:52,103 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:52,776 [23] INFO  - WCF - Activity Log Parameter Saved -> Activity= Save As Draft, 
+Changes=ProposedBy	
+RequestDate	
+WorkflowStatus	Draft
+Status	Draft
+
+Approved/Updated date	18/06/2018
+Approved/Updated time	02:41 PM
+Approver Comment	
+BusinessUnits	MR
+FeedbackTitle	dhgfhggv
+Branch	Delhi DLF Office
+ProductType	MR Juicer Mixer Grinders
+DefectDescription	hjfvhjvf
+SupplierCode	1234
+ProductSerial	dtydghtdfhgd
+FeedbackNo	
+Files	LoadingIndicator-128.png
+CCActingUser	DCR DCN Management Sytem User 2
+Month	
+Year	
+ItemCode	640078
+ItemDescription	Aristo 3 Jar JMG
+ProductGroup	, 
+ActivityDate=18/06/2018, 
+ActivityBy=23, 
+RequestID=49, 
+SectionName=Feedback Detail Section, 
+, 
+2018-06-18 14:41:52,776 [3] INFO  - WCF - Calling Activity Log -> Complete, 
+2018-06-18 14:41:52,776 [28] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2018-06-18 14:41:52,776 [9] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:53,761 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:54,869 [28] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="23"
+2018-06-18 14:41:55,465 [28] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="25"
+2018-06-18 14:41:55,980 [28] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2018-06-18 14:41:55,996 [9] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="DCR DCN Management Sytem User 2"
+2018-06-18 14:41:55,996 [28] INFO  - WCF - Helper.GetNameUsingUserID, String="23"
+2018-06-18 14:41:55,996 [24] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="DCR DCN Management Sytem User 2"
+2018-06-18 14:41:55,996 [25] INFO  - WCF - Helper.GetNameUsingUserID, String="23"
+2018-06-18 14:42:04,687 [28] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 14:42:04,983 [9] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 14:42:04,983 [9] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 14:42:04,983 [28] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 14:42:04,983 [9] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 14:42:04,983 [25] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 14:42:07,323 [24] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 14:42:07,323 [9] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 14:42:07,339 [25] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 14:42:07,935 [9] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/86c357dcf9414514afec1c4a6edad750?version=2, 
+2018-06-18 15:17:47,912 [67] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 15:17:48,616 [76] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 15:17:48,616 [76] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 15:17:48,616 [74] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 15:17:48,616 [75] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 15:17:48,616 [67] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 15:18:58,273 [79] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 15:19:25,741 [72] ERROR - Id: 01167918-fb77-4f44-966b-fe1188ee7ab6
+2018-06-18 15:19:25,745 [72] ERROR - StatusCode: 200
+2018-06-18 15:19:25,745 [72] ERROR - Controller: 
+2018-06-18 15:19:25,745 [72] ERROR - Action: 
+2018-06-18 15:19:25,745 [72] ERROR - Unable to connect to the remote server
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 52.172.144.18:443
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoPost(String url, String contentType, String body, Func`2 webExceptionHandler)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetUserRealm(String login)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetEnableSectionNames(String applicationName, String formName, String role) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3527
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2467
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-06-18 15:19:25,769 [72] ERROR - Unable to connect to the remote server
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 52.172.144.18:443
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoPost(String url, String contentType, String body, Func`2 webExceptionHandler)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetUserRealm(String login)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetEnableSectionNames(String applicationName, String formName, String role) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3527
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2467
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-06-18 15:19:27,968 [72] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 15:19:27,968 [76] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 15:19:27,968 [72] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 15:19:27,968 [76] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 15:19:27,968 [78] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 15:38:32,378 [10] INFO  - MVC - Application_Start_Done, 
+2018-06-18 15:38:32,386 [12] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 15:38:38,356 [13] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 15:38:38,388 [10] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 15:38:38,388 [13] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 15:38:38,388 [12] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 15:38:38,421 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 15:38:41,719 [10] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 15:38:41,731 [12] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-18 15:38:56,640 [13] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 15:38:57,638 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-06-18 15:38:57,639 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-06-18 15:38:57,652 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-18 15:38:57,652 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-18 15:38:57,653 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-18 15:38:57,653 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-18 15:38:57,652 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-06-18 15:38:57,652 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-06-18 15:38:58,589 [10] INFO  - WCF - Helper.GetAllButtons, 
+2018-06-18 15:38:58,589 [12] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-06-18 15:39:04,840 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 15:40:35,800 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/926bef8a088e44d4b493e35c36bc085d?version=2, 
+2018-06-18 16:00:22,206 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 16:00:26,664 [43] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-18 16:00:36,852 [43] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 16:00:37,570 [45] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-18 16:00:37,570 [42] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-18 16:00:37,570 [43] INFO  - WCF - Called Helper GetFormData, 
+2018-06-18 16:00:37,570 [52] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-18 16:00:37,570 [46] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-18 16:00:48,437 [46] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-18 16:00:48,438 [48] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-18 16:00:48,438 [45] INFO  - WCF - called Helper.GetFormData, 
+2018-06-18 16:00:49,379 [42] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/b5ae7c5480e04148be1f394ce350e5a1?version=2, 
+2018-06-18 16:00:53,523 [42] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-06-18 16:00:55,332 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=750014&_=1529317848840, 
+2018-06-18 16:02:49,790 [44] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=67, 
+2018-06-18 16:02:51,521 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=270067&_=1529317848841, 
+2018-06-18 16:02:58,052 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=35, 
+2018-06-18 16:02:59,506 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=350004&_=1529317848842, 
+2018-06-18 16:03:25,319 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=55, 
+2018-06-18 16:03:27,378 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250955&_=1529317848843, 

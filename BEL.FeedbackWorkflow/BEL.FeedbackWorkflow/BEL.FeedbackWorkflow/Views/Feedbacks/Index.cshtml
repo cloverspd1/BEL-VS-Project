@@ -1,0 +1,169 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks
+@using BEL.CommonDataContract
+@using BEL.FeedbackWorkflow.Models.Common
+@model  FeedbacksContract
+@{
+    FeedbacksContract contract = Model as FeedbacksContract;
+    FeedbacksForm form = contract.Forms.FirstOrDefault() as FeedbacksForm;
+    ViewBag.Title = "Product Quality Feedback";
+    FeedbacksDetailSection feedbackDetailSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.FEEDBACKDETAILSECTION)) as FeedbacksDetailSection;
+
+    CCActingUserSection ccActingUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCACTINGUSERSECTION)) as CCActingUserSection;
+    CCQualityInchargeSection ccQualityInchargeSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCQUALITYINCHARGESECTION)) as CCQualityInchargeSection;
+    QaulityUserSection qaulityUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.QAULITYUSERSECTION)) as QaulityUserSection;
+
+}
+@if (form != null)
+{
+    @section buttons{
+        @Html.Partial("_ButtonGroup", form.Buttons)
+    }
+
+    if (!string.IsNullOrEmpty(form.FormStatus))
+    {
+        <div class="card-body text-right pad-bot-15">
+            <div class="label label-primary">
+                @form.FormStatus
+            </div>
+        </div>
+    }
+
+
+    <div id="pageFeedback">
+        <div id="tab-general">
+
+            <div class="row mbl">
+                <div class="col-lg-12">
+                    <div class="tab-content responsive " id="generalTabContent">
+                        @if (feedbackDetailSection != null)
+                        {
+                            string sectionActiveCss = feedbackDetailSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails1">
+                                    @Html.ResourceValue("Section_Title_FeedbackDetailDocumentSection", ResourceNames.Feedbacks)
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails1">
+                                    <div class="form-horizontal">
+                                        <p><span class="text-danger text-default-light">@Html.ResourceValue("Text_Mandatory", ResourceNames.Common)</span></p>
+                                        @Html.Partial("_feedbacksDetailSection", feedbackDetailSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
+                        @if (ccActingUserSection != null)
+                        {
+                            string sectionActiveCss = ccActingUserSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails2">
+                                    @Html.ResourceValue("Section_Title_CCActingUserSection", ResourceNames.Feedbacks)
+                                    @if (ccActingUserSection.CurrentApprover != null && !string.IsNullOrEmpty(ccActingUserSection.CurrentApprover.Role) && !string.IsNullOrEmpty(ccActingUserSection.CurrentApprover.ApproveByName))
+                                    {
+                                        <span> – <i class="fa fa-check"></i> Verified by  @ccActingUserSection.CurrentApprover.ApproveByName (@ccActingUserSection.CurrentApprover.Role) </span>
+                                    }
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails2">
+                                    <div class="form-horizontal">
+
+                                        @Html.Partial("_ccActingUserSection", ccActingUserSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
+                        @if (ccQualityInchargeSection != null)
+                        {
+                            string sectionActiveCss = ccQualityInchargeSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails4">
+                                    @Html.ResourceValue("Section_Title_CCQualityInchargeSection", ResourceNames.Feedbacks)
+                                    @if (ccQualityInchargeSection.CurrentApprover != null && !string.IsNullOrEmpty(ccQualityInchargeSection.CurrentApprover.Role) && !string.IsNullOrEmpty(ccQualityInchargeSection.CurrentApprover.ApproveByName))
+                                    {
+                                        <span> – <i class="fa fa-check"></i> Verified by  @ccQualityInchargeSection.CurrentApprover.ApproveByName (@ccQualityInchargeSection.CurrentApprover.Role) </span>
+                                    }
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails4">
+                                    <div class="form-horizontal">
+
+                                        @Html.Partial("_ccQualityInchargeSection", ccQualityInchargeSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
+                        @if (qaulityUserSection != null)
+                        {
+                            string sectionActiveCss = qaulityUserSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails3">
+                                    @Html.ResourceValue("Section_Title_QAUserSection", ResourceNames.Feedbacks)
+                                    @if (qaulityUserSection.CurrentApprover != null && !string.IsNullOrEmpty(qaulityUserSection.CurrentApprover.Role) && !string.IsNullOrEmpty(qaulityUserSection.CurrentApprover.ApproveByName))
+                                    {
+                                        <span> – <i class="fa fa-check"></i> Verified by  @qaulityUserSection.CurrentApprover.ApproveByName (@qaulityUserSection.CurrentApprover.Role) </span>
+                                    }
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails3">
+                                    <div class="form-horizontal">
+
+                                        @Html.Partial("_qaUserSection", qaulityUserSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
+
+
+                        @{ApplicationStatusSection appStatus = form.SectionsList.FirstOrDefault(f => f != null && f.SectionName.Equals(SectionNameConstant.APPLICATIONSTATUS)) as ApplicationStatusSection;
+
+                        if (appStatus != null)
+                        {
+                            @Html.Partial("_ApplicationStatus", appStatus)
+                        }
+
+                        ActivityLogSection activityLog = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.ACTIVITYLOG)) as ActivityLogSection;
+                        if (activityLog != null)
+                        {
+                            @Html.Partial("_ActivityLogs", activityLog, new ViewDataDictionary { { "Resources", ResourceNames.Feedbacks } })
+                        }
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="divAddProductSerial"></div>
+    <div class="scroll-top-wrapper ">
+        <i class="fa fa-chevron-up">
+        </i>
+    </div>
+    if (Model != null)
+        {
+            //if (feedbackDetailSection.Status == "" || feedbackDetailSection.Status == "Rejected")
+            //{
+                @Html.Partial("_printFeedback", Model)
+            //}
+        }
+
+    @section scripts{
+        @Scripts.Render("~/bundles/feedbackindex")
+    }
+}
+
+

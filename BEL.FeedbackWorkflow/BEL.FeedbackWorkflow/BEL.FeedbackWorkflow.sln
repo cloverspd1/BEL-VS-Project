@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5F9E72AF-BDCD-42FC-8ABB-CE983904A6C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{845D4428-D29B-463C-8EB7-9B3C72614031}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Contract", "Data Contract", "{6AD1F65D-1ADE-4BE5-84D2-F291AC51822B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{E71CFCB3-71E5-4D9A-8AE7-E851A5ED6C4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharepointApp", "SharepointApp", "{E84E7238-BD45-468B-A5F9-8CB0BFBE689C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEL.DataAccessLayer", "BEL.DataAccessLayer\BEL.DataAccessLayer.csproj", "{0C860AE9-B781-4A42-9E20-39384BF4EC54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEL.CommonDataContract", "BEL.CommonDataContract\BEL.CommonDataContract.csproj", "{081CA91D-A9A9-47DE-9BB9-8C1B474FE391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEL.FeedbackWorkflow", "BEL.FeedbackWorkflow\BEL.FeedbackWorkflow.csproj", "{5DFCF898-293B-43A1-8BD4-A39B161E69B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEL.SPApp", "BEL.SPApp\BEL.SPApp.csproj", "{DE70F061-8CE9-4502-A59B-86BA532AD7C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F60B6CFD-0136-428C-8998-3BF26E04E45E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/microsoft%20product%20server%20and%20technologies
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BEL.CommonDataContract\\BEL.CommonDataContract.csproj
+		SccProjectTopLevelParentUniqueName1 = BEL.FeedbackWorkflow.sln
+		SccProjectName1 = BEL.CommonDataContract
+		SccLocalPath1 = BEL.CommonDataContract
+		SccProjectUniqueName2 = BEL.DataAccessLayer\\BEL.DataAccessLayer.csproj
+		SccProjectTopLevelParentUniqueName2 = BEL.FeedbackWorkflow.sln
+		SccProjectName2 = BEL.DataAccessLayer
+		SccLocalPath2 = BEL.DataAccessLayer
+		SccProjectUniqueName3 = BEL.FeedbackWorkflow\\BEL.FeedbackWorkflow.csproj
+		SccProjectTopLevelParentUniqueName3 = BEL.FeedbackWorkflow.sln
+		SccProjectName3 = BEL.FeedbackWorkflow
+		SccLocalPath3 = BEL.FeedbackWorkflow
+		SccProjectUniqueName4 = BEL.SPApp\\BEL.SPApp.csproj
+		SccProjectTopLevelParentUniqueName4 = BEL.FeedbackWorkflow.sln
+		SccProjectName4 = BEL.SPApp
+		SccLocalPath4 = BEL.SPApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C860AE9-B781-4A42-9E20-39384BF4EC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C860AE9-B781-4A42-9E20-39384BF4EC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C860AE9-B781-4A42-9E20-39384BF4EC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C860AE9-B781-4A42-9E20-39384BF4EC54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081CA91D-A9A9-47DE-9BB9-8C1B474FE391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081CA91D-A9A9-47DE-9BB9-8C1B474FE391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081CA91D-A9A9-47DE-9BB9-8C1B474FE391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081CA91D-A9A9-47DE-9BB9-8C1B474FE391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFCF898-293B-43A1-8BD4-A39B161E69B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFCF898-293B-43A1-8BD4-A39B161E69B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFCF898-293B-43A1-8BD4-A39B161E69B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFCF898-293B-43A1-8BD4-A39B161E69B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C860AE9-B781-4A42-9E20-39384BF4EC54} = {845D4428-D29B-463C-8EB7-9B3C72614031}
+		{081CA91D-A9A9-47DE-9BB9-8C1B474FE391} = {6AD1F65D-1ADE-4BE5-84D2-F291AC51822B}
+		{5DFCF898-293B-43A1-8BD4-A39B161E69B3} = {5F9E72AF-BDCD-42FC-8ABB-CE983904A6C7}
+		{DE70F061-8CE9-4502-A59B-86BA532AD7C0} = {E84E7238-BD45-468B-A5F9-8CB0BFBE689C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.WCF.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

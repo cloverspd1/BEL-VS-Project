@@ -1,0 +1,32 @@
+﻿@using BEL.CommonDataContract;
+@{
+    ViewBag.Title = "BulkUpload";
+
+}
+<div class="card">
+    <div class=" card-head">
+        Bulk Upload SKU Master Data.
+        <div class="btn collapse-btn" data-toggle="collapse" data-target="#divProductName"><i class="fa fa-chevron-down"></i></div>
+    </div>
+    <div class="card-body form-horizontal" id="divProductName">
+        <div class="row">
+            <a href="@this.ViewData["BasePath"]/images/SKUMaster.xlsx">
+                <i class="fa fa-download"></i>
+                &nbsp;Download Sample
+            </a>
+        </div>
+            <div class="row">
+                <div id="BulkUpload" data-appname="@SiteURLs.FEEDBACKSITEURL">
+                </div>
+                <div id="returnmsg">
+
+                </div>
+            </div>
+
+
+
+        </div>
+</div>
+        @section scripts{
+        @Scripts.Render("~/bundles/bulkuploadindex")
+        }

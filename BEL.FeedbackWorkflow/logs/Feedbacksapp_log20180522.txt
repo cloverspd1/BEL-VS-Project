@@ -1,0 +1,158 @@
+2018-05-22 10:09:17,760 [12] INFO  - MVC - Application_Start_Done, 
+2018-05-22 10:09:17,769 [11] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 10:09:31,100 [5] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 10:09:31,194 [12] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 10:09:31,194 [8] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 10:09:31,194 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 10:09:31,304 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 10:09:40,511 [12] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 10:09:40,567 [5] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 10:09:57,118 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 10:11:07,370 [12] INFO  - MVC - Application_Start_Done, 
+2018-05-22 10:11:07,370 [8] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 10:11:32,091 [8] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 10:11:32,179 [15] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 10:11:32,179 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 10:11:32,179 [12] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 10:11:32,259 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 10:11:37,567 [8] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 10:11:37,583 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 10:11:50,572 [12] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 10:11:51,396 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-05-22 10:11:51,396 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-05-22 10:11:51,396 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-05-22 10:11:51,396 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-05-22 10:11:51,400 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-05-22 10:11:51,400 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-05-22 10:11:51,396 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-05-22 10:11:51,396 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-05-22 10:11:53,041 [15] INFO  - WCF - Helper.GetAllButtons, 
+2018-05-22 10:11:53,041 [8] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-05-22 10:12:01,277 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 10:12:23,572 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/e53d1f015804403b91762b7b6e8e3e14?version=2, 
+2018-05-22 10:12:25,163 [10] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 10:12:26,215 [15] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 10:12:26,215 [15] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 10:12:26,215 [10] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 10:12:26,215 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 10:12:26,215 [12] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 10:12:29,091 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 10:12:29,099 [12] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 10:12:29,115 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 10:12:29,541 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/b5ef4eff9ed14e609b7564aef0f0c4a2?version=2, 
+2018-05-22 15:15:15,259 [5] INFO  - MVC - Application_Start_Done, 
+2018-05-22 15:15:15,305 [8] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 15:15:19,884 [5] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 15:15:19,947 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 15:15:19,947 [8] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 15:15:19,947 [5] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 15:15:19,948 [10] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 15:15:23,337 [8] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 15:15:23,368 [5] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 15:15:39,900 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 15:15:41,584 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-05-22 15:15:41,586 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-05-22 15:15:41,587 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-05-22 15:15:41,588 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-05-22 15:15:41,588 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-05-22 15:15:41,584 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-05-22 15:15:41,585 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-05-22 15:15:41,585 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-05-22 15:15:42,278 [8] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-05-22 15:15:42,278 [10] INFO  - WCF - Helper.GetAllButtons, 
+2018-05-22 15:16:59,729 [8] INFO  - MVC - Application_Start_Done, 
+2018-05-22 15:16:59,729 [5] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 15:17:03,216 [8] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 15:17:03,244 [5] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 15:17:03,244 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 15:17:03,244 [9] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 15:17:03,258 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 15:17:06,039 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 15:17:06,057 [5] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 15:17:12,731 [5] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 15:17:13,057 [5] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 15:17:13,058 [5] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 15:17:13,059 [5] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 15:17:13,057 [8] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 15:17:13,057 [9] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 15:17:15,541 [9] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 15:17:15,541 [8] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 15:17:19,868 [9] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 15:17:20,462 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-05-22 15:17:20,462 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-05-22 15:17:20,476 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-05-22 15:17:20,476 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-05-22 15:17:20,478 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-05-22 15:17:20,479 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-05-22 15:17:20,480 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-05-22 15:17:20,477 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-05-22 15:17:21,494 [8] INFO  - WCF - Helper.GetAllButtons, 
+2018-05-22 15:17:21,494 [5] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-05-22 15:17:24,542 [5] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 15:17:28,428 [8] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 15:17:28,444 [5] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 15:29:00,652 [6] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 15:29:00,653 [7] INFO  - MVC - Application_Start_Done, 
+2018-05-22 15:29:20,438 [6] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 15:29:20,495 [8] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 15:29:20,495 [7] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 15:29:20,496 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 15:29:20,496 [6] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 15:29:23,718 [6] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 15:29:23,718 [7] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 15:29:35,563 [6] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 15:29:36,138 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-05-22 15:29:36,140 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-05-22 15:29:36,139 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-05-22 15:29:36,138 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-05-22 15:29:36,144 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-05-22 15:29:36,142 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-05-22 15:29:36,139 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-05-22 15:29:36,143 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-05-22 15:29:37,293 [6] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-05-22 15:29:37,293 [11] INFO  - WCF - Helper.GetAllButtons, 
+2018-05-22 15:29:45,564 [7] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 15:32:28,621 [7] INFO  - MVC - Application_Start_Done, 
+2018-05-22 15:32:28,635 [7] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 15:32:34,059 [10] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 15:32:34,086 [8] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 15:32:34,086 [7] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 15:32:34,100 [8] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 15:32:34,100 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 15:32:37,428 [7] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 15:32:37,428 [8] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 15:32:52,115 [8] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 15:32:52,494 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-05-22 15:32:52,495 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-05-22 15:32:52,495 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-05-22 15:32:52,498 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-05-22 15:32:52,499 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-05-22 15:32:52,494 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-05-22 15:32:52,497 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-05-22 15:32:52,495 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-05-22 15:32:53,088 [7] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-05-22 15:32:53,088 [10] INFO  - WCF - Helper.GetAllButtons, 
+2018-05-22 15:32:58,593 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 15:33:23,187 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/3932fd58c1fa4c84b1d9980131a198de?version=2, 
+2018-05-22 18:24:25,737 [11] INFO  - MVC - Application_Start_Done, 
+2018-05-22 18:24:26,204 [11] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-05-22 18:24:30,720 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-05-22 18:24:30,876 [9] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-05-22 18:24:30,876 [13] INFO  - WCF - Called Helper GetFormData, 
+2018-05-22 18:24:30,876 [12] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-05-22 18:24:30,876 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2018-05-22 18:24:33,498 [13] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-05-22 18:24:33,524 [9] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-05-22 18:24:50,060 [12] INFO  - WCF - called Helper.GetFormData, 
+2018-05-22 18:24:50,780 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-05-22 18:24:50,781 [13] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-05-22 18:24:50,796 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-05-22 18:24:50,797 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-05-22 18:24:50,798 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-05-22 18:24:50,800 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-05-22 18:24:50,796 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-05-22 18:24:50,796 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-05-22 18:24:51,497 [13] INFO  - WCF - Helper.GetAllButtons, 
+2018-05-22 18:24:51,497 [12] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-05-22 18:24:58,015 [13] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-05-22 18:25:26,389 [13] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/35e4f09db365404b8570a1c3f1ff5154?version=2, 

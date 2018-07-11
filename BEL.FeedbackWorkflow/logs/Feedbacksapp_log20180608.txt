@@ -1,0 +1,2 @@
+2018-06-08 18:19:19,729 [7] INFO  - MVC - Application_Start_Done, 
+2018-06-08 18:19:19,861 [7] INFO  - MVC - Begin Request http://localhost:5179/, 

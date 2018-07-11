@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="FeedbackSPAppTest"     
+     ProductID="{79d7b796-4ad9-4017-88ab-df53639ae295}"
+     Version="1.0.0.9"
+     SharePointMinVersion="16.0.0.0">
+  <!--Priya =  ProductID="{79d7b796-4ad9-4017-88ab-df53639ae295}"-->
+  <!--DEVProductID="{894ddb3d-b3e1-40b9-8514-625e02c3cf8e}"-->
+  <!--UATProductID="{79d7b796-4ad9-4017-88ab-df53639ae194}"-->
+  <!--ProdProductID="{D67F5981-73B3-40C4-8D4B-942C38D16FDC}"-->
+  <Properties>
+    <Title>FeedbackSPAppTest</Title>
+    <StartPage>~remoteAppUrl/?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="*" />
+  </AppPrincipal>
+  <AppPermissionRequests AllowAppOnlyPolicy="false">
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="FullControl" />
+    <AppPermissionRequest Scope="http://sharepoint/social/tenant" Right="Read" />
+  </AppPermissionRequests>
+</App>

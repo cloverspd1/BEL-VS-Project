@@ -1,0 +1,86 @@
+﻿@using BEL.FeedbackWorkflow.Models
+@using BEL.CommonDataContract
+@using BEL.FeedbackWorkflow.Models.Common
+@model List<ISection>
+@{
+    ViewBag.Title = "Feedback Report";
+}
+<style>
+    table tbody td {
+        text-align: left;
+    }
+</style>
+<div class="text-center"><a href="javascript:void(0);" id="btnGenerateFinalizationReportExportToExcel" class="btn btn-primary">Export to Excel</a></div>
+<div class="panel-body grid-view">
+
+    <table id="wipDCRTable" class="table table-hover table-bordered someTable">
+        <thead>
+            <tr>
+                <th>View Link</th>
+                <th>@Html.ResourceValue("Grid_Title_FeedbackNo", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_CreationDate", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_BusinessUnit", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_Branch", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_ProposedBy", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_Status", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_ProductGroup", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_ItemCode", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_ProblemCause", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_FeedbackTitle", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_DefectDescription", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_ProductSerial", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_CCActingUser", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_AssignDate", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_Comment", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_CCQualityInchargeUser", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_AssignDate", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_Comment", ResourceNames.Feedbacks)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model != null && Model.Count > 0)
+            {
+                foreach (FeedbackReportSection item in Model)
+                {
+                    string url = "Lists/Feedbacks/DispForm.aspx?ID=";
+                    <tr>
+                        <td><a href="#" onclick="ViewWIPReport('@url@item.ID')">View</a></td>
+                        <td>@item.FeedbackNo</td>
+                        <td>@(item.RequestDate.HasValue ? item.RequestDate.Value.ToString("dd/MM/yyyy") : "")</td>
+                        <td>@item.BusinessUnits</td>
+                        <td>@item.Branch</td>
+                        <td>@item.ProposedBy</td>
+                        <td>@item.WorkflowStatus</td>
+                        <td>@item.ProductGroup</td>
+                        <td>@item.ItemCode</td>
+                        <td>@item.ProblemCause</td>
+                        <td>@item.FeedbackTitle</td>
+                        <td>@item.DefectDescription</td>
+                        <td>@item.ProductSerial</td>
+                        <td>@item.CCActingUserName</td>
+                        <td>@(item.CCActingAssignDate.HasValue ? item.CCActingAssignDate.Value.ToString("dd/MM/yyyy") : "-")</td>
+                        <td>@item.Comments</td>
+                        <td>@item.CCQualityInchargeName</td>
+                        <td>@(item.CCQualityIcAssignDate.HasValue ? item.CCQualityIcAssignDate.Value.ToString("dd/MM/yyyy") : "-")</td>
+                        <td>@item.QualityComments</td>
+                    </tr>
+
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9" class="text-center text-danger">
+                        @Html.ResourceValue("Grid_Text_NoData", ResourceNames.Common)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/feedbackindex")
+}

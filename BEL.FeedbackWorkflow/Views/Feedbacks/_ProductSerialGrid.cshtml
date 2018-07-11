@@ -1,0 +1,46 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks
+@using BEL.CommonDataContract
+@model List<ITrans>
+
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered someTable" id="productSerialtable">
+        <thead>
+            <tr>
+                <th>@Html.ResourceValue("Grid_ProductSerial_Header_Label_No", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_ProductSerial_Header_Label_ProductSerialNo", ResourceNames.Feedbacks)</th>
+                <th>@Html.ResourceValue("Grid_Title_Action", ResourceNames.Common)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Count() > 0)
+            {
+                foreach (ProductSerial item in Model)
+                {
+                    <tr>
+
+                        <td>@item.Index</td>
+                        <td>@item.ProductSerialNo</td>
+                        <td>
+                            <a class="btn ink-reaction btn-floating-action" data-ajax="true" data-ajax-loading="#loading" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#divAddProductSerial" href="@Url.Action("AddProductSerial","NPD",new {index=@item.Index})">
+                                <i class='fa fa-edit'></i>
+                            </a>
+                            <a class="btn ink-reaction btn-floating-action btn-danger" onclick="ProductSerialDelete('@item.Index');">
+                                <i class='fa fa-trash-o'></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9" class="text-center text-danger">
+                        @Html.ResourceValue("Grid_Text_NoProductSerialData", ResourceNames.NPD)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

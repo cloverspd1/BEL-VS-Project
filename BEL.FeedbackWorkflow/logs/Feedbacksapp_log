@@ -1,0 +1,100 @@
+2018-07-02 10:33:54,621 [11] INFO  - MVC - Application_Start_Done, 
+2018-07-02 10:33:54,644 [12] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-02 10:34:10,667 [6] ERROR - Id: 4e9a5156-f96d-4a03-aa0b-a70be0f53e1f
+2018-07-02 10:34:10,670 [6] ERROR - StatusCode: 200
+2018-07-02 10:34:10,673 [6] ERROR - Controller: 
+2018-07-02 10:34:10,675 [6] ERROR - Action: 
+2018-07-02 10:34:10,676 [6] ERROR - The account password has expired, as specified by the account settings.
+Microsoft.SharePoint.Client.IdcrlException: The account password has expired, as specified by the account settings.
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String securityXml, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer..ctor() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 68
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.<>c.<.cctor>b__18_0() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 25
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.get_Instance() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 34
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 33
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-07-02 10:34:10,741 [6] ERROR - The account password has expired, as specified by the account settings.
+Microsoft.SharePoint.Client.IdcrlException: The account password has expired, as specified by the account settings.
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String securityXml, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer..ctor() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 68
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.<>c.<.cctor>b__18_0() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 25
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.get_Instance() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 34
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 33
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

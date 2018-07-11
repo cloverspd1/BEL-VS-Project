@@ -1,0 +1,94 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks
+@using BEL.FeedbackWorkflow.Models.Common
+@using BEL.FeedbackWorkflow.Models.Master;
+@using BEL.CommonDataContract;
+@model QaulityUserSection
+
+@using (Ajax.BeginForm("SaveQaulityUserSection", "Feedbacks", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        LoadingElementId = "loading",
+        OnFailure = "OnFailure",
+        OnSuccess = "OnSuccess",
+        OnBegin = "BeginClient"
+    }, new { enctype = "multipart/form-data" }))
+{
+
+    @Html.HiddenFor(m => m.ListDetails[0].ItemId)
+    @Html.HiddenFor(m => m.ListDetails[0].ListName)
+    @Html.HiddenFor(m => m.SectionName)
+    @Html.HiddenFor(m => m.ActionStatus)
+    @Html.HiddenFor(m => m.Status)
+    @Html.HiddenFor(m => m.QAHeadUser)
+    @Html.Partial("_ApproversList", Model.ApproversList)
+    @*@Html.AntiForgeryToken()*@
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label left">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.ResourceValue("Label_Comment", ResourceNames.Feedbacks)
+                </label>
+                <div class="col-sm-8">
+                    <div class="form-control noborder text-left">
+                        @Html.TextAreaFor(m => m.CurrentApprover.Comments, new { maxlength = 1000, @class = "form-control", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+                        @Html.HiddenFor(x => x.CurrentApprover.Approver)
+                        @Html.HiddenFor(x => x.CurrentApprover.Role)
+                        @Html.HiddenFor(x => x.CurrentApprover.AssignDate)
+                        @Html.ValidationMessageFor(m => m.CurrentApprover.Comments, ResourceNames.Feedbacks)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label left">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.LabelFor(m => m.Observations, ResourceNames.Feedbacks)
+                </label>
+                <div class="col-sm-8">
+                    <div class="form-control noborder text-left">
+                        @Html.TextAreaFor(m => m.Observations, new { maxlength = 1000, @class = "form-control ", data_toggle = "tooltip", title = "Max 1000 characters" })
+                        @Html.ValidationMessageFor(m => m.Observations, ResourceNames.Feedbacks)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label left">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.LabelFor(m => m.ActionPlans, ResourceNames.Feedbacks)
+                </label>
+                <div class="col-sm-8">
+                    <div class="form-control noborder text-left">
+                        @Html.TextAreaFor(m => m.ActionPlans, new { maxlength = 1000, @class = "form-control ", data_toggle = "tooltip", title = "Max 1000 characters" })
+                        @Html.ValidationMessageFor(m => m.ActionPlans, ResourceNames.Feedbacks)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.LabelFor(m => m.ProblemCause, ResourceNames.Feedbacks)
+                </label>
+                <div class="col-md-8 ">
+                    <div class="form-control noborder">
+                        @Html.DropDownListFor(m => m.ProblemCause, new SelectList((Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.PROBLEMCAUSEMASTER)) as ProblemCauseMaster).Items.OrderBy(x => x.Title), "Value", "Title"), "Select", new { @class = "form-control", @data_selected = Model.ProblemCause })
+                        @Html.ValidationMessageFor(m => m.ProblemCause, ResourceNames.Feedbacks)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+}
+

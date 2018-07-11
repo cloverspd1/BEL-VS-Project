@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Resources.Common" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQIAMSXQBhWBEAAApEABEChLQQMQgCAAACYgBJAEEJA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources.Common_ActivityLogs" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAAAAAAgEAAAABEAAAAwAABEAAAgkAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources.Common_ApplicationStatus" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgQACAQgBAAEAIAABEAAAAQCABCAAQAEAAAAAoIE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources.Feedbacks" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBCiTQAABSlQRUAwEcAFEQQwA2EQhEABgCSATBQBBq4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources.NPD" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>PNmPACw5NakDCTLYsZyD8HQjrUN2uxBheFQISRGBM74=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.BundleConfig" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\BundleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.FilterConfig" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\FilterConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.RouteConfig" Collapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.MvcExceptionHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Filters\MvcExceptionHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointContextFilterAttribute" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\SharePointContextFilterAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.ValidateAntiForgeryTokenOnAllPosts" Collapsed="true">
+    <Position X="10" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAIAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\ValidateAntiForgeryTokenOnAllPosts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.MvcApplication" Collapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAEAAAAAAAAAAUAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointContext" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAgAAZACGhAGAAASAEEEGBAIVIAEAEAQBAAAA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointContextProvider" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABAAAAAACAACAgAAAgAABAAAAAAAAAACAQAA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointAcsContext" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAQAAIAABAAkAAAQAAAAAAAAAgAEAAIAAAACA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointAcsContextProvider" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEIQAA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointHighTrustContext" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAABAAAAIAABAAgAAAQAAAAAAAAQAAEAAAAAAAAA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointHighTrustContextProvider" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAIQAA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.TokenHelper" Collapsed="true">
+    <Position X="20.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARwQgAgDQQtxEAACgQAgUkgEAUggADVYAQAgAgQCABE=</HashCode>
+      <FileName>TokenHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.SharePointContextToken" Collapsed="true">
+    <Position X="18.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAQAAAgAAACAAAAAAAAAAAAEAAAAAAAAAgADA=</HashCode>
+      <FileName>TokenHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.MultipleSymmetricKeySecurityToken" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAIAAAAAAAABAAAAAAAAAAIAACAAACAAAAAQAgA=</HashCode>
+      <FileName>TokenHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.BusinessLayer.CommonBusinessLayer" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAGAAAmAAAEAAAgAAQAAAUAAAAgAAAAA=</HashCode>
+      <FileName>BusinessLayer\CommonBusinessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAUIAAAgAAIAAAAARUDAAAAAAIAA=</HashCode>
+      <FileName>BusinessLayer\FeedbacksBusinessLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NPD.Workflow.Common.BundleHelper" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BundleHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Common.ExcelHelper" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ExcelHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Common.FileListHelper" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAEAAAAAIQAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Common\FileListHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Common.Logger" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Common\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Common.SessionExpiration" Collapsed="true">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\SessionExpiration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Common.UtilityHelper" Collapsed="true">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\UtilityHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Common.ValidateJsonAntiForgeryTokenAttribute" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ValidateJsonAntiForgeryTokenAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Web.Mvc.Html.Helper" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAACEAAQAAEAIAAAAAAAAAABQCAAAIAAAAgAEAA=</HashCode>
+      <FileName>Common\Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Controllers.AdminController" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Controllers\Admin\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Controllers.BaseController" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCAAAAlIYIAIQQQAAiCgEEAMiIKAAAEgAAIABQAAAQA=</HashCode>
+      <FileName>Controllers\BaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Controllers.FeedbacksController" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQBAAAAAAAAAIAAAAEAAAAQAAAEAABEAAAA=</HashCode>
+      <FileName>Controllers\Feedbacks\FeedbacksAdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAACAAAAEAIAA=</HashCode>
+      <FileName>Controllers\Feedbacks\FeedbacksBaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Controllers.MasterController" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAQAAAAAAAAAAAAAAhBAACAEAAQAABAA=</HashCode>
+      <FileName>Controllers\Master\MasterController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Controllers.PowerBIController" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\PowerBIController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FormNames" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Models\Common\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.ListNames" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\Common\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.Masters" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAACAAAAAEAQAAAAAAIAAIAAACAAAEAADAAAADA=</HashCode>
+      <FileName>Models\Common\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.NPDSectionName" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAhAAAgAAAAACAAAAAAAAAAAAQAAAAABAAAAAAA=</HashCode>
+      <FileName>Models\Common\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.Roles" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAQAAAAAAAABAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Common\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FeedbacksFormNames" Collapsed="true">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Common\FeedbackConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FeedbackListNames" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACIAAAAQAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\Common\FeedbackConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FeedbacksMasters" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAEAQAQAAgAAAAAAAAAAAAAAAAAAAAJA=</HashCode>
+      <FileName>Models\Common\FeedbackConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FeedbackSectionName" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAIgAgAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Common\FeedbackConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FeedbackRoles" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAggQAAAAAABABAAAAAAAAQAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\Common\FeedbackConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Common.FeedbackNoCount" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\Common\FeedbackNoCount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.CCActingUserSection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAAEAiAAgEAAAAIIAADgAAAAAAAAEAgAIAYA=</HashCode>
+      <FileName>Models\Feedbacks\CCActingUserSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.CCQualityInchargeSection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAiAAgEBAAAIgAADAAAAAAAAAEAgAYAYQ=</HashCode>
+      <FileName>Models\Feedbacks\CCQualityInchargeSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksContract" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Feedbacks\FeedbacksContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAVBAxQqQAgEBEAAoAAADCCAAgEAAAEQgAIQcA=</HashCode>
+      <FileName>Models\Feedbacks\FeedbacksDetailSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAIAAQAAAAEBAAAAAAAAAAAAAACAAE=</HashCode>
+      <FileName>Models\Feedbacks\FeedbacksForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.ProductSerial" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAAEAgAQCAAAAAAAAAAAAAAAAAAEAAAAAQAA=</HashCode>
+      <FileName>Models\Feedbacks\ProductSerial.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.QaulityUserSection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAEAAAAiAAgEAAQAIIAADAAAAAAAAAEAgAIARA=</HashCode>
+      <FileName>Models\Feedbacks\QaulityUserSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksAdminContract" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FeedbacksAdmin\FeedbacksAdminContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksAdminDetailSection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABABAAVBAlQqQAgEBESAooAADiCAAgAAAAEQgBYQcQ=</HashCode>
+      <FileName>Models\FeedbacksAdmin\FeedbacksAdminDetailSection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksAdminForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAIAAQAAAAEBAAAAAAAAAAAAAACAAE=</HashCode>
+      <FileName>Models\FeedbacksAdmin\FeedbacksAdminForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ApproverMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAgAIAAAAAgA=</HashCode>
+      <FileName>Models\Master\ApproverMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ApproverMasterListItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAEAAAAAgAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>Models\Master\ApproverMasterListItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.BranchMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAgAIAAAAAgA=</HashCode>
+      <FileName>Models\Master\BranchMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.BranchMasterListItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Master\BranchMasterListItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.BusinessUnitMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAgAIAAAAAgA=</HashCode>
+      <FileName>Models\Master\BusinessUnitMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.BusinessUnitMasterListItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Master\BusinessUnitMasterListItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ItemMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAgAIAAAAAgA=</HashCode>
+      <FileName>Models\Master\ItemMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ItemMasterListItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAgEAAABAAAAAAAAACAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Master\ItemMasterListItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ProblemCauseMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAgAIAAAAAgA=</HashCode>
+      <FileName>Models\Master\ProblemCauseMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ProblemCauseMasterListItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Master\ProblemCauseMasterListItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ProductTypeMaster" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAgAIAAAAAgA=</HashCode>
+      <FileName>Models\Master\ProductTypeMaster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BEL.FeedbackWorkflow.Models.Master.ProductTypeMasterListItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Master\ProductTypeMasterListItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="BEL.FeedbackWorkflow.RedirectionStatus" Collapsed="true">
+    <Position X="8.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAABAAAAAAA=</HashCode>
+      <FileName>SharePointContext.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="System.Web.Mvc.Html.ResourceNames" Collapsed="true">
+    <Position X="10" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAACAAAAEAAAAAAAAAAAABAQAAA=</HashCode>
+      <FileName>Common\ResourceNames.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

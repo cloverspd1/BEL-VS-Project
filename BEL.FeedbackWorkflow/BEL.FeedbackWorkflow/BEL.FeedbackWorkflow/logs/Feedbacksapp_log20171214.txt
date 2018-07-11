@@ -1,0 +1,23 @@
+2017-12-14 12:42:49,797 [11] INFO  - MVC - Application_Start_Done, 
+2017-12-14 12:42:49,819 [12] INFO  - MVC - Begin Request http://localhost:5179/, 
+2017-12-14 12:42:53,183 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2017-12-14 12:42:53,317 [14] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2017-12-14 12:42:53,317 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2017-12-14 12:42:53,317 [12] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2017-12-14 12:42:53,331 [14] INFO  - WCF - Called Helper GetFormData, 
+2017-12-14 12:42:55,850 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2017-12-14 12:42:55,850 [12] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2017-12-14 12:42:56,610 [11] INFO  - MVC - Begin Request http://localhost:5179/PowerBI/Index, 
+2017-12-14 12:43:05,265 [14] INFO  - WCF - called Helper.GetFormData, 
+2017-12-14 12:43:05,694 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 3"
+2017-12-14 12:43:05,696 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2017-12-14 12:43:05,696 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2017-12-14 12:43:05,709 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2017-12-14 12:43:05,714 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2017-12-14 12:43:05,694 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2017-12-14 12:43:05,725 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2017-12-14 12:43:05,704 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2017-12-14 12:43:05,703 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2017-12-14 12:43:05,720 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2017-12-14 12:43:06,545 [12] INFO  - WCF - Get All Buttons from Sharepoint, 
+2017-12-14 12:43:06,545 [11] INFO  - WCF - Helper.GetAllButtons, 

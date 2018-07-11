@@ -1,0 +1,199 @@
+2018-06-15 15:20:32,830 [11] INFO  - MVC - Application_Start_Done, 
+2018-06-15 15:20:32,830 [9] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:22:17,060 [6] INFO  - MVC - Application_Start_Done, 
+2018-06-15 15:22:17,073 [8] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:23:20,000 [6] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:23:20,000 [11] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:23:20,468 [6] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:23:20,558 [6] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:23:20,558 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:23:20,590 [6] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:23:20,650 [6] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:23:20,650 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:23:20,650 [6] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:23:20,652 [11] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:23:20,652 [6] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:23:20,652 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:23:20,701 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:23:20,701 [6] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:23:20,702 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:23:20,702 [6] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:23:20,703 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:23:23,923 [6] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:23:23,933 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-15 15:23:24,111 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:23:24,111 [6] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-15 15:23:24,355 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:23:24,355 [6] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-15 15:23:32,883 [11] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:23:34,381 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:23:34,486 [11] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:23:34,487 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:23:34,487 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:23:34,488 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:23:35,745 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-15 15:23:35,746 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:23:39,776 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:23:39,777 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:24:38,150 [7] ERROR - Id: e9ad319d-8556-4463-86ea-a693aa4010d5
+2018-06-15 15:24:38,153 [7] ERROR - StatusCode: 200
+2018-06-15 15:24:38,158 [7] ERROR - Controller: 
+2018-06-15 15:24:38,159 [7] ERROR - Action: 
+2018-06-15 15:24:38,160 [7] ERROR - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterDataOf(ClientContext context, Web web, IMaster master) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 92
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterData(ClientContext context, Web web, List`1 masters) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 52
+   at BEL.DataAccessLayer.BELDataAccessLayer.FillSectionFromList(ClientContext context, Web web, String applicationName, String formName, String role, Object actualSection, String userID, Dictionary`2 otherParamDictionary, List`1& approverMatrixFromList) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3211
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetData(ClientContext context, Web web, String applicationName, String formName, String role, ISection section, Boolean isActive, String userID, List`1& approverMatrixFromList, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2952
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form, String role, Dictionary`2 activeAndHiddenSections, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2872
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2473
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-06-15 15:24:38,172 [7] ERROR - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterDataOf(ClientContext context, Web web, IMaster master) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 92
+   at BEL.DataAccessLayer.MasterDataHelper.GetMasterData(ClientContext context, Web web, List`1 masters) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\MasterDataHelper.cs:line 52
+   at BEL.DataAccessLayer.BELDataAccessLayer.FillSectionFromList(ClientContext context, Web web, String applicationName, String formName, String role, Object actualSection, String userID, Dictionary`2 otherParamDictionary, List`1& approverMatrixFromList) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3211
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , String , String , String , Object , String , Dictionary`2 , List`1& )
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetData(ClientContext context, Web web, String applicationName, String formName, String role, ISection section, Boolean isActive, String userID, List`1& approverMatrixFromList, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2952
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form, String role, Dictionary`2 activeAndHiddenSections, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2872
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2473
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-06-15 15:24:38,256 [11] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:24:38,261 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:24:38,263 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:24:38,266 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-06-15 15:24:38,269 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:24:38,307 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:24:38,268 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-06-15 15:24:38,323 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-06-15 15:24:38,328 [12] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:24:38,324 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-06-15 15:24:38,435 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-06-15 15:24:38,435 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:24:38,437 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:24:38,439 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:24:38,440 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-06-15 15:24:38,442 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-06-15 15:24:38,435 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:24:38,436 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-06-15 15:26:30,720 [6] INFO  - MVC - Application_Start_Done, 
+2018-06-15 15:26:30,727 [7] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:26:37,067 [7] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:26:37,108 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:26:37,108 [7] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:26:37,108 [6] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:26:37,110 [8] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:26:39,664 [6] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:26:39,682 [7] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-15 15:26:53,165 [8] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:26:53,557 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-06-15 15:26:53,573 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-06-15 15:26:53,573 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:26:53,574 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:26:53,583 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:26:53,583 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-06-15 15:26:53,583 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-06-15 15:26:53,583 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:26:54,279 [6] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-06-15 15:26:54,279 [7] INFO  - WCF - Helper.GetAllButtons, 
+2018-06-15 15:27:01,369 [7] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-15 15:27:38,910 [7] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/0bf79eef08214a0f980264bfa10cb4f2?version=2, 
+2018-06-15 15:28:02,229 [7] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:28:02,543 [7] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:28:02,544 [7] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:28:02,543 [8] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:28:02,543 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:28:02,543 [12] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:28:06,631 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-15 15:28:06,631 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:28:06,631 [12] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:28:12,044 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/24db34f3594947ebb5370cf82f276023?version=2, 
+2018-06-15 15:36:25,750 [11] INFO  - MVC - Application_Start_Done, 
+2018-06-15 15:36:25,765 [12] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-06-15 15:36:40,824 [13] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-06-15 15:36:40,856 [16] INFO  - WCF - Called Helper GetFormData, 
+2018-06-15 15:36:40,856 [12] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-06-15 15:36:40,856 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=23, 
+2018-06-15 15:36:40,872 [13] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-06-15 15:36:42,904 [12] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-06-15 15:36:42,904 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-06-15 15:36:57,419 [13] INFO  - WCF - called Helper.GetFormData, 
+2018-06-15 15:36:57,967 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 1"
+2018-06-15 15:36:57,968 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:36:57,970 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:36:57,972 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-06-15 15:36:57,968 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=26
+2018-06-15 15:36:57,973 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=23
+2018-06-15 15:36:57,967 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Training Management Sytem User 2"
+2018-06-15 15:36:57,968 [13] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-06-15 15:36:59,060 [16] INFO  - WCF - Helper.GetAllButtons, 
+2018-06-15 15:36:59,060 [13] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-06-15 15:37:08,790 [12] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-06-15 15:37:16,430 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/eb36487031ce4c8d82988214ff5a55e7?version=2, 

@@ -1,0 +1,85 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks
+@using BEL.CommonDataContract
+
+@model ProductSerial
+<div class="modal fade" id="addeditProductSerialModel" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">
+                    @if (Model.Index > 0)
+                    {
+                        <span>
+                            @Html.ResourceValue("Popup_Title_EditProductSerial", ResourceNames.Feedbacks)
+                        </span>
+                    }
+                    else
+                    {
+                        <span>
+                            @Html.ResourceValue("Popup_Title_AddProductSerial", ResourceNames.Feedbacks)
+                        </span>
+                    }
+                </h4>
+            </div>
+            @using (Ajax.BeginForm("SaveProductSerial", "DCR", new AjaxOptions
+            {
+                HttpMethod = "POST",
+                LoadingElementId = "loading",
+                OnFailure = "OnFailure",
+                OnSuccess = "OnProductSerialaddSuccess",
+                OnBegin = "BeginClient"
+            }, new { enctype = "multipart/form-data", id = "frmSaveProductSerial" }))
+            {
+                @*@Html.AntiForgeryToken()*@
+                @Html.HiddenFor(m => m.RequestBy)
+                @Html.HiddenFor(m => m.RequestDate)
+                @Html.HiddenFor(m => m.RequestID)
+                @Html.HiddenFor(m => m.ID)
+                @Html.HiddenFor(m => m.Index)
+                @Html.HiddenFor(m => m.ItemAction)
+                <div class="modal-body form-horizontal">
+                    
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="DesiredResult" class="col-md-4 control-label">
+                                    <span class="text-danger text-default-light">*</span>
+                                    @Html.LabelFor(m => m.ProductSerialNo, ResourceNames.NPD)
+                                </label>
+                                <div class="col-md-8 ">
+                                    @Html.TextBoxFor(m => m.ProductSerialNo, new { maxLength = 17, data_toggle = "tooltip", title = "Max 17 characters", @class = "form-control " })
+                                    @Html.ValidationMessageFor(m => m.ProductSerialNo, ResourceNames.NPD)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="OnModelSubmit(this.form.id)">@Html.ResourceValue("Button_Text_Save", ResourceNames.Common)</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        @Html.ResourceValue("Button_Text_Close", ResourceNames.Common)
+                    </button>
+                </div>
+            }
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#addeditProductSerialModel").modal().on('shown.bs.modal', function () {
+            BindValidation();
+            $.validator.unobtrusive.parsePopup("#addeditProductSerialModel");            
+        });
+    });
+</script>
+
+
+

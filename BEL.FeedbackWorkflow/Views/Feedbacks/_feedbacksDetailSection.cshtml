@@ -1,0 +1,356 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks
+@using BEL.FeedbackWorkflow.Models.Common
+@using BEL.FeedbackWorkflow.Models.Master;
+@using BEL.CommonDataContract;
+@model FeedbacksDetailSection
+
+<script type="text/javascript">
+    @{
+
+        //ApproverMaster approverlist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(Masters.APPROVERMASTER)) as ApproverMaster;
+
+      }
+
+
+
+</script>
+<div id="divDocEngineerSection">
+    @using (Ajax.BeginForm("SaveFeedbacksDetailSection", "Feedbacks", new AjaxOptions
+    {
+        HttpMethod = "POST",
+        LoadingElementId = "loading",
+        OnFailure = "OnFailure",
+        OnSuccess = "OnSuccess",
+        OnBegin = "BeginClient"
+    }, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.HiddenFor(m => m.ListDetails[0].ItemId)
+        @Html.HiddenFor(m => m.ListDetails[0].ListName)
+        @Html.HiddenFor(m => m.SectionName)
+        @Html.HiddenFor(m => m.ActionStatus)
+        @Html.HiddenFor(m => m.Status)
+
+        @Html.Partial("_ApproversList", Model.ApproversList)
+        @Html.Partial("_CurrentApprover", Model.CurrentApprover ?? new ApplicationStatus())
+        @*@Html.AntiForgeryToken()*@
+
+        if (Model.RequestDate.HasValue)
+        {
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            @Html.LabelFor(m => m.RequestDate, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+
+                                @(Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+                                @Html.Hidden("RequestDate", Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            @Html.LabelFor(m => m.ProposedBy, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+                                @(string.IsNullOrEmpty(Model.ProposedByName) ? ViewBag.UserName : Model.ProposedByName)
+                                @Html.Hidden("ProposedBy", string.IsNullOrEmpty(Model.ProposedBy) ? (string)ViewBag.UserID : Model.ProposedBy)
+                                @Html.Hidden("ProposedByName", string.IsNullOrEmpty(Model.ProposedByName) ? (string)ViewBag.UserName : Model.ProposedByName)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+
+                            @Html.LabelFor(m => m.FeedbackNo, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+                                <span class="text-danger" id="ReferenceNo">
+                                    <b>
+                                        @Html.DisplayFor(m => m.FeedbackNo, ResourceNames.Feedbacks)
+                                        @Html.HiddenFor(m => m.FeedbackNo)
+                                    </b>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="col-md-4 control-label">
+                            @Html.LabelFor(m => m.Status, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+                                <span class="text-danger" id="Status">
+                                    <b>
+                                        @(string.IsNullOrEmpty(Model.WorkflowStatus) ? Html.ResourceValue("Text_New", ResourceNames.Common) : Model.WorkflowStatus)
+                                    </b>
+                                </span>
+                                @Html.HiddenFor(m => m.Status)
+                                @Html.HiddenFor(m => m.WorkflowStatus)
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        }
+        else
+        {
+            @Html.Hidden("RequestDate", Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+            @Html.Hidden("ProposedBy", string.IsNullOrEmpty(Model.ProposedBy) ? (string)ViewBag.UserID : Model.ProposedBy)
+            @Html.Hidden("ProposedByName", string.IsNullOrEmpty(Model.ProposedByName) ? (string)ViewBag.UserName : Model.ProposedByName)
+            @Html.DisplayFor(m => m.FeedbackNo, ResourceNames.Feedbacks)
+            @Html.HiddenFor(m => m.FeedbackNo)
+            @Html.HiddenFor(m => m.Status)
+            @Html.HiddenFor(m => m.WorkflowStatus)
+        }
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.ItemCode, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @if (string.IsNullOrEmpty(Model.Status) || Model.Status.Equals("Draft"))
+                            {
+                            @Html.TextBoxFor(m => m.ItemCode, new { @class = "user-tags", @data_hint = "Type and Select by Item Code", @data_url = "/Feedbacks/GetAllItems", @data_limit = "1", @data_onadd = "ItemCodeAdded", @data_onremove = "ItemCodeRemoved", @data_displaycolumn = "name" })
+                            @Html.ValidationMessageFor(m => m.ItemCode, ResourceNames.Feedbacks)
+
+                            }
+                            else
+                            {
+                            <div class="form-control noborder">
+                                @Html.DisplayFor(m => m.ItemCode)
+                                @Html.HiddenFor(m => m.ItemCode)
+                            </div>
+
+                            <div class="hide">
+                                @Html.TextBoxFor(m => m.ItemCode, new { @class = "user-tags ", @data_hint = "Type and Select by Item Code", @data_url = "/Feedbacks/GetAllItems", @data_limit = "1", @data_onadd = "ItemCodeAdded", @data_onremove = "ItemCodeRemoved", @data_displaycolumn = "name" })
+                                @Html.ValidationMessageFor(m => m.ItemCode, ResourceNames.Feedbacks)
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+
+                        @Html.LabelFor(m => m.ItemDescription, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            <span class="ItemDescription">
+                                <span>
+                                    @Html.DisplayFor(m => m.ItemDescription, new { @class = "form-control" })
+                                </span>
+                                @Html.HiddenFor(m => m.ItemDescription)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+
+                        @Html.LabelFor(m => m.BusinessUnits, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            <span class="BusinessUnits">
+                                <span>
+                                    @Html.DisplayFor(m => m.BusinessUnits, new { @class = "form-control" })
+                                </span>
+                                @Html.HiddenFor(m => m.BusinessUnits)
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.ProductType, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @*@Html.TextAreaFor(m => m.ProductType, new { maxLength = 100, @class = "form-control", data_toggle = "tooltip", title = "Max 100 characters" })
+                                @Html.ValidationMessageFor(m => m.ProductType, ResourceNames.Feedbacks)*@
+                            <span class="ProductGroup ItemCode">
+                                <span>
+                                    @Html.DisplayFor(m => m.ProductType, new { @class = "form-control" })
+                                </span>
+                                @Html.HiddenFor(m => m.ProductType)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.SupplierCode, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @Html.TextBoxFor(m => m.SupplierCode, new { maxLength = 4, @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.SupplierCode, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        @Html.LabelFor(m => m.Branch, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8">
+                        <div class="form-control noborder">
+                            @(string.IsNullOrEmpty(Model.Branch) ? "" : Model.Branch)
+                            @Html.HiddenFor(m => m.Branch)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.FeedbackTitle, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @Html.TextAreaFor(m => m.FeedbackTitle, new { maxLength = 255, @class = "form-control", data_toggle = "tooltip", title = "Max 255 characters" })
+                            @Html.ValidationMessageFor(m => m.FeedbackTitle, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            <span class="text-danger text-default-light">*</span>
+                            @Html.LabelFor(m => m.ModelName, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+                                @Html.TextAreaFor(m => m.ModelName, new { maxLength = 255, @class = "form-control", data_toggle = "tooltip", title = "Max 255 characters" })
+                                @Html.ValidationMessageFor(m => m.ModelName, ResourceNames.Feedbacks)
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+
+
+
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.ProductSerial, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @Html.TextAreaFor(m => m.ProductSerial, new { maxLength = 1000, @class = "form-control", data_toggle = "tooltip", title = "Max 1000 characters" })
+                            @Html.ValidationMessageFor(m => m.ProductSerial, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+
+                        @Html.LabelFor(m => m.DefectDescription, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @Html.TextAreaFor(m => m.DefectDescription, new { maxLength = 1000, @class = "form-control", data_toggle = "tooltip", title = "Max 1000 characters" })
+                            @Html.ValidationMessageFor(m => m.DefectDescription, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 attachment">
+                <div class="form-group">
+                    <label for="FileNameList" class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.FileNameList, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <span class="text-danger text-default-light">
+                            (Max. up to 40MB per file and you can upload maximum 10 files.)
+                        </span>
+                        <div id="AttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
+                        </div>
+                        @Html.TextBoxFor(m => m.FileNameList, new { @class = "notvisible" })
+
+                        @Html.ValidationMessageFor(m => m.FileNameList, ResourceNames.Feedbacks)
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="col-md-8 control-label">
+
+                        Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
+                    </label>
+                    <div class="col-md-4 ">
+                        <div class="form-control noborder">
+                            @Html.DisplayFor(m => m.CCActingUserName)
+                            @Html.HiddenFor(m => m.CCActingUser)
+                            @Html.HiddenFor(m => m.CCActingUserName)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
