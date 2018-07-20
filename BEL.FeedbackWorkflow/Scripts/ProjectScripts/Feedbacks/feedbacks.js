@@ -331,8 +331,8 @@ function ItemCodeRemoved(ele) {
     $(".ItemCode").find("textarea").val('');
 
     //change done by priya starts here...
-    $(".ItemDescription").find('span').html('');
-    $(".BusinessUnits").find('span').html('');
+    //$(".ItemDescription").find('span').html('');
+    //$(".BusinessUnits").find('span').html('');
     //changes done by priya end here....
 }
 function GetMultiselectValue(options) {

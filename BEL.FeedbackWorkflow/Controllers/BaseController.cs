@@ -113,8 +113,9 @@
                     {
                         this.SPCurrentUser = new UserDetails();
                        // this.SPCurrentUser.UserId = "20";
-                        this.SPCurrentUser.UserId = "23";
-                       // this.SPCurrentUser.UserId = "24";
+                        //this.SPCurrentUser.UserId = "23";
+                        this.SPCurrentUser.UserId = "19";
+                        // this.SPCurrentUser.UserId = "24";
                         //this.SPCurrentUser.UserId = CommonBusinessLayer.Instance.GetCurrentUser(User.IdentName);
 
                         ////this.SPCurrentUser = NPDBusinessLayer.Instance.getUSerDetail(Convert.ToInt32(this.SPCurrentUser.UserId));  

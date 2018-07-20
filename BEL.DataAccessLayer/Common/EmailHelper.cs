@@ -109,6 +109,8 @@
                                 listDetail.ListItemObject = item;
                                 customValues["ItemLink"] = "#URL" + spList.DefaultDisplayFormUrl + "?ID=" + listDetail.ItemId;
                                 customValues["ItemLinkClickHere"] = "<a href='#URL" + spList.DefaultDisplayFormUrl + "?ID=" + listDetail.ItemId + "' >Click Here</a>";
+                                customValues["Description"] = item["DefectDescription"].ToString();
+                                customValues["ProGroup"] = item["ProductType"].ToString();
                             }
 
                             emailTemplate = this.CreateEmailBody(appContext, appWeb, emailTemplate, listItemDetails, customValues);
