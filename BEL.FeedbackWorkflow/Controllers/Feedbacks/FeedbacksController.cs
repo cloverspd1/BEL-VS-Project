@@ -76,6 +76,7 @@
                     model.CCActingUser = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver;
                     model.CCActingUserName = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName;
                 }
+                model.ProductGroup = model.ProductType;
                 model.Files = new List<FileDetails>();
                 model.Files = FileListHelper.GenerateFileBytes(model.FileNameList);
                 model.FileNameList = string.Join(",", FileListHelper.GetFileNames(model.FileNameList));

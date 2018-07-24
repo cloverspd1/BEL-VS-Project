@@ -109,8 +109,16 @@
                                 listDetail.ListItemObject = item;
                                 customValues["ItemLink"] = "#URL" + spList.DefaultDisplayFormUrl + "?ID=" + listDetail.ItemId;
                                 customValues["ItemLinkClickHere"] = "<a href='#URL" + spList.DefaultDisplayFormUrl + "?ID=" + listDetail.ItemId + "' >Click Here</a>";
-                                customValues["Description"] = item["DefectDescription"].ToString();
-                                customValues["ProGroup"] = item["ProductType"].ToString();
+
+                                customValues.Add("ProGroup",Convert.ToString(item["ProductType"]));
+                                customValues.Add("DefectDesc",Convert.ToString(item["DefectDescription"]));
+
+                                int val=customValues["ProGroup"].GetHashCode();
+
+                                //customValues["ProGroup"] = Convert.ToString(item["ProductType"]);
+                                //customValues["DefectDesc"] = Convert.ToString(item["DefectDescription"]);
+                               // customValues["comment"] = Convert.ToString(item[""]);
+
                             }
 
                             emailTemplate = this.CreateEmailBody(appContext, appWeb, emailTemplate, listItemDetails, customValues);
@@ -258,7 +266,7 @@
             {
                 if (customValues != null && customValues.Count > 0)
                 {
-                    foreach (KeyValuePair<string, string> strEmail in emailBody)
+                    foreach (KeyValuePair<string,string> strEmail in emailBody)
                     {
                         Regex r = new Regex(@"\[\[Custom:(.+?)\]\]");
                         string preparedEmail = HttpUtility.HtmlDecode(strEmail.Value);

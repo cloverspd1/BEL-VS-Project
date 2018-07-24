@@ -1910,6 +1910,7 @@
         private void SendMail(ButtonActionStatus actionPerformed, ClientContext context, Web web, string currentUserID, int itemId, List<ApplicationStatus> approversDataFromList, string listname, int nextLevel, int currLevel, Dictionary<string, string> paraml, Dictionary<string, string> mailCustomValues = null, List<FileDetails> emailAttachments = null)
         {
             string from = string.Empty, to = string.Empty, cc = string.Empty, role = string.Empty, tmplName = string.Empty, strAllusers = string.Empty, nextApproverIds = string.Empty;
+            string comment = string.Empty;
             EmailHelper eHelper = new EmailHelper();
             Dictionary<string, string> email = new Dictionary<string, string>();
             List<ListItemDetail> itemdetail = new List<ListItemDetail>();
@@ -1935,6 +1936,8 @@
                 }
                 mailCustomValues[Parameter.CURRENTAPPROVERNAME] = GetNameUsingUserID(context, web, currentUserID);
                 mailCustomValues[Parameter.NEXTAPPROVERNAME] = GetNameUsingUserID(context, web, nextApproverIds);
+                                   
+                   
             }
             catch (Exception ex)
             {

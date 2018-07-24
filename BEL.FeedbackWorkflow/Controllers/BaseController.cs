@@ -115,6 +115,7 @@
                        // this.SPCurrentUser.UserId = "20";
                         //this.SPCurrentUser.UserId = "23";
                         this.SPCurrentUser.UserId = "19";
+                        //this.SPCurrentUser.UserId = "25";
                         // this.SPCurrentUser.UserId = "24";
                         //this.SPCurrentUser.UserId = CommonBusinessLayer.Instance.GetCurrentUser(User.IdentName);
 
