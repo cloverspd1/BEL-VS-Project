@@ -112,7 +112,7 @@
                     if (!this.EnvironmentLive)
                     {
                         this.SPCurrentUser = new UserDetails();
-                       // this.SPCurrentUser.UserId = "20";
+                       //this.SPCurrentUser.UserId = "20";
                         //this.SPCurrentUser.UserId = "23";
                         this.SPCurrentUser.UserId = "19";
                         //this.SPCurrentUser.UserId = "25";

@@ -5,7 +5,7 @@
 @{
     FeedbacksContract contract = Model as FeedbacksContract;
     FeedbacksForm form = contract.Forms.FirstOrDefault() as FeedbacksForm;
-    ViewBag.Title = "Product Quality Feedback Deploy by Priya";
+    ViewBag.Title = "Product Quality Feedback";
     FeedbacksDetailSection feedbackDetailSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.FEEDBACKDETAILSECTION)) as FeedbacksDetailSection;
 
     CCActingUserSection ccActingUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCACTINGUSERSECTION)) as CCActingUserSection;

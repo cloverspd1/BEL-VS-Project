@@ -211,6 +211,7 @@
                             this.UpdateFeedbacksNoCount(currentFeedbacksNo);
                             Logger.Info("Update DCR No " + section.FeedbackNo);
                         }
+
                     }
 
                     if (itemDetails.ItemId > 0)
