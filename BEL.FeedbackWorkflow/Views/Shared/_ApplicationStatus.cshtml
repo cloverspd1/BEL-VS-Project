@@ -57,7 +57,15 @@
                                 }
                             </td>
                             <td>@(item.ApprovalDate != null && item.Status == ApproverStatus.APPROVED ? item.ApprovalDate.Value.ToShortDateString() : "-")</td>
-                            <td>@(string.IsNullOrEmpty(item.Comments) ? "-" : item.Comments)</td>
+                            <td>@if (item.Comments == null)
+                            {
+                                @(string.IsNullOrEmpty(item.QualityComments) ? "-" : item.QualityComments)
+                            }
+                            else
+                            {
+                                @(string.IsNullOrEmpty(item.Comments) ? "-" : item.Comments)
+                            }
+                           </td>
                         </tr>
                                 }
                             }

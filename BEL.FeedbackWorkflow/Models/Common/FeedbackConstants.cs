@@ -91,6 +91,9 @@
         /// Item MASTER
         /// </summary>
         public const string SKUMASTER = "SKUMaster";
+
+        ///new master for Quality Status
+        public const string QUALITYSTATUSMASTER = "QualityStatusMaster";
     }
 
     /// <summary>

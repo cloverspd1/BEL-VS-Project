@@ -1044,6 +1044,15 @@
                             if (param != null)
                             {
                                 param[Parameter.ISNEWITEM] = isNewItem.ToString();
+                                if(section.ButtonCaption== " Forward to Quality User")
+                                {
+                                    param[Parameter.SENDTOLEVEL] = "3";
+                                }
+                                else if(section.ButtonCaption== "Send Back")
+                                {
+                                    param[Parameter.SENDTOLEVEL] = "0";
+                                }
+                               
                             }
                             int itemId = this.SaveDataInList(context, web, actualSection, item, listDetail.ListName, param, mailCustomValues, emailAttachments);
 
@@ -1149,6 +1158,7 @@
                     if (isListCoumn && isCurrentListCoumn && !notSaved)
                     {
                         string propertyName = property.GetCustomAttribute<FieldColumnNameAttribute>() != null && !string.IsNullOrEmpty(property.GetCustomAttribute<FieldColumnNameAttribute>().FieldsInformation) ? property.GetCustomAttribute<FieldColumnNameAttribute>().FieldsInformation : property.Name;
+                        
                         if (property.GetCustomAttribute<IsFileAttribute>() != null && property.GetCustomAttribute<IsFileAttribute>().IsFile)
                         {
                             files = property.GetValue(actualSection) != null ? property.GetValue(actualSection) as List<FileDetails> : null;
@@ -1240,6 +1250,11 @@
                 Logger.Info("context.ExecuteQuery() Save Main List Item.");
                 /////*  Data saved in Main List  */
                 itemId = Convert.ToInt32(item["ID"].ToString());
+               // string comment = string.Empty;
+                //if (item["QualityStatus"] != null)
+                //{
+                //    item["Comments"] = item["QualityComments"];
+                //}
                 Logger.Info("Actual Section Properties Saved", itemId);
                 bool isNewItem = param.ContainsKey(Parameter.ISNEWITEM) ? Convert.ToBoolean(param[Parameter.ISNEWITEM]) : false;
                 if (isNewItem)
@@ -1375,6 +1390,17 @@
                         else
                         {
                             approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role).Comments = currentApproverDetails.Comments;
+                        }
+                    }
+                    if (!string.IsNullOrEmpty(currentApproverDetails.QualityComments))
+                    {
+                        if (!string.IsNullOrEmpty(currentApproverDetails.Levels))
+                        {
+                            approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role && p.Levels == currentApproverDetails.Levels).QualityComments = currentApproverDetails.QualityComments;
+                        }
+                        else
+                        {
+                            approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role).QualityComments = currentApproverDetails.QualityComments;
                         }
                     }
                     if (!string.IsNullOrEmpty(currentApproverDetails.Approver))
@@ -1909,7 +1935,7 @@
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Can not able to change anything here."), System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification = "could not able to reduce size.")]
         private void SendMail(ButtonActionStatus actionPerformed, ClientContext context, Web web, string currentUserID, int itemId, List<ApplicationStatus> approversDataFromList, string listname, int nextLevel, int currLevel, Dictionary<string, string> paraml, Dictionary<string, string> mailCustomValues = null, List<FileDetails> emailAttachments = null)
         {
-            string from = string.Empty, to = string.Empty, cc = string.Empty, role = string.Empty, tmplName = string.Empty, strAllusers = string.Empty, nextApproverIds = string.Empty;
+            string from = string.Empty, to = string.Empty, cc = string.Empty, role = string.Empty, strNofifyUsers=string.Empty, tmplName = string.Empty, strAllusers = string.Empty, nextApproverIds = string.Empty;
             string comment = string.Empty;
             EmailHelper eHelper = new EmailHelper();
             Dictionary<string, string> email = new Dictionary<string, string>();
@@ -1922,6 +1948,9 @@
                 }
                 itemdetail.Add(new ListItemDetail() { ItemId = itemId, IsMainList = true, ListName = listname });
                 strAllusers = this.GetEmailUsers(approversDataFromList, nextLevel, currLevel);
+                strNofifyUsers = this.GetNotificationUsers("EmailNotification");
+                
+
                 approversDataFromList.ForEach(p =>
                  {
                      if (Convert.ToInt32(p.Levels) == nextLevel && !string.IsNullOrEmpty(p.Approver))
@@ -1980,14 +2009,25 @@
                         {
                             if (Convert.ToInt32(p.Levels) == nextLevel && !string.IsNullOrEmpty(p.Approver) && p.Status == ApproverStatus.PENDING) ////Status also need to check
                             {
-                                allToUsers = allToUsers.Trim(',') + "," + p.Approver;
+                                if (p.Levels=="3" && p.Status== "Pending")
+                                {
+                                    cc = strNofifyUsers;                                    
+                                }
+                                else
+                                {
+                                    cc = string.Empty;
+                                }
+                                allToUsers = allToUsers.Trim(',') + p.Approver;
+
                             }
                         });
+                        
                         to = allToUsers.Trim(',');
-                        cc = approversDataFromList.Where(p => p.Role == UserRoles.CREATOR).First().Approver;
+                        cc += approversDataFromList.Where(p => p.Role == UserRoles.CREATOR).First().Approver;
                         role = approversDataFromList.FirstOrDefault(p => Convert.ToInt32(p.Levels) == currLevel).Role;
                         tmplName = EmailTemplateName.APPROVALMAIL;
                         email = eHelper.GetEmailBody(context, web, EmailTemplateName.APPROVALMAIL, itemdetail, mailCustomValues, role, paraml[Parameter.APPLICATIONNAME], paraml[Parameter.FROMNAME]);
+                        
                     }
                     //// creato to all viewer
                     break;
@@ -2100,6 +2140,30 @@
             }
             ////strUsersEmail = usersWithRole.FirstOrDefault(x => x.Value == RoleType.Reader).Key + "," + usersWithRole.FirstOrDefault(x => x.Value == RoleType.Contributor).Key;
             return strUsersEmail.Trim(',');
+        }
+
+        public string GetNotificationUsers(string groupname)
+        {
+            string strUsersEmail = string.Empty;
+            string userID = string.Empty;
+            string siteURL = BELDataAccessLayer.Instance.GetSiteURL(SiteURLs.FEEDBACKSITEURL);
+            using (ClientContext context = BELDataAccessLayer.Instance.CreateClientContext(siteURL))
+            {
+                Web web = BELDataAccessLayer.Instance.CreateWeb(context);
+
+                Group group = web.SiteGroups.GetByName(groupname);
+                UserCollection users = group.Users;
+                context.Load(users);
+                context.ExecuteQuery();
+               
+                foreach (User usr in users)
+                {
+                    userID += Convert.ToString(usr.Id) + ",";
+                }
+
+             }
+
+            return userID;
         }
 
         /// <summary>
@@ -2362,7 +2426,7 @@
                                 item.RoleAssignments.Add(objUser[i], collRoleDefinitionBindingAssignee);
                             }
                             context.ExecuteQuery();
-
+                            permissionAssigned = true;
                             Logger.Info("User Permission set for -> " + userIDs);
                         }
                     }
@@ -2380,6 +2444,7 @@
                     context.Load(adminGroup);
                     item.RoleAssignments.Add(adminGroup, collRoleDefinitionBindingAssignee);
                     context.ExecuteQuery();
+                    permissionAssigned = true;
                 }
                 catch (Exception ex)
                 {
@@ -2408,12 +2473,31 @@
                     context.Load(adminGroup);
                     item.RoleAssignments.Add(adminGroup, collRoleDefinitionBindingAssignee);
                     context.ExecuteQuery();
+                    permissionAssigned = true;
                 }
                 catch (Exception ex)
                 {
                     Logger.Error("Error while granting Permission to " + UserRoles.VIEWER + " Group");
                     Logger.Error(ex);
                 }
+                
+                //assign read permission to "EmailNotification" group
+                try
+                {
+                    collRoleDefinitionBindingAssignee = new RoleDefinitionBindingCollection(context);
+                    collRoleDefinitionBindingAssignee.Add(web.RoleDefinitions.GetByName(SharePointPermission.READER)); ////Set permission type
+                    Group notifyGroup = web.SiteGroups.GetByName(UserRoles.Notification);
+                    context.Load(notifyGroup);
+                    item.RoleAssignments.Add(notifyGroup, collRoleDefinitionBindingAssignee);
+                    context.ExecuteQuery();
+                    permissionAssigned = true;
+                }
+                catch (Exception ex)
+                {
+                    Logger.Error("Error while granting Permission to " + UserRoles.Notification + " Group");
+                    Logger.Error(ex);
+                }
+
             }
             return permissionAssigned;
         }
@@ -2460,6 +2544,10 @@
                         else if (this.IsGroupMember(context, web, userID, UserRoles.VIEWER))
                         {
                             role = UserRoles.VIEWER;
+                        }
+                        else if(this.IsGroupMember(context,web,userID,UserRoles.Notification))
+                        {
+                            role = UserRoles.Notification;
                         }
                     }
                     Logger.Info("Called Helper.GetCurrentUserRole and Role=" + role);
@@ -3597,6 +3685,10 @@
                 {
                     status = FormStatus.NEW;
                 }
+                else
+                {
+                   // status = FormStatus.SENTBACK;
+                }
                 buttons = (from b in buttons
                            where
                            !string.IsNullOrEmpty(b.Role) &&
@@ -3871,7 +3963,15 @@
                             string approverActivityLog = string.Empty; //// "Assigned date" + "\t" + (approverDetails.AssignDate.HasValue ? approverDetails.AssignDate.Value.ToString("dd/MM/yyyy") : string.Empty);
                             approverActivityLog += "\nApproved/Updated date" + "\t" + DateTime.Now.ToString("dd/MM/yyyy");
                             approverActivityLog += "\nApproved/Updated time" + "\t" + DateTime.Now.ToString("hh:mm tt");
-                            approverActivityLog += "\n" + "Approver Comment" + "\t" + approverDetails.Comments;
+                            if (approverDetails.Comments == null && approverDetails.QualityComments!=null)
+                            {
+                                approverActivityLog += "\n" + "Approver Comment" + "\t" + approverDetails.QualityComments;
+                            }
+                            else
+                            {
+                                approverActivityLog += "\n" + "Approver Comment" + "\t" + approverDetails.Comments;
+                            }
+                            
                             if (string.IsNullOrEmpty(strActivity))
                             {
                                 strActivity = approverActivityLog;

@@ -165,6 +165,11 @@
         [DataMember]
         public string Comments { get; set; }
 
+        [DataMember]
+        public string QualityComments { get; set; }
+
+      
+
         /// <summary>
         /// Gets or sets the assign date.
         /// </summary>

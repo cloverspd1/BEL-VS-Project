@@ -193,8 +193,14 @@
                                 Logger.Info("Feedbacks No is " + section.FeedbackNo);
                                 status.ExtraData = section.FeedbackNo;
                             }
+                            else
+                            {
+
+                            }
                         }
                     }
+                    
+                    
                     List<ListItemDetail> objSaveDetails = BELDataAccessLayer.Instance.SaveData(this.context, this.web, sectionDetails, objDict);
                     ListItemDetail itemDetails = objSaveDetails.Where(p => p.ListName.Equals(FeedbackListNames.FEEDBACKLIST)).FirstOrDefault<ListItemDetail>();
                     if (sectionDetails.SectionName == FeedbackSectionName.FEEDBACKDETAILSECTION)

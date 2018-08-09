@@ -1014,6 +1014,8 @@ function ConfirmSubmit(ele) {
     var formList = $("form[data-ajax='true']:visible").not(".disabled");
     var isValid = true;
     var dataAction = $(ele).attr("data-action");
+
+
     formList.each(function () {
         if (dataAction == "1" || dataAction == "33" || dataAction == "35") {
             $(this).validate().settings.ignore = "*";
@@ -1021,10 +1023,12 @@ function ConfirmSubmit(ele) {
             $(".field-validation-valid").removeClass("field-validation-error");
         }
         else if (dataAction == "22") {
-            $(this).validate().settings.ignore = "*";
-            $(".field-validation-error").addClass("field-validation-valid");
-            $(".field-validation-valid").removeClass("field-validation-error");
-            $(this).validate().settings.ignore = ":not(.requiredOnSendBack)";
+            if (false) {
+                $(this).validate().settings.ignore = "*";
+                $(".field-validation-error").addClass("field-validation-valid");
+                $(".field-validation-valid").removeClass("field-validation-error");
+                $(this).validate().settings.ignore = ":not(.requiredOnSendBack)";
+            }
         }
         else if (dataAction == "41") {
             $(this).validate().settings.ignore = "*";

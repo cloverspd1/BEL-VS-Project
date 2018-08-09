@@ -69,6 +69,14 @@
         public ActionResult SaveFeedbacksDetailSection(FeedbacksDetailSection model)
         {
             ActionStatus status = new ActionStatus();
+            if (model != null && model.ButtonCaption == " Forward to Quality User")
+            {
+                //ModelState.Remove("CCQualityInchargeUser");
+                model.ActionStatus = model.ActionStatus == ButtonActionStatus.NextApproval ? ButtonActionStatus.SendForward : model.ActionStatus;
+                ModelState.Remove("CCQualityInchargeUser");
+                ModelState.Remove("CCActingUser");
+            }
+
             if (model != null && this.ValidateModelState(model))
             {
                 if (model.ApproversList != null)
@@ -176,6 +184,7 @@
                 model.CCQAInchargeFileNameList = string.Join(",", FileListHelper.GetFileNames(model.CCQAInchargeFileNameList));
 
                 Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+                
                 status = this.SaveSection(model, objDict);
                 status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
             }

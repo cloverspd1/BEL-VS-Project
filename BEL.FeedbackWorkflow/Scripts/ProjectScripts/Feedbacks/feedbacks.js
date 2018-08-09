@@ -75,7 +75,61 @@ $(document).ready(function () {
         }
     }).change();
 
+    
+    $("#SendBackToCC").click(function () {
+       
+        if ($(this).is(":checked")) {
+            $("#closediv").hide();
+            $("#quastatusdiv").show();
+            $("#quastatusdiv").css("visibility", "visible");
+            $("a.btn:contains('Complete')").text("Send Back");
+            $("a.btn:contains('Send Back')").attr('data-original-title', "Request will be forward to CC.");
+            $("a.btn:contains('Send Back')").attr('data-action', "22");
+           
+        } else {
+            $("#closediv").show();
+            $("#quastatusdiv").hide();
+            $("#quastatusdiv").css("visibility", "hidden");
+            $("a.btn:contains('Send Back')").text("Complete");
+            $("a.btn:contains('Complete')").attr('data-original-title', "Request will be close.");
+            $("a.btn:contains('Complete')").attr('data-action', "14");
+        }
+    });
 
+    //if ($("#sendbacktocc").is(":checked")) {
+    //    $("#qualitystatus").rules("add", "required");
+    //    $("#observations").rules("remove", "required");
+    //    $("#actionplans").rules("remove", "required");
+    //    $("#problemcause").rules("remove", "required");
+       
+    //} else {
+    //    $("#qualitystatus").rules("remove", "required");
+    //    $("#observations").rules("add", "required");
+    //    $("#actionplans").rules("add", "required");
+    //    $("#problemcause").rules("add", "required");
+    //    $("#quastatusdiv").addclass("hide");
+    //}
+    
+    $("#QualityStatus").on("change", function () {
+        var txt = $(this).val();
+        if (txt != "") {
+            var btntext = "Forward to CC";
+            if (txt == "Others") {
+               
+                $(".quacomments").removeClass("hide");
+            }
+            else {
+                $(".quacomments").addClass("hide");
+            }
+        }else {
+            $(".quacomments").addClass("hide");
+               
+            }
+    }).change();
+
+   
+
+   
 
 
     //For QA
@@ -130,6 +184,10 @@ $(document).ready(function () {
     //if ($.trim($("#QAUserList").attr("data-selected")) != "") {
     //    $('#QAUserList').multiselect('select', $("#QAUserList").attr("data-selected").split(","));
     //}
+
+   
+
+
     debugger;
     $("#wipDCRTable").DataTable({
         "paging": true,
@@ -350,3 +408,21 @@ function ViewWIPReport(url) {
     parent.postMessage(url, SPHOST);
     // window.location.href = url;
 }
+$(window).load(function () {
+    // executes when complete page is fully loaded, including all frames, objects and images
+    if ($("#SendBackToCC").is(":checked")) {
+        //$("#closediv").css("visibility", "hidden");
+        $("#closediv").hide();
+        $("#quastatusdiv").css("visibility", "visible");
+        $("a.btn:contains('Complete')").text("Send Back");
+        $("a.btn:contains('Send Back')").attr('data-original-title', "Request will be forward to CC.");
+        $("a.btn:contains('Send Back')").attr('data-action', "22");
+    } else {
+        $("#closediv").css("visibility", "visible");
+        $("#quastatusdiv").css("visibility", "hidden");
+        $("a.btn:contains('Send Back')").text("Complete");
+        $("a.btn:contains('Complete')").attr('data-original-title', "Request will be close.");
+        $("a.btn:contains('Complete')").attr('data-action', "14");
+    }
+   
+});

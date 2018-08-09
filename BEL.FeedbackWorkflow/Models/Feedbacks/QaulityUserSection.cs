@@ -37,6 +37,7 @@
                 this.CurrentApprover = new ApplicationStatus();
                 this.MasterData = new List<IMaster>();
                 this.MasterData.Add(new ProblemCauseMaster());
+                this.MasterData.Add(new QualityStatusMaster());
             }
         }
 
@@ -130,6 +131,9 @@
         [DataMember, IsListColumn(false), IsApproverDetails(true, FeedbackListNames.FEEDBACKAPPAPPROVALMATRIX)]
         public ApplicationStatus CurrentApprover { get; set; }
 
+        [DataMember]
+        public bool SendBackToCC { get; set; }
+
         /// <summary>
         /// Gets or sets the approvers list.
         /// </summary>
@@ -148,13 +152,17 @@
         [DataMember, IsListColumn(false)]
         public string ButtonCaption { get; set; }
 
+        [DataMember]
+        public string QualityStatus { get; set; }
+
         /// <summary>
         /// Gets or sets the Project Name.
         /// </summary>
         /// <value>
         /// The project name.
         /// </value>
-        [DataMember, Required, MaxLength(1000)]
+         [DataMember, MaxLength(1000)]
+        //[DataMember, MaxLength(1000)]
         public string Observations { get; set; }
 
         /// <summary>
@@ -163,7 +171,8 @@
         /// <value>
         /// The project name.
         /// </value>
-        [DataMember, Required, MaxLength(1000)]
+        [DataMember, MaxLength(1000)]
+       // [DataMember, MaxLength(1000)]
         public string ActionPlans { get; set; }
 
         /// <summary>
@@ -172,7 +181,7 @@
         /// <value>
         /// The income group.
         /// </value>
-        [DataMember, Required]
+        [DataMember]
         public string ProblemCause { get; set; }
 
         /// <summary>

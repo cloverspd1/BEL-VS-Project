@@ -39,12 +39,12 @@
         public JsonResult GetUsers(string q, string d = null)
         {
             ////dal
-            ////using (CommonServiceClient client = new CommonServiceClient())
-            ////{
-            ////var newList = client.GetUsers(q, d);
-            ////JsonResult jResult = this.Json((from n in newList select new { id = n.Key, name = n.Value }).ToList(), JsonRequestBehavior.AllowGet);
-            ////return jResult;
-            ////}
+            //using (CommonServiceClient client = new CommonServiceClient())
+            //{
+            //var newList = client.GetUsers(q, d);
+            //JsonResult jResult = this.Json((from n in newList select new { id = n.Key, name = n.Value }).ToList(), JsonRequestBehavior.AllowGet);
+            //return jResult;
+            //}
             return null;
         }
 

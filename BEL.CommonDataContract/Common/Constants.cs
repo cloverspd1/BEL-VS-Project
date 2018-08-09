@@ -211,6 +211,8 @@
         /// All Users
         /// </summary>
         public const string ALL = "All";
+
+        public const string Notification = "EmailNotification";
     }
 
     /// <summary>
@@ -708,6 +710,7 @@
         /// The sendmailtosafetydept
         /// </summary>
         public const string SENDEMAILTOQASHAREWITH = "SendMailToQAShareWith";
+        public const string FEEDBACKEMAILNOTIFICATION = "FeedbackEmailNotification";
     }
 
     /// <summary>

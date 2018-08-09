@@ -30,6 +30,7 @@
         @Html.HiddenFor(m => m.SectionName)
         @Html.HiddenFor(m => m.ActionStatus)
         @Html.HiddenFor(m => m.Status)
+       
 
         @Html.Partial("_ApproversList", Model.ApproversList)
         @Html.Partial("_CurrentApprover", Model.CurrentApprover ?? new ApplicationStatus())
@@ -120,7 +121,8 @@
             @Html.HiddenFor(m => m.FeedbackNo)
             @Html.HiddenFor(m => m.Status)
             @Html.HiddenFor(m => m.WorkflowStatus)
-        }
+        
+    }
         <div class="row">
 
             <div class="col-sm-6">
@@ -225,8 +227,18 @@
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
-                            @Html.TextBoxFor(m => m.SupplierCode, new { maxLength = 4, @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
-                            @Html.ValidationMessageFor(m => m.SupplierCode, ResourceNames.Feedbacks)
+                            @if (Model.Status == "Sent Back")
+                            {
+                                @Html.DisplayFor(m => m.SupplierCode, new { @class = "form-control" })
+                                @Html.HiddenFor(m => m.SupplierCode)
+                              
+                            }
+                            else
+                            {
+                                @Html.TextBoxFor(m => m.SupplierCode, new { maxLength = 4, @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                                @Html.ValidationMessageFor(m => m.SupplierCode, ResourceNames.Feedbacks)
+                            }
+                            
                         </div>
                     </div>
                 </div>
@@ -257,8 +269,19 @@
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
-                            @Html.TextAreaFor(m => m.FeedbackTitle, new { maxLength = 255, @class = "form-control", data_toggle = "tooltip", title = "Max 255 characters" })
-                            @Html.ValidationMessageFor(m => m.FeedbackTitle, ResourceNames.Feedbacks)
+                            @if (Model.Status == "Sent Back")
+                            {
+                                @Html.DisplayFor(m => m.FeedbackTitle, new { @class = "form-control" })
+                                @Html.HiddenFor(m => m.FeedbackTitle)
+
+                               
+                            }
+                            else
+                            {
+                                @Html.TextAreaFor(m => m.FeedbackTitle, new { maxLength = 255, @class = "form-control", data_toggle = "tooltip", title = "Max 255 characters" })
+                                @Html.ValidationMessageFor(m => m.FeedbackTitle, ResourceNames.Feedbacks)
+                            }
+                           
                         </div>
                     </div>
                 </div>
@@ -289,8 +312,19 @@
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
-                            @Html.TextAreaFor(m => m.ProductSerial, new { maxLength = 1000, @class = "form-control", data_toggle = "tooltip", title = "Max 1000 characters" })
-                            @Html.ValidationMessageFor(m => m.ProductSerial, ResourceNames.Feedbacks)
+                            @if (Model.Status == "Sent Back")
+                            {
+                                @Html.DisplayFor(m => m.ProductSerial, new { @class = "form-control" })
+                                @Html.HiddenFor(m => m.ProductSerial)
+                            }
+                            else
+                            {
+                                @Html.TextAreaFor(m => m.ProductSerial, new { maxLength = 1000, @class = "form-control", data_toggle = "tooltip", title = "Max 1000 characters" })
+                                @Html.ValidationMessageFor(m => m.ProductSerial, ResourceNames.Feedbacks)
+                            }
+
+
+                           
                         </div>
                     </div>
                 </div>
@@ -351,6 +385,6 @@
                 </div>
             </div>
         </div>
-
+       
     }
 </div>
