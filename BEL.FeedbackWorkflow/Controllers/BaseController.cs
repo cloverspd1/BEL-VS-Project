@@ -112,7 +112,7 @@
                     if (!this.EnvironmentLive)
                     {
                         this.SPCurrentUser = new UserDetails();
-                        //this.SPCurrentUser.UserId = "20";
+                        //this.SPCurrentUser.UserId = "20";//dcrdcnuser1
                         //this.SPCurrentUser.UserId = "23";
                        this.SPCurrentUser.UserId = "19";//cloverspd1
                         //this.SPCurrentUser.UserId = "22";//collabapp3
@@ -839,6 +839,7 @@
                     }
                 }
             }
+           
             else if (model != null && model.ActionStatus == ButtonActionStatus.Delegate)
             {
                 //List<string> listOfError = this.GetErrorKeys();

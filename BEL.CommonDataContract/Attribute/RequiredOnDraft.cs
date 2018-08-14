@@ -43,4 +43,17 @@
         {
         }
     }
+    /// <summary>
+    /// Required On RequiredOnSendForward
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
+    public class RequiredOnSendForward : Attribute
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RequiredOnSendForward"/> class.
+        /// </summary>
+        public RequiredOnSendForward()
+        {
+        }
+    }
 }

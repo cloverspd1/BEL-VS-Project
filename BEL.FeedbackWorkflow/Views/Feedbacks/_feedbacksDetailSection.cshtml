@@ -340,8 +340,19 @@
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
-                            @Html.TextAreaFor(m => m.DefectDescription, new { maxLength = 1000, @class = "form-control", data_toggle = "tooltip", title = "Max 1000 characters" })
-                            @Html.ValidationMessageFor(m => m.DefectDescription, ResourceNames.Feedbacks)
+                            @if (Model.Status == "Sent Back")
+                            {
+                                @Html.DisplayFor(m => m.DefectDescription, new { @class = "form-control" })
+                                @Html.HiddenFor(m => m.DefectDescription)
+                            }
+                            else
+                            {
+                                @Html.TextAreaFor(m => m.DefectDescription, new { maxLength = 1000, @class = "form-control", data_toggle = "tooltip", title = "Max 1000 characters" })
+                                @Html.ValidationMessageFor(m => m.DefectDescription, ResourceNames.Feedbacks)
+                            }
+
+
+                          
                         </div>
                     </div>
                 </div>
@@ -354,37 +365,119 @@
                         @Html.LabelFor(m => m.FileNameList, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8 ">
+
                         <span class="text-danger text-default-light">
-                            (Max. up to 40MB per file and you can upload maximum 10 files.)
-                        </span>
-                        <div id="AttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
-                        </div>
-                        @Html.TextBoxFor(m => m.FileNameList, new { @class = "notvisible" })
+                                (Max. up to 40MB per file and you can upload maximum 10 files.)
+                            </span>
+                            <div id="AttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
+                            </div>
+                            @Html.TextBoxFor(m => m.FileNameList, new { @class = "notvisible" })
 
-                        @Html.ValidationMessageFor(m => m.FileNameList, ResourceNames.Feedbacks)
-
+                            @Html.ValidationMessageFor(m => m.FileNameList, ResourceNames.Feedbacks)
+                        
                     </div>
                 </div>
             </div>
         </div>
+       
+        <div id="feedbacksentback">
+        @if (Model.Status == "Sent Back")
+        {
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            <span class="text-danger text-default-light">*</span>
 
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="form-group">
-                    <label class="col-md-8 control-label">
+                            @Html.Label("Sample Provided", ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+                                @Html.DropDownListFor(m => m.SampleProvided, new SelectList(new List<SelectListItem> {new SelectListItem { Text = "Yes", Value = "Yes" },new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"),"Select", new { @class = "form-control", @data_selected = Model.SampleProvided, @data_val = "false", @data_val_required = "Sample provided is required" })
+                                @Html.ValidationMessageFor(m => m.SampleProvided, ResourceNames.Feedbacks)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            <span class="text-danger text-default-light">*</span>
 
-                        Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
-                    </label>
-                    <div class="col-md-4 ">
-                        <div class="form-control noborder">
-                            @Html.DisplayFor(m => m.CCActingUserName)
-                            @Html.HiddenFor(m => m.CCActingUser)
-                            @Html.HiddenFor(m => m.CCActingUserName)
+                            @Html.Label("Sample Quantity", ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+
+                                @Html.TextBoxFor(m => m.SampleQuantity, new { @class = "form-control", data_toggle = "tooltip", title = "" })
+                                @Html.ValidationMessageFor(m => m.SampleQuantity, ResourceNames.Feedbacks)
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            <span class="text-danger text-default-light">*</span>
+
+                            @Html.Label("Sample Comments", ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+
+                                @Html.TextAreaFor(m => m.SampleComments, new {maxLength=1000, @class = "form-control", data_toggle = "tooltip", title = "" })
+                                @Html.ValidationMessageFor(m => m.SampleComments, ResourceNames.Feedbacks)
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="col-md-8 control-label">
+
+                            Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
+                        </label>
+                        <div class="col-md-4 ">
+                            <div class="form-control noborder">
+                                @Html.DisplayFor(m => m.QualityUserName)
+                                @Html.HiddenFor(m => m.QualityUser)
+                                @Html.HiddenFor(m => m.QualityUserName)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else {
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="col-md-8 control-label">
+
+                            Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
+                        </label>
+                        <div class="col-md-4 ">
+                            <div class="form-control noborder">
+                                @Html.DisplayFor(m => m.CCActingUserName)
+                                @Html.HiddenFor(m => m.CCActingUser)
+                                @Html.HiddenFor(m => m.CCActingUserName)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
         </div>
+
+       
        
     }
 </div>

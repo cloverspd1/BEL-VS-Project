@@ -159,6 +159,15 @@
         [DataMember, IsListColumn(false)]
         public bool IsActive { get; set; }
 
+        [DataMember]
+        public string SampleProvided { get; set; }
+
+        [DataMember]
+        public string SampleQuantity { get; set; }
+
+        [DataMember]
+        public string SampleComments { get; set; }
+
         /// <summary>
         /// Gets or sets the action status.
         /// </summary>
@@ -300,6 +309,9 @@
         [DataMember, IsPerson(true, true, false), IsViewer]
         public string CCActingUser { get; set; }
 
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string QualityUser { get; set; }
+
         /// <summary>
         /// Gets or sets the request date.
         /// </summary>
@@ -308,6 +320,9 @@
         /// </value>
         [DataMember, IsPerson(true, true, true), FieldColumnName("CCActingUser"), IsViewer]
         public string CCActingUserName { get; set; }
+
+        [DataMember, IsPerson(true, true, true), FieldColumnName("QAUser"), IsViewer]
+        public string QualityUserName { get; set; }
 
         /// <summary>
         /// Gets or sets the month.
