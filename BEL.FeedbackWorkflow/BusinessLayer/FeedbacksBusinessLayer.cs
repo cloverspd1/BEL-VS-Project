@@ -176,6 +176,7 @@
                     objDict[Parameter.ACTIVITYLOG] = FeedbackListNames.FEEDBACKACTIVITYLOG;
                     objDict[Parameter.APPLICATIONNAME] = ApplicationNameConstants.FEEDBACKSAPP;
                     objDict[Parameter.FROMNAME] = FormNameConstants.FeedbacksFORM;
+                    
                     FeedbacksDetailSection section = null;
                     if (sectionDetails.SectionName == FeedbackSectionName.FEEDBACKDETAILSECTION)
                     {

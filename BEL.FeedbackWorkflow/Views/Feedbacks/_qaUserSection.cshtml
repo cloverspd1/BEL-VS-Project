@@ -20,6 +20,7 @@
     @Html.HiddenFor(m => m.ActionStatus)
     @Html.HiddenFor(m => m.Status)
     @Html.HiddenFor(m => m.QAHeadUser)
+    @Html.HiddenFor(m=>m.QualityUserDate)
     @Html.Partial("_ApproversList", Model.ApproversList)
     @*@Html.AntiForgeryToken()*@
 
@@ -107,6 +108,43 @@
                     </div>
                 </div>
             </div>
+            @*<div>
+                @if (Model.Status == " Forward to Quality User") {*@ 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">
+                                <span class="text-danger text-default-light">*</span>
+
+                                @Html.Label("Implemented", ResourceNames.Feedbacks)
+                            </label>
+                            <div class="col-md-8 ">
+                                <div class="form-control noborder">
+                                    @Html.DropDownListFor(m => m.Implemented, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.Implemented, @data_val = "true", @data_val_required = "Implemented is required" })
+                                    @Html.ValidationMessageFor(m => m.Implemented, ResourceNames.Feedbacks)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">
+                                <span class="text-danger text-default-light">*</span>
+
+                                @Html.Label("Implemented Remark", ResourceNames.Feedbacks)
+                            </label>
+                            <div class="col-md-8 ">
+                                <div class="form-control noborder">
+                                    @Html.TextAreaFor(m => m.CurrentApprover.ImplementedRemark, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Implemented Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+
+                                    @Html.ValidationMessageFor(m => m.CurrentApprover.ImplementedRemark, ResourceNames.Feedbacks)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*}
+            </div>*@
         </div>
     <div id="quastatusdiv">
         <div class="row">

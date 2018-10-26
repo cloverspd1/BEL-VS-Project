@@ -25,6 +25,7 @@
     @Html.HiddenFor(m => m.SectionName)
     @Html.HiddenFor(m => m.ActionStatus)
     @Html.HiddenFor(m => m.Status)
+    @Html.HiddenFor(m=>m.QualityInchargeDate)
     @Html.Partial("_ApproversList", Model.ApproversList)
     @*@Html.AntiForgeryToken()*@
 

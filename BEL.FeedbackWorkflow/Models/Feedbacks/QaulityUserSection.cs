@@ -68,6 +68,12 @@
         [DataMember]
         public string Status { get; set; }
 
+        [DataMember]
+        public DateTime? QualityUserDate { get; set; }
+
+        [DataMember]
+        public DateTime? ImplementationDate { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the section.
         /// </summary>
@@ -131,6 +137,13 @@
         [DataMember, IsListColumn(false), IsApproverDetails(true, FeedbackListNames.FEEDBACKAPPAPPROVALMATRIX)]
         public ApplicationStatus CurrentApprover { get; set; }
 
+        [DataMember, MaxLength(1000)]
+        //[DataMember, MaxLength(1000)]
+        public string ImplementedRemark { get; set; }
+
+        [DataMember, Required]
+        public string FileNameList { get; set; }
+
         [DataMember]
         public bool SendBackToCC { get; set; }
 
@@ -155,13 +168,17 @@
         [DataMember]
         public string QualityStatus { get; set; }
 
+        [DataMember]
+        public string Implemented { get; set; }
+
+      
         /// <summary>
         /// Gets or sets the Project Name.
         /// </summary>
         /// <value>
         /// The project name.
         /// </value>
-         [DataMember, MaxLength(1000)]
+        [DataMember, MaxLength(1000)]
         //[DataMember, MaxLength(1000)]
         public string Observations { get; set; }
 

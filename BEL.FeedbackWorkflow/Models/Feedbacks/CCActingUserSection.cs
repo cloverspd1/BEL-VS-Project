@@ -67,6 +67,12 @@
         [DataMember]
         public string Status { get; set; }
 
+        [DataMember]
+        public DateTime? QualityInchargeDate { get; set; }
+
+        [DataMember]
+        public DateTime? QualityUserDate { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the section.
         /// </summary>
@@ -156,6 +162,7 @@
         /// </value>
         [DataMember, Required, RequiredOnDraft]
         public bool ForwardtoCCQualityIncharge { get; set; }
+
 
         /// <summary>
         /// Gets or sets the Project Type.

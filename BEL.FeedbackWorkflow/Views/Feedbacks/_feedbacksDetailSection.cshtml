@@ -2,6 +2,7 @@
 @using BEL.FeedbackWorkflow.Models.Common
 @using BEL.FeedbackWorkflow.Models.Master;
 @using BEL.CommonDataContract;
+@using System.Runtime.Serialization;
 @model FeedbacksDetailSection
 
 <script type="text/javascript">
@@ -369,13 +370,28 @@
                         <span class="text-danger text-default-light">
                                 (Max. up to 40MB per file and you can upload maximum 10 files.)
                             </span>
-                            <div id="AttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
-                            </div>
-                            @Html.TextBoxFor(m => m.FileNameList, new { @class = "notvisible" })
+                        @*@if (Model.FeedbackNo == null)
+        {
+            <div id="AttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
+            </div>
+            @Html.TextBoxFor(m => m.FileNameList, new { @class = "notvisible" })
+            @Html.ValidationMessageFor(m => m.FileNameList, ResourceNames.Feedbacks)
 
-                            @Html.ValidationMessageFor(m => m.FileNameList, ResourceNames.Feedbacks)
-                        
-                    </div>
+        }
+        else
+        {
+            @Html.HiddenFor(m => m.FileNameList);
+
+        }*@
+                        <div id="AttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
+                        </div>
+                        @Html.TextBoxFor(m => m.FileNameList, new { @class = "notvisible" })
+                        @Html.ValidationMessageFor(m => m.FileNameList, ResourceNames.Feedbacks)    
+
+                           
+                      
+
+</div>
                 </div>
             </div>
         </div>
@@ -393,7 +409,7 @@
                         </label>
                         <div class="col-md-8 ">
                             <div class="form-control noborder">
-                                @Html.DropDownListFor(m => m.SampleProvided, new SelectList(new List<SelectListItem> {new SelectListItem { Text = "Yes", Value = "Yes" },new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"),"Select", new { @class = "form-control", @data_selected = Model.SampleProvided, @data_val = "false", @data_val_required = "Sample provided is required" })
+                                @Html.DropDownListFor(m => m.SampleProvided, new SelectList(new List<SelectListItem> {new SelectListItem { Text = "Yes", Value = "Yes" },new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"),"Select", new { @class = "form-control", @data_selected = Model.SampleProvided, @data_val = "true", @data_val_required = "Sample provided is required" })
                                 @Html.ValidationMessageFor(m => m.SampleProvided, ResourceNames.Feedbacks)
                             </div>
                         </div>
@@ -402,7 +418,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="col-md-4 control-label">
-                            <span class="text-danger text-default-light">*</span>
+                            <span class="text-danger text-default-light"></span>
 
                             @Html.Label("Sample Quantity", ResourceNames.Feedbacks)
                         </label>
@@ -428,7 +444,7 @@
                         <div class="col-md-8 ">
                             <div class="form-control noborder">
 
-                                @Html.TextAreaFor(m => m.SampleComments, new {maxLength=1000, @class = "form-control", data_toggle = "tooltip", title = "" })
+                                @Html.TextAreaFor(m => m.SampleComments, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
                                 @Html.ValidationMessageFor(m => m.SampleComments, ResourceNames.Feedbacks)
 
                             </div>

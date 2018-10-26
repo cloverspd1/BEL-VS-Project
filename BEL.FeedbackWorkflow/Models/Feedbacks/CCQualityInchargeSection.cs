@@ -67,6 +67,9 @@
         [DataMember]
         public string Status { get; set; }
 
+        [DataMember]
+        public DateTime? QualityInchargeDate { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the section.
         /// </summary>

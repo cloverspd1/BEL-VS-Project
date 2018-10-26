@@ -69,6 +69,10 @@
         [DataMember, IsListColumn(false)]
         public int ID { get; set; }
 
+        [DataMember, IsListColumn(false)]
+        public bool flag { get; set; }
+
+
         /// <summary>
         /// Gets or sets the request date.
         /// </summary>
@@ -96,6 +100,10 @@
         [DataMember]
         public DateTime? RequestDate { get; set; }
 
+
+        [DataMember]
+        public DateTime? SampleProvidedDate { get; set; }
+
         /// <summary>
         /// Gets or sets the workflow status.
         /// </summary>
@@ -113,6 +121,8 @@
         /// </value>
         [DataMember]
         public string Status { get; set; }
+
+
 
         /// <summary>
         /// Gets or sets the name of the section.

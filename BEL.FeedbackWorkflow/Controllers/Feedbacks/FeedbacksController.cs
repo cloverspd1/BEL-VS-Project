@@ -40,6 +40,7 @@
             objDict.Add(Parameter.FROMNAME, FormNameConstants.FeedbacksFORM);
             objDict.Add(Parameter.ITEMID, id.ToString());
             objDict.Add(Parameter.USEREID, this.CurrentUser.UserId);
+            
             ViewBag.UserID = this.CurrentUser.UserId;
             ViewBag.UserName = this.CurrentUser.FullName;
             contract = this.GetFeedbacksDetails(objDict);
@@ -75,6 +76,9 @@
                 model.ActionStatus = model.ActionStatus == ButtonActionStatus.NextApproval ? ButtonActionStatus.SendForward : model.ActionStatus;
                 ModelState.Remove("CCQualityInchargeUser");
                 ModelState.Remove("CCActingUser");
+                model.flag = true;
+                model.SampleProvidedDate = DateTime.Now;
+                
             }
 
             if (model != null && this.ValidateModelState(model))
@@ -131,6 +135,8 @@
                 else if (!model.ForwardtoCCQualityIncharge && model.ActionStatus == ButtonActionStatus.Complete)
                 {
                     model.CCQualityInchargeUser = model.CCQualityInchargeName = string.Empty;
+                    model.QualityInchargeDate = DateTime.Now;
+                    model.QualityUserDate = DateTime.Now;
                 }
                 model.Files = new List<FileDetails>();
                 model.Files = FileListHelper.GenerateFileBytes(model.CCFileNameList);  ////For Save Attachemennt
@@ -178,7 +184,9 @@
                 else if (!model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.Complete)
                 {
                     model.QAUser = model.QAUserName = string.Empty;
+                   
                 }
+                model.QualityInchargeDate = DateTime.Now;
                 model.Files = new List<FileDetails>();
                 model.Files = FileListHelper.GenerateFileBytes(model.CCQAInchargeFileNameList);  ////For Save Attachemennt
                 model.CCQAInchargeFileNameList = string.Join(",", FileListHelper.GetFileNames(model.CCQAInchargeFileNameList));
@@ -212,7 +220,21 @@
             ActionStatus status = new ActionStatus();
             if (model != null && this.ValidateModelState(model))
             {
+                if (model.SendBackToCC == true)
+                {
+                    model.QualityUserDate = DateTime.Now;
+                }
+                else
+                {
+                    model.ImplementationDate = DateTime.Now;
+                    model.QualityUserDate = DateTime.Now;
+                    
+                   
+                 
+                }
                 Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+                objDict.Add("DefectDesc1", model.Implemented);
+                objDict.Add("DefectDesc2", model.CurrentApprover.ImplementedRemark);
                 status = this.SaveSection(model, objDict);
                 status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
             }

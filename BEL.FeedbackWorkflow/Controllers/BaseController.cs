@@ -115,11 +115,14 @@
                         //this.SPCurrentUser.UserId = "20";//dcrdcnuser1
                         //this.SPCurrentUser.UserId = "23";
                        this.SPCurrentUser.UserId = "19";//cloverspd1
-                        //this.SPCurrentUser.UserId = "22";//collabapp3
-                        //this.SPCurrentUser.UserId = "24";//collabapp1
-                        //this.SPCurrentUser.UserId = "27"; //collabapp2
-                        // this.SPCurrentUser.UserId = "29";//Dipankar
-                         //this.SPCurrentUser.UserId = "9";//Admin
+                       // this.SPCurrentUser.UserId = "32";//cloverspd1
+                                                         //this.SPCurrentUser.UserId = "35";//cloverspd1
+                                                         //this.SPCurrentUser.UserId = "22";//collabapp3
+                                                         //this.SPCurrentUser.UserId = "24";//collabapp1
+                                                         //this.SPCurrentUser.UserId = "27"; //collabapp2
+                                                         // this.SPCurrentUser.UserId = "29";//Dipankar
+                                                         //this.SPCurrentUser.UserId = "9";//Admin
+                                                         //this.SPCurrentUser.UserId = "34";//Creator sent back by Quality
 
                         //this.SPCurrentUser.UserId = CommonBusinessLayer.Instance.GetCurrentUser(User.IdentName);
 

@@ -77,7 +77,7 @@ $(document).ready(function () {
 
     
     $("#SendBackToCC").click(function () {
-       
+        debugger;
         if ($(this).is(":checked")) {
             $("#closediv").hide();
             $("#quastatusdiv").show();
@@ -96,21 +96,11 @@ $(document).ready(function () {
         }
     });
 
-    //if ($("#sendbacktocc").is(":checked")) {
-    //    $("#qualitystatus").rules("add", "required");
-    //    $("#observations").rules("remove", "required");
-    //    $("#actionplans").rules("remove", "required");
-    //    $("#problemcause").rules("remove", "required");
-       
-    //} else {
-    //    $("#qualitystatus").rules("remove", "required");
-    //    $("#observations").rules("add", "required");
-    //    $("#actionplans").rules("add", "required");
-    //    $("#problemcause").rules("add", "required");
-    //    $("#quastatusdiv").addclass("hide");
-    //}
     
+
     $("#QualityStatus").on("change", function () {
+        debugger;
+        
         var txt = $(this).val();
         if (txt != "") {
             var btntext = "Forward to CC";
@@ -411,6 +401,7 @@ function ViewWIPReport(url) {
 $(window).load(function () {
     // executes when complete page is fully loaded, including all frames, objects and images
     if ($("#SendBackToCC").is(":checked")) {
+        debugger;
         //$("#closediv").css("visibility", "hidden");
         $("#closediv").hide();
         $("#quastatusdiv").css("visibility", "visible");
@@ -419,7 +410,8 @@ $(window).load(function () {
         $("a.btn:contains('Send Back')").attr('data-action', "22");
     } else {
         $("#closediv").css("visibility", "visible");
-        $("#quastatusdiv").css("visibility", "hidden");
+       // $("#quastatusdiv").css("visibility", "hidden");
+        $("#quastatusdiv").hide();
         $("a.btn:contains('Send Back')").text("Complete");
         $("a.btn:contains('Complete')").attr('data-original-title', "Request will be close.");
         $("a.btn:contains('Complete')").attr('data-action', "14");
