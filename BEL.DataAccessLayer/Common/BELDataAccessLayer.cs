@@ -1239,6 +1239,7 @@
                         }
                     }
                 }
+               
                 foreach (KeyValuePair<string, object> field in itemDictionary)
                 {
                     item[field.Key] = itemDictionary[field.Key];
@@ -1250,12 +1251,26 @@
                 Logger.Info("context.ExecuteQuery() Save Main List Item.");
                 /////*  Data saved in Main List  */
                 itemId = Convert.ToInt32(item["ID"].ToString());
-               // string comment = string.Empty;
+                if (item["Implemented"] != null)
+                {
+                    if (param.ContainsKey(item["Implemented"].ToString()))
+                    {
+                        Logger.Info("Item already exist.");
+                    }
+                    else
+                    {
+                       // param.Add("Implemented", item["Implemented"].ToString());
+                    }
+
+                }
+
+                // string comment = string.Empty;
                 //if (item["QualityStatus"] != null)
                 //{
                 //    item["Comments"] = item["QualityComments"];
                 //}
                 Logger.Info("Actual Section Properties Saved", itemId);
+               
                 bool isNewItem = param.ContainsKey(Parameter.ISNEWITEM) ? Convert.ToBoolean(param[Parameter.ISNEWITEM]) : false;
                 if (isNewItem)
                 {
@@ -1265,6 +1280,7 @@
                         Logger.Info("Reference Number Generated '" + formFieldValues["ReferenceNo"] + "'");
                     }
                 }
+                
 
                 /////* Save Approver Matrix in List*/
                 List<ApplicationStatus> approversDataFromList = null;
@@ -1357,6 +1373,7 @@
                             p.Status = (approverMatrixList.FirstOrDefault(m => m.Role == p.Role) != null && approverMatrixList.FirstOrDefault(m => m.Role == p.Role).Status != null) ? approverMatrixList.FirstOrDefault(m => m.Role == p.Role).Status : p.Status;
                             p.Comments = approverMatrixList.FirstOrDefault(m => m.Role == p.Role && m.Levels == p.Levels) != null && !string.IsNullOrEmpty(approverMatrixList.FirstOrDefault(m => m.Role == p.Role && m.Levels == p.Levels).Comments) ? approverMatrixList.FirstOrDefault(m => m.Role == p.Role && m.Levels == p.Levels).Comments : p.Comments;
                         }
+                        
                     });
                 }
                 if (approversDataFromList != null)
@@ -1401,6 +1418,17 @@
                         else
                         {
                             approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role).QualityComments = currentApproverDetails.QualityComments;
+                        }
+                    }
+                    if (!string.IsNullOrEmpty(currentApproverDetails.ImplementedRemark))
+                    {
+                        if (!string.IsNullOrEmpty(currentApproverDetails.Levels))
+                        {
+                            approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role && p.Levels == currentApproverDetails.Levels).ImplementedRemark = currentApproverDetails.ImplementedRemark;
+                        }
+                        else
+                        {
+                            approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role).ImplementedRemark = currentApproverDetails.ImplementedRemark;
                         }
                     }
                     if (!string.IsNullOrEmpty(currentApproverDetails.Approver))
@@ -1816,6 +1844,8 @@
                 /* Send Email  start*/
                 AsyncHelper.Call(obj =>
                 {
+                   
+                    
                     this.SendMail(actionPerformed, context, web, Convert.ToString(param[Parameter.USEREID]), itemId, approversDataFromList, listName, nextLevel, currLevel, param, mailCustomValues, emailAttachments);
                 });
                 /*Send Email End*/
@@ -1949,20 +1979,28 @@
                 itemdetail.Add(new ListItemDetail() { ItemId = itemId, IsMainList = true, ListName = listname });
                 strAllusers = this.GetEmailUsers(approversDataFromList, nextLevel, currLevel);
                 strNofifyUsers = this.GetNotificationUsers("EmailNotification");
-                
 
+                if (mailCustomValues == null)
+                {
+                    mailCustomValues = new Dictionary<string, string>();
+                }
                 approversDataFromList.ForEach(p =>
                  {
                      if (Convert.ToInt32(p.Levels) == nextLevel && !string.IsNullOrEmpty(p.Approver))
                      {
                          nextApproverIds = nextApproverIds.Trim(',') + "," + p.Approver;
+                         mailCustomValues["Comments"] = p.Comments;
+                         mailCustomValues["ProGroup1"] = p.ImplementedRemark;
+                         if (paraml.ContainsKey("Implemented"))
+                         {
+                             mailCustomValues["Implemented"] = paraml["Implemented"];
+                         }
+                         
+                         
                      }
                  });
                 nextApproverIds = nextApproverIds.Trim(',');
-                if (mailCustomValues == null)
-                {
-                    mailCustomValues = new Dictionary<string, string>();
-                }
+                
                 mailCustomValues[Parameter.CURRENTAPPROVERNAME] = GetNameUsingUserID(context, web, currentUserID);
                 mailCustomValues[Parameter.NEXTAPPROVERNAME] = GetNameUsingUserID(context, web, nextApproverIds);
                                    

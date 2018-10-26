@@ -109,9 +109,11 @@
                                 listDetail.ListItemObject = item;
                                 customValues["ItemLink"] = "#URL" + spList.DefaultDisplayFormUrl + "?ID=" + listDetail.ItemId;
                                 customValues["ItemLinkClickHere"] = "<a href='#URL" + spList.DefaultDisplayFormUrl + "?ID=" + listDetail.ItemId + "' >Click Here</a>";
-
                                 customValues.Add("ProGroup",Convert.ToString(item["ProductType"]));
                                 customValues.Add("DefectDesc",Convert.ToString(item["DefectDescription"]));
+                                customValues.Add("DefectDesc1", Convert.ToString(item["Implemented"]));
+                               
+
 
                                 int val=customValues["ProGroup"].GetHashCode();
 

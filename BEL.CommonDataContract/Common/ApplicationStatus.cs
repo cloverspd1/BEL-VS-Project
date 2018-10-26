@@ -168,7 +168,10 @@
         [DataMember]
         public string QualityComments { get; set; }
 
-      
+        [DataMember]
+        public string ImplementedRemark { get; set; }
+
+
 
         /// <summary>
         /// Gets or sets the assign date.

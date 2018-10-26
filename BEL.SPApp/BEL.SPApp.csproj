@@ -22,7 +22,7 @@
     <WorkflowPartId>{61fb1e03-4891-4962-a147-7117f883f6ad}</WorkflowPartId>
     <CspkgPartId>{9b15516c-6803-4a2d-86b7-29180c6ed953}</CspkgPartId>
     <SqlPackagePartId>{bbda8d0f-7043-40da-b79f-06326cd3458e}</SqlPackagePartId>
-    <ActivePublishProfile>NewBELFeedback - Web Deploy</ActivePublishProfile>
+    <ActivePublishProfile>BEL_Production</ActivePublishProfile>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
