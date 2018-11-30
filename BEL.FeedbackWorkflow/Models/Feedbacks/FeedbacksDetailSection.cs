@@ -72,6 +72,39 @@
         [DataMember, IsListColumn(false)]
         public bool flag { get; set; }
 
+        [IsListColumn(false)]
+        public bool IsField { get; set; }
+
+        [DataMember]
+        public bool IsSiteCompleted { get; set; }
+
+        [DataMember]
+        public bool ProtectionForVoltage { get; set; }
+
+        [DataMember]
+        public bool ProductWiring { get; set; }
+
+        [DataMember]
+        public string RNVoltage { get; set; }
+
+        [DataMember]
+        public string YNVoltage { get; set; }
+
+        [DataMember]
+        public string BNVoltage { get; set; }
+
+        [DataMember]
+        public string ENVoltage { get; set; }
+
+        [DataMember]
+        public string ENVoltageLUM { get; set; }
+
+        [DataMember]
+        public string LNVoltage { get; set; }
+
+        [DataMember]
+        public string powersupplier { get; set; }
+
 
         /// <summary>
         /// Gets or sets the request date.
@@ -320,7 +353,14 @@
         public string CCActingUser { get; set; }
 
         [DataMember, IsPerson(true, true, false), IsViewer]
+        public string LUMUser { get; set; }
+
+        [DataMember, IsPerson(true, true, false), IsViewer]
         public string QualityUser { get; set; }
+
+
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string QualityUserCreator { get; set; }
 
         /// <summary>
         /// Gets or sets the request date.
@@ -330,9 +370,29 @@
         /// </value>
         [DataMember, IsPerson(true, true, true), FieldColumnName("CCActingUser"), IsViewer]
         public string CCActingUserName { get; set; }
+        
 
-        [DataMember, IsPerson(true, true, true), FieldColumnName("QAUser"), IsViewer]
+        [DataMember, IsPerson(true, true, true), FieldColumnName("LUMUser"), IsViewer]
+        public string LUMUserName { get; set; }
+
+        [DataMember, IsPerson(true, true, true), FieldColumnName("QualityUser"), IsViewer]
         public string QualityUserName { get; set; }
+
+        [DataMember, IsPerson(true, true, true), FieldColumnName("QualityUserCreator"), IsViewer]
+        public string QualityUserCreatorName { get; set; }
+
+
+
+
+        //[DataMember, IsPerson(true, true, false), IsViewer]
+        //public string QAUserCreator { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Project Type.
+        /// </summary>
+        /// <value>
+        /// The project type.
+        /// </value>
 
         /// <summary>
         /// Gets or sets the month.

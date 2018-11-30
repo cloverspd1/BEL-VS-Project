@@ -166,7 +166,7 @@
         /// <value>
         /// The project type.
         /// </value>
-        [DataMember, Required, IsPerson(true, true, false), IsViewer]
+        [DataMember, IsPerson(true, true, false), IsViewer]
         public string QAUser { get; set; }
 
         /// <summary>
@@ -177,6 +177,18 @@
         /// </value>
         [DataMember, IsPerson(true, true, true), FieldColumnName("QAUser"), IsViewer]
         public string QAUserName { get; set; }
+
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string LUMQAUser { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Project Type.
+        /// </summary>
+        /// <value>
+        /// The project type.
+        /// </value>
+        [DataMember, IsPerson(true, true, true), FieldColumnName("LUMQAUser"), IsViewer]
+        public string LUMQAUserName { get; set; }
 
         /// <summary>
         /// Gets or sets the files.
@@ -195,5 +207,8 @@
         /// </value>
         [DataMember]
         public string CCQAInchargeFileNameList { get; set; }
+
+        [DataMember, IsListColumn(false)]
+        public string BUHidden { get; set; }
     }
 }

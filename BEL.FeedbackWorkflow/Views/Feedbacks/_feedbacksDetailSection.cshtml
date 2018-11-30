@@ -4,11 +4,21 @@
 @using BEL.CommonDataContract;
 @using System.Runtime.Serialization;
 @model FeedbacksDetailSection
+@{
+    FeedbacksContract contract = new FeedbacksContract();
+    ApproverMaster approverusrelist2 = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
+    List<ApproverMasterListItem> qaUserList2 = approverusrelist2.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.QAULITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
+    qaUserList2 = Helper.SplitUser(qaUserList2);
+
+    ApproverMaster approverusrelist3 = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
+    List<ApproverMasterListItem> qaUserList3 = approverusrelist3.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.LUMQUALITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
+    qaUserList3 = Helper.SplitUser(qaUserList3);
+}
 
 <script type="text/javascript">
     @{
 
-        //ApproverMaster approverlist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(Masters.APPROVERMASTER)) as ApproverMaster;
+//ApproverMaster approverlist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(Masters.APPROVERMASTER)) as ApproverMaster;
 
       }
 
@@ -396,104 +406,369 @@
             </div>
         </div>
        
-        <div id="feedbacksentback">
-        @if (Model.Status == "Sent Back")
-        {
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">
-                            <span class="text-danger text-default-light">*</span>
+        <div class="row" id="divQualityUser">
 
-                            @Html.Label("Sample Provided", ResourceNames.Feedbacks)
-                        </label>
-                        <div class="col-md-8 ">
-                            <div class="form-control noborder">
-                                @Html.DropDownListFor(m => m.SampleProvided, new SelectList(new List<SelectListItem> {new SelectListItem { Text = "Yes", Value = "Yes" },new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"),"Select", new { @class = "form-control", @data_selected = Model.SampleProvided, @data_val = "true", @data_val_required = "Sample provided is required" })
-                                @Html.ValidationMessageFor(m => m.SampleProvided, ResourceNames.Feedbacks)
-                            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+@if (Model.IsField)
+{
+                    <label class="col-md-4 control-label">
+
+                        <span class="text-danger text-default-light">*</span>
+
+                        @Html.LabelFor(m=>m.QualityUserCreator, ResourceNames.Feedbacks)
+
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.ListBox("QualityUserCreatorList", new MultiSelectList(qaUserList2.ToArray(), "UserID", "UserName"), new { @id = "QualityUserCreatorList", @Name = "QualityUserCreatorList", @class = "form-control", @data_selected = Model.QualityUserCreator })
+                            @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
+                            @Html.ValidationMessage("QAUserListCreator", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
+                            @Html.HiddenFor(m => m.QualityUserCreator)
+                            @Html.HiddenFor(m => m.QualityUserCreatorName)
+
                         </div>
+
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">
-                            <span class="text-danger text-default-light"></span>
+}
+else
+{
+    <label class="col-md-4 control-label">
 
-                            @Html.Label("Sample Quantity", ResourceNames.Feedbacks)
-                        </label>
-                        <div class="col-md-8 ">
-                            <div class="form-control noborder">
+        <span class="text-danger text-default-light">*</span>
 
-                                @Html.TextBoxFor(m => m.SampleQuantity, new { @class = "form-control", data_toggle = "tooltip", title = "" })
-                                @Html.ValidationMessageFor(m => m.SampleQuantity, ResourceNames.Feedbacks)
+        @Html.LabelFor(m => m.QualityUserCreator, ResourceNames.Feedbacks)
 
-                            </div>
+    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.ListBox("QualityUserCreatorList", new MultiSelectList(qaUserList3.ToArray(), "UserID", "UserName"), new { @id = "QualityUserCreatorList", @Name = "QualityUserCreatorList", @class = "form-control", @data_selected = Model.QualityUserCreator })
+                            @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
+                                @Html.ValidationMessage("QAUserListCreator", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
+                            @Html.HiddenFor(m => m.QualityUserCreator)
+                            @Html.HiddenFor(m => m.QualityUserCreatorName)
+
                         </div>
+
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="col-md-4 control-label">
-                            <span class="text-danger text-default-light">*</span>
+}
 
-                            @Html.Label("Sample Comments", ResourceNames.Feedbacks)
-                        </label>
-                        <div class="col-md-8 ">
-                            <div class="form-control noborder">
-
-                                @Html.TextAreaFor(m => m.SampleComments, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
-                                @Html.ValidationMessageFor(m => m.SampleComments, ResourceNames.Feedbacks)
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-md-8 control-label">
-
-                            Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
-                        </label>
-                        <div class="col-md-4 ">
-                            <div class="form-control noborder">
-                                @Html.DisplayFor(m => m.QualityUserName)
-                                @Html.HiddenFor(m => m.QualityUser)
-                                @Html.HiddenFor(m => m.QualityUserName)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }
-        else {
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-md-8 control-label">
-
-                            Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
-                        </label>
-                        <div class="col-md-4 ">
-                            <div class="form-control noborder">
-                                @Html.DisplayFor(m => m.CCActingUserName)
-                                @Html.HiddenFor(m => m.CCActingUser)
-                                @Html.HiddenFor(m => m.CCActingUserName)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }
 
         </div>
 
+        <div class="row" id="sampleDiv" hidden>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+
+                        @Html.Label("Sample Comments", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.TextAreaFor(m => m.SampleComments, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+                            @Html.ValidationMessageFor(m => m.SampleComments, ResourceNames.Feedbacks)
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
        
-       
+
+        <div class="row" id="divSiteCompleted">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-8 control-label">
+                        <span class="text-danger text-default-light"></span>
+                        @Html.Label("Is Site Completed / Under Construction?", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-4">
+                        <div class="form-control noborder">
+                           
+                            @Html.CheckBoxFor(m => m.IsSiteCompleted) 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        @Html.Label("BN Voltage (In DB)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8">
+                        <div class="form-control noborder">
+                            @Html.TextBoxFor(m => m.BNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.BNVoltage, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row" id="DivAnyProtection">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-8 control-label">
+                        <span class="text-danger text-default-light"></span>
+                        @Html.Label("Any Protection For Voltage/ Current Used?", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-4">
+                        <div class="form-control noborder">
+
+                          @Html.CheckBoxFor(m => m.ProtectionForVoltage) 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        @Html.Label("EN Voltage (In DB)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8">
+                        <div class="form-control noborder">
+                            @Html.TextBoxFor(m => m.ENVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.ENVoltage, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row" id="divProductWiring">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-6 control-label">
+                        <span class="text-danger text-default-light"></span>
+                        @Html.Label("Is Product Wiring is OK ?", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-4">
+                        <div class="form-control noborder">
+                            @Html.CheckBoxFor(m => m.ProductWiring)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        @Html.Label("EN Voltage (In Luminaire)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8">
+                        <div class="form-control noborder">
+                            @Html.TextBoxFor(m => m.ENVoltageLUM, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.ENVoltageLUM, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row" id="divRNVtg">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light"></span>
+                        @Html.Label("RN Voltage(In DB)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.TextBoxFor(m => m.RNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.RNVoltage, ResourceNames.Feedbacks)
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        @Html.Label("LN Voltage (In Luminaire)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8">
+                        <div class="form-control noborder">
+                            @Html.TextBoxFor(m => m.LNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.LNVoltage, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row" id="divYNvtg">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light"></span>
+                        @Html.Label("YN Voltage(In DB)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.TextBoxFor(m => m.YNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.YNVoltage, ResourceNames.Feedbacks)
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        @Html.Label("Power Supplier(EB/GEN Set)", ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8">
+                        <div class="form-control noborder">
+                            @Html.TextBoxFor(m => m.powersupplier, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.ValidationMessageFor(m => m.powersupplier, ResourceNames.Feedbacks)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="feedbacksentback">
+            @if (Model.Status == "Sent Back" && Model.BusinessUnits!="LUM")
+            {
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">
+                                <span class="text-danger text-default-light">*</span>
+
+                                @Html.Label("Sample Provided", ResourceNames.Feedbacks)
+                            </label>
+                            <div class="col-md-8 ">
+                                <div class="form-control noborder">
+                                    @Html.DropDownListFor(m => m.SampleProvided, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.SampleProvided, @data_val = "true", @data_val_required = "Sample provided is required" })
+                                    @Html.ValidationMessageFor(m => m.SampleProvided, ResourceNames.Feedbacks)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">
+                                <span class="text-danger text-default-light"></span>
+
+                                @Html.Label("Sample Quantity", ResourceNames.Feedbacks)
+                            </label>
+                            <div class="col-md-8 ">
+                                <div class="form-control noborder">
+
+                                    @Html.TextBoxFor(m => m.SampleQuantity, new { @class = "form-control", data_toggle = "tooltip", title = "" })
+                                    @Html.ValidationMessageFor(m => m.SampleQuantity, ResourceNames.Feedbacks)
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">
+                                <span class="text-danger text-default-light">*</span>
+
+                                @Html.Label("Sample Comments", ResourceNames.Feedbacks)
+                            </label>
+                            <div class="col-md-8 ">
+                                <div class="form-control noborder">
+
+                                    @Html.TextAreaFor(m => m.SampleComments, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+                                    @Html.ValidationMessageFor(m => m.SampleComments, ResourceNames.Feedbacks)
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-md-8 control-label">
+
+                                Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
+                            </label>
+                            <div class="col-md-4 ">
+                                <div class="form-control noborder">
+                                    @Html.DisplayFor(m => m.QualityUserName)
+                                    @Html.HiddenFor(m => m.QualityUser)
+                                    @Html.HiddenFor(m => m.QualityUserName)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else { 
+
+
+
+                <div class="row" id="divActingUser">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-md-8 control-label">
+
+                                Note: This information will be submitted to Regional trainer, for verification and follow up with quality department:
+                            </label>
+                            <div class="col-md-4 ">
+                                <div class="form-control noborder">
+                                    @Html.DisplayFor(m => m.CCActingUserName)
+                                    @Html.HiddenFor(m => m.CCActingUser)
+                                    @Html.HiddenFor(m => m.CCActingUserName)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+           
+            <div class="row" id="divLUMUser">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="col-md-8 control-label">
+
+                            Note: This information will be submitted to LUM Service Managers, for verification and follow up with quality department:
+                        </label>
+                        <div class="col-md-4 ">
+                            <div class="form-control noborder">
+                                @Html.DisplayFor(m => m.LUMUserName)
+                                @Html.HiddenFor(m => m.LUMUser)
+                                @Html.HiddenFor(m => m.LUMUserName)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     }
 </div>

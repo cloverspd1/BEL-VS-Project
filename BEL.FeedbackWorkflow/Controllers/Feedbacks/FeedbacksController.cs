@@ -40,7 +40,8 @@
             objDict.Add(Parameter.FROMNAME, FormNameConstants.FeedbacksFORM);
             objDict.Add(Parameter.ITEMID, id.ToString());
             objDict.Add(Parameter.USEREID, this.CurrentUser.UserId);
-            
+            objDict.Add("BusinessUnit", "");
+
             ViewBag.UserID = this.CurrentUser.UserId;
             ViewBag.UserName = this.CurrentUser.FullName;
             contract = this.GetFeedbacksDetails(objDict);
@@ -81,19 +82,68 @@
                 
             }
 
+
             if (model != null && this.ValidateModelState(model))
             {
                 if (model.ApproversList != null)
                 {
-                    model.CCActingUser = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver;
-                    model.CCActingUserName = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName;
+                    if (model.ApproversList != null && model.BusinessUnits=="LUM" && model.ActionStatus == ButtonActionStatus.NextApproval)
+                    {
+                        model.CCActingUser = model.LUMUser;
+                        model.CCActingUserName = model.LUMUserName;
+                    }
+                    else
+                    {
+                        //model.CCActingUser = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver;
+                        //model.CCActingUserName = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName;
+                       
+                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = model.CCActingUser;
+                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName = model.CCActingUserName;
+                    }
                 }
+                
+
+                string ID = "";
+                string[] IDs = null;
+                string Flag = "false";
+                model.ApproversList.ForEach(p =>
+                {
+
+                    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "0")
+                    {
+                        ID = p.Approver;
+                    }
+                    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "1" && p.Approver!=null)
+                    {
+                       
+                        IDs = p.Approver.Split(',');
+                        //if (model.QAUser != null)
+                        //{
+                        //    p.Approver = model.QAUser;
+                        //}
+                    }
+
+                    if (IDs != null)
+                    {
+                        for (int i = 0; i < IDs.Length; i++)
+                        {
+                            if (IDs != null && ID != "" && ID == IDs[i])
+                            {
+                                Flag = "true";
+                            }
+                        }
+                    }
+                });
+               
                 model.ProductGroup = model.ProductType;
                 model.Files = new List<FileDetails>();
                 model.Files = FileListHelper.GenerateFileBytes(model.FileNameList);
                 model.FileNameList = string.Join(",", FileListHelper.GetFileNames(model.FileNameList));
                 ////For Save Attachemennt
                 Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+                objDict.Add("Flag", Flag);
+                objDict.Add("CreatorToQA", model.QualityUserCreator);
+                objDict.Add("CreatorToQAName", model.QualityUserCreatorName);
                 status = this.SaveSection(model, objDict);
                 status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
             }
@@ -131,6 +181,7 @@
                 {
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).Approver = model.CCQualityInchargeUser;
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).ApproverName = model.CCQualityInchargeName;
+                    
                 }
                 else if (!model.ForwardtoCCQualityIncharge && model.ActionStatus == ButtonActionStatus.Complete)
                 {
@@ -176,10 +227,17 @@
 
             if (model != null && this.ValidateModelState(model))
             {
-                if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval)
+                if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden=="Others")
                 {
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).Approver = model.QAUser;
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).ApproverName = model.QAUserName;
+                }
+                else if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden == "LUM")
+                {
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).Approver = model.LUMQAUser;
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).ApproverName = model.LUMQAUserName;
+                    model.QAUser = model.LUMQAUser;
+                    model.QAUserName = model.LUMQAUserName;
                 }
                 else if (!model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.Complete)
                 {
@@ -229,9 +287,12 @@
                     model.ImplementationDate = DateTime.Now;
                     model.QualityUserDate = DateTime.Now;
                     
-                   
-                 
                 }
+                model.Files = new List<FileDetails>();
+                model.Files = FileListHelper.GenerateFileBytes(model.QUFileNameList);  ////For Save Attachemennt
+                model.QUFileNameList = string.Join(",", FileListHelper.GetFileNames(model.QUFileNameList));
+
+
                 Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
                 objDict.Add("DefectDesc1", model.Implemented);
                 objDict.Add("DefectDesc2", model.CurrentApprover.ImplementedRemark);
@@ -277,6 +338,37 @@
                 return this.Json(master, JsonRequestBehavior.AllowGet);
             }
             return this.Json("[]", JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetVariableDefine(string BU)
+        {
+            string data = BU;
+            string result = "";
+            if (!string.IsNullOrEmpty(data))
+            {
+                int id = 0;
+                FeedbacksContract contract = null;
+                Logger.Info("Start Feedback form and ID = " + id);
+                Dictionary<string, string> objDict = new Dictionary<string, string>();
+                objDict.Add(Parameter.FROMNAME, FormNameConstants.FeedbacksFORM);
+                objDict.Add(Parameter.ITEMID, id.ToString());
+                objDict.Add(Parameter.USEREID, this.CurrentUser.UserId);
+                objDict.Add("BusinessUnit", BU);
+
+                ViewBag.UserID = this.CurrentUser.UserId;
+                ViewBag.UserName = this.CurrentUser.FullName;
+                contract = this.GetFeedbacksDetails(objDict);
+                contract.UserDetails = this.CurrentUser;
+                if (contract.dynmicfield.Count>0) {
+                    result = "True";
+                }
+                else
+                {
+                    result = "False";
+                }
+                //return this.Json(master, JsonRequestBehavior.AllowGet);
+            }
+            return this.Json(result,JsonRequestBehavior.AllowGet);
         }
 
         #region "Feedback Report"

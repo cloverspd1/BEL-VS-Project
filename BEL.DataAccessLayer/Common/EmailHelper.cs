@@ -112,7 +112,8 @@
                                 customValues.Add("ProGroup",Convert.ToString(item["ProductType"]));
                                 customValues.Add("DefectDesc",Convert.ToString(item["DefectDescription"]));
                                 customValues.Add("DefectDesc1", Convert.ToString(item["Implemented"]));
-                               
+                                customValues.Add("ProGroup1", Convert.ToString(item["ImplementedRemark"]));
+
 
 
                                 int val=customValues["ProGroup"].GetHashCode();

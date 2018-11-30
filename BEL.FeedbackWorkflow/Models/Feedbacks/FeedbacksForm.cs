@@ -63,6 +63,10 @@
         [DataMember]
         public int FormApprovalLevel { get; set; }
 
+
+        [DataMember]
+        public bool IsField { get; set; }
+
         /// <summary>
         /// Gets or sets the total approval required.
         /// </summary>

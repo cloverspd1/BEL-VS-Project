@@ -106,6 +106,9 @@
         /// </summary>
         public const string FEEDBACKDETAILSECTION = "Feedback Detail Section";
 
+
+        public const string CCQUALITYINCHARGESECTIONFORCREATOR = "CC Quality Incharge For Creator Section";
+
         /// <summary>
         /// The Feedback approver1 section
         /// </summary>
@@ -115,6 +118,8 @@
         /// The Feedback approver2 section
         /// </summary>
         public const string CCQUALITYINCHARGESECTION = "CC Quality Incharge Section";
+
+
 
         /// <summary>
         /// The Feedback approver3 section
@@ -168,6 +173,15 @@
         /// Quality User
         /// </summary>
         public const string QAULITYUSER = "Quality User";
+
+        /// <summary>
+        /// LUM Approver
+        /// </summary>
+        public const string LUMSERVICEMANAGES = "Lum Service Managers";
+
+        public const string LUMQUALITYINCHARGE = "LUM Quality Incharge";
+
+        public const string LUMQUALITYUSER = "LUM Quality User";
 
         /// <summary>
         /// QA Head

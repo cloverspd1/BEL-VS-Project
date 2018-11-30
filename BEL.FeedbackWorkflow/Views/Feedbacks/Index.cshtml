@@ -11,7 +11,16 @@
     CCActingUserSection ccActingUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCACTINGUSERSECTION)) as CCActingUserSection;
     CCQualityInchargeSection ccQualityInchargeSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCQUALITYINCHARGESECTION)) as CCQualityInchargeSection;
     QaulityUserSection qaulityUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.QAULITYUSERSECTION)) as QaulityUserSection;
-
+    if (contract.dynmicfield != null) {
+        if (contract.dynmicfield.Count > 0)
+        {
+            feedbackDetailSection.IsField = true;
+        }
+        else
+        {
+            feedbackDetailSection.IsField = false;
+        }
+    }
 }
 @if (form != null)
 {
@@ -49,10 +58,16 @@
                                         @Html.Partial("_feedbacksDetailSection", feedbackDetailSection)
 
                                     </div>
+                                    
                                     <div class="clearfix"></div>
+                                   
                                 </div>
+
                                 <div class="clearfix"></div>
+                                
                             </div>
+
+                           
                         }
                         @if (ccActingUserSection != null)
                         {

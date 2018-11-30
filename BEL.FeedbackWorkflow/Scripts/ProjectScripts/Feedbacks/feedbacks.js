@@ -1,5 +1,7 @@
 ﻿var GetFinalizationReportExportToExcelUrl = BASEPATHURL + "/Feedbacks/GetFeedbackReportExportToExcel";
 $(document).ready(function () {
+   
+
     $(".sectionDetailType").change();
 
     BindUserTags("");
@@ -31,6 +33,16 @@ $(document).ready(function () {
         });
 
         ccqauploadedFiles = BindFileList("CCQAInchargeFileNameList", "CCQAAttachFile");
+    }
+    if ($("#QUFileNameList").length != 0) {
+        BindFileUploadControl({
+            ElementId: 'QUAttachFile', Params: {}, Url: "UploadFile",
+            AllowedExtensions: [],
+            MultipleFiles: false,
+            CallBack: "OnQUFileUploaded"
+        });
+
+        quuploadedFiles = BindFileList("QUFileNameList", "QUAttachFile");
     }
     $("input[name='ForwardtoCCQualityIncharge']").on("change", function () {
 
@@ -171,13 +183,48 @@ $(document).ready(function () {
         $("input[type='hidden'][name='QAUserName']").val(GetMultiselectValue(selectedOptions));
     }).change();
 
+
     //if ($.trim($("#QAUserList").attr("data-selected")) != "") {
     //    $('#QAUserList').multiselect('select', $("#QAUserList").attr("data-selected").split(","));
     //}
 
+    $('#QAUserList1').multiselect({
+        includeSelectAllOption: true
+    });
+
+    var selectedGender = $("#QAUserList1").attr("data-selected");
+    if ($.trim(selectedGender) != "") {
+        $('#QAUserList1').multiselect('select', selectedGender.split(","));
+    }
+
+    $("#QAUserList1").on("change", function () {
+
+        $('#LUMQAUser').val($("#QAUserList1").val());
+        var selectedOptions = $('#QAUserList1 option:selected');
+        $("input[type='hidden'][name='LUMQAUserName']").val(GetMultiselectValue(selectedOptions));
+    }).change();
+
+    //if ($.trim($("#QAUserList").attr("data-selected")) != "") {
+    //    $('#QAUserList').multiselect('select', $("#QAUserList").attr("data-selected").split(","));
+    //}
+
+    $('#QualityUserCreatorList').multiselect({
+        includeSelectAllOption: true
+    });
+
+    var selectedGender = $("#QualityUserCreatorList").attr("data-selected");
+    if ($.trim(selectedGender) != "") {
+        $('#QualityUserCreatorList').multiselect('select', selectedGender.split(","));
+    }
+
+    $("#QualityUserCreatorList").on("change", function () {
+
+        $('#QualityUserCreator').val($("#QualityUserCreatorList").val());
+        var selectedOptions = $('#QualityUserCreatorList option:selected');
+        $("input[type='hidden'][name='QualityUserCreatorName']").val(GetMultiselectValue(selectedOptions));
+    }).change();
+
    
-
-
     debugger;
     $("#wipDCRTable").DataTable({
         "paging": true,
@@ -195,7 +242,8 @@ $(document).ready(function () {
 function GetFinalizationReportExportToExcel() {
     window.open(GetFinalizationReportExportToExcelUrl);
 }
-var uploadedFiles = [], ccuploadedFiles = [], ccqauploadedFiles = [];
+
+var uploadedFiles = [], ccuploadedFiles = [], ccqauploadedFiles = [],quuploadedFiles = [];
 
 function OnFileUploaded(result) {
     uploadedFiles.push(result);
@@ -241,10 +289,18 @@ function OnCCFileUploaded(result) {
     ccuploadedFiles.push(result);
     $("#CCFileNameList").val(JSON.stringify(ccuploadedFiles)).blur();
 }
+
 function OnCCQAFileUploaded(result) {
     ccqauploadedFiles.push(result);
     $("#CCQAInchargeFileNameList").val(JSON.stringify(ccqauploadedFiles)).blur();
 }
+
+function OnQUFileUploaded(result) {
+    quuploadedFiles.push(result);
+    $("#QUFileNameList").val(JSON.stringify(quuploadedFiles)).blur();
+}
+
+
 
 function CCAttachFileRemoveImage(ele) {
     var Id = $(ele).attr("data-id");
@@ -280,6 +336,7 @@ function CCAttachFileRemoveImage(ele) {
         }
     });
 }
+
 function CCQAAttachFileRemoveImage(ele) {
     var Id = $(ele).attr("data-id");
     var li = $(ele).parents("li.qq-upload-success");
@@ -315,6 +372,68 @@ function CCQAAttachFileRemoveImage(ele) {
     });
 }
 
+function QUAttachFileRemoveImage(ele) {
+    var Id = $(ele).attr("data-id");
+    var li = $(ele).parents("li.qq-upload-success");
+    var itemIdx = li.index();
+    ConfirmationDailog({
+        title: "Remove", message: "Are you sure to remove file?", id: Id, url: "/Master/RemoveUploadFile", okCallback: function (id, data) {
+            li.find(".qq-upload-status-text").remove();
+            $('<span class="qq-upload-spinner"></span>').appendTo(li);
+            li.removeClass("qq-upload-success");
+            var idx = -1;
+            var tmpList = [];
+            $(quuploadedFiles).each(function (i, item) {
+                if (idx == -1 && item.FileId == id) {
+                    idx = i;
+                    if (item.Status == 0) {
+                        item.Status = 2;
+                        tmpList.push(item);
+                    }
+                } else {
+                    tmpList.push(item);
+                }
+            });
+            if (idx >= 0) {
+                quuploadedFiles = tmpList;
+                li.remove();
+                if (quuploadedFiles.length == 0) {
+                    $("#QUFileNameList").val("").blur();
+                } else {
+                    $("#QUFileNameList").val(JSON.stringify(quuploadedFiles)).blur();
+                }
+            }
+        }
+    });
+}
+function FieldAdded(ele, id, text) {
+    ShowWaitDialog();
+    AjaxCall({
+        url: "/Feedbacks/GetSKUInfo?itemCode=" + id,
+        httpmethod: "GET",
+        sucesscallbackfunction: function (result) {
+            var isValidentry = true;
+
+            if (isValidentry) {
+                $.each(result, function (key, value) {
+                    ////if ($('input[name="ListDetails[0].ItemId"]').val() == 0) {
+                    debugger;
+                    $("span." + key).find("span").text(value);
+                    $("span." + key).find("input").val(value);
+                    $("span." + key).find("textarea").val(value);
+                    if ($("#" + key).val() == '') {
+                        $("#" + key).val(value);
+                    }
+
+                });
+            }
+            else {
+                HideWaitDialog();
+               
+            }
+        }
+    });
+}
 function ItemCodeAdded(ele, id, text) {
 
     ShowWaitDialog();
@@ -327,27 +446,23 @@ function ItemCodeAdded(ele, id, text) {
             if (isValidentry) {
                 $.each(result, function (key, value) {
                     ////if ($('input[name="ListDetails[0].ItemId"]').val() == 0) {
-
+                    debugger;
                     $("span." + key).find("span").text(value);
                     $("span." + key).find("input").val(value);
                     $("span." + key).find("textarea").val(value);
                     if ($("#" + key).val() == '') {
                         $("#" + key).val(value);
                     }
-
-                    ////if (key == "ItemDescription" && value !== 'undefined') {
-                    ////    $("span." + key).find("span").text($('input#ItemDescription').val());
-                    ////}
-
-                    ////if (key == "BusinessUnits" && value !== 'undefined') {
-                    ////    $("span." + key).find("span").text($('input#BusinessUnits').val());
-                    ////}
-
-                    ////}
+                  
+                    if ($("#" + key).val() == "LUM") {
+                       
+                    }
                 });
+
+                
             }
             else {
-                HideWaitDialog();
+                
                 $('#ItemCode').val('');
                 var date = '';
                 if (result.LockingDate) {
@@ -360,8 +475,57 @@ function ItemCodeAdded(ele, id, text) {
                 }
                 var errMessage = "Selected item code is locked by Admin till " + date;
                 AlertModal('Validation', errMessage);
+
+               
+            }
+            $.ajax({
+                url: "/Feedbacks/GetVariableDefine?BU=" + $("#BusinessUnits").val(),
+                httpmethod: "GET",
+                success: function (data) {
+                    debugger;
+                    if (data == "False") {
+                        $("#divQualityUser").css("visibility", "hidden");
+                    } else {
+                        $("#divQualityUser").css("visibility", "visible");
+                    }
+                    
+                    console.log(data);
+                    HideWaitDialog();
+                },
+            });
+            if ($("#BusinessUnits").val() == "LUM") {
+                $("#divActingUser").css("display", "none");
+                $("#divLUMUser").css("display", "inline");
+
+                $("#divSiteCompleted").css("display", "inline");
+                $("#DivAnyProtection").css("display", "inline");
+                $("#divProductWiring").css("display", "inline");
+                $("#divRNVtg").css("display", "inline");
+                $("#divYNvtg").css("display", "inline");
+
+               
+            }
+            else {
+                //alert("naa");
+                    $("#divActingUser").css("display", "inline"); //This for note
+                    $("#divLUMUser").css("display", "none");
+
+                    $("#divSiteCompleted").css("display", "none"); //new field added for LUM
+                    $("#DivAnyProtection").css("display", "none");
+                    $("#divProductWiring").css("display", "none");
+                    $("#divRNVtg").css("display", "none");
+                    $("#divYNvtg").css("display", "none");
+
+                    //$("#divqauser1").css("display", "none");
+                    //$("#divqauser").css("display", "inline");
+
+                   
+                  
             }
 
+        },
+        complete: function () {
+           
         }
 
         //BindApprover();
@@ -369,6 +533,7 @@ function ItemCodeAdded(ele, id, text) {
     });
     $("#SuggestedBy").blur();
 }
+
 function ItemCodeRemoved(ele) {
 
     $("#ItemCode").tokenInput("clear");
@@ -383,6 +548,7 @@ function ItemCodeRemoved(ele) {
     //$(".BusinessUnits").find('span').html('');
     //changes done by priya end here....
 }
+
 function GetMultiselectValue(options) {
     var selected = '';
     options.each(function () {
@@ -416,5 +582,42 @@ $(window).load(function () {
         $("a.btn:contains('Complete')").attr('data-original-title', "Request will be close.");
         $("a.btn:contains('Complete')").attr('data-action', "14");
     }
+    if ($("#BusinessUnits").val()=="") {
+        $("#divActingUser").css("display", "inline");
+        $("#divLUMUser").css("display", "none");
+
+        $("#divSiteCompleted").css("display", "none");
+        $("#DivAnyProtection").css("display", "none");
+        $("#divProductWiring").css("display", "none");
+        $("#divRNVtg").css("display", "none");
+        $("#divYNvtg").css("display", "none");
+
+        $("#divqauser1").css("display", "none");
+        $("#divqauser").css("display", "inline");
+       // alert("nhi");
+
+    } else if ($("#BusinessUnits").val() == "LUM") {
+        $("#divqauser1").css("display", "inline");
+        $("#divqauser").css("display", "none");
+
+        $("#BUHidden").val("LUM");
+       
+        //alert("yes");
+        $("#divActingUser").css("display", "none");
+        $("#divLUMUser").css("display", "inline");
+    }
+    else {
+        $("#divqauser1").css("display", "none");
+        $("#divqauser").css("display", "inline");
+
+       // alert("no");
+
+        $("#BUHidden").val("Others");
+
+        $("#divActingUser").css("display", "inline");
+        $("#divLUMUser").css("display", "none");
+        
+}
    
 });
+

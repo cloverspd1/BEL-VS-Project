@@ -21,6 +21,7 @@
             this.Forms = new List<IForm>();
         }
 
+        public Dictionary<string, string> dynmicfield { get; set; }
         /// <summary>
         /// Gets or sets the user details.
         /// </summary>

@@ -291,6 +291,9 @@
   <data name="Label_ItemDescription" xml:space="preserve">
     <value>Item Description:</value>
   </data>
+  <data name="Label_LUMQAUser" xml:space="preserve">
+    <value>Quality User:</value>
+  </data>
   <data name="Label_ModelName" xml:space="preserve">
     <value>Model Name:</value>
   </data>
@@ -311,6 +314,9 @@
   </data>
   <data name="Label_QAUser" xml:space="preserve">
     <value>Quality User:</value>
+  </data>
+  <data name="Label_QualityUserCreator" xml:space="preserve">
+    <value>Quality User </value>
   </data>
   <data name="Label_RequestDate" xml:space="preserve">
     <value>Created Date:</value>

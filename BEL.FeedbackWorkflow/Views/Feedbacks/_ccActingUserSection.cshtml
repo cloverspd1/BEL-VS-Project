@@ -8,6 +8,8 @@
     ApproverMaster approverusrelist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
     List<ApproverMasterListItem> ccQualityInchargeUserList = approverusrelist.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.CCQUALITYINCHARGEUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
     ccQualityInchargeUserList = Helper.SplitUser(ccQualityInchargeUserList);
+
+
 }
 
 @using (Ajax.BeginForm("SaveCCActingUserSection", "Feedbacks", new AjaxOptions

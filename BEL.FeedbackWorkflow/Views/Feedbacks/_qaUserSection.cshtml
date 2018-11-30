@@ -116,7 +116,7 @@
                             <label class="col-md-4 control-label">
                                 <span class="text-danger text-default-light">*</span>
 
-                                @Html.Label("Implemented", ResourceNames.Feedbacks)
+                                @Html.Label("Implemented:", ResourceNames.Feedbacks)
                             </label>
                             <div class="col-md-8 ">
                                 <div class="form-control noborder">
@@ -131,18 +131,40 @@
                             <label class="col-md-4 control-label">
                                 <span class="text-danger text-default-light">*</span>
 
-                                @Html.Label("Implemented Remark", ResourceNames.Feedbacks)
+                                @Html.Label("Implemented Remark:", ResourceNames.Feedbacks)
                             </label>
                             <div class="col-md-8 ">
                                 <div class="form-control noborder">
-                                    @Html.TextAreaFor(m => m.CurrentApprover.ImplementedRemark, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Implemented Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+                                    @Html.TextAreaFor(m => m.ImplementedRemark, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Implemented Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
 
-                                    @Html.ValidationMessageFor(m => m.CurrentApprover.ImplementedRemark, ResourceNames.Feedbacks)
+                                    @Html.ValidationMessageFor(m => m.ImplementedRemark, ResourceNames.Feedbacks)
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-6 attachment">
+                        <div class="form-group">
+                            <label for="FileNameList" class="col-md-4 control-label">
+                                <span class="text-danger text-default-light"></span>
+                                @Html.Label("Attachment:", ResourceNames.Feedbacks)
+                            </label>
+                            <div class="col-md-8 ">
+
+                                <span class="text-danger text-default-light">
+                                    (Max. up to 40MB per file and you can upload maximum 10 files.)
+                                </span>
+                                <div id="QUAttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
+                                </div>
+                                @Html.TextBoxFor(m => m.QUFileNameList, new { @class = "notvisible" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 @*}
             </div>*@
         </div>

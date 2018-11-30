@@ -141,8 +141,11 @@
         //[DataMember, MaxLength(1000)]
         public string ImplementedRemark { get; set; }
 
-        [DataMember, Required]
-        public string FileNameList { get; set; }
+        [DataMember]
+        public string QUFileNameList { get; set; }
+
+        [DataMember, IsFile(true)]
+        public List<FileDetails> Files { get; set; }
 
         [DataMember]
         public bool SendBackToCC { get; set; }

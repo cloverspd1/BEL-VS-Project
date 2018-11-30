@@ -8,6 +8,10 @@
     ApproverMaster approverusrelist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
     List<ApproverMasterListItem> qaUserList = approverusrelist.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.QAULITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
     qaUserList = Helper.SplitUser(qaUserList);
+
+    ApproverMaster approverusrelist1 = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
+    List<ApproverMasterListItem> qaUserList1 = approverusrelist1.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.LUMQUALITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
+    qaUserList1 = Helper.SplitUser(qaUserList1);
 }
 
 @using (Ajax.BeginForm("SaveCCQualityInchargeSection", "Feedbacks", new AjaxOptions
@@ -84,7 +88,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="form-group qauser">
+            <div class="form-group" id="divqauser">
                 <label class="col-md-4 control-label">
                     <span class="text-danger text-default-light">*</span>
                     @Html.LabelFor(m => m.QAUser, ResourceNames.Feedbacks)
@@ -92,16 +96,33 @@
                 <div class="col-md-8 ">
                     <div class="form-control noborder">
                         @Html.ListBox("QAUserList", new MultiSelectList(qaUserList.ToArray(), "UserID", "UserName"), new { @id = "QAUserList", @Name = "QAUserList", @class = "form-control", @data_selected = Model.QAUser })
-                        @Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
-                        @Html.ValidationMessage("QAUserList", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))
+                        @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
+                        @Html.ValidationMessage("QAUserList", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
                         @Html.HiddenFor(m => m.QAUser)
                         @Html.HiddenFor(m => m.QAUserName)
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-sm-6">
+            <div class="form-group" id="divqauser1">
+                <label class="col-md-4 control-label">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.LabelFor(m => m.LUMQAUser, ResourceNames.Feedbacks)
+                </label>
+                <div class="col-md-8 ">
+                    <div class="form-control noborder">
+                        @Html.ListBox("QAUserList1", new MultiSelectList(qaUserList1.ToArray(), "UserID", "UserName"), new { @id = "QAUserList1", @Name = "QAUserList1", @class = "form-control", @data_selected = Model.LUMQAUser })
+                        @*@Html.ValidationMessageFor(m => m.LUMQAUser, ResourceNames.Feedbacks)
+                        @Html.ValidationMessage("QAUserList1", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
+                        @Html.HiddenFor(m => m.LUMQAUser)
+                        @Html.HiddenFor(m => m.LUMQAUserName)
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        
+        @Html.HiddenFor(m => m.BUHidden)
 
     </div>
 }
