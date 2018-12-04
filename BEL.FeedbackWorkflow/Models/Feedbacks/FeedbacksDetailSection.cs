@@ -387,5 +387,27 @@
         /// </value>
         [DataMember,]
         public string ProductGroup { get; set; }
+
+        [DataMember, Required]
+        public string SampleProvided { get; set; }
+
+        [DataMember, Required]
+        public string SampleQuantity { get; set; }
+
+        [DataMember, Required, MaxLength(1000)]
+        public string SampleComments { get; set; }
+
+
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string QualityUser { get; set; }
+
+        /// <summary>
+        /// Gets or sets the request date.
+        /// </summary>
+        /// <value>
+        /// The request date.
+        /// </value>
+        [DataMember, IsPerson(true, true, true), FieldColumnName("QualityUser"), IsViewer]
+        public string QualityUserName { get; set; }
     }
 }

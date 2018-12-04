@@ -1044,6 +1044,16 @@
                             if (param != null)
                             {
                                 param[Parameter.ISNEWITEM] = isNewItem.ToString();
+
+                                if (section.ButtonCaption == " Forward to Quality User")
+                                {
+                                    param[Parameter.SENDTOLEVEL] = "3";
+                                }
+                                else if (section.ButtonCaption == "Send Back")
+                                {
+                                    param[Parameter.SENDTOLEVEL] = "0";
+
+                                }
                             }
                             int itemId = this.SaveDataInList(context, web, actualSection, item, listDetail.ListName, param, mailCustomValues, emailAttachments);
 

@@ -287,5 +287,14 @@
         /// </value>
         [DataMember]
         public string ReasonForDelay { get; set; }
+
+
+        [DataMember]
+        public string ImplementedRemark { get; set; }
+
+
+
+        [DataMember]
+        public string QualityComments { get; set; }
     }
 }

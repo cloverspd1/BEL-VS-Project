@@ -183,5 +183,27 @@
         /// </value>
         [DataMember, IsListColumn(false), IsPerson(true, true, false), IsViewer]
         public string QAHeadUser { get; set; }
+
+        [DataMember, IsFile(true)]
+        public List<FileDetails> Files { get; set; }
+
+        [DataMember]
+        public string QUFileNameList { get; set; }
+
+        [DataMember]
+        public bool SendBackToCC { get; set; }
+
+        [DataMember]
+        public DateTime? QualityUserDate { get; set; }
+
+        [DataMember]
+        public DateTime? ImplementationDate { get; set; }
+
+        [DataMember]
+        public string Implemented { get; set; }
+
+        [DataMember]
+        public string QualityStatus { get; set; }
+
     }
 }

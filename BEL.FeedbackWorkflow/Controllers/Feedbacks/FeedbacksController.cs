@@ -202,7 +202,24 @@
             ActionStatus status = new ActionStatus();
             if (model != null && this.ValidateModelState(model))
             {
+                if (model.SendBackToCC == true)
+                {
+                    model.QualityUserDate = DateTime.Now;
+                }
+                else
+                {
+                    model.ImplementationDate = DateTime.Now;
+                    model.QualityUserDate = DateTime.Now;
+
+                }
+                model.Files = new List<FileDetails>();
+                model.Files = FileListHelper.GenerateFileBytes(model.QUFileNameList);  ////For Save Attachemennt
+                model.QUFileNameList = string.Join(",", FileListHelper.GetFileNames(model.QUFileNameList));
+
+
                 Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+                objDict.Add("DefectDesc1", model.Implemented);
+                objDict.Add("DefectDesc2", model.CurrentApprover.ImplementedRemark);
                 status = this.SaveSection(model, objDict);
                 status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
             }
