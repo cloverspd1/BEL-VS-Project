@@ -1,0 +1,128 @@
+﻿@using BEL.FeedbackWorkflow.Models.Feedbacks
+@using BEL.FeedbackWorkflow.Models.Common
+@using BEL.FeedbackWorkflow.Models.Master;
+@using BEL.CommonDataContract;
+@model LUMQualityInchargeSection
+@{
+
+    //ApproverMaster approverusrelist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
+    //List<ApproverMasterListItem> qaUserList = approverusrelist.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.QAULITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
+    //qaUserList = Helper.SplitUser(qaUserList);
+
+    ApproverMaster approverusrelist1 = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
+    List<ApproverMasterListItem> qaUserList1 = approverusrelist1.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.LUMQUALITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
+    qaUserList1 = Helper.SplitUser(qaUserList1);
+}
+
+@using (Ajax.BeginForm("SaveLUMQualityInchargeSection", "Feedbacks", new AjaxOptions
+{
+    HttpMethod = "POST",
+    LoadingElementId = "loading",
+    OnFailure = "OnFailure",
+    OnSuccess = "OnSuccess",
+    OnBegin = "BeginClient"
+}, new { enctype = "multipart/form-data" }))
+{
+
+    @Html.HiddenFor(m => m.ListDetails[0].ItemId)
+    @Html.HiddenFor(m => m.ListDetails[0].ListName)
+    @Html.HiddenFor(m => m.SectionName)
+    @Html.HiddenFor(m => m.ActionStatus)
+    @Html.HiddenFor(m => m.Status)
+    @Html.HiddenFor(m => m.QualityInchargeDate)
+    @Html.Partial("_ApproversList", Model.ApproversList)
+    @*@Html.AntiForgeryToken()*@
+
+    <div class="row">
+        <div class="col-sm-6 attachment">
+            <div class="form-group">
+                <label for="FileNameList" class="col-md-4 control-label">
+                    @Html.LabelFor(m => m.CCQAInchargeFileNameList, ResourceNames.Feedbacks)
+                </label>
+                <div class="col-md-8 ">
+                    <span class="text-danger text-default-light">
+                        (Max. up to 40MB per file and you can upload maximum 10 files.)
+                    </span>
+                    <div id="CCQAAttachFile" data-appname="@SiteURLs.FEEDBACKSITEURL">
+                    </div>
+                    @Html.TextBoxFor(m => m.CCQAInchargeFileNameList, new { @class = "notvisible" })
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.LabelFor(m => m.ForwardtoQuality, ResourceNames.Feedbacks)
+
+                </label>
+                <div class="col-md-8 ">
+                    <div class="form-control noborder">
+                        @Html.RadioButtonFor(m => m.ForwardtoQuality, "True", new { @Id = "ForwardtoQuality1" })
+                        <label for="ForwardtoQuality1">@Html.ResourceValue("Label_ForwardtoQuality1", ResourceNames.Feedbacks)</label><br />
+                        @Html.RadioButtonFor(m => m.ForwardtoQuality, "False", new { @Id = "ForwardtoQuality2" })
+                        <label for="ForwardtoQuality2">@Html.ResourceValue("Label_ForwardtoQuality2", ResourceNames.Feedbacks)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label left">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.ResourceValue("Label_Comment", ResourceNames.Feedbacks)
+                </label>
+                <div class="col-sm-8">
+                    <div class="form-control noborder text-left">
+                        @Html.TextAreaFor(m => m.CurrentApprover.Comments, new { maxlength = 1000, @class = "form-control requiredOnSendBack", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+                        @Html.HiddenFor(x => x.CurrentApprover.Approver)
+                        @Html.HiddenFor(x => x.CurrentApprover.Role)
+                        @Html.HiddenFor(x => x.CurrentApprover.AssignDate)
+                        @Html.ValidationMessageFor(m => m.CurrentApprover.Comments, ResourceNames.Feedbacks)
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<div class="col-sm-6">
+            <div class="form-group">
+                <label class="col-md-4 control-label">
+                    <span class="text-danger text-default-light">*</span>
+                    @Html.LabelFor(m => m.LUMQAUser, ResourceNames.Feedbacks)
+                </label>
+                <div class="col-md-8 ">
+                    <div class="form-control noborder">
+                        @Html.ListBox("QAUserList", new MultiSelectList(qaUserList1.ToArray(), "UserID", "UserName"), new { @id = "QAUserList", @Name = "QAUserList", @class = "form-control", @data_selected = Model.LUMQAUser })
+                     
+                        @Html.HiddenFor(m => m.LUMQAUser)
+                        @Html.HiddenFor(m => m.LUMQAUserName)
+                    </div>
+                </div>
+            </div>
+        </div>*@
+        <div class="col-sm-6">
+       <div class="form-group">
+            <label class="col-md-4 control-label">
+                <span class="text-danger text-default-light">*</span>
+                @Html.LabelFor(m => m.LUMQAUser, ResourceNames.Feedbacks)
+            </label>
+            <div class="col-md-8 ">
+                <div class="form-control noborder">
+                    @Html.ListBox("QAUserList1", new MultiSelectList(qaUserList1.ToArray(), "UserID", "UserName"), new { @id = "QAUserList1", @Name = "QAUserList1", @class = "form-control", @data_selected = Model.LUMQAUser })
+
+                    @Html.HiddenFor(m => m.LUMQAUser)
+                    @Html.HiddenFor(m => m.LUMQAUserName)
+                </div>
+            </div>
+        </div>
+    </div>
+
+        @Html.HiddenFor(m => m.BUHidden)
+
+    </div>
+}
+
+

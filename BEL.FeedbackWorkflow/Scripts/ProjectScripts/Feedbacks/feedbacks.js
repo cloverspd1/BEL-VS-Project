@@ -478,21 +478,24 @@ function ItemCodeAdded(ele, id, text) {
 
                
             }
-            $.ajax({
-                url: "/Feedbacks/GetVariableDefine?BU=" + $("#BusinessUnits").val(),
-                httpmethod: "GET",
-                success: function (data) {
-                    debugger;
-                    if (data == "False") {
-                        $("#divQualityUser").css("visibility", "hidden");
-                    } else {
-                        $("#divQualityUser").css("visibility", "visible");
-                    }
-                    
-                    console.log(data);
-                    HideWaitDialog();
-                },
-            });
+           // BindLUMUser();
+            //$.ajax({
+            //    url: "/Feedbacks/GetVariableDefine?BU=" + $("#BusinessUnits").val(),
+            //    httpmethod: "GET",
+            //    success: function (data) {
+            //        debugger;
+            //        if (data == "False") {
+                       
+            //        } else {
+                      
+            //        }
+
+            //        console.log(data);
+            //        HideWaitDialog();
+            //    },
+            //});
+
+          
             if ($("#BusinessUnits").val() == "LUM") {
                 $("#divActingUser").css("display", "none");
                 $("#divLUMUser").css("display", "inline");
@@ -533,6 +536,24 @@ function ItemCodeAdded(ele, id, text) {
     });
     $("#SuggestedBy").blur();
 }
+
+
+//function BindLUMUser() {
+//    var BusinessUnitvalue = $("#BusinessUnits").val();
+//    $(Approverlist).each(function (i, item) {
+//            debugger;
+//            if (BusinessUnitvalue == "LUM") {
+//               // $(".approver").each(function () {
+//                    if (item.Role == "CC Quality Incharge User") {
+//                        alert("Hi");
+//                        $("#sectiondetails2").find("#ApproveDiv").find("#ApproversList_0__Approver").val("41");
+//                        $("#sectiondetails2").find("#ApproveDiv").find("#ApproversList_0__ApproverName").val("Dumbre Amit");
+//                    }
+                   
+//               // });
+//            }
+//    });
+//}
 
 function ItemCodeRemoved(ele) {
 
@@ -575,6 +596,7 @@ $(window).load(function () {
         $("a.btn:contains('Send Back')").attr('data-original-title', "Request will be forward to CC.");
         $("a.btn:contains('Send Back')").attr('data-action', "22");
     } else {
+        debugger;
         $("#closediv").css("visibility", "visible");
        // $("#quastatusdiv").css("visibility", "hidden");
         $("#quastatusdiv").hide();
@@ -601,7 +623,10 @@ $(window).load(function () {
         $("#divqauser").css("display", "none");
 
         $("#BUHidden").val("LUM");
-       
+        $("a.btn:contains('Close the issue')").text(" Forward to Quality User");
+        $("a.btn:contains(' Forward to Quality User')").attr('data-original-title', "Forward to Quality User");
+        $("a.btn:contains(' Forward to Quality User')").attr('data-action', "10");
+
         //alert("yes");
         $("#divActingUser").css("display", "none");
         $("#divLUMUser").css("display", "inline");

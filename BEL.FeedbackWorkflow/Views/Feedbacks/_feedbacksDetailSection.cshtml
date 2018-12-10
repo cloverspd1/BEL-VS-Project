@@ -4,7 +4,7 @@
 @using BEL.CommonDataContract;
 @using System.Runtime.Serialization;
 @model FeedbacksDetailSection
-@{
+@*@{
     FeedbacksContract contract = new FeedbacksContract();
     ApproverMaster approverusrelist2 = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
     List<ApproverMasterListItem> qaUserList2 = approverusrelist2.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.QAULITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
@@ -13,16 +13,15 @@
     ApproverMaster approverusrelist3 = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
     List<ApproverMasterListItem> qaUserList3 = approverusrelist3.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.LUMQUALITYUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
     qaUserList3 = Helper.SplitUser(qaUserList3);
-}
+}*@
 
 <script type="text/javascript">
     @{
-
-//ApproverMaster approverlist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(Masters.APPROVERMASTER)) as ApproverMaster;
-
+        
+        ApproverMaster approverlist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(Masters.APPROVERMASTER)) as ApproverMaster;
       }
 
-
+    var Approverlist = JSON.parse(@(new HtmlString(Json.Encode(Newtonsoft.Json.JsonConvert.SerializeObject(approverlist.Items.OrderBy(p => p.Title).ToList())))));
 
 </script>
 <div id="divDocEngineerSection">
@@ -43,8 +42,8 @@
         @Html.HiddenFor(m => m.Status)
        
 
-        @Html.Partial("_ApproversList", Model.ApproversList)
-        @Html.Partial("_CurrentApprover", Model.CurrentApprover ?? new ApplicationStatus())
+       
+        @*@Html.Partial("_CurrentApprover", Model.CurrentApprover ?? new ApplicationStatus())*@
         @*@Html.AntiForgeryToken()*@
 
         if (Model.RequestDate.HasValue)
@@ -406,59 +405,7 @@
             </div>
         </div>
        
-        <div class="row" id="divQualityUser">
-
-            <div class="col-sm-6">
-                <div class="form-group">
-@if (Model.IsField)
-{
-                    <label class="col-md-4 control-label">
-
-                        <span class="text-danger text-default-light">*</span>
-
-                        @Html.LabelFor(m=>m.QualityUserCreator, ResourceNames.Feedbacks)
-
-                    </label>
-                    <div class="col-md-8 ">
-                        <div class="form-control noborder">
-
-                            @Html.ListBox("QualityUserCreatorList", new MultiSelectList(qaUserList2.ToArray(), "UserID", "UserName"), new { @id = "QualityUserCreatorList", @Name = "QualityUserCreatorList", @class = "form-control", @data_selected = Model.QualityUserCreator })
-                            @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
-                            @Html.ValidationMessage("QAUserListCreator", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
-                            @Html.HiddenFor(m => m.QualityUserCreator)
-                            @Html.HiddenFor(m => m.QualityUserCreatorName)
-
-                        </div>
-
-                    </div>
-}
-else
-{
-    <label class="col-md-4 control-label">
-
-        <span class="text-danger text-default-light">*</span>
-
-        @Html.LabelFor(m => m.QualityUserCreator, ResourceNames.Feedbacks)
-
-    </label>
-                    <div class="col-md-8 ">
-                        <div class="form-control noborder">
-
-                            @Html.ListBox("QualityUserCreatorList", new MultiSelectList(qaUserList3.ToArray(), "UserID", "UserName"), new { @id = "QualityUserCreatorList", @Name = "QualityUserCreatorList", @class = "form-control", @data_selected = Model.QualityUserCreator })
-                            @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
-                                @Html.ValidationMessage("QAUserListCreator", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
-                            @Html.HiddenFor(m => m.QualityUserCreator)
-                            @Html.HiddenFor(m => m.QualityUserCreatorName)
-
-                        </div>
-
-                    </div>
-}
-
-                </div>
-            </div>
-
-        </div>
+      
 
         <div class="row" id="sampleDiv" hidden>
             <div class="col-sm-6">
@@ -653,7 +600,7 @@ else
         </div>
 
         <div id="feedbacksentback">
-            @if (Model.Status == "Sent Back" && Model.BusinessUnits!="LUM")
+            @if (Model.Status == "Sent Back")
             {
                 <div class="row">
                     <div class="col-sm-6">
@@ -719,19 +666,24 @@ else
                             <div class="col-md-4 ">
                                 <div class="form-control noborder">
                                     @Html.DisplayFor(m => m.QualityUserName)
-                                    @Html.HiddenFor(m => m.QualityUser)
+                                    @Html.HiddenFor(m => m.QAUser)
                                     @Html.HiddenFor(m => m.QualityUserName)
+
+
+                                    @Html.DisplayFor(m => m.LUMQualityUserName)
+                                    @Html.HiddenFor(m => m.LUMQAUser)
+                                    @Html.HiddenFor(m => m.LUMQualityUserName)
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             }
-            else { 
+            else {
 
 
-
-                <div class="row" id="divActingUser">
+                //
+                <div class="row" id = "divActingUser">
                     <div class="col-sm-12">
                         <div class="form-group">
                             <label class="col-md-8 control-label">
@@ -748,27 +700,28 @@ else
                         </div>
                     </div>
                 </div>
-            }
-           
-            <div class="row" id="divLUMUser">
-                <div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-md-8 control-label">
+                <div class="row" id="divLUMUser"> @**@
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-md-8 control-label">
 
-                            Note: This information will be submitted to LUM Service Managers, for verification and follow up with quality department:
-                        </label>
-                        <div class="col-md-4 ">
-                            <div class="form-control noborder">
-                                @Html.DisplayFor(m => m.LUMUserName)
-                                @Html.HiddenFor(m => m.LUMUser)
-                                @Html.HiddenFor(m => m.LUMUserName)
+                                Note: This information will be submitted to LUM Service Managers, for verification and follow up with quality department:
+                            </label>
+                            <div class="col-md-4 ">
+                                <div class="form-control noborder">
+                                    @Html.DisplayFor(m => m.LUMActingUserName)
+                                    @Html.HiddenFor(m => m.LUMActingUser)
+                                    @Html.HiddenFor(m => m.LUMActingUserName)
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }
+           
+           
 
         </div>
-
+        @Html.Partial("_ApproversList", Model.ApproversList)
     }
 </div>

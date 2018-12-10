@@ -89,61 +89,65 @@
                 {
                     if (model.ApproversList != null && model.BusinessUnits=="LUM" && model.ActionStatus == ButtonActionStatus.NextApproval)
                     {
-                        model.CCActingUser = model.LUMUser;
-                        model.CCActingUserName = model.LUMUserName;
+                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = model.LUMActingUser;
+                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).ApproverName = model.LUMActingUserName;
+
                     }
-                    else
+                    else if (model.ApproversList != null && model.BusinessUnits != "LUM" && model.ActionStatus == ButtonActionStatus.NextApproval)
                     {
-                        //model.CCActingUser = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver;
-                        //model.CCActingUserName = model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName;
-                       
                         model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = model.CCActingUser;
                         model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName = model.CCActingUserName;
                     }
                 }
-                
+                //string ID = "";
+                //string[] IDs = null;
+                //string Flag = "false";
+                //model.ApproversList.ForEach(p =>
+                //{
+                //    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "0")
+                //    {
+                //        ID = p.Approver;
+                //    }
+                //    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "1" && p.Approver != null)
+                //    {
+                //        IDs = p.Approver.Split(',');
+                //    }
 
-                string ID = "";
-                string[] IDs = null;
-                string Flag = "false";
-                model.ApproversList.ForEach(p =>
-                {
+                //    if (IDs != null)
+                //    {
+                //        for (int i = 0; i < IDs.Length; i++)
+                //        {
+                //            if (IDs != null && ID != "" && ID == IDs[i])
+                //            {
+                //                Flag = "true";
+                //                if (model.BusinessUnits == "LUM")
+                //                {
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).Approver =p.Approver="";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).ApproverName =p.ApproverName="";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).Status =p.Status="NOTREQUIRED";
+                //                }
+                //                else if (model.BusinessUnits != "LUM")
+                //                {
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = p.Approver = "";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).ApproverName = p.ApproverName = "";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).Status = p.Status = "NOTREQUIRED";
+                //                }
 
-                    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "0")
-                    {
-                        ID = p.Approver;
-                    }
-                    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "1" && p.Approver!=null)
-                    {
-                       
-                        IDs = p.Approver.Split(',');
-                        //if (model.QAUser != null)
-                        //{
-                        //    p.Approver = model.QAUser;
-                        //}
-                    }
+                //            }
+                //        }
+                //    }
+                //});
 
-                    if (IDs != null)
-                    {
-                        for (int i = 0; i < IDs.Length; i++)
-                        {
-                            if (IDs != null && ID != "" && ID == IDs[i])
-                            {
-                                Flag = "true";
-                            }
-                        }
-                    }
-                });
-               
                 model.ProductGroup = model.ProductType;
                 model.Files = new List<FileDetails>();
                 model.Files = FileListHelper.GenerateFileBytes(model.FileNameList);
                 model.FileNameList = string.Join(",", FileListHelper.GetFileNames(model.FileNameList));
+               
                 ////For Save Attachemennt
                 Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
-                objDict.Add("Flag", Flag);
-                objDict.Add("CreatorToQA", model.QualityUserCreator);
-                objDict.Add("CreatorToQAName", model.QualityUserCreatorName);
+                //objDict.Add("Flag", Flag);
+                //    objDict.Add("CreatorToQA", model.QualityUserCreator);
+                //    objDict.Add("CreatorToQAName", model.QualityUserCreatorName);
                 status = this.SaveSection(model, objDict);
                 status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
             }
@@ -154,6 +158,7 @@
             }
             return this.Json(status);
         }
+
         #endregion
 
         #region "Save CC Acting User Section"
@@ -181,11 +186,52 @@
                 {
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).Approver = model.CCQualityInchargeUser;
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).ApproverName = model.CCQualityInchargeName;
-                    
+
                 }
                 else if (!model.ForwardtoCCQualityIncharge && model.ActionStatus == ButtonActionStatus.Complete)
                 {
                     model.CCQualityInchargeUser = model.CCQualityInchargeName = string.Empty;
+                    model.QualityInchargeDate = DateTime.Now;
+                    model.QualityUserDate = DateTime.Now;
+                }
+                model.Files = new List<FileDetails>();
+                model.Files = FileListHelper.GenerateFileBytes(model.CCFileNameList);  ////For Save Attachemennt
+                model.CCFileNameList = string.Join(",", FileListHelper.GetFileNames(model.CCFileNameList));
+
+                Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+                status = this.SaveSection(model, objDict);
+                status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
+            }
+            else
+            {
+                status.IsSucceed = false;
+                status.Messages = this.GetErrorMessage(System.Web.Mvc.Html.ResourceNames.Feedbacks);
+            }
+            return this.Json(status);
+        }
+
+
+        [HttpPost]
+        public ActionResult SaveLUMActingUserSection(LUMActingUserSection model)
+        {
+            ActionStatus status = new ActionStatus();
+            if (model != null && model.ForwardtoCCQualityIncharge == false)
+            {
+                ModelState.Remove("LUMQualityInchargeUser");
+                model.ActionStatus = model.ActionStatus == ButtonActionStatus.NextApproval ? ButtonActionStatus.Complete : model.ActionStatus;
+            }
+
+            if (model != null && this.ValidateModelState(model))
+            {
+                if (model.ApproversList != null && model.ForwardtoCCQualityIncharge && model.ActionStatus == ButtonActionStatus.NextApproval)
+                {
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYINCHARGE).Approver = model.LUMQualityInchargeUser;
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYINCHARGE).ApproverName = model.LUMQualityInchargeName;
+
+                }
+                else if (!model.ForwardtoCCQualityIncharge && model.ActionStatus == ButtonActionStatus.Complete)
+                {
+                    model.LUMQualityInchargeUser = model.LUMQualityInchargeName = string.Empty;
                     model.QualityInchargeDate = DateTime.Now;
                     model.QualityUserDate = DateTime.Now;
                 }
@@ -227,15 +273,15 @@
 
             if (model != null && this.ValidateModelState(model))
             {
-                if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden=="Others")
+                if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden!="LUM")
                 {
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).Approver = model.QAUser;
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).ApproverName = model.QAUserName;
                 }
                 else if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden == "LUM")
                 {
-                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).Approver = model.LUMQAUser;
-                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).ApproverName = model.LUMQAUserName;
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYUSER).Approver = model.LUMQAUser;
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYUSER).ApproverName = model.LUMQAUserName;
                     model.QAUser = model.LUMQAUser;
                     model.QAUserName = model.LUMQAUserName;
                 }
@@ -261,6 +307,50 @@
             }
             return this.Json(status);
         }
+
+        [HttpPost]
+        public ActionResult SaveLUMQualityInchargeSection(LUMQualityInchargeSection model)
+        {
+            ActionStatus status = new ActionStatus();
+            if (model != null && model.ForwardtoQuality == false)
+            {
+                ModelState.Remove("LUMQAUser");
+                model.ActionStatus = model.ActionStatus == ButtonActionStatus.NextApproval ? ButtonActionStatus.Complete : model.ActionStatus;
+            }
+
+            if (model != null && this.ValidateModelState(model))
+            {
+               
+                 if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden == "LUM")
+                {
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYUSER).Approver = model.LUMQAUser;
+                    model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYUSER).ApproverName = model.LUMQAUserName;
+                    //model.QAUser = model.LUMQAUser;
+                    //model.QAUserName = model.LUMQAUserName;
+                }
+                else if (!model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.Complete)
+                {
+                    model.LUMQAUser = model.LUMQAUserName = string.Empty;
+
+                }
+                model.QualityInchargeDate = DateTime.Now;
+                model.Files = new List<FileDetails>();
+                model.Files = FileListHelper.GenerateFileBytes(model.CCQAInchargeFileNameList);  ////For Save Attachemennt
+                model.CCQAInchargeFileNameList = string.Join(",", FileListHelper.GetFileNames(model.CCQAInchargeFileNameList));
+
+                Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+
+                status = this.SaveSection(model, objDict);
+                status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
+            }
+            else
+            {
+                status.IsSucceed = false;
+                status.Messages = this.GetErrorMessage(System.Web.Mvc.Html.ResourceNames.Feedbacks);
+            }
+            return this.Json(status);
+        }
+
         #endregion
 
         #region "Save QA User Section"
@@ -287,6 +377,40 @@
                     model.ImplementationDate = DateTime.Now;
                     model.QualityUserDate = DateTime.Now;
                     
+                }
+                model.Files = new List<FileDetails>();
+                model.Files = FileListHelper.GenerateFileBytes(model.QUFileNameList);  ////For Save Attachemennt
+                model.QUFileNameList = string.Join(",", FileListHelper.GetFileNames(model.QUFileNameList));
+
+
+                Dictionary<string, string> objDict = this.GetSaveDataDictionary(this.CurrentUser.UserId, model.ActionStatus.ToString(), model.ButtonCaption);
+                objDict.Add("DefectDesc1", model.Implemented);
+                objDict.Add("DefectDesc2", model.CurrentApprover.ImplementedRemark);
+                status = this.SaveSection(model, objDict);
+                status = this.GetMessage(status, System.Web.Mvc.Html.ResourceNames.Feedbacks);
+            }
+            else
+            {
+                status.IsSucceed = false;
+                status.Messages = this.GetErrorMessage(System.Web.Mvc.Html.ResourceNames.Feedbacks);
+            }
+            return this.Json(status);
+        }
+
+        public ActionResult SaveLUMQaulityUserSection(LUMQualityUserSection model)
+        {
+            ActionStatus status = new ActionStatus();
+            if (model != null && this.ValidateModelState(model))
+            {
+                if (model.SendBackToCC == true)
+                {
+                    model.QualityUserDate = DateTime.Now;
+                }
+                else
+                {
+                    model.ImplementationDate = DateTime.Now;
+                    model.QualityUserDate = DateTime.Now;
+
                 }
                 model.Files = new List<FileDetails>();
                 model.Files = FileListHelper.GenerateFileBytes(model.QUFileNameList);  ////For Save Attachemennt
@@ -340,36 +464,37 @@
             return this.Json("[]", JsonRequestBehavior.AllowGet);
         }
 
-        public JsonResult GetVariableDefine(string BU)
-        {
-            string data = BU;
-            string result = "";
-            if (!string.IsNullOrEmpty(data))
-            {
-                int id = 0;
-                FeedbacksContract contract = null;
-                Logger.Info("Start Feedback form and ID = " + id);
-                Dictionary<string, string> objDict = new Dictionary<string, string>();
-                objDict.Add(Parameter.FROMNAME, FormNameConstants.FeedbacksFORM);
-                objDict.Add(Parameter.ITEMID, id.ToString());
-                objDict.Add(Parameter.USEREID, this.CurrentUser.UserId);
-                objDict.Add("BusinessUnit", BU);
+        //public JsonResult GetVariableDefine(string BU)
+        //{
+        //    string data = BU;
+        //    string result = "";
+        //    if (!string.IsNullOrEmpty(data))
+        //    {
+        //        int id = 0;
+        //        FeedbacksContract contract = null;
+        //        Logger.Info("Start Feedback form and ID = " + id);
+        //        Dictionary<string, string> objDict = new Dictionary<string, string>();
+        //        objDict.Add(Parameter.FROMNAME, FormNameConstants.FeedbacksFORM);
+        //        objDict.Add(Parameter.ITEMID, id.ToString());
+        //        objDict.Add(Parameter.USEREID, this.CurrentUser.UserId);
+        //        objDict.Add("BusinessUnit", BU);
 
-                ViewBag.UserID = this.CurrentUser.UserId;
-                ViewBag.UserName = this.CurrentUser.FullName;
-                contract = this.GetFeedbacksDetails(objDict);
-                contract.UserDetails = this.CurrentUser;
-                if (contract.dynmicfield.Count>0) {
-                    result = "True";
-                }
-                else
-                {
-                    result = "False";
-                }
-                //return this.Json(master, JsonRequestBehavior.AllowGet);
-            }
-            return this.Json(result,JsonRequestBehavior.AllowGet);
-        }
+        //        ViewBag.UserID = this.CurrentUser.UserId;
+        //        ViewBag.UserName = this.CurrentUser.FullName;
+        //        contract = this.GetFeedbacksDetails(objDict);
+        //        contract.UserDetails = this.CurrentUser;
+        //        if (contract.dynmicfield.Count > 0)
+        //        {
+        //            result = "True";
+        //        }
+        //        else
+        //        {
+        //            result = "False";
+        //        }
+        //        //return this.Json(master, JsonRequestBehavior.AllowGet);
+        //    }
+        //    return this.Json(result, JsonRequestBehavior.AllowGet);
+        //}
 
         #region "Feedback Report"
         /// <summary>

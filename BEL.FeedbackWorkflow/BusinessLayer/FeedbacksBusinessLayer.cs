@@ -95,18 +95,23 @@
                 string formName = objDict[Parameter.FROMNAME];
                 int itemId = Convert.ToInt32(objDict[Parameter.ITEMID]);
                 string userID = objDict[Parameter.USEREID];
-                string BU = objDict["BusinessUnit"];
-                //if (objDict.ContainsKey("BusinessUnit"))
-                //{
-                //    BU=
-                //}
+                string BU = "";
+                
                 IForm feedbacksForm = new FeedbacksForm(true);
                 List<ApproverMasterListItem> approverList = new List<ApproverMasterListItem>();
                 feedbacksForm = BELDataAccessLayer.Instance.GetFormData(this.context, this.web, ApplicationNameConstants.FEEDBACKSAPP, formName, itemId, userID, feedbacksForm);
                 var sectionDetails = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.FEEDBACKDETAILSECTION) as FeedbacksDetailSection;
+                
                 if (feedbacksForm != null && feedbacksForm.SectionsList != null && feedbacksForm.SectionsList.Count > 0)
                 {
-                   
+                    if (objDict.ContainsKey("BusinessUnit") && objDict["BusinessUnit"] != "")
+                    {
+                        BU = objDict["BusinessUnit"];
+                    }
+                    else
+                    {
+                        BU = sectionDetails.BusinessUnits;
+                    }
                     if (sectionDetails != null)
                     {
                         
@@ -116,6 +121,7 @@
                             var spCurrentUser = CommonBusinessLayer.Instance.GetLoginUserDetail(userID);
                             sectionDetails.Branch = spCurrentUser.Location;
                             
+
                             List<IMasterItem> approvers = sectionDetails.MasterData.FirstOrDefault(p => p.NameOfMaster == FeedbacksMasters.APPROVERMASTER).Items;
                             approverList = approvers.ConvertAll(p => (ApproverMasterListItem)p);
                            
@@ -123,26 +129,29 @@
                            {
                                if (p.Role == FeedbackRoles.CCACTINGUSER)
                                {
-                                   sectionDetails.CCActingUser = p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).UserID;
-                                   sectionDetails.CCActingUserName = p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).UserName;
-
-                                   sectionDetails.LUMUser = p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGES).UserID;
-                                   sectionDetails.LUMUserName = p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGES).UserName;
+                                   sectionDetails.CCActingUser = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).UserID;
+                                   sectionDetails.CCActingUserName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).UserName;
                                }
-                               
+                               else if(p.Role==FeedbackRoles.LUMSERVICEMANAGERS)
+                               {
+                                   sectionDetails.LUMActingUser = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).UserID;
+                                   sectionDetails.LUMActingUserName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).UserName;
+                               }
+
                            });
                         }
                         else
                         {
                             sectionDetails.ApproversList.Remove(sectionDetails.ApproversList.FirstOrDefault(p => p.Role == UserRoles.VIEWER));
-                           
                         }
                         sectionDetails.FileNameList = sectionDetails.Files != null && sectionDetails.Files.Count > 0 ? JsonConvert.SerializeObject(sectionDetails.Files.Where(x => !string.IsNullOrEmpty(sectionDetails.FileNameList) && sectionDetails.FileNameList.Split(',').Contains(x.FileName)).ToList()) : string.Empty;
-                        ////sectionDetails.FileNameList = sectionDetails.Files != null && sectionDetails.Files.Count > 0 ? JsonConvert.SerializeObject(sectionDetails.Files) : string.Empty;
+                      
                     }
                     contract.Forms.Add(feedbacksForm);
                 }
 
+              
+            
                 var ccSectionDetails = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.CCACTINGUSERSECTION) as CCActingUserSection;
                 if (ccSectionDetails != null)
                 {
@@ -151,58 +160,81 @@
                     approverList = approvers.ConvertAll(p => (ApproverMasterListItem)p);
                     ccSectionDetails.ApproversList.ForEach(p =>
                     {
-                        if (p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER && BU == "LUM")
+                        if (BU != "LUM" && BU!=null)
                         {
-                            ccSectionDetails.CCQualityInchargeUser = p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserID;
-                            ccSectionDetails.CCQualityInchargeName = p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserName;
+                            ccSectionDetails.CCQualityInchargeUser =p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
+                            ccSectionDetails.CCQualityInchargeName =p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
                         }
-                        else if(p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER && BU != "LUM" && BU!="")
-                        {
-
-                            ccSectionDetails.CCQualityInchargeUser = p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
-                            ccSectionDetails.CCQualityInchargeName = p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
-                        }
-                        else
-                        {
-
-                            ccSectionDetails.CCQualityInchargeUser = p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
-                            ccSectionDetails.CCQualityInchargeName = p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
-                        }
-                        
                     });
                 }
-                
+
+                var LUMSectionDetails = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.LUMCCACTINGUSERSECTION) as LUMActingUserSection;
+
+                if (LUMSectionDetails != null)
+                {
+                    LUMSectionDetails.CCFileNameList = LUMSectionDetails.Files != null && LUMSectionDetails.Files.Count > 0 ? JsonConvert.SerializeObject(LUMSectionDetails.Files.Where(x => !string.IsNullOrEmpty(LUMSectionDetails.CCFileNameList) && LUMSectionDetails.CCFileNameList.Split(',').Contains(x.FileName)).ToList()) : string.Empty;
+                    List<IMasterItem> approvers = LUMSectionDetails.MasterData.FirstOrDefault(p => p.NameOfMaster == FeedbacksMasters.APPROVERMASTER).Items;
+                    approverList = approvers.ConvertAll(p => (ApproverMasterListItem)p);
+
+                    LUMSectionDetails.ApproversList.ForEach(p =>
+                    {
+                        if (BU == "LUM")
+                        {
+                            LUMSectionDetails.LUMQualityInchargeUser =p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserID;
+                            LUMSectionDetails.LUMQualityInchargeName =p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserName;
+                        }
+                    });
+                   
+                }
+
                 var ccQASectionDetails = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.CCQUALITYINCHARGESECTION) as CCQualityInchargeSection;
                 if (ccQASectionDetails != null)
                 {
                     ccQASectionDetails.CCQAInchargeFileNameList = ccQASectionDetails.Files != null && ccQASectionDetails.Files.Count > 0 ? JsonConvert.SerializeObject(ccQASectionDetails.Files.Where(x => !string.IsNullOrEmpty(ccQASectionDetails.CCQAInchargeFileNameList) && ccQASectionDetails.CCQAInchargeFileNameList.Split(',').Contains(x.FileName)).ToList()) : string.Empty;
+                    
+                }
+
+                var LUMQASectionDetails = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.LUMQUALITYINCHARGESECTION) as LUMQualityInchargeSection;
+                if (LUMQASectionDetails != null)
+                {
+                    LUMQASectionDetails.CCQAInchargeFileNameList = LUMQASectionDetails.Files != null && LUMQASectionDetails.Files.Count > 0 ? JsonConvert.SerializeObject(LUMQASectionDetails.Files.Where(x => !string.IsNullOrEmpty(LUMQASectionDetails.CCQAInchargeFileNameList) && LUMQASectionDetails.CCQAInchargeFileNameList.Split(',').Contains(x.FileName)).ToList()) : string.Empty;
 
                 }
+
+
                 var qaUserSection = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.QAULITYUSERSECTION) as QaulityUserSection;
                 if (qaUserSection != null)
                 {
                     qaUserSection.QUFileNameList = qaUserSection.Files != null && qaUserSection.Files.Count > 0 ? JsonConvert.SerializeObject(qaUserSection.Files.Where(x => !string.IsNullOrEmpty(qaUserSection.QUFileNameList) && qaUserSection.QUFileNameList.Split(',').Contains(x.FileName)).ToList()) : string.Empty;
                     qaUserSection.QAHeadUser = approverList != null && approverList.FirstOrDefault(q => q.Role == FeedbackRoles.QAHEADUSER) != null ? approverList.FirstOrDefault(q => q.Role == FeedbackRoles.QAHEADUSER).UserID : string.Empty;
-                    
+
+                                       
+                }
+
+                var LUMqaUserSection = feedbacksForm.SectionsList.FirstOrDefault(f => f.SectionName == FeedbackSectionName.LUMQAULITYUSERSECTION) as QaulityUserSection;
+                if (LUMqaUserSection != null)
+                {
+                    LUMqaUserSection.QUFileNameList = LUMqaUserSection.Files != null && LUMqaUserSection.Files.Count > 0 ? JsonConvert.SerializeObject(LUMqaUserSection.Files.Where(x => !string.IsNullOrEmpty(LUMqaUserSection.QUFileNameList) && LUMqaUserSection.QUFileNameList.Split(',').Contains(x.FileName)).ToList()) : string.Empty;
+                    LUMqaUserSection.QAHeadUser = approverList != null && approverList.FirstOrDefault(q => q.Role == FeedbackRoles.QAHEADUSER) != null ? approverList.FirstOrDefault(q => q.Role == FeedbackRoles.QAHEADUSER).UserID : string.Empty;
 
 
                 }
 
-                if (ccSectionDetails != null) { 
-                    string[] ID = ccSectionDetails.CCQualityInchargeUser.Split(',');
-                
-                    contract.dynmicfield = new Dictionary<string, string>();
-                    for (int i = 0; i < ID.Length; i++)
-                    {
-                    
-                        if (ID[i] == userID)
-                        {
-                            contract.dynmicfield.Add("Visibility", "visible");
-                        }
-                        
-                    }
-                }
-                
+                //if (ccSectionDetails != null) { 
+                //    string[] ID = ccSectionDetails.CCQualityInchargeUser.Split(',');
+
+                //    contract.dynmicfield = new Dictionary<string, string>();
+                //    for (int i = 0; i < ID.Length; i++)
+                //    {
+
+                //        if (ID[i] == userID)
+                //        {
+                //            contract.dynmicfield.Add("Visibility", "visible");
+                //        }
+
+                //    }
+                //}
+
 
             }
            
@@ -252,10 +284,48 @@
                             {
 
                             }
+                            
+                            
+                        }
+
+                            if (section.ButtonCaption == " Forward to Quality User")
+                            {
+                                objDict[Parameter.SENDTOLEVEL] = "3";
+                                section.ActionStatus = ButtonActionStatus.SendForward;
+                             }
+                            else if (section.ButtonCaption == "SendForward")
+                            {
+                                objDict[Parameter.SENDTOLEVEL] = "2";
+                            section.ActionStatus = ButtonActionStatus.SendForward;
+                            }
+                            
+
+                    }
+                   
+                    QaulityUserSection sectionQA = null;
+                    if (sectionDetails.SectionName == FeedbackSectionName.QAULITYUSERSECTION)
+                    {
+                        sectionQA = sectionDetails as QaulityUserSection;
+                        if (sectionDetails.ActionStatus == ButtonActionStatus.SendBack)
+                        {
+                             if (sectionQA.ButtonCaption == "Send Back")
+                                {
+                                    objDict[Parameter.SENDTOLEVEL] = "0";
+                                }
                         }
                     }
-                    
-                    
+                    LUMQualityUserSection sectionLUMQA = null;
+                    if (sectionDetails.SectionName == FeedbackSectionName.LUMQAULITYUSERSECTION)
+                    {
+                        sectionLUMQA = sectionDetails as LUMQualityUserSection;
+                        if (sectionDetails.ActionStatus == ButtonActionStatus.SendBack)
+                        {
+                            if (sectionLUMQA.ButtonCaption == "Send Back")
+                            {
+                                objDict[Parameter.SENDTOLEVEL] = "0";
+                            }
+                        }
+                    }
                     List<ListItemDetail> objSaveDetails = BELDataAccessLayer.Instance.SaveData(this.context, this.web, sectionDetails, objDict);
                     ListItemDetail itemDetails = objSaveDetails.Where(p => p.ListName.Equals(FeedbackListNames.FEEDBACKLIST)).FirstOrDefault<ListItemDetail>();
                     if (sectionDetails.SectionName == FeedbackSectionName.FEEDBACKDETAILSECTION)

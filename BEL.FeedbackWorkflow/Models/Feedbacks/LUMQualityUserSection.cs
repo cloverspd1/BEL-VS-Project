@@ -1,4 +1,5 @@
-﻿namespace BEL.FeedbackWorkflow.Models.Feedbacks
+﻿
+namespace BEL.FeedbackWorkflow.Models.Feedbacks
 {
     using BEL.CommonDataContract;
     using System;
@@ -9,34 +10,31 @@
     using BEL.FeedbackWorkflow.Models.Common;
     using System.ComponentModel.DataAnnotations;
     using BEL.FeedbackWorkflow.Models.Master;
-    
-    /// <summary>
-    /// Feedbacks Detail Section
-    /// </summary>
     [DataContract, Serializable]
-    public class CCActingUserSection : ISection
+    public class LUMQualityUserSection : ISection
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CCActingUserSection"/> class.
+        /// Initializes a new instance of the <see cref="QaulityUserSection"/> class.
         /// </summary>
-        public CCActingUserSection()
+        public LUMQualityUserSection()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CCActingUserSection"/> class.
+        /// Initializes a new instance of the <see cref="QaulityUserSection"/> class.
         /// </summary>
         /// <param name="isSet">if set to <c>true</c> [is set].</param>
-        public CCActingUserSection(bool isSet)
+        public LUMQualityUserSection(bool isSet)
         {
             if (isSet)
             {
                 this.ListDetails = new List<ListItemDetail>() { new ListItemDetail(FeedbackListNames.FEEDBACKLIST, true) };
-                this.SectionName = FeedbackSectionName.CCACTINGUSERSECTION;
+                this.SectionName = FeedbackSectionName.LUMQAULITYUSERSECTION;
                 this.ApproversList = new List<ApplicationStatus>();
                 this.CurrentApprover = new ApplicationStatus();
                 this.MasterData = new List<IMaster>();
-                this.MasterData.Add(new ApproverMaster());
+                this.MasterData.Add(new ProblemCauseMaster());
+                this.MasterData.Add(new QualityStatusMaster());
             }
         }
 
@@ -58,6 +56,21 @@
         [DataMember, IsListColumn(false)]
         public int ID { get; set; }
 
+        [DataMember, Required, RequiredOnDraft]
+        public bool ForwardtoQuality { get; set; }
+
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string QAUser { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Project Type.
+        /// </summary>
+        /// <value>
+        /// The project type.
+        /// </value>
+        [DataMember, IsPerson(true, true, true), FieldColumnName("QAUser"), IsViewer]
+        public string QAUserName { get; set; }
+
         /// <summary>
         /// Gets or sets the status.
         /// </summary>
@@ -67,14 +80,18 @@
         [DataMember]
         public string Status { get; set; }
 
-        [IsListColumn(false)]
-        public bool IsField { get; set; }
+        [DataMember]
+        public DateTime? QualityUserDate { get; set; }
+
+
+        [DataMember]
+        public string CCQAInchargeFileNameList { get; set; }
 
         [DataMember]
         public DateTime? QualityInchargeDate { get; set; }
 
         [DataMember]
-        public DateTime? QualityUserDate { get; set; }
+        public DateTime? ImplementationDate { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the section.
@@ -139,6 +156,19 @@
         [DataMember, IsListColumn(false), IsApproverDetails(true, FeedbackListNames.FEEDBACKAPPAPPROVALMATRIX)]
         public ApplicationStatus CurrentApprover { get; set; }
 
+        [DataMember, MaxLength(1000)]
+        //[DataMember, MaxLength(1000)]
+        public string ImplementedRemark { get; set; }
+
+        [DataMember]
+        public string QUFileNameList { get; set; }
+
+        [DataMember, IsFile(true)]
+        public List<FileDetails> Files { get; set; }
+
+        [DataMember]
+        public bool SendBackToCC { get; set; }
+
         /// <summary>
         /// Gets or sets the approvers list.
         /// </summary>
@@ -157,50 +187,49 @@
         [DataMember, IsListColumn(false)]
         public string ButtonCaption { get; set; }
 
+        [DataMember]
+        public string QualityStatus { get; set; }
+
+        [DataMember]
+        public string Implemented { get; set; }
+
+
         /// <summary>
-        /// Gets or sets the Forward to Quality.
+        /// Gets or sets the Project Name.
         /// </summary>
         /// <value>
-        /// The Forward to Quality.
+        /// The project name.
         /// </value>
-        [DataMember, Required, RequiredOnDraft]
-        public bool ForwardtoCCQualityIncharge { get; set; }
-
+        [DataMember, MaxLength(1000)]
+        //[DataMember, MaxLength(1000)]
+        public string Observations { get; set; }
 
         /// <summary>
-        /// Gets or sets the Project Type.
+        /// Gets or sets the Project Name.
         /// </summary>
         /// <value>
-        /// The project type.
+        /// The project name.
         /// </value>
-        [DataMember, Required, IsPerson(true, true, false), IsViewer]
-        public string CCQualityInchargeUser { get; set; }
+        [DataMember, MaxLength(1000)]
+        // [DataMember, MaxLength(1000)]
+        public string ActionPlans { get; set; }
 
         /// <summary>
-        /// Gets or sets the Project Type.
+        /// Gets or sets the Income Group.
         /// </summary>
         /// <value>
-        /// The project type.
-        /// </value>
-        [DataMember, IsPerson(true, true, true), FieldColumnName("CCQualityInchargeUser"), IsViewer]
-        public string CCQualityInchargeName { get; set; }
-
-        /// <summary>
-        /// Gets or sets the files.
-        /// </summary>
-        /// <value>
-        /// The files.
-        /// </value>
-        [DataMember, IsFile(true)]
-        public List<FileDetails> Files { get; set; }
-
-        /// <summary>
-        /// Gets or sets the file name list.
-        /// </summary>
-        /// <value>
-        /// The file name list.
+        /// The income group.
         /// </value>
         [DataMember]
-        public string CCFileNameList { get; set; }
+        public string ProblemCause { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Income Group.
+        /// </summary>
+        /// <value>
+        /// The income group.
+        /// </value>
+        [DataMember, IsListColumn(false), IsPerson(true, true, false), IsViewer]
+        public string QAHeadUser { get; set; }
     }
 }

@@ -24,8 +24,11 @@
                 this.SectionsList = new List<ISection>();
                 this.SectionsList.Add(new FeedbacksDetailSection(true));
                 this.SectionsList.Add(new CCActingUserSection(true));
+                this.SectionsList.Add(new LUMActingUserSection(true));
                 this.SectionsList.Add(new CCQualityInchargeSection(true));
+                this.SectionsList.Add(new LUMQualityInchargeSection(true));
                 this.SectionsList.Add(new QaulityUserSection(true));
+                this.SectionsList.Add(new LUMQualityUserSection(true));
                 this.SectionsList.Add(new ApplicationStatusSection(true) { SectionName = SectionNameConstant.APPLICATIONSTATUS });
                 this.SectionsList.Add(new ActivityLogSection(FeedbackListNames.FEEDBACKACTIVITYLOG));
                 this.Buttons = new List<Button>();

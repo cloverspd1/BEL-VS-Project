@@ -1044,35 +1044,7 @@
                             if (param != null)
                             {
                                 param[Parameter.ISNEWITEM] = isNewItem.ToString();
-                                if(section.ButtonCaption== " Forward to Quality User")
-                                {
-                                    param[Parameter.SENDTOLEVEL] = "3";
-                                }
-                                else if(section.ButtonCaption== "Send Back")
-                                {
-                                    param[Parameter.SENDTOLEVEL] = "0";
-
-                                }
-                                if(param.ContainsKey("Flag") ==true && param.ContainsKey("CreatorToQA") == true)
-                                {
-                                    if (param.ContainsKey("SendToLevel") == false)
-                                    { 
-                                        if (param["Flag"] == "true")
-                                        {
-                                            param[Parameter.SENDTOLEVEL] = "2";
-                                            section.ButtonCaption = "SendForward";
-                                        }
-                                        else if (param["CreatorToQA"] != "" && param["CreatorToQA"] != null || param["CreatorToQAName"]!="" && param["CreatorToQAName"]!=null)
-                                        {
-                                            param[Parameter.SENDTOLEVEL] = "3";
-                                            section.ButtonCaption = "SendForward";
-                                        }
-                                    }
-
-                                }
-                                
-
-
+                              
                             }
                             int itemId = this.SaveDataInList(context, web, actualSection, item, listDetail.ListName, param, mailCustomValues, emailAttachments);
 
@@ -1506,30 +1478,8 @@
                 }
                 Logger.Info("Started form level assignment");
 
-                ButtonActionStatus actionPerformed;
-                if (param.ContainsKey("SendToLevel") == false)
-                {
-                    actionPerformed = actualSection.ActionStatus;
-                    
-                }
-                else {
-                    if (param[Parameter.SENDTOLEVEL] != null && param[Parameter.SENDTOLEVEL] != "")
-                    {
-                        if (param[Parameter.SENDTOLEVEL] == "2" || param[Parameter.SENDTOLEVEL] == "3")
-                        {
-                            actionPerformed = ButtonActionStatus.SendForward;
-                        }
-                        else
-                        {
-                            actionPerformed = actualSection.ActionStatus;
-                        }
-                    }
-                    else
-                    {
-                        actionPerformed = actualSection.ActionStatus;
-                    }
-                }
-
+                ButtonActionStatus actionPerformed = actualSection.ActionStatus;
+               
 
                 if (!string.IsNullOrEmpty(approverMatrixListName))
                 {
@@ -1540,18 +1490,6 @@
                             string userRole = p.Role.Replace(" ", string.Empty);
                            
                             formFieldValues[userRole.Substring(0, userRole.Length > 32 ? 32 : userRole.Length)] = GetFieldUserValueFromPerson(context, web, p.Approver.Trim(',').Split(','));
-                        }
-                        if (param.ContainsKey("SendToLevel")==true)
-                        {
-                            if (param[Parameter.SENDTOLEVEL] == "3" && p.Levels == "3" && param["CreatorToQA"]!=null)
-                            {
-                                p.Approver = param["CreatorToQA"];
-                                p.ApproverName = param["CreatorToQAName"];
-                            }
-                        }
-                        else
-                        {
-
                         }
                     });
                     if (approversDataFromList.Any(p => Convert.ToInt32(p.Levels) == currLevel && !string.IsNullOrEmpty(p.Approver) && p.Approver.Contains(currentUserID)))

@@ -2,28 +2,19 @@
 @using BEL.FeedbackWorkflow.Models.Common
 @using BEL.FeedbackWorkflow.Models.Master;
 @using BEL.CommonDataContract;
-@model CCActingUserSection
+@model LUMActingUserSection
 @{
-
-    ApproverMaster approverusrelist = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
-    List<ApproverMasterListItem> ccQualityInchargeUserList = approverusrelist.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.CCQUALITYINCHARGEUSER).ToList().ConvertAll(p => (ApproverMasterListItem)p);
-    ccQualityInchargeUserList = Helper.SplitUser(ccQualityInchargeUserList);
-
-    ApproverMaster approverusrelistLUM = Model.MasterData.FirstOrDefault(x => x.NameOfMaster.Equals(FeedbacksMasters.APPROVERMASTER)) as ApproverMaster;
-    List<ApproverMasterListItem> ccQualityInchargeUserListLUM = approverusrelistLUM.Items.Where(x => (x as ApproverMasterListItem).Role == FeedbackRoles.LUMQUALITYINCHARGE).ToList().ConvertAll(p => (ApproverMasterListItem)p);
-    ccQualityInchargeUserListLUM = Helper.SplitUser(ccQualityInchargeUserListLUM);
-
 
 }
 
-@using (Ajax.BeginForm("SaveCCActingUserSection", "Feedbacks", new AjaxOptions
-    {
-        HttpMethod = "POST",
-        LoadingElementId = "loading",
-        OnFailure = "OnFailure",
-        OnSuccess = "OnSuccess",
-        OnBegin = "BeginClient"
-    }, new { enctype = "multipart/form-data" }))
+@using (Ajax.BeginForm("SaveLUMActingUserSection", "Feedbacks", new AjaxOptions
+{
+    HttpMethod = "POST",
+    LoadingElementId = "loading",
+    OnFailure = "OnFailure",
+    OnSuccess = "OnSuccess",
+    OnBegin = "BeginClient"
+}, new { enctype = "multipart/form-data" }))
 {
 
     @Html.HiddenFor(m => m.ListDetails[0].ItemId)
@@ -93,23 +84,24 @@
             <div class="form-group CCQualityInchargeUser">
                 <label class="col-md-4 control-label">
                     @*<span class="text-danger text-default-light">*</span>*@
-                    @Html.LabelFor(m => m.CCQualityInchargeUser, ResourceNames.Feedbacks)
+                    @Html.LabelFor(m => m.LUMQualityInchargeUser, ResourceNames.Feedbacks)
                 </label>
                 <div class="col-md-8 ">
                     <div class="form-control noborder">
-                       @Html.DisplayFor(m=>m.CCQualityInchargeName)
-                      
-                        @Html.HiddenFor(m => m.CCQualityInchargeUser)
-                        @Html.HiddenFor(m => m.CCQualityInchargeName)
-                       
+                        @Html.DisplayFor(m => m.LUMQualityInchargeName)
+
+                        @Html.HiddenFor(m => m.LUMQualityInchargeUser)
+                        @Html.HiddenFor(m => m.LUMQualityInchargeName)
+
 
                     </div>
                 </div>
             </div>
         </div>
 
-        
+
 
     </div>
 }
+
 

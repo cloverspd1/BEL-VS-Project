@@ -41,7 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\BEL.Workflow.CA.ruleset</CodeAnalysisRuleSet>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -377,6 +377,9 @@
     <Compile Include="Models\Common\Constants.cs" />
     <Compile Include="Models\Common\FeedbackNoCount.cs" />
     <Compile Include="Models\Feedbacks\CCQualityInchargeSection.cs" />
+    <Compile Include="Models\Feedbacks\LUMActingUserSection.cs" />
+    <Compile Include="Models\Feedbacks\LUMQualityInchargeSection.cs" />
+    <Compile Include="Models\Feedbacks\LUMQualityUserSection.cs" />
     <Compile Include="Models\Feedbacks\QaulityUserSection.cs" />
     <Compile Include="Models\Feedbacks\CCActingUserSection.cs" />
     <Compile Include="Models\Feedbacks\ProductSerial.cs" />
@@ -653,6 +656,7 @@
     <None Include="Properties\PublishProfiles\FeedbackPublish.pubxml" />
     <None Include="Properties\PublishProfiles\Feedback_UAT_Publish.pubxml" />
     <None Include="Properties\PublishProfiles\Feedback_Dev_Publish.pubxml" />
+    <None Include="Properties\PublishProfiles\NewBELFeedback - FTP %2810%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - FTP %284%29.pubxml" />
@@ -662,6 +666,7 @@
     <None Include="Properties\PublishProfiles\NewBELFeedback - FTP %288%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - FTP %289%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\NewBELFeedback - Web Deploy %2810%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\NewBELFeedback - Web Deploy %284%29.pubxml" />
@@ -843,6 +848,9 @@
     <Content Include="Views\Feedbacks\_printFeedback.cshtml" />
     <Content Include="Views\Feedbacks\Reports\FeedbackReport.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Feedbacks\_LUMActingUserSection.cshtml" />
+    <Content Include="Views\Feedbacks\_LUMQualityInchargeSection.cshtml" />
+    <Content Include="Views\Feedbacks\_LUMqaUserSection.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

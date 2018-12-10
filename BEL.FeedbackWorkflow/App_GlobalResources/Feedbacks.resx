@@ -265,7 +265,10 @@
     <value>Attachments:</value>
   </data>
   <data name="Label_ForwardtoCCQualityIncharge" xml:space="preserve">
-    <value>Forward to CC Quality Incharge:</value>
+    <value>Forward to CC Quality Incharge</value>
+  </data>
+  <data name="Label_ForwardtoLUMQualityIncharge1" xml:space="preserve">
+    <value>Forward to LUM Quality Incharge</value>
   </data>
   <data name="Label_ForwardtoQuality" xml:space="preserve">
     <value>Forward to Quality:</value>
@@ -277,7 +280,7 @@
     <value>Close the issue</value>
   </data>
   <data name="Label_ForwardtoQualityIncharge" xml:space="preserve">
-    <value>Forward to CC Quality Incharge:</value>
+    <value>Forward to CC Quality Incharge</value>
   </data>
   <data name="Label_ForwardtoQualityIncharge1" xml:space="preserve">
     <value>Forward to CC Quality Incharge</value>
@@ -338,6 +341,15 @@
   </data>
   <data name="Section_Title_FeedbackDetailDocumentSection" xml:space="preserve">
     <value>Product Quality Feedback Detail Section</value>
+  </data>
+  <data name="Section_Title_LUMActingUserSection" xml:space="preserve">
+    <value>LUM Acting User Section</value>
+  </data>
+  <data name="Section_Title_LUMQAUserSection" xml:space="preserve">
+    <value>LUM Quality User</value>
+  </data>
+  <data name="Section_Title_LUMQualityInchargeSection" xml:space="preserve">
+    <value>LUM Quality Incharge Section</value>
   </data>
   <data name="Section_Title_QAUserSection" xml:space="preserve">
     <value>Quality User Section</value>

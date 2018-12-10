@@ -9,16 +9,21 @@
     FeedbacksDetailSection feedbackDetailSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.FEEDBACKDETAILSECTION)) as FeedbacksDetailSection;
 
     CCActingUserSection ccActingUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCACTINGUSERSECTION)) as CCActingUserSection;
+    LUMActingUserSection LumActingUserSection= form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.LUMCCACTINGUSERSECTION)) as LUMActingUserSection;
     CCQualityInchargeSection ccQualityInchargeSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.CCQUALITYINCHARGESECTION)) as CCQualityInchargeSection;
+    LUMQualityInchargeSection LUMQualityInchargeSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.LUMQUALITYINCHARGESECTION)) as LUMQualityInchargeSection;
     QaulityUserSection qaulityUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.QAULITYUSERSECTION)) as QaulityUserSection;
+    LUMQualityUserSection LUMqaulityUserSection = form.SectionsList.FirstOrDefault(f => f.SectionName.Equals(FeedbackSectionName.LUMQAULITYUSERSECTION)) as LUMQualityUserSection;
     if (contract.dynmicfield != null) {
         if (contract.dynmicfield.Count > 0)
         {
             feedbackDetailSection.IsField = true;
+            ccActingUserSection.IsField = true;
         }
         else
         {
             feedbackDetailSection.IsField = false;
+            ccActingUserSection.IsField = false;
         }
     }
 }
@@ -92,6 +97,29 @@
                                 <div class="clearfix"></div>
                             </div>
                         }
+                        @if (LumActingUserSection != null)
+                        {
+                            string sectionActiveCss = LumActingUserSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails5">
+                                    @Html.ResourceValue("Section_Title_LUMActingUserSection", ResourceNames.Feedbacks)
+                                    @if (LumActingUserSection.CurrentApprover != null && !string.IsNullOrEmpty(LumActingUserSection.CurrentApprover.Role) && !string.IsNullOrEmpty(LumActingUserSection.CurrentApprover.ApproveByName))
+                                    {
+                                        <span> – <i class="fa fa-check"></i> Verified by  @LumActingUserSection.CurrentApprover.ApproveByName (@LumActingUserSection.CurrentApprover.Role) </span>
+                                    }
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails5">
+                                    <div class="form-horizontal">
+
+                                        @Html.Partial("_LUMActingUserSection", LumActingUserSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
                         @if (ccQualityInchargeSection != null)
                         {
                             string sectionActiveCss = ccQualityInchargeSection.IsActive ? string.Empty : "disabled";
@@ -115,6 +143,29 @@
                                 <div class="clearfix"></div>
                             </div>
                         }
+                        @if (LUMQualityInchargeSection != null)
+                        {
+                            string sectionActiveCss = LUMQualityInchargeSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails6">
+                                    @Html.ResourceValue("Section_Title_LUMQualityInchargeSection", ResourceNames.Feedbacks)
+                                    @if (LUMQualityInchargeSection.CurrentApprover != null && !string.IsNullOrEmpty(LUMQualityInchargeSection.CurrentApprover.Role) && !string.IsNullOrEmpty(LUMQualityInchargeSection.CurrentApprover.ApproveByName))
+                                    {
+                                        <span> – <i class="fa fa-check"></i> Verified by  @LUMQualityInchargeSection.CurrentApprover.ApproveByName (@LUMQualityInchargeSection.CurrentApprover.Role) </span>
+                                    }
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails6">
+                                    <div class="form-horizontal">
+
+                                        @Html.Partial("_LUMQualityInchargeSection", LUMQualityInchargeSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
                         @if (qaulityUserSection != null)
                         {
                             string sectionActiveCss = qaulityUserSection.IsActive ? string.Empty : "disabled";
@@ -131,6 +182,29 @@
                                     <div class="form-horizontal">
 
                                         @Html.Partial("_qaUserSection", qaulityUserSection)
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        }
+                        @if (LUMqaulityUserSection != null)
+                        {
+                            string sectionActiveCss = LUMqaulityUserSection.IsActive ? string.Empty : "disabled";
+                            <div class="card @sectionActiveCss">
+                                <div class="card-head" data-toggle="collapse" data-target="#sectiondetails3">
+                                    @Html.ResourceValue("Section_Title_LUMQAUserSection", ResourceNames.Feedbacks)
+                                    @if (LUMqaulityUserSection.CurrentApprover != null && !string.IsNullOrEmpty(LUMqaulityUserSection.CurrentApprover.Role) && !string.IsNullOrEmpty(LUMqaulityUserSection.CurrentApprover.ApproveByName))
+                                    {
+                                        <span> – <i class="fa fa-check"></i> Verified by  @LUMqaulityUserSection.CurrentApprover.ApproveByName (@LUMqaulityUserSection.CurrentApprover.Role) </span>
+                                    }
+                                    <div class="btn collapse-btn"><i class="fa fa-chevron-down"></i></div>
+                                </div>
+                                <div class="card-body" id="sectiondetails3">
+                                    <div class="form-horizontal">
+
+                                        @Html.Partial("_LUMqaUserSection", LUMqaulityUserSection)
 
                                     </div>
                                     <div class="clearfix"></div>

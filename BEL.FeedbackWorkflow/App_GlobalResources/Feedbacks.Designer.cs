@@ -502,11 +502,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forward to CC Quality Incharge:.
+        ///   Looks up a localized string similar to Forward to CC Quality Incharge.
         /// </summary>
         internal static string Label_ForwardtoCCQualityIncharge {
             get {
                 return ResourceManager.GetString("Label_ForwardtoCCQualityIncharge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forward to LUM Quality Incharge.
+        /// </summary>
+        internal static string Label_ForwardtoLUMQualityIncharge1 {
+            get {
+                return ResourceManager.GetString("Label_ForwardtoLUMQualityIncharge1", resourceCulture);
             }
         }
         
@@ -538,7 +547,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forward to CC Quality Incharge:.
+        ///   Looks up a localized string similar to Forward to CC Quality Incharge.
         /// </summary>
         internal static string Label_ForwardtoQualityIncharge {
             get {
@@ -723,6 +732,33 @@ namespace Resources {
         internal static string Section_Title_FeedbackDetailDocumentSection {
             get {
                 return ResourceManager.GetString("Section_Title_FeedbackDetailDocumentSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LUM Acting User Section.
+        /// </summary>
+        internal static string Section_Title_LUMActingUserSection {
+            get {
+                return ResourceManager.GetString("Section_Title_LUMActingUserSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LUM Quality User.
+        /// </summary>
+        internal static string Section_Title_LUMQAUserSection {
+            get {
+                return ResourceManager.GetString("Section_Title_LUMQAUserSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LUM Quality Incharge Section.
+        /// </summary>
+        internal static string Section_Title_LUMQualityInchargeSection {
+            get {
+                return ResourceManager.GetString("Section_Title_LUMQualityInchargeSection", resourceCulture);
             }
         }
         

@@ -114,10 +114,23 @@
         /// </summary>
         public const string CCACTINGUSERSECTION = "CC Acting User Section";
 
+
+        /// <summary>
+        /// The Feedback approver1 section for LUM
+        /// </summary>
+
+        public const string LUMCCACTINGUSERSECTION = "LUM Acting User Section";
+
         /// <summary>
         /// The Feedback approver2 section
         /// </summary>
         public const string CCQUALITYINCHARGESECTION = "CC Quality Incharge Section";
+
+
+        /// <summary>
+        /// The Feedback approver2 section for LUM
+        /// </summary>
+        public const string LUMQUALITYINCHARGESECTION = "LUM Quality Incharge Section";
 
 
 
@@ -125,6 +138,11 @@
         /// The Feedback approver3 section
         /// </summary>
         public const string QAULITYUSERSECTION = "Qaulity User Section";
+
+        /// <summary>
+        /// The Feedback approver3 section
+        /// </summary>
+        public const string LUMQAULITYUSERSECTION = "LUM Quality User Section";
 
         /// <summary>
         /// The Feedback approver1 section
@@ -177,9 +195,9 @@
         /// <summary>
         /// LUM Approver
         /// </summary>
-        public const string LUMSERVICEMANAGES = "Lum Service Managers";
+        public const string LUMSERVICEMANAGERS = "LUM Service Managers";
 
-        public const string LUMQUALITYINCHARGE = "LUM Quality Incharge";
+        public const string LUMQUALITYINCHARGE = "LUM Quality Incharge User";
 
         public const string LUMQUALITYUSER = "LUM Quality User";
 

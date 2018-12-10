@@ -9,30 +9,27 @@
     using BEL.FeedbackWorkflow.Models.Common;
     using System.ComponentModel.DataAnnotations;
     using BEL.FeedbackWorkflow.Models.Master;
-    
-    /// <summary>
-    /// Feedbacks Detail Section
-    /// </summary>
+
     [DataContract, Serializable]
-    public class CCActingUserSection : ISection
+    public class LUMQualityInchargeSection : ISection
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CCActingUserSection"/> class.
+        /// Initializes a new instance of the <see cref="LUMQualityInchargeSection"/> class.
         /// </summary>
-        public CCActingUserSection()
+        public LUMQualityInchargeSection()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CCActingUserSection"/> class.
+        /// Initializes a new instance of the <see cref="CCQualityInchargeSection"/> class.
         /// </summary>
         /// <param name="isSet">if set to <c>true</c> [is set].</param>
-        public CCActingUserSection(bool isSet)
+        public LUMQualityInchargeSection(bool isSet)
         {
             if (isSet)
             {
                 this.ListDetails = new List<ListItemDetail>() { new ListItemDetail(FeedbackListNames.FEEDBACKLIST, true) };
-                this.SectionName = FeedbackSectionName.CCACTINGUSERSECTION;
+                this.SectionName = FeedbackSectionName.LUMQUALITYINCHARGESECTION;
                 this.ApproversList = new List<ApplicationStatus>();
                 this.CurrentApprover = new ApplicationStatus();
                 this.MasterData = new List<IMaster>();
@@ -40,47 +37,19 @@
             }
         }
 
-        /// <summary>
-        /// Gets or sets the master data.
-        /// </summary>
-        /// <value>
-        /// The master data.
-        /// </value>
         [DataMember, IsListColumn(false), ContainsMasterData(true)]
         public List<IMaster> MasterData { get; set; }
 
-        /// <summary>
-        /// Gets or sets the identifier.
-        /// </summary>
-        /// <value>
-        /// The identifier.
-        /// </value>
         [DataMember, IsListColumn(false)]
         public int ID { get; set; }
 
-        /// <summary>
-        /// Gets or sets the status.
-        /// </summary>
-        /// <value>
-        /// The status.
-        /// </value>
+
         [DataMember]
         public string Status { get; set; }
-
-        [IsListColumn(false)]
-        public bool IsField { get; set; }
 
         [DataMember]
         public DateTime? QualityInchargeDate { get; set; }
 
-        [DataMember]
-        public DateTime? QualityUserDate { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name of the section.
-        /// </summary>
-        /// <value>
-        /// The name of the section.
         /// </value>
         [DataMember, IsListColumn(false)]
         public string SectionName { get; set; }
@@ -164,17 +133,7 @@
         /// The Forward to Quality.
         /// </value>
         [DataMember, Required, RequiredOnDraft]
-        public bool ForwardtoCCQualityIncharge { get; set; }
-
-
-        /// <summary>
-        /// Gets or sets the Project Type.
-        /// </summary>
-        /// <value>
-        /// The project type.
-        /// </value>
-        [DataMember, Required, IsPerson(true, true, false), IsViewer]
-        public string CCQualityInchargeUser { get; set; }
+        public bool ForwardtoQuality { get; set; }
 
         /// <summary>
         /// Gets or sets the Project Type.
@@ -182,8 +141,29 @@
         /// <value>
         /// The project type.
         /// </value>
-        [DataMember, IsPerson(true, true, true), FieldColumnName("CCQualityInchargeUser"), IsViewer]
-        public string CCQualityInchargeName { get; set; }
+        //[DataMember, IsPerson(true, true, false), IsViewer]
+        //public string QAUser { get; set; }
+
+        ///// <summary>
+        ///// Gets or sets the Project Type.
+        ///// </summary>
+        ///// <value>
+        ///// The project type.
+        ///// </value>
+        //[DataMember, IsPerson(true, true, true), FieldColumnName("QAUser"), IsViewer]
+        //public string QAUserName { get; set; }
+
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string LUMQAUser { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Project Type.
+        /// </summary>
+        /// <value>
+        /// The project type.
+        /// </value>
+        [DataMember, IsPerson(true, true, true), FieldColumnName("LUMQAUser"), IsViewer]
+        public string LUMQAUserName { get; set; }
 
         /// <summary>
         /// Gets or sets the files.
@@ -201,6 +181,9 @@
         /// The file name list.
         /// </value>
         [DataMember]
-        public string CCFileNameList { get; set; }
+        public string CCQAInchargeFileNameList { get; set; }
+
+        [DataMember, IsListColumn(false)]
+        public string BUHidden { get; set; }
     }
 }

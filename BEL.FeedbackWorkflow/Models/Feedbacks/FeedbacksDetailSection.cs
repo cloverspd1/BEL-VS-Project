@@ -353,10 +353,12 @@
         public string CCActingUser { get; set; }
 
         [DataMember, IsPerson(true, true, false), IsViewer]
-        public string LUMUser { get; set; }
+        public string LUMActingUser { get; set; }
 
         [DataMember, IsPerson(true, true, false), IsViewer]
-        public string QualityUser { get; set; }
+        public string LUMUser { get; set; }
+
+      
 
 
         [DataMember, IsPerson(true, true, false), IsViewer]
@@ -370,16 +372,25 @@
         /// </value>
         [DataMember, IsPerson(true, true, true), FieldColumnName("CCActingUser"), IsViewer]
         public string CCActingUserName { get; set; }
-        
+
+        [DataMember, IsPerson(true, true, true), FieldColumnName("LUMActingUser"), IsViewer]
+        public string LUMActingUserName { get; set; }
+
 
         [DataMember, IsPerson(true, true, true), FieldColumnName("LUMUser"), IsViewer]
         public string LUMUserName { get; set; }
 
-        [DataMember, IsPerson(true, true, true), FieldColumnName("QualityUser"), IsViewer]
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string QAUser { get; set; }
+
+        [DataMember, IsPerson(true, true, true), FieldColumnName("QAUser"), IsViewer]
         public string QualityUserName { get; set; }
 
-        [DataMember, IsPerson(true, true, true), FieldColumnName("QualityUserCreator"), IsViewer]
-        public string QualityUserCreatorName { get; set; }
+        [DataMember, IsPerson(true, true, false), IsViewer]
+        public string LUMQAUser { get; set; }
+
+        [DataMember, IsPerson(true, true, true), FieldColumnName("LUMQAUser"), IsViewer]
+        public string LUMQualityUserName { get; set; }
 
 
 
