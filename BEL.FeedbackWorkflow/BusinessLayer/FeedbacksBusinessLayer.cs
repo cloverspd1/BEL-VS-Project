@@ -137,6 +137,16 @@
                                    sectionDetails.LUMActingUser = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).UserID;
                                    sectionDetails.LUMActingUserName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).UserName;
                                }
+                               else if(p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER)
+                               {
+                                   p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
+                                   p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
+                               }
+                               else if(p.Role == FeedbackRoles.LUMQUALITYINCHARGE)
+                               {
+                                   p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserID;
+                                   p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserName;
+                               }
 
                            });
                         }
@@ -160,11 +170,9 @@
                     approverList = approvers.ConvertAll(p => (ApproverMasterListItem)p);
                     ccSectionDetails.ApproversList.ForEach(p =>
                     {
-                        if (BU != "LUM" && BU!=null)
-                        {
                             ccSectionDetails.CCQualityInchargeUser =p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
                             ccSectionDetails.CCQualityInchargeName =p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
-                        }
+                       
                     });
                 }
 
@@ -178,11 +186,10 @@
 
                     LUMSectionDetails.ApproversList.ForEach(p =>
                     {
-                        if (BU == "LUM")
-                        {
+                        
                             LUMSectionDetails.LUMQualityInchargeUser =p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserID;
                             LUMSectionDetails.LUMQualityInchargeName =p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserName;
-                        }
+                       
                     });
                    
                 }
