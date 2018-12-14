@@ -1254,11 +1254,19 @@
                                 }
                                 break;
                             case ButtonActionStatus.Complete:
-                                if (approvers.Any(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)))
+                                //if (approvers.Any(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)))
+                                //{
+                                //    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)).Status = ApproverStatus.APPROVED;
+                                //    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)).ApprovalDate = DateTime.Now;
+                                //    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)).ApproveBy = userEmail;
+                                //}
+                              
+
+                                if (approvers.Any(p => p.Levels == currLevel.ToString() && !string.IsNullOrWhiteSpace(p.Approver) && p.Approver.Contains(userEmail)))
                                 {
-                                    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)).Status = ApproverStatus.APPROVED;
-                                    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)).ApprovalDate = DateTime.Now;
-                                    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && p.Approver.Contains(userEmail)).ApproveBy = userEmail;
+                                    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && (!string.IsNullOrWhiteSpace(p.Approver) && p.Approver.Contains(userEmail))).Status = ApproverStatus.APPROVED;
+                                    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && (!string.IsNullOrWhiteSpace(p.Approver) && p.Approver.Contains(userEmail))).ApprovalDate = DateTime.Now;
+                                    approvers.FirstOrDefault(p => p.Levels == currLevel.ToString() && (!string.IsNullOrWhiteSpace(p.Approver) && p.Approver.Contains(userEmail))).ApproveBy = userEmail;
                                 }
                                 break;
                             case ButtonActionStatus.MeetingConducted:
