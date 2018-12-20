@@ -413,7 +413,7 @@
                     <label class="col-md-4 control-label">
                         <span class="text-danger text-default-light">*</span>
 
-                        @Html.Label("Sample Comments", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.SampleComments, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
@@ -434,12 +434,14 @@
                 <div class="form-group">
                     <label class="col-md-8 control-label">
                         <span class="text-danger text-default-light"></span>
-                        @Html.Label("Is Site Completed / Under Construction?", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.IsSiteCompleted, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-4">
                         <div class="form-control noborder">
                            
-                            @Html.CheckBoxFor(m => m.IsSiteCompleted) 
+                            @*@Html.CheckBoxFor(m => m.IsSiteCompleted)*@ 
+                            @Html.DropDownListFor(m => m.IsSiteCompleted, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.IsSiteCompleted, @data_val = "true", @data_val_required = "Sample provided is required" })
+                            @*@Html.ValidationMessageFor(m => m.IsSiteCompleted, ResourceNames.Feedbacks)*@
                             
                         </div>
                     </div>
@@ -448,7 +450,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        @Html.Label("BN Voltage (In DB)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.BNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
@@ -468,12 +470,13 @@
                 <div class="form-group">
                     <label class="col-md-8 control-label">
                         <span class="text-danger text-default-light"></span>
-                        @Html.Label("Any Protection For Voltage/ Current Used?", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.ProtectionForVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-4">
                         <div class="form-control noborder">
 
-                          @Html.CheckBoxFor(m => m.ProtectionForVoltage) 
+                          @*@Html.CheckBoxFor(m => m.ProtectionForVoltage)*@ 
+                            @Html.DropDownListFor(m => m.ProtectionForVoltage, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.ProtectionForVoltage, @data_val = "true", @data_val_required = "Sample provided is required" })
 
                         </div>
                     </div>
@@ -482,7 +485,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        @Html.Label("EN Voltage (In DB)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.ENVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
@@ -500,13 +503,14 @@
         <div class="row" id="divProductWiring">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label class="col-md-6 control-label">
+                    <label class="col-md-8 control-label">
                         <span class="text-danger text-default-light"></span>
-                        @Html.Label("Is Product Wiring is OK ?", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.ProductWiring, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-4">
                         <div class="form-control noborder">
-                            @Html.CheckBoxFor(m => m.ProductWiring)
+                            @*@Html.CheckBoxFor(m => m.ProductWiring)*@
+                            @Html.DropDownListFor(m => m.ProductWiring, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.ProductWiring, @data_val = "true", @data_val_required = "Sample provided is required" })
                         </div>
                     </div>
                 </div>
@@ -514,7 +518,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        @Html.Label("EN Voltage (In Luminaire)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.ENVoltageLUM, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
@@ -534,7 +538,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label">
                         <span class="text-danger text-default-light"></span>
-                        @Html.Label("RN Voltage(In DB)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.RNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
@@ -549,7 +553,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        @Html.Label("LN Voltage (In Luminaire)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.LNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
@@ -569,7 +573,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label">
                         <span class="text-danger text-default-light"></span>
-                        @Html.Label("YN Voltage(In DB)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.YNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
@@ -584,7 +588,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        @Html.Label("Power Supplier(EB/GEN Set)", ResourceNames.Feedbacks)
+                        @Html.LabelFor(m=>m.powersupplier, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
@@ -608,7 +612,7 @@
                             <label class="col-md-4 control-label">
                                 <span class="text-danger text-default-light">*</span>
 
-                                @Html.Label("Sample Provided", ResourceNames.Feedbacks)
+                                @Html.LabelFor(m=>m.SampleProvided, ResourceNames.Feedbacks)
                             </label>
                             <div class="col-md-8 ">
                                 <div class="form-control noborder">
@@ -623,7 +627,7 @@
                             <label class="col-md-4 control-label">
                                 <span class="text-danger text-default-light"></span>
 
-                                @Html.Label("Sample Quantity", ResourceNames.Feedbacks)
+                                @Html.LabelFor(m=>m.SampleQuantity, ResourceNames.Feedbacks)
                             </label>
                             <div class="col-md-8 ">
                                 <div class="form-control noborder">
@@ -642,7 +646,7 @@
                             <label class="col-md-4 control-label">
                                 <span class="text-danger text-default-light">*</span>
 
-                                @Html.Label("Sample Comments", ResourceNames.Feedbacks)
+                                @Html.LabelFor(m=>m.SampleComments, ResourceNames.Feedbacks)
                             </label>
                             <div class="col-md-8 ">
                                 <div class="form-control noborder">

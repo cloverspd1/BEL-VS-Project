@@ -229,13 +229,16 @@
     <value>Status</value>
   </data>
   <data name="Label_ActionPlans" xml:space="preserve">
-    <value>Action Plans:</value>
+    <value>Action Plans</value>
+  </data>
+  <data name="Label_BNVoltage" xml:space="preserve">
+    <value>Blue to Neutral Voltage (In Distribution Box)</value>
   </data>
   <data name="Label_Branch" xml:space="preserve">
-    <value>Branch:</value>
+    <value>Branch</value>
   </data>
   <data name="Label_BusinessUnits" xml:space="preserve">
-    <value>Business Unit:</value>
+    <value>Business Unit</value>
   </data>
   <data name="Label_CCActingUser" xml:space="preserve">
     <value>CC Acting User</value>
@@ -250,19 +253,25 @@
     <value>CC Quality Incharge</value>
   </data>
   <data name="Label_Comment" xml:space="preserve">
-    <value>Comments/Remarks:</value>
+    <value>Comments/Remarks</value>
   </data>
   <data name="Label_DefectDescription" xml:space="preserve">
-    <value>Defect Description:</value>
+    <value>Defect Description</value>
+  </data>
+  <data name="Label_ENVoltage" xml:space="preserve">
+    <value>Earth to neutral  Voltage (In Distribution Box)</value>
+  </data>
+  <data name="Label_ENVoltageLUM" xml:space="preserve">
+    <value>Earth to neutral  Voltage (In Luminaire)</value>
   </data>
   <data name="Label_FeedbackNo" xml:space="preserve">
-    <value>Feedback No:</value>
+    <value>Feedback No</value>
   </data>
   <data name="Label_FeedbackTitle" xml:space="preserve">
-    <value>Feedback Title:</value>
+    <value>Feedback Title</value>
   </data>
   <data name="Label_FileNameList" xml:space="preserve">
-    <value>Attachments:</value>
+    <value>Attachments</value>
   </data>
   <data name="Label_ForwardtoCCQualityIncharge" xml:space="preserve">
     <value>Forward to CC Quality Incharge</value>
@@ -271,7 +280,7 @@
     <value>Forward to LUM Quality Incharge</value>
   </data>
   <data name="Label_ForwardtoQuality" xml:space="preserve">
-    <value>Forward to Quality:</value>
+    <value>Forward to Quality</value>
   </data>
   <data name="Label_ForwardtoQuality1" xml:space="preserve">
     <value>Forward to Quality</value>
@@ -288,50 +297,80 @@
   <data name="Label_ForwardtoQualityIncharge2" xml:space="preserve">
     <value>Close the issue</value>
   </data>
+  <data name="Label_IsSiteCompleted" xml:space="preserve">
+    <value>Is Site Completed / Under Construction?</value>
+  </data>
   <data name="Label_ItemCode" xml:space="preserve">
-    <value>Item Code:</value>
+    <value>Item Code</value>
   </data>
   <data name="Label_ItemDescription" xml:space="preserve">
-    <value>Item Description:</value>
+    <value>Item Description</value>
+  </data>
+  <data name="Label_LNVoltage" xml:space="preserve">
+    <value>Line to neutral Voltage (In Luminaire)</value>
   </data>
   <data name="Label_LUMQAUser" xml:space="preserve">
-    <value>Quality User:</value>
+    <value>Quality User</value>
   </data>
   <data name="Label_ModelName" xml:space="preserve">
-    <value>Model Name:</value>
+    <value>Model Name</value>
   </data>
   <data name="Label_Observations" xml:space="preserve">
-    <value>Observations:</value>
+    <value>Observations</value>
+  </data>
+  <data name="Label_powersupplier" xml:space="preserve">
+    <value>Power Supplier(Electricity Board /GEN Set)</value>
   </data>
   <data name="Label_ProblemCause" xml:space="preserve">
-    <value>Problem Cause/ issue related to:</value>
+    <value>Problem Cause/ issue related to</value>
   </data>
   <data name="Label_ProductSerial" xml:space="preserve">
-    <value>Product Serial:</value>
+    <value>Product Serial</value>
   </data>
   <data name="Label_ProductType" xml:space="preserve">
-    <value>Product Group:</value>
+    <value>Product Group</value>
+  </data>
+  <data name="Label_ProductWiring" xml:space="preserve">
+    <value>Is Product Wiring is OK ?</value>
   </data>
   <data name="Label_ProposedBy" xml:space="preserve">
-    <value>Proposed By:</value>
+    <value>Proposed By</value>
+  </data>
+  <data name="Label_ProtectionForVoltage" xml:space="preserve">
+    <value>Any Protection For Voltage/ Current Used?</value>
   </data>
   <data name="Label_QAUser" xml:space="preserve">
-    <value>Quality User:</value>
+    <value>Quality User</value>
   </data>
   <data name="Label_QualityUserCreator" xml:space="preserve">
     <value>Quality User </value>
   </data>
   <data name="Label_RequestDate" xml:space="preserve">
-    <value>Created Date:</value>
+    <value>Created Date</value>
+  </data>
+  <data name="Label_RNVoltage" xml:space="preserve">
+    <value>Red to Neutral  Voltage(In Distribution Box)</value>
+  </data>
+  <data name="Label_SampleComments" xml:space="preserve">
+    <value>Sample Comments</value>
+  </data>
+  <data name="Label_SampleProvided" xml:space="preserve">
+    <value>Sample Provided</value>
+  </data>
+  <data name="Label_SampleQuantity" xml:space="preserve">
+    <value>Sample Quantity</value>
   </data>
   <data name="Label_Status" xml:space="preserve">
-    <value>Status:</value>
+    <value>Status</value>
   </data>
   <data name="Label_SupplierCode" xml:space="preserve">
-    <value>Supplier Code:</value>
+    <value>Supplier Code</value>
   </data>
   <data name="Label_WorkflowStatus" xml:space="preserve">
     <value>Workflow Status</value>
+  </data>
+  <data name="Label_YNVoltage" xml:space="preserve">
+    <value>Yellow to Neutral Voltage(In Distribution Box)</value>
   </data>
   <data name="Section_Title_CCActingUserSection" xml:space="preserve">
     <value>CC Acting User Section</value>

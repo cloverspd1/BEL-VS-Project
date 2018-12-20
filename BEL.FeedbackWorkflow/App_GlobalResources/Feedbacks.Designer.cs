@@ -394,7 +394,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Action Plans:.
+        ///   Looks up a localized string similar to Action Plans.
         /// </summary>
         internal static string Label_ActionPlans {
             get {
@@ -403,7 +403,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Branch:.
+        ///   Looks up a localized string similar to Blue to Neutral Voltage (In Distribution Box).
+        /// </summary>
+        internal static string Label_BNVoltage {
+            get {
+                return ResourceManager.GetString("Label_BNVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch.
         /// </summary>
         internal static string Label_Branch {
             get {
@@ -412,7 +421,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Business Unit:.
+        ///   Looks up a localized string similar to Business Unit.
         /// </summary>
         internal static string Label_BusinessUnits {
             get {
@@ -457,7 +466,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Comments/Remarks:.
+        ///   Looks up a localized string similar to Comments/Remarks.
         /// </summary>
         internal static string Label_Comment {
             get {
@@ -466,7 +475,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Defect Description:.
+        ///   Looks up a localized string similar to Defect Description.
         /// </summary>
         internal static string Label_DefectDescription {
             get {
@@ -475,7 +484,25 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feedback No:.
+        ///   Looks up a localized string similar to Earth to neutral  Voltage (In Distribution Box).
+        /// </summary>
+        internal static string Label_ENVoltage {
+            get {
+                return ResourceManager.GetString("Label_ENVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Earth to neutral  Voltage (In Luminaire).
+        /// </summary>
+        internal static string Label_ENVoltageLUM {
+            get {
+                return ResourceManager.GetString("Label_ENVoltageLUM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback No.
         /// </summary>
         internal static string Label_FeedbackNo {
             get {
@@ -484,7 +511,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feedback Title:.
+        ///   Looks up a localized string similar to Feedback Title.
         /// </summary>
         internal static string Label_FeedbackTitle {
             get {
@@ -493,7 +520,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Attachments:.
+        ///   Looks up a localized string similar to Attachments.
         /// </summary>
         internal static string Label_FileNameList {
             get {
@@ -520,7 +547,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forward to Quality:.
+        ///   Looks up a localized string similar to Forward to Quality.
         /// </summary>
         internal static string Label_ForwardtoQuality {
             get {
@@ -574,7 +601,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Item Code:.
+        ///   Looks up a localized string similar to Is Site Completed / Under Construction?.
+        /// </summary>
+        internal static string Label_IsSiteCompleted {
+            get {
+                return ResourceManager.GetString("Label_IsSiteCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Item Code.
         /// </summary>
         internal static string Label_ItemCode {
             get {
@@ -583,7 +619,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Item Description:.
+        ///   Looks up a localized string similar to Item Description.
         /// </summary>
         internal static string Label_ItemDescription {
             get {
@@ -592,7 +628,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quality User:.
+        ///   Looks up a localized string similar to Line to neutral Voltage (In Luminaire).
+        /// </summary>
+        internal static string Label_LNVoltage {
+            get {
+                return ResourceManager.GetString("Label_LNVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quality User.
         /// </summary>
         internal static string Label_LUMQAUser {
             get {
@@ -601,7 +646,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Model Name:.
+        ///   Looks up a localized string similar to Model Name.
         /// </summary>
         internal static string Label_ModelName {
             get {
@@ -610,7 +655,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Observations:.
+        ///   Looks up a localized string similar to Observations.
         /// </summary>
         internal static string Label_Observations {
             get {
@@ -619,7 +664,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Problem Cause/ issue related to:.
+        ///   Looks up a localized string similar to Power Supplier(Electricity Board /GEN Set).
+        /// </summary>
+        internal static string Label_powersupplier {
+            get {
+                return ResourceManager.GetString("Label_powersupplier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Problem Cause/ issue related to.
         /// </summary>
         internal static string Label_ProblemCause {
             get {
@@ -628,7 +682,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Serial:.
+        ///   Looks up a localized string similar to Product Serial.
         /// </summary>
         internal static string Label_ProductSerial {
             get {
@@ -637,7 +691,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Group:.
+        ///   Looks up a localized string similar to Product Group.
         /// </summary>
         internal static string Label_ProductType {
             get {
@@ -646,7 +700,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Proposed By:.
+        ///   Looks up a localized string similar to Is Product Wiring is OK ?.
+        /// </summary>
+        internal static string Label_ProductWiring {
+            get {
+                return ResourceManager.GetString("Label_ProductWiring", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proposed By.
         /// </summary>
         internal static string Label_ProposedBy {
             get {
@@ -655,7 +718,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quality User:.
+        ///   Looks up a localized string similar to Any Protection For Voltage/ Current Used?.
+        /// </summary>
+        internal static string Label_ProtectionForVoltage {
+            get {
+                return ResourceManager.GetString("Label_ProtectionForVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quality User.
         /// </summary>
         internal static string Label_QAUser {
             get {
@@ -673,7 +745,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Created Date:.
+        ///   Looks up a localized string similar to Created Date.
         /// </summary>
         internal static string Label_RequestDate {
             get {
@@ -682,7 +754,43 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status:.
+        ///   Looks up a localized string similar to Red to Neutral  Voltage(In Distribution Box).
+        /// </summary>
+        internal static string Label_RNVoltage {
+            get {
+                return ResourceManager.GetString("Label_RNVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sample Comments.
+        /// </summary>
+        internal static string Label_SampleComments {
+            get {
+                return ResourceManager.GetString("Label_SampleComments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sample Provided.
+        /// </summary>
+        internal static string Label_SampleProvided {
+            get {
+                return ResourceManager.GetString("Label_SampleProvided", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sample Quantity.
+        /// </summary>
+        internal static string Label_SampleQuantity {
+            get {
+                return ResourceManager.GetString("Label_SampleQuantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
         /// </summary>
         internal static string Label_Status {
             get {
@@ -691,7 +799,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Supplier Code:.
+        ///   Looks up a localized string similar to Supplier Code.
         /// </summary>
         internal static string Label_SupplierCode {
             get {
@@ -705,6 +813,15 @@ namespace Resources {
         internal static string Label_WorkflowStatus {
             get {
                 return ResourceManager.GetString("Label_WorkflowStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yellow to Neutral Voltage(In Distribution Box).
+        /// </summary>
+        internal static string Label_YNVoltage {
+            get {
+                return ResourceManager.GetString("Label_YNVoltage", resourceCulture);
             }
         }
         
