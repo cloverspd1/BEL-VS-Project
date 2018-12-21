@@ -440,11 +440,9 @@
                         <div class="form-control noborder">
                            
                             @*@Html.CheckBoxFor(m => m.IsSiteCompleted)*@ 
-                            @Html.DropDownListFor(m => m.IsSiteCompleted, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.IsSiteCompleted})
+                            @Html.DropDownListFor(m => m.IsSiteCompleted, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.IsSiteCompleted})
                             @*@Html.ValidationMessageFor(m => m.IsSiteCompleted, ResourceNames.Feedbacks)*@
 
-                            @*@Html.DropDownListFor(m => m.IsSiteCompleted, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select",new { @class = "form-control", @data_selected = Model.IsSiteCompleted, @data_val = "false", @data_val_required = "Sample provided is required" })*@
-                            @*@Html.ValidationMessageFor(m => m.IsSiteCompleted, ResourceNames.Feedbacks)*@
                             
                         </div>
                     </div>
@@ -479,10 +477,8 @@
                         <div class="form-control noborder">
 
                           @*@Html.CheckBoxFor(m => m.ProtectionForVoltage)*@ 
-                            @Html.DropDownListFor(m => m.ProtectionForVoltage, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.ProtectionForVoltage, @data_val = "false", @data_val_required = "Implemented is required" })
-                            @*@Html.ValidationMessageFor(m => m.ProtectionForVoltage, ResourceNames.Feedbacks)*@
-                            @*@Html.DropDownListFor(m => m.ProtectionForVoltage, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.ProtectionForVoltage, @data_val = "false", @data_val_required = "Sample provided is required" })*@
-
+                            @Html.DropDownListFor(m => m.ProtectionForVoltage, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.ProtectionForVoltage, @data_val = "false", @data_val_required = "Implemented is required" })
+                        
                         </div>
                     </div>
                 </div>
@@ -515,9 +511,8 @@
                     <div class="col-md-4">
                         <div class="form-control noborder">
                             @*@Html.CheckBoxFor(m => m.ProductWiring)*@
-                            @Html.DropDownListFor(m => m.ProductWiring, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.ProductWiring, @data_val = "false", @data_val_required = "Implemented is required" })
-                            @*@Html.ValidationMessageFor(m => m.ProductWiring, ResourceNames.Feedbacks)*@
-                            @*@Html.DropDownListFor(m => m.ProductWiring, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.ProductWiring, @data_val = "false", @data_val_required = "Sample provided is required" })*@
+                            @Html.DropDownListFor(m => m.ProductWiring, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.ProductWiring, @data_val = "false", @data_val_required = "Implemented is required" })
+                           
                         </div>
                     </div>
                 </div>
