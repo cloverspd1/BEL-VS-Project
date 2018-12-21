@@ -1838,12 +1838,12 @@
                 /* Save Approver Matrix & Give Permission End*/
 
                 /* Send Email  start*/
-                AsyncHelper.Call(obj =>
-                {
+                //AsyncHelper.Call(obj =>
+                //{
 
 
-                    this.SendMail(actionPerformed, context, web, Convert.ToString(param[Parameter.USEREID]), itemId, approversDataFromList, listName, nextLevel, currLevel, param, mailCustomValues, emailAttachments);
-                });
+                //    this.SendMail(actionPerformed, context, web, Convert.ToString(param[Parameter.USEREID]), itemId, approversDataFromList, listName, nextLevel, currLevel, param, mailCustomValues, emailAttachments);
+                //});
                 /*Send Email End*/
             }
             return itemId;

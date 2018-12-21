@@ -160,7 +160,7 @@
                     approverList = approvers.ConvertAll(p => (ApproverMasterListItem)p);
                     ccSectionDetails.ApproversList.ForEach(p =>
                     {
-                        if (BU != "LUM" && BU!=null)
+                        if (BU != "Illumination S" && BU!=null)
                         {
                             ccSectionDetails.CCQualityInchargeUser =p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
                             ccSectionDetails.CCQualityInchargeName =p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
@@ -178,7 +178,7 @@
 
                     LUMSectionDetails.ApproversList.ForEach(p =>
                     {
-                        if (BU == "LUM")
+                        if (BU == "Illumination S")
                         {
                             LUMSectionDetails.LUMQualityInchargeUser =p.Approver= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserID;
                             LUMSectionDetails.LUMQualityInchargeName =p.ApproverName= approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserName;

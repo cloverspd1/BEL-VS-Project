@@ -454,7 +454,7 @@ function ItemCodeAdded(ele, id, text) {
                         $("#" + key).val(value);
                     }
                   
-                    if ($("#" + key).val() == "LUM") {
+                    if ($("#" + key).val() == "Illumination S") {
                        
                     }
                 });
@@ -496,7 +496,7 @@ function ItemCodeAdded(ele, id, text) {
             //});
 
           
-            if ($("#BusinessUnits").val() == "LUM") {
+            if ($("#BusinessUnits").val() == "Illumination S") {
                 $("#divActingUser").css("display", "none");
                 $("#divLUMUser").css("display", "inline");
 
@@ -618,11 +618,11 @@ $(window).load(function () {
         $("#divqauser").css("display", "inline");
        // alert("nhi");
 
-    } else if ($("#BusinessUnits").val() == "LUM") {
+    } else if ($("#BusinessUnits").val() == "Illumination S") {
         $("#divqauser1").css("display", "inline");
         $("#divqauser").css("display", "none");
 
-        $("#BUHidden").val("LUM");
+        $("#BUHidden").val("Illumination S");
         $("a.btn:contains('Close the issue')").text(" Forward to Quality User");
         $("a.btn:contains(' Forward to Quality User')").attr('data-original-title', "Forward to Quality User");
         $("a.btn:contains(' Forward to Quality User')").attr('data-action', "10");
