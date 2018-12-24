@@ -137,6 +137,16 @@
                                    sectionDetails.LUMActingUser = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).UserID;
                                    sectionDetails.LUMActingUserName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).UserName;
                                }
+                               else if (p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER)
+                               {
+                                   p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserID;
+                                   p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).UserName;
+                               }
+                               else if (p.Role == FeedbackRoles.LUMQUALITYINCHARGE)
+                               {
+                                   p.Approver = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserID;
+                                   p.ApproverName = approverList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMQUALITYINCHARGE).UserName;
+                               }
 
                            });
                         }

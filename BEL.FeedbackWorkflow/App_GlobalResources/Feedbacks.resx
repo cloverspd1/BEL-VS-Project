@@ -231,6 +231,9 @@
   <data name="Label_ActionPlans" xml:space="preserve">
     <value>Action Plans:</value>
   </data>
+  <data name="Label_BNVoltage" xml:space="preserve">
+    <value>Blue to Neutral Voltage (In Distribution Box)</value>
+  </data>
   <data name="Label_Branch" xml:space="preserve">
     <value>Branch:</value>
   </data>
@@ -254,6 +257,12 @@
   </data>
   <data name="Label_DefectDescription" xml:space="preserve">
     <value>Defect Description:</value>
+  </data>
+  <data name="Label_ENVoltage" xml:space="preserve">
+    <value>Earth to neutral Voltage (In Distribution Box)</value>
+  </data>
+  <data name="Label_ENVoltageLUM" xml:space="preserve">
+    <value>Earth to neutral Voltage (In Luminaire)</value>
   </data>
   <data name="Label_FeedbackNo" xml:space="preserve">
     <value>Feedback No:</value>
@@ -288,11 +297,17 @@
   <data name="Label_ForwardtoQualityIncharge2" xml:space="preserve">
     <value>Close the issue</value>
   </data>
+  <data name="Label_IsSiteCompleted" xml:space="preserve">
+    <value>Is Site Completed / under construction ?</value>
+  </data>
   <data name="Label_ItemCode" xml:space="preserve">
     <value>Item Code:</value>
   </data>
   <data name="Label_ItemDescription" xml:space="preserve">
     <value>Item Description:</value>
+  </data>
+  <data name="Label_LNVoltage" xml:space="preserve">
+    <value>Line to neutral Voltage (In Distribution Box)</value>
   </data>
   <data name="Label_LUMQAUser" xml:space="preserve">
     <value>Quality User:</value>
@@ -306,6 +321,9 @@
   <data name="Label_Observations" xml:space="preserve">
     <value>Observations:</value>
   </data>
+  <data name="Label_powersupplier" xml:space="preserve">
+    <value>Power Supplier (Electricity Board  / GEN Set)</value>
+  </data>
   <data name="Label_ProblemCause" xml:space="preserve">
     <value>Problem Cause/ issue related to:</value>
   </data>
@@ -315,8 +333,14 @@
   <data name="Label_ProductType" xml:space="preserve">
     <value>Product Group:</value>
   </data>
+  <data name="Label_ProductWiring" xml:space="preserve">
+    <value>Is Product Wiring is Ok ?</value>
+  </data>
   <data name="Label_ProposedBy" xml:space="preserve">
     <value>Proposed By:</value>
+  </data>
+  <data name="Label_ProtectionForVoltage" xml:space="preserve">
+    <value>Any Protection for Voltage / Current used ?</value>
   </data>
   <data name="Label_QAUser" xml:space="preserve">
     <value>Quality User:</value>
@@ -327,6 +351,9 @@
   <data name="Label_RequestDate" xml:space="preserve">
     <value>Created Date:</value>
   </data>
+  <data name="Label_RNVoltage" xml:space="preserve">
+    <value>Red to Neutral Voltage (In Distribution Box)</value>
+  </data>
   <data name="Label_Status" xml:space="preserve">
     <value>Status:</value>
   </data>
@@ -335,6 +362,9 @@
   </data>
   <data name="Label_WorkflowStatus" xml:space="preserve">
     <value>Workflow Status</value>
+  </data>
+  <data name="Label_YNVoltage" xml:space="preserve">
+    <value>Yellow to Neutral Voltage (In Distribution Box)</value>
   </data>
   <data name="Section_Title_CCActingUserSection" xml:space="preserve">
     <value>CC Acting User Section</value>
