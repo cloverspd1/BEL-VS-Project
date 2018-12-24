@@ -354,6 +354,15 @@
   <data name="Label_RNVoltage" xml:space="preserve">
     <value>Red to Neutral Voltage (In Distribution Box)</value>
   </data>
+  <data name="Label_SampleComments" xml:space="preserve">
+    <value>Sample Comments</value>
+  </data>
+  <data name="Label_SampleProvided" xml:space="preserve">
+    <value>Is Sample Provided ?</value>
+  </data>
+  <data name="Label_SampleQuantity" xml:space="preserve">
+    <value>Sample Quantity</value>
+  </data>
   <data name="Label_Status" xml:space="preserve">
     <value>Status:</value>
   </data>

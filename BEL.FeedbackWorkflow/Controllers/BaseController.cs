@@ -130,9 +130,9 @@
                         //this.SPCurrentUser.UserId = "34";//Creator sent back by Quality //tapas
                         //this.SPCurrentUser.UserId = "32";//sanin
                         //this.SPCurrentUser.UserId = "29"; // kanse
-                        // this.SPCurrentUser.UserId = "42"; // cloverspd
+                         this.SPCurrentUser.UserId = "42"; // cloverspd
                         // this.SPCurrentUser.UserId = "28"; //Singh.C.V
-                         this.SPCurrentUser.UserId = "136"; //collab app2 production
+                        // this.SPCurrentUser.UserId = "136"; //collab app2 production
 
 
                         //this.SPCurrentUser.UserId = CommonBusinessLayer.Instance.GetCurrentUser(User.IdentName);

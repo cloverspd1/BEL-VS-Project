@@ -772,6 +772,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sample Comments.
+        /// </summary>
+        internal static string Label_SampleComments {
+            get {
+                return ResourceManager.GetString("Label_SampleComments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Sample Provided ?.
+        /// </summary>
+        internal static string Label_SampleProvided {
+            get {
+                return ResourceManager.GetString("Label_SampleProvided", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sample Quantity.
+        /// </summary>
+        internal static string Label_SampleQuantity {
+            get {
+                return ResourceManager.GetString("Label_SampleQuantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Status:.
         /// </summary>
         internal static string Label_Status {
