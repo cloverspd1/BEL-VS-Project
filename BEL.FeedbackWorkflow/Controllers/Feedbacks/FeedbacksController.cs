@@ -79,6 +79,7 @@
                 ModelState.Remove("CCActingUser");
                 model.flag = true;
                 model.SampleProvidedDate = DateTime.Now;
+                model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CREATOR).Comments = model.SampleComments;
                 
             }
 

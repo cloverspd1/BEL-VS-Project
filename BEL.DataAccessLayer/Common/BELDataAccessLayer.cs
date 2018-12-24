@@ -1412,6 +1412,7 @@
                             approversDataFromList.FirstOrDefault(p => p.Role == currentApproverDetails.Role).QualityComments = currentApproverDetails.QualityComments;
                         }
                     }
+
                     if (!string.IsNullOrEmpty(currentApproverDetails.ImplementedRemark))
                     {
                         if (!string.IsNullOrEmpty(currentApproverDetails.Levels))
