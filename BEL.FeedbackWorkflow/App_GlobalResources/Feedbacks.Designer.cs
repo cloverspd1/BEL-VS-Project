@@ -601,6 +601,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LUM Quality Incharge.
+        /// </summary>
+        internal static string Label_LUMQualityInchargeUser {
+            get {
+                return ResourceManager.GetString("Label_LUMQualityInchargeUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Model Name:.
         /// </summary>
         internal static string Label_ModelName {

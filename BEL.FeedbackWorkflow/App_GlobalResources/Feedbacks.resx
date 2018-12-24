@@ -297,6 +297,9 @@
   <data name="Label_LUMQAUser" xml:space="preserve">
     <value>Quality User:</value>
   </data>
+  <data name="Label_LUMQualityInchargeUser" xml:space="preserve">
+    <value>LUM Quality Incharge</value>
+  </data>
   <data name="Label_ModelName" xml:space="preserve">
     <value>Model Name:</value>
   </data>

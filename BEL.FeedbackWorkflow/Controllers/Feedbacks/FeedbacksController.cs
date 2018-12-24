@@ -87,59 +87,56 @@
             {
                 if (model.ApproversList != null)
                 {
-                    if (model.ApproversList != null && model.BusinessUnits== "Illumination S" && model.ActionStatus == ButtonActionStatus.NextApproval)
+                    if (model.ApproversList != null && model.BusinessUnits=="Illumination S" && model.ActionStatus == ButtonActionStatus.NextApproval)
                     {
                         model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = model.LUMActingUser;
                         model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).ApproverName = model.LUMActingUserName;
 
-                        // model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYINCHARGE).Approver = "";
-                        //model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = "";
-
-                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).Approver = "";
-                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQUALITYINCHARGEUSER).ApproverName = "";
-
-
-                        ////model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQualityIncharge).Approver = {assign user from approver master}
-                        //// model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = ""
-                        //// model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCQualityInchargeUser).Approver = ""
-                        if (model.ProposedBy == model.LUMActingUser)
-                        {
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = "";
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).ApproverName = "";
-                        }
-                        else
-                        {
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = model.LUMActingUser;
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).ApproverName = model.LUMActingUserName;
-                        }
-                        //// if(currentUser == LUM Service manager Id)
-                        ////then  model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = ""
-                        //// else model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = model.LUMActingUser;
-
                     }
-
                     else if (model.ApproversList != null && model.BusinessUnits != "Illumination S" && model.ActionStatus == ButtonActionStatus.NextApproval)
                     {
                         model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = model.CCActingUser;
                         model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName = model.CCActingUserName;
-
-                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYINCHARGE).Approver = "";
-                        model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.LUMQUALITYINCHARGE).ApproverName = "";
-
-                        if (model.ProposedBy == model.CCActingUser)
-                        {
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = "";
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName = "";
-                        }
-                        else
-                        {
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).Approver = model.CCActingUser;
-                            model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.CCACTINGUSER).ApproverName = model.CCActingUserName;
-                        }
-
                     }
                 }
-               
+                //string ID = "";
+                //string[] IDs = null;
+                //string Flag = "false";
+                //model.ApproversList.ForEach(p =>
+                //{
+                //    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "0")
+                //    {
+                //        ID = p.Approver;
+                //    }
+                //    if (p.FillByRole == FeedbackRoles.CREATOR && p.Levels == "1" && p.Approver != null)
+                //    {
+                //        IDs = p.Approver.Split(',');
+                //    }
+
+                //    if (IDs != null)
+                //    {
+                //        for (int i = 0; i < IDs.Length; i++)
+                //        {
+                //            if (IDs != null && ID != "" && ID == IDs[i])
+                //            {
+                //                Flag = "true";
+                //                if (model.BusinessUnits == "Illumination S")
+                //                {
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).Approver =p.Approver="";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).ApproverName =p.ApproverName="";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.CCACTINGUSER).Status =p.Status="NOTREQUIRED";
+                //                }
+                //                else if (model.BusinessUnits != "Illumination S")
+                //                {
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).Approver = p.Approver = "";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).ApproverName = p.ApproverName = "";
+                //                    model.ApproversList.FirstOrDefault(q => q.Role == FeedbackRoles.LUMSERVICEMANAGERS).Status = p.Status = "NOTREQUIRED";
+                //                }
+
+                //            }
+                //        }
+                //    }
+                //});
 
                 model.ProductGroup = model.ProductType;
                 model.Files = new List<FileDetails>();
@@ -276,7 +273,7 @@
 
             if (model != null && this.ValidateModelState(model))
             {
-                if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden!="Illumination S")
+                if (model.ApproversList != null && model.ForwardtoQuality && model.ActionStatus == ButtonActionStatus.NextApproval && model.BUHidden!= "Illumination S")
                 {
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).Approver = model.QAUser;
                     model.ApproversList.FirstOrDefault(p => p.Role == FeedbackRoles.QAULITYUSER).ApproverName = model.QAUserName;

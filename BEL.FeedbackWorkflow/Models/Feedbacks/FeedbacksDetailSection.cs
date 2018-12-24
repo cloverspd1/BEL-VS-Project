@@ -76,13 +76,13 @@
         public bool IsField { get; set; }
 
         [DataMember]
-        public bool IsSiteCompleted { get; set; }
+        public string IsSiteCompleted { get; set; }
 
         [DataMember]
-        public bool ProtectionForVoltage { get; set; }
+        public string ProtectionForVoltage { get; set; }
 
         [DataMember]
-        public bool ProductWiring { get; set; }
+        public string ProductWiring { get; set; }
 
         [DataMember]
         public string RNVoltage { get; set; }

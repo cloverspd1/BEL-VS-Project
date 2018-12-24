@@ -542,7 +542,7 @@ function ItemCodeAdded(ele, id, text) {
 //    var BusinessUnitvalue = $("#BusinessUnits").val();
 //    $(Approverlist).each(function (i, item) {
 //            debugger;
-//            if (BusinessUnitvalue == "Illumination S") {
+//            if (BusinessUnitvalue == "LUM") {
 //               // $(".approver").each(function () {
 //                    if (item.Role == "CC Quality Incharge User") {
 //                        alert("Hi");
@@ -623,9 +623,9 @@ $(window).load(function () {
         $("#divqauser").css("display", "none");
 
         $("#BUHidden").val("Illumination S");
-        $("a.btn:contains('Close the issue')").text(" Forward to Quality User");
-        $("a.btn:contains(' Forward to Quality User')").attr('data-original-title', "Forward to Quality User");
-        $("a.btn:contains(' Forward to Quality User')").attr('data-action', "10");
+        //$("a.btn:contains('Close the issue')").text(" Forward to Quality User");
+        //$("a.btn:contains(' Forward to Quality User')").attr('data-original-title', "Forward to Quality User");
+        //$("a.btn:contains(' Forward to Quality User')").attr('data-action', "10");
 
         //alert("yes");
         $("#divActingUser").css("display", "none");
