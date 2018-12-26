@@ -407,7 +407,7 @@
        
       
 
-        <div class="row" id="sampleDiv" hidden>
+        @*<div class="row" id="sampleDiv" hidden>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
@@ -425,7 +425,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
 
        
 
@@ -653,7 +653,7 @@
                             <div class="col-md-8 ">
                                 <div class="form-control noborder">
 
-                                    @Html.TextAreaFor(m => m.SampleComments, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
+                                    @Html.TextAreaFor(m => m.SampleComments, new { maxlength = 1000, @class = "form-control ", @data_val = "true", @data_selected = Model.SampleComments, @data_val_required = "Comments/Remarks is required (max allow 1000 char.)", data_toggle = "tooltip", title = "Max 1000 characters" })
                                     @Html.ValidationMessageFor(m => m.SampleComments, ResourceNames.Feedbacks)
 
                                 </div>
