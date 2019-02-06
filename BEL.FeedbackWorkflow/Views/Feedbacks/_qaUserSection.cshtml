@@ -21,6 +21,7 @@
     @Html.HiddenFor(m => m.Status)
     @Html.HiddenFor(m => m.QAHeadUser)
     @Html.HiddenFor(m=>m.QualityUserDate)
+    @*@Html.HiddenFor(m => m.SendBackToCC)*@
     @Html.Partial("_ApproversList", Model.ApproversList)
     @*@Html.AntiForgeryToken()*@
 
@@ -34,6 +35,7 @@
                     </label>
                 <div class="col-sm-8">
                     @Html.CheckBoxFor(m=>m.SendBackToCC) *Please select this if you want to send back to consumer care.
+
                     </div>
                 </div>
             </div>

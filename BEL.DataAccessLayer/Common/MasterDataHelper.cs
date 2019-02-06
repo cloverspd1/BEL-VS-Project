@@ -66,6 +66,8 @@
         /// <returns>
         /// master object
         /// </returns>
+        /// 
+        
         private IMaster GetMasterDataOf(ClientContext context, Web web, IMaster master)
         {
             dynamic objMaster = Convert.ChangeType(master, master.GetType());

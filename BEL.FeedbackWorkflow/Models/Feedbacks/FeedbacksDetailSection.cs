@@ -205,6 +205,8 @@
         [DataMember]
         public string SampleProvided { get; set; }
 
+        
+
         [DataMember]
         public string SampleQuantity { get; set; }
 

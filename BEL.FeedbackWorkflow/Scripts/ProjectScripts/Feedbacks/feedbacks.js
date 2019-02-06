@@ -1,6 +1,26 @@
 ﻿var GetFinalizationReportExportToExcelUrl = BASEPATHURL + "/Feedbacks/GetFeedbackReportExportToExcel";
 $(document).ready(function () {
    
+    $("#SendBackToCC").change(function () {
+        debugger;
+        if ($(this).is(":checked")) {
+            $("#closediv").hide();
+            $("#quastatusdiv").show();
+            $("#quastatusdiv").css("visibility", "visible");
+            $("a.btn:contains('Complete')").text("Send Back");
+            $("a.btn:contains('Send Back')").attr('data-original-title', "Request will be forward to CC.");
+            $("a.btn:contains('Send Back')").attr('data-action', "22");
+
+        } else {
+            $("#closediv").show();
+            $("#quastatusdiv").hide();
+            $("#quastatusdiv").css("visibility", "hidden");
+            $("a.btn:contains('Send Back')").text("Complete");
+            $("a.btn:contains('Complete')").attr('data-original-title', "Request will be close.");
+            $("a.btn:contains('Complete')").attr('data-action', "14");
+        }
+    });
+
 
     $(".sectionDetailType").change();
 
@@ -88,26 +108,7 @@ $(document).ready(function () {
     }).change();
 
     
-    $("#SendBackToCC").click(function () {
-        debugger;
-        if ($(this).is(":checked")) {
-            $("#closediv").hide();
-            $("#quastatusdiv").show();
-            $("#quastatusdiv").css("visibility", "visible");
-            $("a.btn:contains('Complete')").text("Send Back");
-            $("a.btn:contains('Send Back')").attr('data-original-title', "Request will be forward to CC.");
-            $("a.btn:contains('Send Back')").attr('data-action', "22");
-           
-        } else {
-            $("#closediv").show();
-            $("#quastatusdiv").hide();
-            $("#quastatusdiv").css("visibility", "hidden");
-            $("a.btn:contains('Send Back')").text("Complete");
-            $("a.btn:contains('Complete')").attr('data-original-title', "Request will be close.");
-            $("a.btn:contains('Complete')").attr('data-action', "14");
-        }
-    });
-
+   
     
 
     $("#QualityStatus").on("change", function () {
@@ -627,6 +628,12 @@ $(window).load(function () {
         $("a.btn:contains(' Forward to Quality User')").attr('data-original-title', "Forward to Quality User");
         $("a.btn:contains(' Forward to Quality User')").attr('data-action', "10");
 
+        $("#divSiteCompleted").css("display", "inline");
+        $("#DivAnyProtection").css("display", "inline");
+        $("#divProductWiring").css("display", "inline");
+        $("#divRNVtg").css("display", "inline");
+        $("#divYNvtg").css("display", "inline");
+
         //alert("yes");
         $("#divActingUser").css("display", "none");
         $("#divLUMUser").css("display", "inline");
@@ -634,6 +641,12 @@ $(window).load(function () {
     else {
         $("#divqauser1").css("display", "none");
         $("#divqauser").css("display", "inline");
+
+        $("#divSiteCompleted").css("display", "none");
+        $("#DivAnyProtection").css("display", "none");
+        $("#divProductWiring").css("display", "none");
+        $("#divRNVtg").css("display", "none");
+        $("#divYNvtg").css("display", "none");
 
        // alert("no");
 

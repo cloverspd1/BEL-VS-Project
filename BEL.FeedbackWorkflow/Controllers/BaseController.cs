@@ -115,8 +115,8 @@
                         this.SPCurrentUser = new UserDetails();
                         //this.SPCurrentUser.UserId = "9";//Sharepoint Admin
                         // this.SPCurrentUser.UserId = "20";//dcrdcnuser1
-                        this.SPCurrentUser.UserId = "27";//collabapp2
-                        //this.SPCurrentUser.UserId = "22";//collabapp3
+                       // this.SPCurrentUser.UserId = "27";//collabapp2
+                        this.SPCurrentUser.UserId = "22";//collabapp3
                         // this.SPCurrentUser.UserId = "41";//Dumbre Amit
                         // this.SPCurrentUser.UserId = "43";//Dnyadev 
                         //this.SPCurrentUser.UserId = "40";//Patil Bhushan 
