@@ -84,25 +84,25 @@
         [DataMember]
         public string ProductWiring { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string RNVoltage { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string YNVoltage { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string BNVoltage { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string ENVoltage { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string ENVoltageLUM { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string LNVoltage { get; set; }
 
-        [DataMember]
+        [DataMember, Required]
         public string powersupplier { get; set; }
 
 

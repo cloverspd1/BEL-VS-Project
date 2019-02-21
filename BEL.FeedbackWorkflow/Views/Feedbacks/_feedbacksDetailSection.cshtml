@@ -46,39 +46,39 @@
         @*@Html.Partial("_CurrentApprover", Model.CurrentApprover ?? new ApplicationStatus())*@
         @*@Html.AntiForgeryToken()*@
 
-    if (Model.RequestDate.HasValue)
-    {
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label class="col-md-4 control-label">
-                        @Html.LabelFor(m => m.RequestDate, ResourceNames.Feedbacks)
-                    </label>
-                    <div class="col-md-8 ">
-                        <div class="form-control noborder">
+        if (Model.RequestDate.HasValue)
+        {
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            @Html.LabelFor(m => m.RequestDate, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
 
-                            @(Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
-                            @Html.Hidden("RequestDate", Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+                                @(Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+                                @Html.Hidden("RequestDate", Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label class="col-md-4 control-label">
-                        @Html.LabelFor(m => m.ProposedBy, ResourceNames.Feedbacks)
-                    </label>
-                    <div class="col-md-8 ">
-                        <div class="form-control noborder">
-                            @(string.IsNullOrEmpty(Model.ProposedByName) ? ViewBag.UserName : Model.ProposedByName)
-                            @Html.Hidden("ProposedBy", string.IsNullOrEmpty(Model.ProposedBy) ? (string)ViewBag.UserID : Model.ProposedBy)
-                            @Html.Hidden("ProposedByName", string.IsNullOrEmpty(Model.ProposedByName) ? (string)ViewBag.UserName : Model.ProposedByName)
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">
+                            @Html.LabelFor(m => m.ProposedBy, ResourceNames.Feedbacks)
+                        </label>
+                        <div class="col-md-8 ">
+                            <div class="form-control noborder">
+                                @(string.IsNullOrEmpty(Model.ProposedByName) ? ViewBag.UserName : Model.ProposedByName)
+                                @Html.Hidden("ProposedBy", string.IsNullOrEmpty(Model.ProposedBy) ? (string)ViewBag.UserID : Model.ProposedBy)
+                                @Html.Hidden("ProposedByName", string.IsNullOrEmpty(Model.ProposedByName) ? (string)ViewBag.UserName : Model.ProposedByName)
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
@@ -121,69 +121,69 @@
 
 
             </div>
-    }
-    else
-    {
-        @Html.Hidden("RequestDate", Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
-        @Html.Hidden("ProposedBy", string.IsNullOrEmpty(Model.ProposedBy) ? (string)ViewBag.UserID : Model.ProposedBy)
-        @Html.Hidden("ProposedByName", string.IsNullOrEmpty(Model.ProposedByName) ? (string)ViewBag.UserName : Model.ProposedByName)
-        @Html.DisplayFor(m => m.FeedbackNo, ResourceNames.Feedbacks)
-        @Html.HiddenFor(m => m.FeedbackNo)
-        @Html.HiddenFor(m => m.Status)
-        @Html.HiddenFor(m => m.WorkflowStatus)
+        }
+        else
+        {
+            @Html.Hidden("RequestDate", Model.RequestDate.HasValue ? Model.RequestDate.Value.ToShortDateString() : "")
+            @Html.Hidden("ProposedBy", string.IsNullOrEmpty(Model.ProposedBy) ? (string)ViewBag.UserID : Model.ProposedBy)
+            @Html.Hidden("ProposedByName", string.IsNullOrEmpty(Model.ProposedByName) ? (string)ViewBag.UserName : Model.ProposedByName)
+            @Html.DisplayFor(m => m.FeedbackNo, ResourceNames.Feedbacks)
+            @Html.HiddenFor(m => m.FeedbackNo)
+            @Html.HiddenFor(m => m.Status)
+            @Html.HiddenFor(m => m.WorkflowStatus)
 
-    }
-    <div class="row">
+        }
+        <div class="row">
 
-        <div class="col-sm-6">
-            <div class="form-group">
-                <label class="col-md-4 control-label">
-                    <span class="text-danger text-default-light">*</span>
-                    @Html.LabelFor(m => m.ItemCode, ResourceNames.Feedbacks)
-                </label>
-                <div class="col-md-8 ">
-                    <div class="form-control noborder">
-                        @if (string.IsNullOrEmpty(Model.Status) || Model.Status.Equals("Draft"))
-                        {
-                            @Html.TextBoxFor(m => m.ItemCode, new { @class = "user-tags", @min_chars = 4, @data_hint = "Type and Select by Item Code(min 4 char)", @data_url = "/Feedbacks/GetAllItems", @data_limit = "1", @data_onadd = "ItemCodeAdded", @data_onremove = "ItemCodeRemoved", @data_displaycolumn = "name" })
-                            @Html.ValidationMessageFor(m => m.ItemCode, ResourceNames.Feedbacks)
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.ItemCode, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            @if (string.IsNullOrEmpty(Model.Status) || Model.Status.Equals("Draft"))
+                            {
+                                @Html.TextBoxFor(m => m.ItemCode, new { @class = "user-tags", @min_chars = 4, @data_hint = "Type and Select by Item Code(min 4 char)", @data_url = "/Feedbacks/GetAllItems", @data_limit = "1", @data_onadd = "ItemCodeAdded", @data_onremove = "ItemCodeRemoved", @data_displaycolumn = "name" })
+                                @Html.ValidationMessageFor(m => m.ItemCode, ResourceNames.Feedbacks)
 
-                        }
-                        else
-                        {
-                            <div class="form-control noborder">
-                                @Html.DisplayFor(m => m.ItemCode)
-                                @Html.HiddenFor(m => m.ItemCode)
-                            </div>
+                            }
+                            else
+                            {
+                                <div class="form-control noborder">
+                                    @Html.DisplayFor(m => m.ItemCode)
+                                    @Html.HiddenFor(m => m.ItemCode)
+                                </div>
 
-                            @*<div class="hide">
-                                    @Html.TextBoxFor(m => m.ItemCode, new { @class = "user-tags ", @min_chars = 4, @data_hint = "Type and Select by Item Code(min 4 char)", @data_url = "/Feedbacks/GetAllItems", @data_limit = "1", @data_onadd = "ItemCodeAdded", @data_onremove = "ItemCodeRemoved", @data_displaycolumn = "name" })
-                                    @Html.ValidationMessageFor(m => m.ItemCode, ResourceNames.Feedbacks)
-                                </div>*@
-                        }
+                                @*<div class="hide">
+                                        @Html.TextBoxFor(m => m.ItemCode, new { @class = "user-tags ", @min_chars = 4, @data_hint = "Type and Select by Item Code(min 4 char)", @data_url = "/Feedbacks/GetAllItems", @data_limit = "1", @data_onadd = "ItemCodeAdded", @data_onremove = "ItemCodeRemoved", @data_displaycolumn = "name" })
+                                        @Html.ValidationMessageFor(m => m.ItemCode, ResourceNames.Feedbacks)
+                                    </div>*@
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="form-group">
-                <label class="col-md-4 control-label">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
 
-                    @Html.LabelFor(m => m.ItemDescription, ResourceNames.Feedbacks)
-                </label>
-                <div class="col-md-8 ">
-                    <div class="form-control noborder">
-                        <span class="ItemDescription">
-                            <span>
-                                @Html.DisplayFor(m => m.ItemDescription, new { @class = "form-control" })
+                        @Html.LabelFor(m => m.ItemDescription, ResourceNames.Feedbacks)
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+                            <span class="ItemDescription">
+                                <span>
+                                    @Html.DisplayFor(m => m.ItemDescription, new { @class = "form-control" })
+                                </span>
+                                @Html.HiddenFor(m => m.ItemDescription)
                             </span>
-                            @Html.HiddenFor(m => m.ItemDescription)
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <div class="row">
 
 
@@ -433,16 +433,16 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-8 control-label">
-                        <span class="text-danger text-default-light"></span>
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.IsSiteCompleted, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-4">
                         <div class="form-control noborder">
 
                             @*@Html.CheckBoxFor(m => m.IsSiteCompleted)*@
-                            @Html.DropDownListFor(m => m.IsSiteCompleted, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.IsSiteCompleted })
+                            @Html.DropDownListFor(m => m.IsSiteCompleted, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), "Select", new { @class = "form-control", @data_selected = Model.IsSiteCompleted, @data_val = "true", @data_val_required = "Is Site Completed / under construction is required" })
                             @*@Html.ValidationMessageFor(m => m.IsSiteCompleted, ResourceNames.Feedbacks)*@
-
+                            @Html.ValidationMessageFor(m => m.IsSiteCompleted, ResourceNames.Feedbacks)
 
                         </div>
                     </div>
@@ -451,11 +451,12 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.BNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
-                            @Html.TextBoxFor(m => m.BNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.BNVoltage, new { @class = "form-control", data_toggle = "tooltip", title = "Integer and decimal only", onkeypress = "return validateDecimalValue(this, event);"})
                             @Html.ValidationMessageFor(m => m.BNVoltage, ResourceNames.Feedbacks)
                         </div>
                     </div>
@@ -470,15 +471,15 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-8 control-label">
-                        <span class="text-danger text-default-light"></span>
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.ProtectionForVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-4">
                         <div class="form-control noborder">
 
                             @*@Html.CheckBoxFor(m => m.ProtectionForVoltage)*@
-                            @Html.DropDownListFor(m => m.ProtectionForVoltage, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.ProtectionForVoltage, @data_val = "false", @data_val_required = "Implemented is required" })
-
+                            @Html.DropDownListFor(m => m.ProtectionForVoltage, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"),"Select", new { @class = "form-control", @data_selected = Model.ProtectionForVoltage, @data_val = "true", @data_val_required = "Any Protection for Voltage / Current used is required" })
+                            @Html.ValidationMessageFor(m => m.ProtectionForVoltage, ResourceNames.Feedbacks)
                         </div>
                     </div>
                 </div>
@@ -486,11 +487,12 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.ENVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
-                            @Html.TextBoxFor(m => m.ENVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.ENVoltage, new { @class = "form-control", data_toggle = "tooltip", title = "Integer/Decimal only" ,onkeypress = "return validateDecimalValue(this, event);" })
                             @Html.ValidationMessageFor(m => m.ENVoltage, ResourceNames.Feedbacks)
                         </div>
                     </div>
@@ -505,14 +507,14 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-8 control-label">
-                        <span class="text-danger text-default-light"></span>
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.ProductWiring, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-4">
                         <div class="form-control noborder">
                             @*@Html.CheckBoxFor(m => m.ProductWiring)*@
-                            @Html.DropDownListFor(m => m.ProductWiring, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"), new { @class = "form-control", @data_selected = Model.ProductWiring, @data_val = "false", @data_val_required = "Implemented is required" })
-
+                            @Html.DropDownListFor(m => m.ProductWiring, new SelectList(new List<SelectListItem> { new SelectListItem { Text = "Yes", Value = "Yes" }, new SelectListItem { Text = "No", Value = "No" } }, "Value", "Text"),"Select", new { @class = "form-control", @data_selected = Model.ProductWiring, @data_val = "true", @data_val_required = "Is Product Wiring is Ok required" })
+                            @Html.ValidationMessageFor(m => m.ProductWiring, ResourceNames.Feedbacks)
                         </div>
                     </div>
                 </div>
@@ -520,11 +522,12 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.ENVoltageLUM, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
-                            @Html.TextBoxFor(m => m.ENVoltageLUM, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.ENVoltageLUM, new { @class = "form-control", data_toggle = "tooltip", title = "Integer/Decimal only", onkeypress = "return validateDecimalValue(this, event);" })
                             @Html.ValidationMessageFor(m => m.ENVoltageLUM, ResourceNames.Feedbacks)
                         </div>
                     </div>
@@ -539,13 +542,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        <span class="text-danger text-default-light"></span>
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.RNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
 
-                            @Html.TextBoxFor(m => m.RNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.RNVoltage, new { @class = "form-control", data_toggle = "tooltip", title = "Integer/Decimal only", onkeypress = "return validateDecimalValue(this, event);" })
                             @Html.ValidationMessageFor(m => m.RNVoltage, ResourceNames.Feedbacks)
 
                         </div>
@@ -555,11 +558,12 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
+                        <span class="text-danger text-default-light">*</span>
                         @Html.LabelFor(m => m.LNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
-                            @Html.TextBoxFor(m => m.LNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.LNVoltage, new { @class = "form-control", data_toggle = "tooltip", title = "Integer/Decimal only", onkeypress = "return validateDecimalValue(this, event);" })
                             @Html.ValidationMessageFor(m => m.LNVoltage, ResourceNames.Feedbacks)
                         </div>
                     </div>
@@ -574,13 +578,13 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        <span class="text-danger text-default-light"></span>
-                        @Html.LabelFor(m=>m.YNVoltage, ResourceNames.Feedbacks)
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.YNVoltage, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8 ">
                         <div class="form-control noborder">
 
-                            @Html.TextBoxFor(m => m.YNVoltage, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.YNVoltage, new { @class = "form-control", data_toggle = "tooltip", title = "Integer/Decimal only", onkeypress = "return validateDecimalValue(this, event);" })
                             @Html.ValidationMessageFor(m => m.YNVoltage, ResourceNames.Feedbacks)
 
                         </div>
@@ -590,11 +594,12 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="col-md-4 control-label">
-                        @Html.LabelFor(m=>m.powersupplier, ResourceNames.Feedbacks)
+                        <span class="text-danger text-default-light">*</span>
+                        @Html.LabelFor(m => m.powersupplier, ResourceNames.Feedbacks)
                     </label>
                     <div class="col-md-8">
                         <div class="form-control noborder">
-                            @Html.TextBoxFor(m => m.powersupplier, new { @class = "form-control alphanumericwithspace", data_toggle = "tooltip", title = "Max 4 characters" })
+                            @Html.TextBoxFor(m => m.powersupplier, new { @class = "form-control", data_toggle = "tooltip", title = "Integer/Decimal only", onkeypress = "return validateDecimalValue(this, event);" })
                             @Html.ValidationMessageFor(m => m.powersupplier, ResourceNames.Feedbacks)
                         </div>
                     </div>
@@ -685,7 +690,8 @@
                     </div>
                 </div>
             }
-            else {
+            else
+            {
 
 
                 //
@@ -708,28 +714,62 @@
                 </div>
                 <div class="row" id="divLUMUser">
                     @**@
-                        
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label class="col-md-8 control-label">
 
-                                    Note: This information will be submitted to LUM Service Managers, for verification and follow up with quality department:
-                                </label>
-                                <div class="col-md-4 ">
-                                    <div class="form-control noborder">
-                                        @Html.DisplayFor(m => m.LUMActingUserName)
-                                        @Html.HiddenFor(m => m.LUMActingUser)
-                                        @Html.HiddenFor(m => m.LUMActingUserName)
-                                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-md-8 control-label">
+
+                                Note: This information will be submitted to LUM Service Managers, for verification and follow up with quality department:
+                            </label>
+                            <div class="col-md-4 ">
+                                <div class="form-control noborder">
+                                    @Html.DisplayFor(m => m.LUMActingUserName)
+                                    @Html.HiddenFor(m => m.LUMActingUser)
+                                    @Html.HiddenFor(m => m.LUMActingUserName)
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             }
 
 
 
         </div>
+
         @Html.Partial("_ApproversList", Model.ApproversList)
     }
 </div>
+<script type="text/javascript">
+
+    function validateDecimalValue(element, event) {
+        var charachterCode = (event.which) ? event.which : event.keyCode;
+        var number = element.value.split('.');
+        // characterCode 46: period
+        // characterCode 31: unit seperator
+        // characterCode 48: digit 0
+        // characterCode 57: digit 9
+        if (charachterCode != 46 && charachterCode > 31 && (charachterCode < 48 || charachterCode > 57)) {
+            return false;
+        }
+        // Just one period
+        if (number.length > 1 && charachterCode == 46) {
+            return false;
+        }
+        // Get the carat position
+        var caratPosition = getSelectionStart(element);
+        var dotPosition = element.value.indexOf(".");
+        if (caratPosition > dotPosition && dotPosition > -1 && (number[1].length > 1)) {
+            return false;
+        }
+        return true;
+    }
+    function getSelectionStart(e) {
+        if (e.createTextRange) {
+            var r = document.selection.createRange().duplicate();
+            r.moveEnd('character', e.value.length);
+            if (r.text === '') return e.value.length;
+            return e.value.lastIndexOf(r.text);
+        } else return e.selectionStart;
+    }
+</script>

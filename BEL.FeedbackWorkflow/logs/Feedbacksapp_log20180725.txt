@@ -1,0 +1,690 @@
+2018-07-25 14:56:11,482 [7] INFO  - MVC - Application_Start_Done, 
+2018-07-25 14:56:11,507 [8] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 14:56:23,484 [14] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 14:56:23,528 [8] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 14:56:23,528 [9] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 14:56:23,528 [7] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 14:56:23,528 [14] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 14:56:28,968 [7] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 14:56:28,980 [8] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-07-25 14:56:50,137 [7] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 14:56:52,027 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-07-25 14:56:52,027 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-07-25 14:56:52,027 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-07-25 14:56:52,027 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2018-07-25 14:56:52,027 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-07-25 14:56:52,031 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-07-25 14:56:52,027 [14] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-07-25 14:56:52,031 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-07-25 14:56:53,965 [14] INFO  - WCF - Helper.GetAllButtons, 
+2018-07-25 14:56:53,965 [7] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-07-25 14:57:02,598 [7] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 14:57:19,446 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/6f50a048fab141c3a86e744386133beb?version=2, 
+2018-07-25 14:57:28,462 [7] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-07-25 14:57:29,005 [9] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 14:57:52,395 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=750009&_=1532510838225, 
+2018-07-25 14:58:10,164 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 14:58:11,816 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720008&_=1532510838226, 
+2018-07-25 14:58:18,256 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=67, 
+2018-07-25 14:58:18,831 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=675, 
+2018-07-25 14:58:20,794 [7] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=67, 
+2018-07-25 14:58:22,606 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=670018&_=1532510838227, 
+2018-07-25 14:58:55,871 [15] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 14:58:57,151 [15] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720008&_=1532510838228, 
+2018-07-25 14:59:03,957 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=67, 
+2018-07-25 14:59:05,242 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=670018&_=1532510838229, 
+2018-07-25 15:54:02,846 [77] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 15:54:04,142 [83] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 15:54:04,144 [83] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 15:54:04,142 [77] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 15:54:04,142 [84] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 15:54:04,142 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 15:54:09,268 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 15:54:09,323 [83] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 15:54:09,323 [77] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 15:54:10,476 [87] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/722aa62d14a6454fa16fcae317ce5d07?version=2, 
+2018-07-25 15:54:17,429 [84] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 15:54:20,128 [84] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=500059&_=1532514249619, 
+2018-07-25 15:55:21,320 [84] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 15:55:22,379 [87] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 15:55:22,379 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 15:55:22,379 [84] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 15:55:22,384 [84] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 15:55:22,379 [86] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 15:55:22,457 [84] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 15:55:24,736 [86] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 15:55:24,737 [86] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 15:55:24,738 [86] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 15:55:24,740 [86] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 15:55:24,736 [84] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 15:55:28,898 [84] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 15:55:28,914 [16] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 15:55:28,915 [86] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 15:55:29,893 [84] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/cf6fe273b09c44c0977401408969d97c?version=2, 
+2018-07-25 15:55:33,282 [84] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 15:55:34,815 [86] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=500059&_=1532514329152, 
+2018-07-25 15:56:01,955 [87] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 15:56:02,723 [87] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 15:56:04,366 [16] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 15:56:04,367 [16] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 15:56:04,368 [16] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 15:56:04,369 [16] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 15:56:04,366 [87] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 15:57:12,777 [83] ERROR - Id: 393ad210-00cd-4ea8-94b9-459e6b9a2ff9
+2018-07-25 15:57:12,782 [83] ERROR - StatusCode: 200
+2018-07-25 15:57:12,783 [83] ERROR - Controller: 
+2018-07-25 15:57:12,784 [83] ERROR - Action: 
+2018-07-25 15:57:12,785 [83] ERROR - The operation has timed out
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoPost(String url, String contentType, String body, Func`2 webExceptionHandler)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetUserRealm(String login)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetEnableSectionNames(String applicationName, String formName, String role) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3530
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2470
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-07-25 15:57:12,976 [83] ERROR - The operation has timed out
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoPost(String url, String contentType, String body, Func`2 webExceptionHandler)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetUserRealm(String login)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetEnableSectionNames(String applicationName, String formName, String role) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3530
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2470
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-07-25 15:57:44,483 [86] ERROR - Id: 063e70f5-d771-420b-b81f-274babaf9783
+2018-07-25 15:57:44,489 [86] ERROR - StatusCode: 200
+2018-07-25 15:57:44,495 [86] ERROR - Controller: 
+2018-07-25 15:57:44,502 [86] ERROR - Action: 
+2018-07-25 15:57:44,504 [86] ERROR - The operation has timed out
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoPost(String url, String contentType, String body, Func`2 webExceptionHandler)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetUserRealm(String login)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetEnableSectionNames(String applicationName, String formName, String role) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3530
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2470
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-07-25 15:57:44,509 [86] ERROR - The operation has timed out
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.DoPost(String url, String contentType, String body, Func`2 webExceptionHandler)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetUserRealm(String login)
+   at Microsoft.SharePoint.Client.Idcrl.IdcrlAuth.GetServiceToken(String username, String password, String serviceTarget, String servicePolicy)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.CreateWeb(ClientContext context) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 749
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetEnableSectionNames(String applicationName, String formName, String role) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3530
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2470
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-07-25 16:01:39,517 [11] INFO  - MVC - Application_Start_Done, 
+2018-07-25 16:01:39,525 [81] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 16:01:44,841 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 16:01:44,865 [85] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 16:01:44,865 [81] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 16:01:44,866 [82] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 16:01:44,867 [11] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 16:01:48,929 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-07-25 16:01:48,929 [81] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 16:02:06,540 [82] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 16:02:08,167 [85] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-07-25 16:02:08,169 [78] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-07-25 16:02:08,179 [85] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-07-25 16:02:08,179 [81] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-07-25 16:02:08,180 [85] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-07-25 16:02:08,179 [78] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-07-25 16:02:08,183 [85] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-07-25 16:02:08,182 [81] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2018-07-25 16:02:09,435 [81] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-07-25 16:02:09,435 [78] INFO  - WCF - Helper.GetAllButtons, 
+2018-07-25 16:02:18,226 [78] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 16:02:37,273 [81] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/05036ec9b50e4e679710f7649b278fd5?version=2, 
+2018-07-25 16:02:47,902 [85] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 16:03:34,118 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=500059&_=1532514756365, 
+2018-07-25 16:04:14,465 [8] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 16:04:15,153 [75] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 16:04:15,153 [8] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 16:04:15,153 [82] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 16:04:15,153 [77] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 16:04:15,163 [86] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 16:05:24,248 [80] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 16:05:24,248 [15] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 16:05:24,276 [15] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 16:05:25,358 [8] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/2ee484191fbf4e22979b050a93ad8458?version=2, 
+2018-07-25 17:18:38,700 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=00, 
+2018-07-25 17:18:39,480 [44] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 17:18:40,836 [46] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=340009&_=1532514924547, 
+2018-07-25 17:18:55,320 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=12345678910.txt, 
+2018-07-25 17:19:08,016 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","CCActingUser","CCActingUserName","ButtonCaption","X-Requested-With"], 
+2018-07-25 17:19:56,042 [43] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}
+2018-07-25 17:19:57,835 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:19:57,839 [49] INFO  - WCF - Saving Actual Section Properties, 
+2018-07-25 17:19:57,835 [46] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:20:30,084 [44] ERROR - Error While SaveData - List Name:,List ItemID:0 Message:Unable to connect to the remote server, StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetIdcrlHeader(Uri url, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.Idcrl.SharePointOnlineAuthenticationProvider.GetAuthenticationCookie(Uri url, String username, SecureString password, Boolean alwaysThrowOnFailure, EventHandler`1 executingWebRequest)
+   at Microsoft.SharePoint.Client.SharePointOnlineCredentials.GetAuthenticationCookie(Uri url, Boolean refresh, Boolean alwaysThrowOnFailure)
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.SetupRequestCredential(ClientRuntimeContext context, HttpWebRequest request)
+   at Microsoft.SharePoint.Client.SPWebRequestExecutor.GetRequestStream()
+   at Microsoft.SharePoint.Client.ClientContext.GetFormDigestInfoPrivate()
+   at Microsoft.SharePoint.Client.ClientContext.EnsureFormDigest()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.SaveDataInList(ClientContext context, Web web, Object actualSection, ListItem item, String listName, Dictionary`2 param, Dictionary`2 mailCustomValues, List`1 emailAttachments) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1239
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , Object , ListItem , String , Dictionary`2 , Dictionary`2 , List`1 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute9[T0,T1,T2,T3,T4,T5,T6,T7,T8,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)
+   at BEL.DataAccessLayer.BELDataAccessLayer.SaveData(ClientContext context, Web web, ISection section, Dictionary`2 param, Dictionary`2 mailCustomValues, List`1 emailAttachments) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1048
+2018-07-25 17:20:35,551 [44] ERROR - Id: 45de0fe8-5b24-4582-ab3d-6df2cc5d867b
+2018-07-25 17:20:35,555 [44] ERROR - StatusCode: 200
+2018-07-25 17:20:35,603 [44] ERROR - Controller: 
+2018-07-25 17:20:35,627 [44] ERROR - Action: 
+2018-07-25 17:20:35,631 [44] ERROR - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.SaveBySection(ISection sectionDetails, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 209
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.SaveSection(ISection section, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 37
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.SaveFeedbacksDetailSection(FeedbacksDetailSection model) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 85
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-07-25 17:20:35,759 [44] ERROR - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.SaveBySection(ISection sectionDetails, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 209
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.SaveSection(ISection section, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 37
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.SaveFeedbacksDetailSection(FeedbacksDetailSection model) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 85
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-07-25 17:22:03,400 [46] INFO  - MVC - Application_Start_Done, 
+2018-07-25 17:22:03,408 [42] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 17:22:07,635 [40] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 17:22:07,655 [46] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 17:22:07,655 [40] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 17:22:07,655 [30] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 17:22:07,655 [42] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 17:22:12,314 [46] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 17:22:12,330 [42] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-07-25 17:22:33,105 [40] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 17:22:35,640 [42] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-07-25 17:22:35,640 [46] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-07-25 17:22:35,644 [46] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-07-25 17:22:35,640 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-07-25 17:22:35,640 [42] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-07-25 17:22:35,648 [42] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-07-25 17:22:35,648 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-07-25 17:22:35,644 [46] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2018-07-25 17:22:36,812 [42] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-07-25 17:22:36,812 [46] INFO  - WCF - Helper.GetAllButtons, 
+2018-07-25 17:22:54,226 [44] ERROR - Id: f56d873c-fcf7-4c3d-90ea-cbfc45933113
+2018-07-25 17:22:54,246 [44] ERROR - StatusCode: 200
+2018-07-25 17:22:54,294 [44] ERROR - Controller: 
+2018-07-25 17:22:54,298 [44] ERROR - Action: 
+2018-07-25 17:22:54,302 [44] ERROR - Unable to read data from the transport connection: The connection was closed.
+System.IO.IOException: Unable to read data from the transport connection: The connection was closed.
+   at System.Net.GZipWrapperStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.StreamReader.ReadBuffer(Char[] userBuffer, Int32 userOffset, Int32 desiredChars, Boolean& readToUserBuffer)
+   at System.IO.StreamReader.Read(Char[] buffer, Int32 index, Int32 count)
+   at Microsoft.SharePoint.Client.TextPeekReader.FillBuffer()
+   at Microsoft.SharePoint.Client.TextPeekReader.Peek(Char[] buffer, Int32 count)
+   at Microsoft.SharePoint.Client.JsonReader.ReadTokenNumber(Int32 tokenPosition)
+   at Microsoft.SharePoint.Client.JsonReader.GetTokenPrivate()
+   at Microsoft.SharePoint.Client.JsonReader.ReadToken()
+   at Microsoft.SharePoint.Client.JsonReader.ReadInt32()
+   at Microsoft.SharePoint.Client.Taxonomy.TaxonomyFieldValue.InitOnePropertyFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientValueObject.FromJson(JsonReader reader)
+   at Microsoft.SharePoint.Client.JsonReader.ReadJsonObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadKeyValue()
+   at Microsoft.SharePoint.Client.ListItem.InitNonPropertyFieldFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientObject.FromJson(JsonReader reader)
+   at Microsoft.SharePoint.Client.JsonReader.ReadJsonObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadObjectArray(Type fallbackElementType)
+   at Microsoft.SharePoint.Client.ClientObjectCollection`1.ReadChildItems(JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientObjectCollection.InitOnePropertyFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ListItemCollection.InitOnePropertyFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientObject.FromJson(JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetAllButtons() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3642
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetButtons(String applicationName, String formName, String role, String status, Dictionary`2 otherParam, String formType) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3592
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form, String role, Dictionary`2 activeAndHiddenSections, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2924
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2476
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-07-25 17:22:54,462 [44] ERROR - Unable to read data from the transport connection: The connection was closed.
+System.IO.IOException: Unable to read data from the transport connection: The connection was closed.
+   at System.Net.GZipWrapperStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.StreamReader.ReadBuffer(Char[] userBuffer, Int32 userOffset, Int32 desiredChars, Boolean& readToUserBuffer)
+   at System.IO.StreamReader.Read(Char[] buffer, Int32 index, Int32 count)
+   at Microsoft.SharePoint.Client.TextPeekReader.FillBuffer()
+   at Microsoft.SharePoint.Client.TextPeekReader.Peek(Char[] buffer, Int32 count)
+   at Microsoft.SharePoint.Client.JsonReader.ReadTokenNumber(Int32 tokenPosition)
+   at Microsoft.SharePoint.Client.JsonReader.GetTokenPrivate()
+   at Microsoft.SharePoint.Client.JsonReader.ReadToken()
+   at Microsoft.SharePoint.Client.JsonReader.ReadInt32()
+   at Microsoft.SharePoint.Client.Taxonomy.TaxonomyFieldValue.InitOnePropertyFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientValueObject.FromJson(JsonReader reader)
+   at Microsoft.SharePoint.Client.JsonReader.ReadJsonObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadKeyValue()
+   at Microsoft.SharePoint.Client.ListItem.InitNonPropertyFieldFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientObject.FromJson(JsonReader reader)
+   at Microsoft.SharePoint.Client.JsonReader.ReadJsonObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadObject(Type fallbackType)
+   at Microsoft.SharePoint.Client.JsonReader.ReadObjectArray(Type fallbackElementType)
+   at Microsoft.SharePoint.Client.ClientObjectCollection`1.ReadChildItems(JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientObjectCollection.InitOnePropertyFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ListItemCollection.InitOnePropertyFromJson(String peekedName, JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientObject.FromJson(JsonReader reader)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetAllButtons() in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3642
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetButtons(String applicationName, String formName, String role, String status, Dictionary`2 otherParam, String formType) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 3592
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form, String role, Dictionary`2 activeAndHiddenSections, Dictionary`2 otherParamDictionary) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2924
+   at BEL.DataAccessLayer.BELDataAccessLayer.GetFormData(ClientContext context, Web web, String applicationName, String formName, Int32 itemId, String userID, IForm form) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2476
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 99
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.GetFeedbacksDetails(IDictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 24
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.Index(Int32 id) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 45
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-07-25 17:27:24,422 [46] INFO  - MVC - Application_Start_Done, 
+2018-07-25 17:27:24,438 [32] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 17:27:32,867 [32] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 17:27:32,887 [32] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 17:27:32,887 [37] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 17:27:32,887 [46] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 17:27:32,891 [40] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 17:27:36,978 [40] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 17:27:36,978 [46] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-07-25 17:27:56,897 [46] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 17:27:59,508 [37] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-07-25 17:27:59,508 [46] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-07-25 17:27:59,512 [46] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2018-07-25 17:27:59,512 [46] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2018-07-25 17:27:59,512 [46] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-07-25 17:27:59,516 [46] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-07-25 17:27:59,508 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-07-25 17:27:59,508 [37] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-07-25 17:28:00,712 [37] INFO  - WCF - Helper.GetAllButtons, 
+2018-07-25 17:28:00,712 [33] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-07-25 17:28:09,498 [46] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 17:28:28,805 [33] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/a7236db6b134454db3e591fa27e4518f?version=2, 
+2018-07-25 17:28:46,496 [40] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 17:29:09,606 [46] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=500059&_=1532519907986, 
+2018-07-25 17:29:29,992 [33] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=12345678910.txt, 
+2018-07-25 17:29:40,949 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","CCActingUser","CCActingUserName","ButtonCaption","X-Requested-With"], 
+2018-07-25 17:29:48,305 [37] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}
+2018-07-25 17:29:49,470 [37] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:29:49,474 [45] INFO  - WCF - Saving Actual Section Properties, 
+2018-07-25 17:29:49,470 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:29:52,806 [37] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-07-25 17:29:56,256 [37] INFO  - WCF - Actual Section Properties Saved, Int32=89
+2018-07-25 17:29:59,398 [37] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-1-89"
+2018-07-25 17:29:59,794 [37] INFO  - WCF - Reference Number Generated 'Feedback Form-1-89', 
+2018-07-25 17:30:14,665 [37] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-07-25 17:30:28,301 [37] INFO  - WCF - Set Viewer  Approver ID='22' and RequestId='89', 
+2018-07-25 17:30:28,694 [37] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='89', 
+2018-07-25 17:30:28,301 [32] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='89', 
+2018-07-25 17:30:28,301 [33] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='89', 
+2018-07-25 17:30:28,301 [45] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='89', 
+2018-07-25 17:30:37,061 [37] INFO  - WCF - Tasks Saved if any, 
+2018-07-25 17:30:39,278 [37] INFO  - WCF - Tasks approvers Saved if any, 
+2018-07-25 17:30:41,231 [37] INFO  - WCF - Started form level assignment, 
+2018-07-25 17:30:44,822 [45] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=SaveAsDraft, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Pending","Comments":null,"AssignDate":"2018-07-25T17:30:43.8404452+05:30","DueDate":"2018-08-03T17:30:43.836446+05:30","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-07-25 17:30:44,822 [33] INFO  - WCF - End of form level assignment, 
+2018-07-25 17:30:44,834 [33] INFO  - WCF - -2==0 && Not Assigned==Not Assigned, 
+2018-07-25 17:30:44,842 [33] INFO  - WCF - 3==0 && Not Assigned==Not Assigned, 
+2018-07-25 17:30:44,822 [37] INFO  - WCF - Case Action Performed 'SaveAsDraft', 
+2018-07-25 17:30:44,854 [37] INFO  - WCF - condition true for => {"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}, 
+2018-07-25 17:30:44,830 [45] INFO  - WCF - 2==0 && Not Assigned==Not Assigned, 
+2018-07-25 17:30:44,858 [45] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=SaveAsDraft, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Not Assigned","Comments":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":89,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-07-25 17:30:44,846 [33] INFO  - WCF - 1==0 && Not Assigned==Not Assigned, 
+2018-07-25 17:30:44,866 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:30:44,862 [45] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2018-07-25 17:30:44,854 [32] INFO  - WCF - 0==0 && Not Assigned==Not Assigned, 
+2018-07-25 17:30:44,874 [45] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:30:44,858 [37] INFO  - WCF - Save as draft condition => any approver=True, 
+2018-07-25 17:30:44,870 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:30:44,982 [45] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:30:44,982 [32] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='89' with values = {"ReferenceNo":"Feedback Form-1-89","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null}],"Status":"Draft","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"WorkflowStatus":"Draft"}, 
+2018-07-25 17:30:48,077 [46] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__57(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1742
+2018-07-25 17:30:50,222 [37] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Draft', 
+2018-07-25 17:30:50,222 [33] INFO  - WCF - Save Form Field Name='Status'='Draft', 
+2018-07-25 17:30:50,326 [32] INFO  - WCF - Helper.SaveAttachment FileName:12345678910.txt, FileSize:02b6143a-a8a2-4dc3-9c82-4b16c7fb2e58.txt, Status:New, 
+2018-07-25 17:30:52,598 [33] INFO  - WCF - Helper.SaveAttachment file saved, 
+2018-07-25 17:30:52,598 [37] INFO  - WCF - Calling SetItemPermission -> itemid=89, listname=Feedbacks, {"19":"Contribute"}, 
+2018-07-25 17:30:53,134 [33] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2018-07-25 17:30:53,134 [45] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19, 
+2018-07-25 17:30:53,138 [32] INFO  - WCF - item ResetRoleInheritance Called, 
+2018-07-25 17:30:53,134 [37] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2018-07-25 17:30:54,117 [45] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2018-07-25 17:30:54,821 [33] INFO  - WCF - User Permission set for -> 19, 
+2018-07-25 17:30:55,645 [46] ERROR - Error while granting Permission to Viewer Group
+2018-07-25 17:30:55,645 [46] ERROR - Group cannot be found.
+Microsoft.SharePoint.Client.ServerException: Group cannot be found.
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.SetItemPermission(ClientContext context, Web web, ListItem& item, Dictionary`2 usersWithPermission) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 2410
+2018-07-25 17:30:55,761 [37] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=89, activityby=19, 
+2018-07-25 17:30:55,761 [45] INFO  - WCF - Called SetItemPermission Permission Assigned ->False, 
+2018-07-25 17:30:55,761 [32] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2018-07-25 17:30:55,761 [33] INFO  - WCF - Calling Activity Log -> {"UserID":"19","ActionPer":" Save As Draft|SaveAsDraft","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, 
+2018-07-25 17:30:55,777 [37] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:30:57,308 [37] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:30:57,308 [37] INFO  - WCF - Activity Log Parameter Saved -> Activity= Save As Draft, 
+Changes=ProposedBy	
+RequestDate	
+WorkflowStatus	Draft
+Status	Draft
+
+Approved/Updated date	25/07/2018
+Approved/Updated time	05:30 PM
+Approver Comment	
+BusinessUnits	MR
+FeedbackTitle	bcld
+Branch	Sion Office (6th Floor)
+ProductType	MR Dry/Spray Irons
+DefectDescription	fbedshf
+SupplierCode	bjkd
+ProductSerial	ghbirnhhhh
+FeedbackNo	
+Files	12345678910.txt
+CCActingUser	Clover Sharepoint 1
+Month	
+Year	
+ItemCode	500059
+ItemDescription	Dry Iron - Marvel
+ProductGroup	MR Dry/Spray Irons, 
+ActivityDate=25/07/2018, 
+ActivityBy=19, 
+RequestID=89, 
+SectionName=Feedback Detail Section, 
+, 
+2018-07-25 17:30:57,308 [45] INFO  - WCF - Calling Activity Log -> Complete, 
+2018-07-25 17:30:57,308 [32] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2018-07-25 17:30:59,604 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:31:01,168 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-07-25 17:31:02,039 [45] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2018-07-25 17:31:03,818 [37] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2018-07-25 17:31:04,972 [37] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="Clover Sharepoint 1"
+2018-07-25 17:31:04,984 [46] INFO  - WCF - Helper.GetNameUsingUserID, String="19"
+2018-07-25 17:31:04,972 [45] INFO  - WCF - Helper.GetNameUsingUserID, String="19"
+2018-07-25 17:31:04,972 [32] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="Clover Sharepoint 1"
+2018-07-25 17:31:09,511 [32] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-07-25 17:31:10,163 [32] INFO  - WCF - Called Helper GetFormData, 
+2018-07-25 17:31:10,163 [37] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-07-25 17:31:10,163 [32] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-07-25 17:31:10,163 [33] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-07-25 17:31:10,163 [45] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-07-25 17:31:14,462 [37] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-07-25 17:31:14,466 [32] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-07-25 17:31:14,466 [33] INFO  - WCF - called Helper.GetFormData, 
+2018-07-25 17:31:15,162 [32] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/b4e6271ea7dd42cfaed24c014a508c13?version=2, 
+2018-07-25 17:32:45,011 [46] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=000, 
+2018-07-25 17:32:48,462 [45] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=750009&_=1532520074661, 

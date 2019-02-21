@@ -1,0 +1,31 @@
+https://stackoverflow.com/questions/48851937/datatable-anchor-events-on-click-is-not-working-and-return-failed-to-load-resour
+
+https://stackoverflow.com/questions/23825895/how-to-add-anchor-tag-to-column-for-each-row-bootstrap-datatable
+
+https://stackoverflow.com/questions/30296108/jquery-datatable-link-onclick-event
+
+https://stackoverflow.com/questions/35547647/how-to-make-datatable-row-or-cell-clickable
+
+
+function isCurrentUserMemberOfGroup(groupName) {
+    var userIsInGroup = false;
+    $.ajax({
+        async: false,
+        headers: { "accept": "application/json; odata=verbose" },
+        method: "GET",
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/currentuser/groups",
+        success: function (data) {
+            data.d.results.forEach( function (value) {
+                if (value.Title == groupName) {               
+                     userIsInGroup = true;
+                }
+            });
+        },
+        error: function (response) {
+            console.log(response.status);
+        },
+    });    
+    return userIsInGroup;
+}
+
+var isAdmin = isCurrentUserMemberOfGroup("Admins Group");

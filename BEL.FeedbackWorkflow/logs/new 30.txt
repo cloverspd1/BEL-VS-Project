@@ -1,0 +1,78 @@
+ $.ajax({
+                url: "/Feedbacks/GetVariableDefine?BU=" + $("#BusinessUnits").val(),
+                httpmethod: "GET",
+                success: function (data) {
+                    debugger;
+                    if (data == "False") {
+                        $("#divQualityUser").css("visibility", "hidden");
+                    } else {
+                        $("#divQualityUser").css("visibility", "visible");
+                    }
+                    
+                    console.log(data);
+                    HideWaitDialog();
+                },
+            });
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			  <div class="row" id="divQualityUser">
+
+            <div class="col-sm-6">
+                <div class="form-group">
+@if (Model.IsField)
+{
+                    <label class="col-md-4 control-label">
+
+                        <span class="text-danger text-default-light">*</span>
+
+                        @Html.LabelFor(m=>m.QualityUserCreator, ResourceNames.Feedbacks)
+
+                    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.ListBox("QualityUserCreatorList", new MultiSelectList(qaUserList2.ToArray(), "UserID", "UserName"), new { @id = "QualityUserCreatorList", @Name = "QualityUserCreatorList", @class = "form-control", @data_selected = Model.QualityUserCreator })
+                            @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
+                            @Html.ValidationMessage("QAUserListCreator", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
+                            @Html.HiddenFor(m => m.QualityUserCreator)
+                            @Html.HiddenFor(m => m.QualityUserCreatorName)
+
+                        </div>
+
+                    </div>
+}
+else
+{
+    <label class="col-md-4 control-label">
+
+        <span class="text-danger text-default-light">*</span>
+
+        @Html.LabelFor(m => m.QualityUserCreator, ResourceNames.Feedbacks)
+
+    </label>
+                    <div class="col-md-8 ">
+                        <div class="form-control noborder">
+
+                            @Html.ListBox("QualityUserCreatorList", new MultiSelectList(qaUserList3.ToArray(), "UserID", "UserName"), new { @id = "QualityUserCreatorList", @Name = "QualityUserCreatorList", @class = "form-control", @data_selected = Model.QualityUserCreator })
+                            @*@Html.ValidationMessageFor(m => m.QAUser, ResourceNames.Feedbacks)
+                                @Html.ValidationMessage("QAUserListCreator", Html.ResourceValue("Error_Gender", ResourceNames.Feedbacks))*@
+                            @Html.HiddenFor(m => m.QualityUserCreator)
+                            @Html.HiddenFor(m => m.QualityUserCreatorName)
+
+                        </div>
+
+                    </div>
+}
+
+                </div>
+            </div>
+
+        </div>

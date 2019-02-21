@@ -19,7 +19,7 @@ namespace Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option or rebuild the Visual Studio project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Feedbacks {
@@ -66,6 +66,15 @@ namespace Resources {
         internal static string Error_ActionPlans {
             get {
                 return ResourceManager.GetString("Error_ActionPlans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blue to Neutral Voltage is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_BNVoltage {
+            get {
+                return ResourceManager.GetString("Error_BNVoltage", resourceCulture);
             }
         }
         
@@ -133,6 +142,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Earth to Neutral Voltage is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_ENVoltage {
+            get {
+                return ResourceManager.GetString("Error_ENVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Earth to Neutral Voltage(LUM) is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_ENVoltageLUM {
+            get {
+                return ResourceManager.GetString("Error_ENVoltageLUM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Feedback Title is required (Max 255 Char.).
         /// </summary>
         internal static string Error_FeedbackTitle {
@@ -187,6 +214,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Line to neutral Voltage is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_LNVoltage {
+            get {
+                return ResourceManager.GetString("Error_LNVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Model Name is required (Max 255 char.).
         /// </summary>
         internal static string Error_ModelName {
@@ -201,6 +237,15 @@ namespace Resources {
         internal static string Error_Observations {
             get {
                 return ResourceManager.GetString("Error_Observations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Power Supplier is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_powersupplier {
+            get {
+                return ResourceManager.GetString("Error_powersupplier", resourceCulture);
             }
         }
         
@@ -241,11 +286,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Red to Neutral Voltage is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_RNVoltage {
+            get {
+                return ResourceManager.GetString("Error_RNVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Supplier Code is required (4 digit only)..
         /// </summary>
         internal static string Error_SupplierCode {
             get {
                 return ResourceManager.GetString("Error_SupplierCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yellow to Neutral Voltage is required (Interger/Decimal only.).
+        /// </summary>
+        internal static string Error_YNVoltage {
+            get {
+                return ResourceManager.GetString("Error_YNVoltage", resourceCulture);
             }
         }
         

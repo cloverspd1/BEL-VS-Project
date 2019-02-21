@@ -1,0 +1,1205 @@
+2019-02-14 15:15:58,404 [8] INFO  - MVC - Application_Start_Done, 
+2019-02-14 15:15:58,584 [10] INFO  - MVC - Begin Request http://localhost:5179/, 
+2019-02-14 15:16:47,244 [9] INFO  - MVC - Start Feedback form and ID = 0, 
+2019-02-14 15:16:47,351 [15] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:16:47,351 [17] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2019-02-14 15:16:47,352 [9] INFO  - WCF - Called Helper.IsGroupMember true, 
+2019-02-14 15:16:47,352 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2019-02-14 15:16:51,864 [9] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2019-02-14 15:16:51,894 [10] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2019-02-14 15:17:13,319 [17] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:17:14,471 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:17:14,476 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=42
+2019-02-14 15:17:14,477 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=41
+2019-02-14 15:17:14,479 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 15:17:14,478 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint"
+2019-02-14 15:17:14,476 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:17:14,480 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 15:17:14,481 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:17:14,484 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:17:14,482 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:17:14,482 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:17:14,487 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 15:17:14,485 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:17:14,492 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Dumbre Amit"
+2019-02-14 15:17:14,486 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 15:17:14,491 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:17:14,493 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:17:14,493 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:17:15,864 [9] INFO  - WCF - Get All Buttons from Sharepoint, 
+2019-02-14 15:17:15,864 [17] INFO  - WCF - Helper.GetAllButtons, 
+2019-02-14 15:17:22,097 [9] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2019-02-14 15:23:31,049 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=34, 
+2019-02-14 15:23:31,426 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=345, 
+2019-02-14 15:23:31,815 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=3456, 
+2019-02-14 15:24:31,080 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=345, 
+2019-02-14 15:24:33,180 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=131345&_=1550137664063, 
+2019-02-14 15:24:48,006 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=75, 
+2019-02-14 15:24:49,265 [19] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=168775&_=1550137664064, 
+2019-02-14 15:24:52,927 [19] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=20, 
+2019-02-14 15:24:55,113 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=531208&_=1550137664065, 
+2019-02-14 15:24:58,974 [29] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=72, 
+2019-02-14 15:25:00,413 [29] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=7200, 
+2019-02-14 15:25:02,222 [29] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720002&_=1550137664066, 
+2019-02-14 15:25:33,848 [31] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=16, 
+2019-02-14 15:25:36,646 [24] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=167, 
+2019-02-14 15:25:38,022 [4] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=169167&_=1550137664067, 
+2019-02-14 15:26:30,970 [31] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=7200, 
+2019-02-14 15:26:32,865 [30] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720002&_=1550137664068, 
+2019-02-14 15:37:21,803 [36] INFO  - MVC - Begin Request http://localhost:5179/, 
+2019-02-14 15:37:22,611 [38] INFO  - WCF - Called Helper.IsGroupMember true, 
+2019-02-14 15:37:22,612 [39] INFO  - MVC - Start Feedback form and ID = 0, 
+2019-02-14 15:37:22,611 [42] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2019-02-14 15:37:22,612 [41] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2019-02-14 15:37:22,611 [37] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:37:24,941 [36] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:37:24,941 [39] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2019-02-14 15:37:24,965 [41] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2019-02-14 15:37:33,032 [38] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=72, 
+2019-02-14 15:37:33,486 [38] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=7200, 
+2019-02-14 15:37:35,344 [41] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=720002&_=1550138845570, 
+2019-02-14 15:38:07,471 [41] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=venu_temp_bckup.txt, 
+2019-02-14 15:39:21,852 [42] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","IsSiteCompleted","BNVoltage","ProtectionForVoltage","ENVoltage","ProductWiring","ENVoltageLUM","RNVoltage","LNVoltage","YNVoltage","powersupplier","CCActingUser","CCActingUserName","LUMActingUser","LUMActingUserName","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","ApproversList[2].ApplicationName","ApproversList[2].ApprovalDate","ApproversList[2].ApproveBy","ApproversList[2].Approver","ApproversList[2].ApproverName","ApproversList[2].AssignDate","ApproversList[2].Comments","ApproversList[2].Days","ApproversList[2].Division","ApproversList[2].DueDate","ApproversList[2].FillByRole","ApproversList[2].FormName","ApproversList[2].HiddenSection","ApproversList[2].ID","ApproversList[2].IsAutoApproval","ApproversList[2].IsEscalate","ApproversList[2].IsReminder","ApproversList[2].Levels","ApproversList[2].RequestID","ApproversList[2].Role","ApproversList[2].SectionName","ApproversList[2].Status","ApproversList[2].SubDivision","ApproversList[2].Title","ApproversList[2].IsOptional","ApproversList[3].ApplicationName","ApproversList[3].ApprovalDate","ApproversList[3].ApproveBy","ApproversList[3].Approver","ApproversList[3].ApproverName","ApproversList[3].AssignDate","ApproversList[3].Comments","ApproversList[3].Days","ApproversList[3].Division","ApproversList[3].DueDate","ApproversList[3].FillByRole","ApproversList[3].FormName","ApproversList[3].HiddenSection","ApproversList[3].ID","ApproversList[3].IsAutoApproval","ApproversList[3].IsEscalate","ApproversList[3].IsReminder","ApproversList[3].Levels","ApproversList[3].RequestID","ApproversList[3].Role","ApproversList[3].SectionName","ApproversList[3].Status","ApproversList[3].SubDivision","ApproversList[3].Title","ApproversList[3].IsOptional","ApproversList[4].ApplicationName","ApproversList[4].ApprovalDate","ApproversList[4].ApproveBy","ApproversList[4].Approver","ApproversList[4].ApproverName","ApproversList[4].AssignDate","ApproversList[4].Comments","ApproversList[4].Days","ApproversList[4].Division","ApproversList[4].DueDate","ApproversList[4].FillByRole","ApproversList[4].FormName","ApproversList[4].HiddenSection","ApproversList[4].ID","ApproversList[4].IsAutoApproval","ApproversList[4].IsEscalate","ApproversList[4].IsReminder","ApproversList[4].Levels","ApproversList[4].RequestID","ApproversList[4].Role","ApproversList[4].SectionName","ApproversList[4].Status","ApproversList[4].SubDivision","ApproversList[4].Title","ApproversList[4].IsOptional","ButtonCaption","X-Requested-With"], 
+2019-02-14 15:39:22,607 [38] INFO  - WCF - Feedbacks No is MR-2019-00006, 
+2019-02-14 15:39:22,607 [41] INFO  - WCF - Feedbacks Current Value + 1 = 6, 
+2019-02-14 15:39:22,675 [38] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"22","ActionPer":" Submit|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}
+2019-02-14 15:39:22,705 [41] INFO  - WCF - Saving Actual Section Properties, 
+2019-02-14 15:39:22,733 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:22,748 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:39:22,764 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:39:27,743 [32] INFO  - WCF - Set Viewer  Approver ID='22' and RequestId='490', 
+2019-02-14 15:39:27,744 [32] INFO  - WCF - Reference Number Generated 'Feedback Form-2019-490', 
+2019-02-14 15:39:27,746 [32] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-2019-490"
+2019-02-14 15:39:27,747 [32] INFO  - WCF - Actual Section Properties Saved, Int32=490
+2019-02-14 15:39:27,748 [32] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2019-02-14 15:39:27,750 [43] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2019-02-14 15:39:27,749 [34] INFO  - WCF - Set Viewer  Approver ID='27' and RequestId='490', 
+2019-02-14 15:39:27,764 [32] INFO  - WCF - Started form level assignment, 
+2019-02-14 15:39:27,764 [34] INFO  - WCF - Tasks Saved if any, 
+2019-02-14 15:39:27,766 [34] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:39:27,766 [34] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:39:27,767 [34] INFO  - WCF - Set Viewer  Approver ID='24,39' and RequestId='490', 
+2019-02-14 15:39:27,768 [34] INFO  - WCF - Set Viewer  Approver ID='22,27,40' and RequestId='490', 
+2019-02-14 15:39:27,764 [43] INFO  - WCF - Tasks approvers Saved if any, 
+2019-02-14 15:39:27,765 [32] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:39:27,769 [34] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:39:27,778 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:39:27,779 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:39:27,780 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:27,780 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:39:27,778 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:39:27,781 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:27,778 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:39:27,799 [43] INFO  - WCF - Case Action Performed 'NextApproval', 
+2019-02-14 15:39:27,800 [43] INFO  - WCF - End of form level assignment, 
+2019-02-14 15:39:27,799 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:39:27,801 [43] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"22","ActionPer":" Submit|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=NextApproval, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"22","ApproverName":null,"Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T15:39:27.6897521+05:30","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"27","ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T15:39:27.6907525+05:30","DueDate":"2019-02-25T15:39:27.6897521+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"22,27,40","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":"","SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":"","Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T15:39:27.6907525+05:30","DueDate":"2019-02-25T15:39:27.6907525+05:30","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":"","SubDivision":null,"Approver":"","ApproverName":"Dumbre Amit","Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":"","Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 15:39:27,799 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:27,801 [34] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"22","ActionPer":" Submit|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=NextApproval, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"22","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"27","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"22,27,40","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":"","SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":"","Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":"","SubDivision":null,"Approver":"","ApproverName":"Dumbre Amit","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":"","Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 15:39:27,924 [34] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='490' with values = {"ReferenceNo":"Feedback Form-2019-490","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":40,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null}],"LastActionPerformed":"NextApproval","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null},"LastActionByRole":"Creator","PendingWith":"CC Acting User","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null}],"FormLevel":"0|1","ApprovalStatus":"In Progress","Status":"Submitted","WorkflowStatus":"Pending With CC Acting User"}, 
+2019-02-14 15:39:30,792 [39] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_1.<SaveDataInList>b__21(Object obj) in E:\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1793
+2019-02-14 15:39:30,904 [34] INFO  - WCF - Save Form Field Name='Status'='Submitted', 
+2019-02-14 15:39:30,904 [32] INFO  - WCF - Helper.SaveAttachment FileName:venu_temp_bckup.txt, FileSize:a9081bcd-fcb8-4337-a200-f8a232bfbffe.txt, Status:New, 
+2019-02-14 15:39:30,904 [43] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Pending With CC Acting User', 
+2019-02-14 15:39:32,827 [38] INFO  - WCF - Calling SetItemPermission -> itemid=490, listname=Feedbacks, {"22,22,27,40":"Read","27":"Contribute"}, 
+2019-02-14 15:39:32,827 [41] INFO  - WCF - Helper.SaveAttachment file saved, 
+2019-02-14 15:39:33,034 [38] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2019-02-14 15:39:33,034 [41] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2019-02-14 15:39:33,034 [43] INFO  - WCF - item ResetRoleInheritance Called, 
+2019-02-14 15:39:33,044 [32] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 22,22,27,40, 
+2019-02-14 15:39:33,625 [41] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2019-02-14 15:39:34,127 [34] INFO  - WCF - User Permission set for -> 22,22,27,40, 
+2019-02-14 15:39:34,127 [41] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 27, 
+2019-02-14 15:39:34,362 [41] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2019-02-14 15:39:34,613 [38] INFO  - WCF - User Permission set for -> 27, 
+2019-02-14 15:39:35,475 [32] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2019-02-14 15:39:35,475 [38] INFO  - WCF - Calling Activity Log -> {"UserID":"22","ActionPer":" Submit|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, 
+2019-02-14 15:39:35,475 [41] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2019-02-14 15:39:35,514 [34] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=490, activityby=22, 
+2019-02-14 15:39:35,514 [43] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:36,296 [41] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:36,297 [32] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2019-02-14 15:39:36,296 [38] INFO  - WCF - Activity Log Parameter Saved -> Activity= Submit, 
+Changes=IsSiteCompleted	Yes
+ProtectionForVoltage	Yes
+ProductWiring	Yes
+RNVoltage	
+YNVoltage	
+BNVoltage	
+ENVoltage	
+ENVoltageLUM	
+LNVoltage	
+powersupplier	
+ProposedBy	
+RequestDate	14/02/2019 15:39:21
+SampleProvidedDate	
+WorkflowStatus	Pending With CC Acting User
+Status	Submitted
+SampleProvided	
+SampleQuantity	
+SampleComments	
+BusinessUnits	MR
+FeedbackTitle	Test
+Branch	Sion Office (6th Floor)
+ProductType	MR Juicers
+DefectDescription	hajskd
+SupplierCode	1382
+ProductSerial	127Teffs123
+FeedbackNo	MR-2019-00006
+Files	venu_temp_bckup.txt
+CCActingUser	Collab App Support-2
+LUMActingUser	Patil Bhushan
+LUMUser	
+QAUser	
+LUMQAUser	
+Month	February
+Year	2019
+ItemCode	720002
+ItemDescription	Juicemax Juicer 500 Watts White & Grey
+ProductGroup	MR Juicers, 
+ActivityDate=14/02/2019, 
+ActivityBy=22, 
+RequestID=490, 
+SectionName=Feedback Detail Section, 
+, 
+2019-02-14 15:39:36,296 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:36,296 [43] INFO  - WCF - Calling Activity Log -> Complete, 
+2019-02-14 15:39:37,519 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:39:38,441 [41] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:39:38,442 [38] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:39:38,442 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:39:38,951 [41] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:39:38,951 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:39:41,066 [38] INFO  - WCF - Aync update Feedbacks Current value currentValue : 6 BusinessUnit : MR, 
+2019-02-14 15:39:41,066 [41] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2019-02-14 15:39:41,467 [41] INFO  - WCF - Update DCR No MR-2019-00006, 
+2019-02-14 15:44:04,919 [20] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:44:05,031 [18] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=22, 
+2019-02-14 15:44:05,031 [20] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:44:05,031 [26] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:44:06,111 [20] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Viewer, 
+2019-02-14 15:44:06,474 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:44:06,476 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:44:06,476 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:44:06,474 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:44:06,474 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:44:06,476 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:44:06,482 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:44:06,483 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:44:06,484 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:44:06,484 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:44:06,483 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:44:06,482 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:44:06,519 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:44:06,519 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:44:06,519 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:44:06,519 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:44:06,537 [26] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:44:07,329 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:44:07,329 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:44:07,405 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:44:07,405 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:44:07,406 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:44:07,405 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:44:07,406 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:44:07,405 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:44:07,562 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:44:07,563 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:44:07,562 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:44:07,562 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:44:07,562 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:44:07,563 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:44:07,969 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:44:07,969 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:44:08,380 [18] INFO  - WCF - Helper.GetButtons for role 'Viewer', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"1"}, 
+2019-02-14 15:45:36,999 [7] INFO  - MVC - Application_Start_Done, 
+2019-02-14 15:45:37,031 [8] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:45:40,568 [7] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:45:44,289 [8] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:45:44,289 [9] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=27, 
+2019-02-14 15:45:46,577 [9] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=CC Acting User, 
+2019-02-14 15:45:47,376 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:45:47,376 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:45:47,376 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:47,377 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:47,378 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:47,380 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:45:47,380 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:45:47,377 [7] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:45:47,384 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:45:47,383 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:45:47,385 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:45:47,383 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:45:47,388 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:45:47,386 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:45:47,387 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:45:47,382 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:45:47,388 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:48,175 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:45:48,175 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:45:48,175 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:45:48,175 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:45:48,179 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:45:48,177 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:45:48,182 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:48,180 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 15:45:48,183 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:48,185 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=41
+2019-02-14 15:45:48,181 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 15:45:48,185 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Dumbre Amit"
+2019-02-14 15:45:48,185 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:45:48,187 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint"
+2019-02-14 15:45:48,188 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 15:45:48,186 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:45:48,189 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 15:45:48,187 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=42
+2019-02-14 15:45:48,409 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:45:48,409 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:45:48,455 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:48,456 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:45:48,455 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:48,457 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:48,457 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:48,455 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:45:48,671 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:45:48,672 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:45:48,671 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:45:48,671 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:45:48,686 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:48,686 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:48,860 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:45:48,860 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:45:49,139 [11] INFO  - WCF - Get All Buttons from Sharepoint, 
+2019-02-14 15:45:49,139 [8] INFO  - WCF - Helper.GetAllButtons, 
+2019-02-14 15:45:57,877 [7] INFO  - WCF - Helper.GetButtons for role 'CC Acting User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"1"}, 
+2019-02-14 15:48:16,161 [15] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:48:16,279 [9] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:48:16,279 [15] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:48:16,279 [16] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=27, 
+2019-02-14 15:48:17,578 [20] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=CC Acting User, 
+2019-02-14 15:48:18,189 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:48:18,190 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:48:18,191 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:48:18,189 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:48:18,192 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:48:18,193 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:48:18,195 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:48:18,189 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:48:18,195 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:48:18,196 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:48:18,194 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:48:18,198 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:48:18,198 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:48:18,197 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:48:18,199 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:48:18,201 [16] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:48:18,200 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:48:18,610 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:48:18,611 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:48:18,611 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:48:18,610 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:48:18,612 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:48:18,613 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:48:18,610 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:48:18,614 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:48:18,795 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:48:18,796 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:48:18,795 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:48:18,796 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:48:18,795 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:48:18,797 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:48:19,014 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:48:19,014 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:48:19,235 [7] INFO  - WCF - Helper.GetButtons for role 'CC Acting User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"1"}, 
+2019-02-14 15:50:32,002 [15] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveCCActingUserSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","CCFileNameList","ForwardtoCCQualityIncharge","CurrentApprover.Comments","CurrentApprover.Approver","CurrentApprover.Role","CurrentApprover.AssignDate","CCQualityInchargeUser","CCQualityInchargeName","ButtonCaption","X-Requested-With"], 
+2019-02-14 15:50:32,147 [15] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"27","ActionPer":"Forward to CC Quality Incharge|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}
+2019-02-14 15:50:32,190 [18] INFO  - WCF - Saving Actual Section Properties, 
+2019-02-14 15:50:32,220 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:50:32,220 [30] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:50:33,988 [32] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2019-02-14 15:50:33,988 [28] INFO  - WCF - Actual Section Properties Saved, Int32=490
+2019-02-14 15:50:33,989 [26] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2019-02-14 15:50:34,577 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:50:34,578 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:50:34,579 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:34,579 [28] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:50:34,581 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:34,577 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:50:34,580 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:50:34,581 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:34,578 [32] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:34,580 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:34,593 [26] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:50:34,594 [26] INFO  - WCF - Set Viewer  Approver ID='27' and RequestId='490', 
+2019-02-14 15:50:34,595 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:34,581 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:34,593 [18] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:50:34,595 [35] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:34,578 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:50:34,594 [15] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:50:34,594 [36] INFO  - WCF - Set Viewer  Approver ID='24,39' and RequestId='490', 
+2019-02-14 15:50:34,595 [34] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:34,593 [21] INFO  - WCF - Set Viewer  Approver ID='22' and RequestId='490', 
+2019-02-14 15:50:34,595 [33] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:34,618 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:34,593 [32] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:50:34,619 [15] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:50:34,619 [30] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:34,619 [33] INFO  - WCF - Started form level assignment, 
+2019-02-14 15:50:34,598 [28] INFO  - WCF - Set Viewer  Approver ID='22,27,40,24,39' and RequestId='490', 
+2019-02-14 15:50:34,618 [21] INFO  - WCF - Tasks Saved if any, 
+2019-02-14 15:50:34,632 [25] INFO  - WCF - Tasks approvers Saved if any, 
+2019-02-14 15:50:34,625 [37] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:50:34,619 [36] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:50:34,625 [18] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:50:34,625 [38] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:50:34,618 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:50:34,631 [35] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:50:34,641 [21] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=1, previousLevel=0, param={"UserID":"27","ActionPer":"Forward to CC Quality Incharge|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, actionperformed=NextApproval, list=[{"ID":2508,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22,27,40,24,39","ApproverName":"Collab App Support-3, Collab App Support-2, Patil Bhushan","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2505,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T10:09:27Z","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":"Collab App Support-3","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2506,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"27","ApproverName":"Collab App Support-2","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":"2019-02-14T15:50:34.5405354+05:30","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"27","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2510,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":null,"Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2509,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":null,"SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T15:50:34.5405354+05:30","DueDate":"2019-02-25T15:50:34.5405354+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2511,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T15:50:34.5405354+05:30","DueDate":"2019-02-25T15:50:34.5405354+05:30","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2507,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2512,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":null,"Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 15:50:34,641 [40] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=1, previousLevel=0, param={"UserID":"27","ActionPer":"Forward to CC Quality Incharge|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, actionperformed=NextApproval, list=[{"ID":2508,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22,27,40,24,39","ApproverName":"Collab App Support-3, Collab App Support-2, Patil Bhushan","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2505,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T10:09:27Z","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":"Collab App Support-3","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2506,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"27","ApproverName":"Collab App Support-2","Status":"Pending","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2510,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":null,"Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2509,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":null,"SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2511,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2507,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2512,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":null,"Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 15:50:34,653 [26] INFO  - WCF - Case Action Performed 'NextApproval', 
+2019-02-14 15:50:34,653 [25] INFO  - WCF - End of form level assignment, 
+2019-02-14 15:50:34,653 [18] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:50:34,653 [28] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:50:34,653 [15] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:34,675 [41] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='490' with values = {"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":40,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null}],"Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null}],"LastActionPerformed":"NextApproval","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null},"LastActionByRole":"CC Acting User","PendingWith":"CC Quality Incharge User","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null}],"FormLevel":"1|2","ApprovalStatus":"In Progress","Status":"Submitted","WorkflowStatus":"Pending With CC Quality Incharge User"}, 
+2019-02-14 15:50:36,427 [20] ERROR - Error While Save Fields FieldName:CCQualityInchargeUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_1.<SaveDataInList>b__21(Object obj) in E:\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1793
+2019-02-14 15:50:36,530 [15] INFO  - WCF - Save Form Field Name='Status'='Submitted', 
+2019-02-14 15:50:36,545 [18] INFO  - WCF - Calling SetItemPermission -> itemid=490, listname=Feedbacks, {"22,27,40,24,39":"Read","24,39":"Contribute"}, 
+2019-02-14 15:50:36,700 [28] INFO  - WCF - item ResetRoleInheritance Called, 
+2019-02-14 15:50:36,700 [21] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2019-02-14 15:50:36,701 [18] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 22,27,40,24,39, 
+2019-02-14 15:50:36,700 [25] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2019-02-14 15:50:37,644 [18] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2019-02-14 15:50:38,111 [18] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 24,39, 
+2019-02-14 15:50:38,111 [21] INFO  - WCF - User Permission set for -> 22,27,40,24,39, 
+2019-02-14 15:50:38,347 [15] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2019-02-14 15:50:38,687 [15] INFO  - WCF - User Permission set for -> 24,39, 
+2019-02-14 15:50:39,452 [15] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=490, activityby=27, 
+2019-02-14 15:50:39,453 [28] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2019-02-14 15:50:39,452 [18] INFO  - WCF - Calling Activity Log -> {"UserID":"27","ActionPer":"Forward to CC Quality Incharge|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, 
+2019-02-14 15:50:39,453 [15] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2019-02-14 15:50:39,474 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:39,967 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:50:39,967 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:50:39,969 [38] INFO  - WCF - Calling Activity Log -> Complete, 
+2019-02-14 15:50:39,967 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:50:39,967 [41] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:50:39,968 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:39,968 [40] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2019-02-14 15:50:39,969 [42] INFO  - WCF - Activity Log Parameter Saved -> Activity=Forward to CC Quality Incharge, 
+Changes=Status	Submitted
+QualityInchargeDate	
+QualityUserDate	
+
+Approved/Updated date	14/02/2019
+Approved/Updated time	03:50 PM
+Approver Comment	testing
+ForwardtoCCQualityIncharge	True
+CCQualityInchargeUser	Collab App Support-1, Gadhari Suresh
+Files	, 
+ActivityDate=14/02/2019, 
+ActivityBy=27, 
+RequestID=490, 
+SectionName=CC Acting User Section, 
+, 
+2019-02-14 15:50:40,951 [15] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:50:40,951 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:50:41,501 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:41,501 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:50:42,264 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:50:42,264 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:50:44,424 [26] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2019-02-14 15:50:50,794 [25] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:50:50,906 [26] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=27, 
+2019-02-14 15:50:50,907 [20] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:50:50,906 [25] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:50:51,421 [20] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Viewer, 
+2019-02-14 15:50:52,062 [32] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:52,063 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:50:52,065 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:52,065 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:52,066 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:52,067 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:52,074 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:52,076 [26] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:50:52,062 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:52,078 [36] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:50:52,062 [33] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:52,062 [35] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:50:52,063 [34] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:50:52,063 [37] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:50:52,064 [42] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:50:52,064 [41] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:50:52,063 [39] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:52,063 [38] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:52,076 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:52,062 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:52,062 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:52,075 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:52,064 [32] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:50:52,435 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:50:52,455 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:52,438 [42] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:50:52,436 [35] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:50:52,435 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:52,435 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:52,438 [41] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:50:52,436 [33] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:52,437 [39] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:50:52,437 [38] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:50:52,638 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:52,639 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:52,639 [33] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:52,638 [38] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:52,638 [39] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:52,640 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:52,641 [34] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:52,638 [35] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:52,827 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:50:52,827 [30] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:50:52,827 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:50:52,827 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:50:53,111 [18] INFO  - WCF - Helper.GetButtons for role 'Viewer', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"2"}, 
+2019-02-14 15:52:55,206 [11] INFO  - MVC - Application_Start_Done, 
+2019-02-14 15:52:55,206 [10] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:53:29,553 [10] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:53:32,546 [12] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=24, 
+2019-02-14 15:53:32,546 [11] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:53:34,047 [11] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=CC Quality Incharge User, 
+2019-02-14 15:53:34,500 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:53:34,500 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:53:34,501 [15] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:53:34,502 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:53:34,500 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:53:34,502 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:53:34,500 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:53:34,503 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:34,506 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:34,504 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:34,504 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:34,508 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:34,508 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:34,509 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:53:34,507 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:53:34,505 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:34,506 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:34,511 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:53:34,513 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:53:34,510 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:53:34,513 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:53:34,512 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:53:34,514 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:53:34,968 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:34,968 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:34,969 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 15:53:34,969 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 15:53:34,971 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:53:34,972 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:53:34,968 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:34,972 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:53:34,970 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:53:34,982 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=41
+2019-02-14 15:53:34,982 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Dumbre Amit"
+2019-02-14 15:53:34,982 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:53:34,985 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint"
+2019-02-14 15:53:34,983 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:53:34,987 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 15:53:34,986 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 15:53:34,983 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=42
+2019-02-14 15:53:34,988 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:35,283 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:53:35,283 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:53:35,314 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:53:35,315 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:53:35,315 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:53:35,314 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:53:35,329 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:35,330 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:35,330 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:35,329 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:35,514 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:35,515 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:35,516 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:35,514 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:35,514 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:35,515 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:35,516 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:35,517 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:35,733 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:53:35,733 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:53:35,733 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:53:35,733 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:53:35,890 [11] INFO  - WCF - Get All Buttons from Sharepoint, 
+2019-02-14 15:53:35,890 [12] INFO  - WCF - Helper.GetAllButtons, 
+2019-02-14 15:53:43,362 [10] INFO  - WCF - Helper.GetButtons for role 'CC Quality Incharge User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"2"}, 
+2019-02-14 15:54:31,699 [12] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:54:31,816 [15] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:54:31,816 [12] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:54:31,816 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=24, 
+2019-02-14 15:54:32,751 [15] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=CC Quality Incharge User, 
+2019-02-14 15:54:33,040 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:54:33,040 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:54:33,042 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:54:33,043 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:54:33,044 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:54:33,045 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:54:33,046 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:54:33,047 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:54:33,048 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:54:33,053 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:54:33,054 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:54:33,055 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:54:33,056 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:54:33,053 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:54:33,054 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:54:33,056 [17] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:54:33,067 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:54:33,055 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:54:33,090 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:54:33,091 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:54:33,091 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:54:33,090 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:54:33,090 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:54:33,422 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:54:33,423 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:54:33,423 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:54:33,422 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:54:33,423 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:54:33,422 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:54:33,422 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:54:33,423 [23] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:54:33,422 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:54:33,422 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:54:33,669 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:54:33,669 [23] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:54:33,669 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:54:33,670 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:54:33,669 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:54:33,670 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:54:33,669 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:54:33,670 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:54:34,017 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:54:34,017 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:54:34,017 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:54:34,018 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:54:34,188 [12] INFO  - WCF - Helper.GetButtons for role 'CC Quality Incharge User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"2"}, 
+2019-02-14 15:56:46,071 [6] INFO  - MVC - Application_Start_Done, 
+2019-02-14 15:56:46,088 [7] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:56:49,607 [6] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:56:52,066 [8] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=39, 
+2019-02-14 15:56:52,066 [6] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:56:53,936 [8] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=CC Quality Incharge User, 
+2019-02-14 15:56:54,534 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:56:54,535 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:56:54,537 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:56:54,534 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:56:54,540 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:56:54,541 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:56:54,535 [11] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:56:54,534 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:56:54,539 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:56:54,542 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:54,541 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:54,543 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:54,547 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:54,546 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:54,544 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:54,548 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:54,550 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:56:54,551 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:56:54,552 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:56:54,545 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:54,550 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:56:54,553 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:56:54,549 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:56:55,452 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:56:55,453 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:56:55,454 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint"
+2019-02-14 15:56:55,455 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=42
+2019-02-14 15:56:55,456 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 15:56:55,452 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=41
+2019-02-14 15:56:55,452 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Dumbre Amit"
+2019-02-14 15:56:55,456 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 15:56:55,459 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:55,460 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:55,457 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:55,461 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 15:56:55,462 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 15:56:55,463 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:56:55,458 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:55,464 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:56:55,460 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:56:55,463 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:56:55,626 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:56:55,626 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:56:55,671 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:55,672 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:55,673 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:56:55,671 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:55,675 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:56:55,676 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:56:55,674 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:56:55,671 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:55,874 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:55,874 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:55,875 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:55,874 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:55,889 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:55,889 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:55,889 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:55,889 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:56,046 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:56:56,046 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:56:56,046 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:56:56,060 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:56:56,205 [11] INFO  - WCF - Get All Buttons from Sharepoint, 
+2019-02-14 15:56:56,205 [6] INFO  - WCF - Helper.GetAllButtons, 
+2019-02-14 15:57:03,466 [6] INFO  - WCF - Helper.GetButtons for role 'CC Quality Incharge User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"2"}, 
+2019-02-14 15:58:45,227 [6] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 15:58:45,342 [17] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=39, 
+2019-02-14 15:58:45,342 [6] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 15:58:45,359 [16] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 15:58:46,937 [5] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=CC Quality Incharge User, 
+2019-02-14 15:58:47,633 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:58:47,633 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:58:47,635 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:58:47,633 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:58:47,636 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:58:47,634 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:58:47,637 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:58:47,639 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:58:47,640 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:58:47,637 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:58:47,642 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:58:47,641 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:58:47,642 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:58:47,644 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:58:47,645 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:58:47,646 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:58:47,647 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:58:47,643 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:58:47,649 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:58:47,648 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:58:47,646 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:58:47,650 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:58:47,657 [5] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 15:58:48,094 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:58:48,094 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:58:48,095 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:58:48,096 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:58:48,097 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:58:48,094 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:58:48,106 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:58:48,106 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:58:48,107 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:58:48,107 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:58:48,280 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:58:48,281 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:58:48,281 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:58:48,283 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:58:48,284 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:58:48,285 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:58:48,280 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:58:48,280 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:58:48,440 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:58:48,441 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:58:48,441 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:58:48,440 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:58:48,650 [17] INFO  - WCF - Helper.GetButtons for role 'CC Quality Incharge User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"2"}, 
+2019-02-14 15:59:39,380 [17] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveCCQualityInchargeSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","QualityInchargeDate","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","CCQAInchargeFileNameList","ForwardtoQuality","CurrentApprover.Comments","CurrentApprover.Approver","CurrentApprover.Role","CurrentApprover.AssignDate","QAUserList","QAUser","QAUserName","LUMQAUser","LUMQAUserName","BUHidden","ButtonCaption","X-Requested-With"], 
+2019-02-14 15:59:39,582 [12] INFO  - WCF - Saving Actual Section Properties, 
+2019-02-14 15:59:39,588 [16] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"39","ActionPer":"Forward to Quality|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}
+2019-02-14 15:59:39,644 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 15:59:47,688 [20] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2019-02-14 15:59:47,688 [23] INFO  - WCF - Actual Section Properties Saved, Int32=490
+2019-02-14 15:59:47,688 [22] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2019-02-14 15:59:48,389 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:59:48,390 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 15:59:48,390 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:59:48,392 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:59:48,393 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:59:48,394 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:59:48,395 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 15:59:48,396 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 15:59:48,397 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:59:48,389 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 15:59:48,399 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:59:48,400 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:59:48,401 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:59:48,402 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 15:59:48,389 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 15:59:48,404 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:59:48,406 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:59:48,412 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:59:48,413 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 15:59:48,414 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 15:59:48,415 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:48,390 [22] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 15:59:48,417 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:59:48,419 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:59:48,416 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:59:48,420 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 15:59:48,421 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:48,398 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 15:59:48,403 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 15:59:48,424 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:59:48,424 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:59:48,423 [12] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:59:48,422 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:59:48,425 [16] INFO  - WCF - Started form level assignment, 
+2019-02-14 15:59:48,428 [17] INFO  - WCF - Tasks Saved if any, 
+2019-02-14 15:59:48,431 [17] INFO  - WCF - Set Viewer  Approver ID='22' and RequestId='490', 
+2019-02-14 15:59:48,427 [12] INFO  - WCF - Tasks approvers Saved if any, 
+2019-02-14 15:59:48,434 [12] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:59:48,435 [12] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='490', 
+2019-02-14 15:59:48,432 [17] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:59:48,429 [16] INFO  - WCF - Set Viewer  Approver ID='22,27,40,24,39,19' and RequestId='490', 
+2019-02-14 15:59:48,438 [17] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 15:59:48,436 [12] INFO  - WCF - Set Viewer  Approver ID='24,39' and RequestId='490', 
+2019-02-14 15:59:48,438 [16] INFO  - WCF - Set Viewer  Approver ID='27' and RequestId='490', 
+2019-02-14 15:59:48,439 [17] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=2, previousLevel=1, param={"UserID":"39","ActionPer":"Forward to Quality|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, actionperformed=NextApproval, list=[{"ID":2508,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22,27,40,24,39,19","ApproverName":"Collab App Support-3, Collab App Support-2, Patil Bhushan, Collab App Support-1, Gadhari Suresh","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2505,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T10:09:27Z","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":"Collab App Support-3","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2506,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"27","ApproverName":"Collab App Support-2","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":"2019-02-14T10:20:34Z","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"27","ApproveByName":"Collab App Support-2","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2510,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":null,"Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2509,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":null,"SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Pending","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2511,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2507,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2512,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":null,"Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 15:59:48,452 [12] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 15:59:48,453 [12] INFO  - WCF - End of form level assignment, 
+2019-02-14 15:59:48,452 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:48,453 [12] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=2, previousLevel=1, param={"UserID":"39","ActionPer":"Forward to Quality|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, actionperformed=NextApproval, list=[{"ID":2508,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22,27,40,24,39,19","ApproverName":"Collab App Support-3, Collab App Support-2, Patil Bhushan, Collab App Support-1, Gadhari Suresh","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2505,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T10:09:27Z","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":"Collab App Support-3","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2506,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"27","ApproverName":"Collab App Support-2","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":"2019-02-14T10:20:34Z","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"27","ApproveByName":"Collab App Support-2","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2510,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":null,"Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2509,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":null,"SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":"2019-02-14T15:59:48.3407706+05:30","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"39","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2511,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2507,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T15:59:48.3407706+05:30","DueDate":"2019-02-25T15:59:48.3407706+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2512,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":null,"Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T15:59:48.3407706+05:30","DueDate":"2019-02-25T15:59:48.3407706+05:30","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 15:59:48,452 [17] INFO  - WCF - Case Action Performed 'NextApproval', 
+2019-02-14 15:59:48,484 [16] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='490' with values = {"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":40,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null}],"QualityUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"LastActionPerformed":"NextApproval","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null},"LastActionByRole":"CC Quality Incharge User","PendingWith":"Quality User","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"FormLevel":"2|3","ApprovalStatus":"In Progress","Status":"Submitted","WorkflowStatus":"Pending With Quality User"}, 
+2019-02-14 15:59:50,156 [12] INFO  - WCF - Save Form Field Name='Status'='Submitted', 
+2019-02-14 15:59:50,170 [17] INFO  - WCF - Calling SetItemPermission -> itemid=490, listname=Feedbacks, {"22,27,40,24,39,19":"Read","19":"Contribute"}, 
+2019-02-14 15:59:50,313 [16] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2019-02-14 15:59:50,314 [16] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2019-02-14 15:59:50,313 [17] INFO  - WCF - item ResetRoleInheritance Called, 
+2019-02-14 15:59:50,313 [12] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 22,27,40,24,39,19, 
+2019-02-14 15:59:51,609 [12] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2019-02-14 15:59:52,013 [16] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19, 
+2019-02-14 15:59:52,013 [17] INFO  - WCF - User Permission set for -> 22,27,40,24,39,19, 
+2019-02-14 15:59:52,115 [12] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2019-02-14 15:59:52,299 [12] INFO  - WCF - User Permission set for -> 19, 
+2019-02-14 15:59:53,062 [12] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2019-02-14 15:59:53,062 [16] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=490, activityby=39, 
+2019-02-14 15:59:53,062 [18] INFO  - WCF - Calling Activity Log -> {"UserID":"39","ActionPer":"Forward to Quality|NextApproval","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, 
+2019-02-14 15:59:53,062 [17] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2019-02-14 15:59:53,078 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:53,482 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:59:53,483 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:59:53,483 [17] INFO  - WCF - Calling Activity Log -> Complete, 
+2019-02-14 15:59:53,483 [23] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:59:53,482 [16] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2019-02-14 15:59:53,482 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:53,483 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 15:59:53,482 [12] INFO  - WCF - Activity Log Parameter Saved -> Activity=Forward to Quality, 
+Changes=Status	Submitted
+QualityInchargeDate	14/02/2019 15:59:39
+
+Approved/Updated date	14/02/2019
+Approved/Updated time	03:59 PM
+Approver Comment	testing
+ForwardtoQuality	True
+QAUser	Clover Sharepoint 1
+LUMQAUser	
+Files	, 
+ActivityDate=14/02/2019, 
+ActivityBy=39, 
+RequestID=490, 
+SectionName=CC Quality Incharge Section, 
+, 
+2019-02-14 15:59:53,483 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 15:59:53,736 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:59:53,736 [18] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 15:59:53,985 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:59:53,985 [18] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 15:59:54,643 [18] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:54,643 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 15:59:54,644 [12] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 15:59:55,285 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 15:59:55,910 [17] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2019-02-14 16:00:04,340 [17] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 16:00:04,441 [21] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 16:00:04,441 [23] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 16:00:04,441 [22] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=39, 
+2019-02-14 16:00:05,017 [12] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Viewer, 
+2019-02-14 16:00:05,254 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:00:05,254 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:00:05,264 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:00:05,265 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:00:05,265 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:00:05,265 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:00:05,266 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:00:05,264 [29] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:05,264 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,264 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:00:05,264 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:00:05,266 [24] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:00:05,266 [23] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:00:05,279 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:00:05,264 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:00:05,278 [30] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:00:05,264 [27] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:00:05,266 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:00:05,284 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:00:05,283 [23] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,279 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:00:05,282 [29] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:00:05,282 [24] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:05,282 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:00:05,297 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:00:05,299 [12] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 16:00:05,282 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:00:05,298 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:00:05,353 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:00:05,616 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:00:05,616 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:00:05,616 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:00:05,622 [29] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:00:05,624 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,625 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:05,622 [27] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:00:05,624 [25] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:05,624 [24] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,623 [28] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:00:05,768 [27] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:00:05,768 [24] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:00:05,768 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:00:05,768 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:05,768 [30] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:00:05,769 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,972 [23] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,972 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:05,972 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:05,972 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:06,502 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:00:06,502 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:00:06,661 [17] INFO  - WCF - Helper.GetButtons for role 'Viewer', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"3"}, 
+2019-02-14 16:01:50,778 [6] INFO  - MVC - Application_Start_Done, 
+2019-02-14 16:01:50,779 [7] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 16:01:56,936 [6] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 16:01:59,082 [6] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 16:01:59,082 [7] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=24, 
+2019-02-14 16:01:59,751 [7] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Viewer, 
+2019-02-14 16:02:00,166 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:02:00,167 [8] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 16:02:00,168 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:02:00,169 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:02:00,168 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:02:00,171 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:02:00,173 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:00,175 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:00,177 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:02:00,169 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:02:00,170 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:02:00,181 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:02:00,183 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:02:00,184 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:02:00,185 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:02:00,178 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:02:00,170 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:02:00,179 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:02:00,191 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:00,189 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:02:00,193 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:02:00,194 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:02:00,195 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:02:00,195 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:02:00,186 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:02:00,188 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:02:00,192 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:00,197 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:02:00,196 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:02:00,897 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:02:00,897 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:02:00,905 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=42
+2019-02-14 16:02:00,905 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 16:02:00,908 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:02:00,905 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint"
+2019-02-14 16:02:00,910 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:02:00,906 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 16:02:00,909 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:02:00,913 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:02:00,912 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:00,911 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:02:00,915 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:02:00,914 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:00,920 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=41
+2019-02-14 16:02:00,920 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Dumbre Amit"
+2019-02-14 16:02:00,921 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:02:00,920 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:02:01,070 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:02:01,070 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:02:01,117 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:02:01,117 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:02:01,117 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:02:01,117 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:02:01,123 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:01,123 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:01,138 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:01,139 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:01,296 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:02:01,296 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:02:01,296 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:02:01,297 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:02:01,310 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:01,310 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:01,534 [6] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:01,534 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:01,544 [7] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:01,544 [8] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:02,064 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:02:02,064 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:02:02,219 [8] INFO  - WCF - Get All Buttons from Sharepoint, 
+2019-02-14 16:02:02,219 [7] INFO  - WCF - Helper.GetAllButtons, 
+2019-02-14 16:02:08,234 [6] INFO  - WCF - Helper.GetButtons for role 'Viewer', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"3"}, 
+2019-02-14 16:04:45,871 [9] INFO  - MVC - Application_Start_Done, 
+2019-02-14 16:04:45,871 [10] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 16:04:48,625 [9] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 16:04:50,988 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2019-02-14 16:04:50,988 [9] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 16:04:52,347 [9] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Quality User, 
+2019-02-14 16:04:52,774 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:04:52,774 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:04:52,776 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:04:52,776 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:04:52,774 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:52,774 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:52,779 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:04:52,775 [10] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 16:04:52,780 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:04:52,782 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:04:52,783 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:04:52,784 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:04:52,777 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:04:52,785 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:04:52,787 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:04:52,782 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:04:52,781 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:04:52,790 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:04:52,789 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:52,790 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:04:52,791 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:04:52,788 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:52,794 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:04:52,797 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:04:52,800 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:04:52,792 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:04:52,801 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:04:52,794 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:04:52,793 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:04:53,487 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:53,487 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:04:53,489 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:04:53,490 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:04:53,488 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:53,487 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:04:53,497 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=41
+2019-02-14 16:04:53,498 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:04:53,499 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=42
+2019-02-14 16:04:53,500 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint"
+2019-02-14 16:04:53,501 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 16:04:53,502 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 16:04:53,504 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:04:53,497 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Dumbre Amit"
+2019-02-14 16:04:53,497 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:04:53,506 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:04:53,505 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:04:53,505 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:04:53,685 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:04:53,685 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:04:53,724 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:53,724 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:53,725 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:53,726 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:04:53,724 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:53,728 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:04:53,727 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:04:53,725 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:04:53,892 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:53,893 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:04:53,894 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:04:53,892 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:53,893 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:04:53,892 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:04:54,126 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:54,126 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:54,126 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:54,126 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:54,675 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:04:54,675 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:04:54,828 [11] INFO  - WCF - Get All Buttons from Sharepoint, 
+2019-02-14 16:04:54,828 [10] INFO  - WCF - Helper.GetAllButtons, 
+2019-02-14 16:04:57,755 [11] INFO  - WCF - Helper.GetButtons for role 'Quality User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"3"}, 
+2019-02-14 16:07:21,928 [15] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveQaulityUserSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","QAHeadUser","QualityUserDate","SendBackToCC","CurrentApprover.Comments","CurrentApprover.Approver","CurrentApprover.Role","CurrentApprover.AssignDate","Observations","ActionPlans","ProblemCause","Implemented","ImplementedRemark","QUFileNameList","QualityStatus","CurrentApprover.QualityComments","ButtonCaption","X-Requested-With"], 
+2019-02-14 16:07:22,020 [10] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":"Complete|Complete","DefectDesc1":"Yes","DefectDesc2":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}
+2019-02-14 16:07:22,112 [10] INFO  - WCF - Saving Actual Section Properties, 
+2019-02-14 16:07:23,988 [20] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2019-02-14 16:07:23,988 [16] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2019-02-14 16:07:23,988 [17] INFO  - WCF - Actual Section Properties Saved, Int32=490
+2019-02-14 16:07:24,603 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:24,603 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:24,603 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:24,605 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:24,607 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:24,607 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:24,603 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:24,604 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:24,610 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:24,609 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:24,606 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:24,612 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:24,608 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:24,611 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:24,610 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:07:24,614 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:07:24,613 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:24,617 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:07:24,617 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:24,614 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:24,619 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:24,615 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:07:24,618 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:24,616 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:07:24,620 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:24,623 [19] INFO  - WCF - Tasks approvers Saved if any, 
+2019-02-14 16:07:24,623 [20] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 16:07:24,624 [20] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 16:07:24,625 [20] INFO  - WCF - Set Viewer  Approver ID='24,39' and RequestId='490', 
+2019-02-14 16:07:24,624 [19] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='490', 
+2019-02-14 16:07:24,627 [19] INFO  - WCF - Set Viewer  Approver ID='22' and RequestId='490', 
+2019-02-14 16:07:24,623 [21] INFO  - WCF - Started form level assignment, 
+2019-02-14 16:07:24,626 [20] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='490', 
+2019-02-14 16:07:24,623 [10] INFO  - WCF - Tasks Saved if any, 
+2019-02-14 16:07:24,630 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:24,631 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:07:24,629 [21] INFO  - WCF - Set Viewer  Approver ID='22,27,40,24,39,19,25' and RequestId='490', 
+2019-02-14 16:07:24,628 [19] INFO  - WCF - Set Viewer  Approver ID='27' and RequestId='490', 
+2019-02-14 16:07:24,629 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:24,640 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 16:07:24,641 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 16:07:24,640 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 16:07:24,640 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 16:07:24,640 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 16:07:24,645 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 16:07:24,645 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 16:07:24,643 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 16:07:24,641 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 16:07:24,643 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="25"
+2019-02-14 16:07:24,647 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 16:07:24,646 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 16:07:24,663 [19] INFO  - WCF - End of form level assignment, 
+2019-02-14 16:07:24,663 [20] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=3, previousLevel=2, param={"UserID":"19","ActionPer":"Complete|Complete","DefectDesc1":"Yes","DefectDesc2":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, actionperformed=Complete, list=[{"ID":2508,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22,27,40,24,39,19,25","ApproverName":"Collab App Support-3, Collab App Support-2, Patil Bhushan, Collab App Support-1, Gadhari Suresh, Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2505,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T10:09:27Z","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":"Collab App Support-3","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2506,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"27","ApproverName":"Collab App Support-2","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":"2019-02-14T10:20:34Z","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"27","ApproveByName":"Collab App Support-2","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2510,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":null,"Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2509,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":null,"SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":"2019-02-14T10:29:48Z","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"39","ApproveByName":"Gadhari Suresh","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2511,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2507,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Approved","Comments":"test","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:29:48Z","DueDate":"2019-02-25T10:29:48Z","ApprovalDate":"2019-02-14T16:07:24.5552771+05:30","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"19","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2512,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":null,"Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:29:48Z","DueDate":"2019-02-25T10:29:48Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 16:07:24,663 [10] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=3, previousLevel=2, param={"UserID":"19","ActionPer":"Complete|Complete","DefectDesc1":"Yes","DefectDesc2":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, actionperformed=Complete, list=[{"ID":2508,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22,27,40,24,39,19,25","ApproverName":"Collab App Support-3, Collab App Support-2, Patil Bhushan, Collab App Support-1, Gadhari Suresh, Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2505,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"22","ApproverName":"Collab App Support-3","Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2019-02-14T10:09:27Z","IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":"22","ApproveByName":"Collab App Support-3","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2506,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"27","ApproverName":"Collab App Support-2","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":"2019-02-14T10:20:34Z","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"27","ApproveByName":"Collab App Support-2","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2510,"Title":"LUM Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Acting User Section","HiddenSection":null,"Levels":"1","Role":"LUM Service Managers","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:09:27Z","DueDate":"2019-02-25T10:09:27Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2509,"Title":"CC Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,CC Acting User","Division":null,"SubDivision":null,"Approver":"24,39","ApproverName":"Collab App Support-1, Gadhari Suresh","Status":"Approved","Comments":"testing","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":"2019-02-14T10:29:48Z","IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":"39","ApproveByName":"Gadhari Suresh","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2511,"Title":"LUM Quality Incharge Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"LUM Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator,LUM Service Managers","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:20:34Z","DueDate":"2019-02-25T10:20:34Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2507,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Pending","Comments":"test","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:29:48Z","DueDate":"2019-02-25T10:29:48Z","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":2512,"Title":"LUM Quality User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"LUM Quality User Section","HiddenSection":null,"Levels":"3","Role":"LUM Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"LUM Quality Incharge User","Division":null,"SubDivision":null,"Approver":null,"ApproverName":null,"Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2019-02-14T10:29:48Z","DueDate":"2019-02-25T10:29:48Z","ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":490,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2019-02-14 16:07:24,663 [21] INFO  - WCF - Case Action Performed 'Complete', 
+2019-02-14 16:07:24,673 [19] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='490' with values = {"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":40,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":25,"LookupValue":null}],"Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":22,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":27,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":24,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":39,"LookupValue":null}],"QualityUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"ApprovalStatus":"Completed","Status":"Completed","FormLevel":"3|3","NextApprover":"","PendingWith":"","WorkflowStatus":"Completed"}, 
+2019-02-14 16:07:26,123 [21] INFO  - WCF - Save Form Field Name='Status'='Completed', 
+2019-02-14 16:07:26,139 [20] INFO  - WCF - Calling SetItemPermission -> itemid=490, listname=Feedbacks, {"22,27,40,24,39,19,25,":"Read"}, 
+2019-02-14 16:07:26,343 [20] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2019-02-14 16:07:26,343 [21] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2019-02-14 16:07:26,343 [19] INFO  - WCF - item ResetRoleInheritance Called, 
+2019-02-14 16:07:26,357 [20] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 22,27,40,24,39,19,25,, 
+2019-02-14 16:07:27,301 [20] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2019-02-14 16:07:28,014 [21] INFO  - WCF - User Permission set for -> 22,27,40,24,39,19,25,, 
+2019-02-14 16:07:28,973 [19] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=490, activityby=19, 
+2019-02-14 16:07:28,974 [19] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2019-02-14 16:07:28,975 [19] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2019-02-14 16:07:28,973 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 16:07:28,973 [21] INFO  - WCF - Calling Activity Log -> {"UserID":"19","ActionPer":"Complete|Complete","DefectDesc1":"Yes","DefectDesc2":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False"}, 
+2019-02-14 16:07:29,357 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="25"
+2019-02-14 16:07:29,360 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 16:07:29,361 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="40"
+2019-02-14 16:07:29,362 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 16:07:29,357 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 16:07:29,357 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 16:07:29,363 [19] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2019-02-14 16:07:29,365 [19] INFO  - WCF - Calling Activity Log -> Complete, 
+2019-02-14 16:07:29,364 [20] INFO  - WCF - Activity Log Parameter Saved -> Activity=Complete, 
+Changes=Status	Completed
+QualityUserDate	14/02/2019 16:07:21
+ImplementationDate	14/02/2019 16:07:21
+
+Approved/Updated date	14/02/2019
+Approved/Updated time	04:07 PM
+Approver Comment	test
+ImplementedRemark	test
+Files	
+SendBackToCC	False
+QualityStatus	
+Implemented	Yes
+Observations	test
+ActionPlans	test
+ProblemCause	Handling, 
+ActivityDate=14/02/2019, 
+ActivityBy=19, 
+RequestID=490, 
+SectionName=Qaulity User Section, 
+, 
+2019-02-14 16:07:29,363 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 16:07:29,876 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 16:07:29,876 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="22"
+2019-02-14 16:07:30,252 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 16:07:30,252 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="27"
+2019-02-14 16:07:30,892 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="24"
+2019-02-14 16:07:30,892 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 16:07:30,892 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="39"
+2019-02-14 16:07:31,503 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 16:07:31,503 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2019-02-14 16:07:32,049 [20] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2019-02-14 16:07:43,793 [18] INFO  - MVC - Begin Request http://localhost:5179/?ID=490, 
+2019-02-14 16:07:43,908 [16] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2019-02-14 16:07:43,908 [19] INFO  - WCF - Called Helper GetFormData, 
+2019-02-14 16:07:43,908 [11] INFO  - MVC - Start Feedback form and ID = 490, 
+2019-02-14 16:07:44,863 [11] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Viewer, 
+2019-02-14 16:07:45,266 [23] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:45,267 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:07:45,268 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:45,269 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:45,270 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:45,271 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:45,266 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:07:45,267 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:07:45,274 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:45,276 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:45,278 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:45,280 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:45,267 [23] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:07:45,268 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:45,272 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:45,268 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:45,270 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:45,302 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:45,269 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:45,266 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:45,273 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:45,318 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:45,319 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:45,320 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:07:45,321 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2019-02-14 16:07:45,322 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:45,319 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:07:45,319 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:45,321 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:45,269 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:45,334 [27] INFO  - WCF - called Helper.GetFormData, 
+2019-02-14 16:07:45,321 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2019-02-14 16:07:45,318 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:45,748 [15] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2019-02-14 16:07:45,749 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2019-02-14 16:07:45,748 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2019-02-14 16:07:45,748 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2019-02-14 16:07:45,764 [25] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:45,764 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:45,764 [28] INFO  - WCF - Helper.GetNameFromPersonField, Int32=40
+2019-02-14 16:07:45,764 [27] INFO  - WCF - Helper.GetNameFromPersonField, String="Patil Bhushan"
+2019-02-14 16:07:46,018 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=39
+2019-02-14 16:07:46,018 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Gadhari Suresh"
+2019-02-14 16:07:46,018 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=24
+2019-02-14 16:07:46,018 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-1"
+2019-02-14 16:07:46,314 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2019-02-14 16:07:46,314 [15] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2019-02-14 16:07:46,829 [11] INFO  - WCF - Helper.GetButtons for role 'Viewer', appName='Feedbacks', formName='Feedback Form', status='Completed', other params={"CurrentFromLevel":"3"}, 

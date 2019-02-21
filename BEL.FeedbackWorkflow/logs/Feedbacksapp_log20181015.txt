@@ -1,0 +1,317 @@
+2018-10-15 13:26:22,426 [11] INFO  - MVC - Application_Start_Done, 
+2018-10-15 13:26:22,479 [11] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-10-15 13:26:29,088 [11] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-10-15 13:26:29,122 [13] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-10-15 13:26:29,122 [11] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-10-15 13:26:29,122 [12] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-10-15 13:26:29,123 [13] INFO  - WCF - Called Helper GetFormData, 
+2018-10-15 13:26:36,765 [11] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-10-15 13:26:36,775 [12] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-10-15 13:27:07,139 [16] INFO  - WCF - called Helper.GetFormData, 
+2018-10-15 13:27:09,541 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:27:09,546 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:27:09,541 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-10-15 13:27:09,544 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-10-15 13:27:09,550 [13] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:27:09,548 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:27:09,553 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:27:09,554 [13] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:27:09,559 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:27:09,555 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:27:09,563 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-10-15 13:27:09,561 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:27:09,565 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:27:09,564 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-10-15 13:27:09,562 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:27:09,566 [13] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:27:09,566 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:27:09,567 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:27:12,108 [16] INFO  - WCF - Helper.GetAllButtons, 
+2018-10-15 13:27:12,108 [12] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-10-15 13:27:26,483 [11] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-10-15 13:27:46,219 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/3895544a8967427dbdce8bde8d56053d?version=2, 
+2018-10-15 13:28:14,672 [13] INFO  - MVC - Begin Request http://localhost:5179/?Id=197, 
+2018-10-15 13:28:14,686 [12] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-10-15 13:28:14,688 [13] INFO  - MVC - Start Feedback form and ID = 197, 
+2018-10-15 13:28:14,687 [16] INFO  - WCF - Called Helper GetFormData, 
+2018-10-15 13:28:19,060 [16] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Creator, 
+2018-10-15 13:28:20,282 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,282 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,282 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,282 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,283 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,282 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,282 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:28:20,282 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:28:20,294 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,294 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,294 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,294 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,294 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,294 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:28:20,294 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,294 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,295 [14] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,308 [16] INFO  - WCF - called Helper.GetFormData, 
+2018-10-15 13:28:20,309 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,308 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:28:20,313 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:28:20,310 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:20,308 [14] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:28:20,308 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-10-15 13:28:20,308 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:28:20,308 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:28:20,308 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,308 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:20,312 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-10-15 13:28:20,315 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:28:20,321 [21] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:28:20,320 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:28:20,322 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:28:21,152 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,152 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,183 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,184 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,183 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:28:21,183 [14] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,183 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,183 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,183 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:28:21,183 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,580 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:28:21,580 [13] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,582 [17] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:28:21,580 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:28:21,580 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:28:21,580 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,580 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,580 [8] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,970 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:21,970 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,980 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:21,980 [20] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:22,359 [16] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:28:22,359 [13] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:28:23,234 [20] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='Sent Back', other params={"CurrentFromLevel":"0"}, 
+2018-10-15 13:28:23,742 [20] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250789&_=1539590303525, 
+2018-10-15 13:28:23,948 [20] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/afb707190118418192fb3a8390b6c8c4?version=2, 
+2018-10-15 13:31:16,333 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","SampleProvided","SampleQuantity","SampleComments","QualityUser","QualityUserName","ButtonCaption","X-Requested-With"], 
+2018-10-15 13:31:16,389 [19] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Forward to Quality User|SendForward","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False","SendToLevel":"3"}
+2018-10-15 13:31:16,429 [7] INFO  - WCF - Saving Actual Section Properties, 
+2018-10-15 13:31:16,435 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:16,457 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:16,457 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:18,641 [25] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-10-15 13:31:18,641 [23] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-10-15 13:31:18,641 [26] INFO  - WCF - Actual Section Properties Saved, Int32=197
+2018-10-15 13:31:20,983 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-10-15 13:31:20,985 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:31:20,989 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:31:20,992 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:20,994 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:20,998 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:21,000 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:21,003 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:21,011 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:20,983 [31] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:31:20,983 [29] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:31:20,984 [27] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:20,983 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-10-15 13:31:21,028 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,031 [33] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:21,032 [33] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:20,999 [35] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:20,983 [24] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:31:20,983 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:31:21,055 [35] INFO  - WCF - End of form level assignment, 
+2018-10-15 13:31:20,983 [23] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:21,067 [36] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:21,068 [40] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="25"
+2018-10-15 13:31:20,983 [22] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:31:21,029 [29] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:31:21,053 [34] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:21,028 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:21,053 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,085 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:21,029 [27] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:21,068 [42] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='197' with values = {"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":31,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":34,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":33,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":25,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":31,"LookupValue":null}],"Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":31,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":34,"LookupValue":null},{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":33,"LookupValue":null}],"QualityUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"LastActionPerformed":"SendForward","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},"LastActionByRole":"Creator","PendingWith":"Quality User","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"FormLevel":"0|3","ApprovalStatus":"In Progress","Status":"Submitted","WorkflowStatus":"Pending With Quality User"}, 
+2018-10-15 13:31:21,055 [31] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:31:21,068 [37] INFO  - WCF - Case Action Performed 'SendForward', 
+2018-10-15 13:31:21,074 [40] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:20,984 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:31:20,984 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:31:21,029 [26] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:21,068 [32] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,068 [35] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="33"
+2018-10-15 13:31:20,988 [7] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:31:21,055 [24] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=3, param={"UserID":"19","ActionPer":" Forward to Quality User|SendForward","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":946,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"19,31,34,33,25,19,19,31","ApproverName":"Clover Sharepoint 1, DCR DCN Management Sytem User 2, Udole Sachin, Navadiya Virendra, Mahadeshwar Pravin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":197,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":943,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Send Forward","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:24:00Z","DueDate":"2018-10-05T12:24:00Z","ApprovalDate":"2018-10-15T13:31:20.9220847+05:30","IsEscalate":false,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":944,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"19,31","ApproverName":"Clover Sharepoint 1, DCR DCN Management Sytem User 2","Status":"Not Assigned","Comments":"please ignore this","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:20:51Z","DueDate":"2018-10-05T12:20:51Z","ApprovalDate":"2018-09-26T12:22:19Z","IsEscalate":true,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":947,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":null,"SubDivision":null,"Approver":"19,34,33","ApproverName":"Clover Sharepoint 1, Udole Sachin, Navadiya Virendra","Status":"Not Assigned","Comments":"Please check this","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:22:19Z","DueDate":"2018-10-05T12:22:19Z","ApprovalDate":"2018-09-26T12:23:14Z","IsEscalate":true,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":945,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-10-15T13:31:20.9230848+05:30","DueDate":"2018-10-24T13:31:20.9220847+05:30","ApprovalDate":"2018-09-26T12:24:00Z","IsEscalate":true,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-10-15 13:31:21,056 [25] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=3, param={"UserID":"19","ActionPer":" Forward to Quality User|SendForward","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":946,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":null,"HiddenSection":null,"Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"19,31,34,33,25,19,19,31","ApproverName":"Clover Sharepoint 1, DCR DCN Management Sytem User 2, Udole Sachin, Navadiya Virendra, Mahadeshwar Pravin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":197,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":943,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":null,"Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:24:00Z","DueDate":"2018-10-05T12:24:00Z","ApprovalDate":"2018-09-26T12:20:51Z","IsEscalate":false,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":944,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":null,"Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":null,"SubDivision":null,"Approver":"19,31","ApproverName":"Clover Sharepoint 1, DCR DCN Management Sytem User 2","Status":"Not Assigned","Comments":"please ignore this","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:20:51Z","DueDate":"2018-10-05T12:20:51Z","ApprovalDate":"2018-09-26T12:22:19Z","IsEscalate":true,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":947,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":null,"Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":null,"SubDivision":null,"Approver":"19,34,33","ApproverName":"Clover Sharepoint 1, Udole Sachin, Navadiya Virendra","Status":"Not Assigned","Comments":"Please check this","QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:22:19Z","DueDate":"2018-10-05T12:22:19Z","ApprovalDate":"2018-09-26T12:23:14Z","IsEscalate":true,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":945,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":null,"Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":null,"SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Send Back","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-09-26T12:23:14Z","DueDate":"2018-10-05T12:23:14Z","ApprovalDate":"2018-09-26T12:24:00Z","IsEscalate":true,"IsReminder":true,"RequestID":197,"ApproveBy":"19","ApproveByName":"Clover Sharepoint 1","IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-10-15 13:31:21,082 [36] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,071 [23] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="34"
+2018-10-15 13:31:21,090 [30] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,092 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="33"
+2018-10-15 13:31:21,082 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:21,096 [34] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="34"
+2018-10-15 13:31:21,100 [39] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,099 [38] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,100 [29] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:21,101 [27] INFO  - WCF - Started form level assignment, 
+2018-10-15 13:31:21,099 [41] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:21,103 [42] INFO  - WCF - Tasks Saved if any, 
+2018-10-15 13:31:21,105 [31] INFO  - WCF - Tasks approvers Saved if any, 
+2018-10-15 13:31:21,107 [37] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='197', 
+2018-10-15 13:31:21,109 [40] INFO  - WCF - Set Viewer  Approver ID='19,34,33' and RequestId='197', 
+2018-10-15 13:31:21,111 [10] INFO  - WCF - Set Viewer  Approver ID='19,31' and RequestId='197', 
+2018-10-15 13:31:21,113 [19] INFO  - WCF - Set Viewer  Approver ID='19,31,34,33,25,19,19,31' and RequestId='197', 
+2018-10-15 13:31:21,115 [26] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='197', 
+2018-10-15 13:31:21,119 [35] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:21,117 [32] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:22,420 [18] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1796
+2018-10-15 13:31:22,441 [18] ERROR - Error While Save Fields FieldName:QualityUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1796
+2018-10-15 13:31:22,545 [19] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Pending With Quality User', 
+2018-10-15 13:31:22,545 [7] INFO  - WCF - Save Form Field Name='Status'='Submitted', 
+2018-10-15 13:31:22,563 [23] INFO  - WCF - Calling SetItemPermission -> itemid=197, listname=Feedbacks, {"19,31,34,33,25,19,19,31":"Read","19":"Contribute"}, 
+2018-10-15 13:31:22,833 [10] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19,31,34,33,25,19,19,31, 
+2018-10-15 13:31:22,833 [22] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2018-10-15 13:31:22,833 [23] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2018-10-15 13:31:22,833 [25] INFO  - WCF - item ResetRoleInheritance Called, 
+2018-10-15 13:31:25,298 [10] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2018-10-15 13:31:26,207 [19] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19, 
+2018-10-15 13:31:26,207 [7] INFO  - WCF - User Permission set for -> 19,31,34,33,25,19,19,31, 
+2018-10-15 13:31:26,344 [19] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2018-10-15 13:31:26,642 [19] INFO  - WCF - User Permission set for -> 19, 
+2018-10-15 13:31:27,501 [25] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2018-10-15 13:31:27,501 [19] INFO  - WCF - Calling Activity Log -> {"UserID":"19","ActionPer":" Forward to Quality User|SendForward","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"False","SendToLevel":"3"}, 
+2018-10-15 13:31:27,501 [7] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2018-10-15 13:31:27,514 [24] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=197, activityby=19, 
+2018-10-15 13:31:27,514 [27] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:28,549 [31] INFO  - WCF - Calling Activity Log -> Complete, 
+2018-10-15 13:31:28,549 [29] INFO  - WCF - Activity Log Parameter Saved -> Activity= Forward to Quality User, 
+Changes=ProposedBy	Clover Sharepoint 1
+RequestDate	26/09/2018 00:00:00
+SampleProvidedDate	15/10/2018 13:31:16
+WorkflowStatus	Pending With Quality User
+Status	Submitted
+SampleProvided	Yes
+SampleQuantity	2
+SampleComments	Sample provided please check
+
+Approved/Updated date	15/10/2018
+Approved/Updated time	01:31 PM
+Approver Comment	
+BusinessUnits	FANS
+FeedbackTitle	Final Tesitng
+Branch	Sion Office (6th Floor)
+ProductType	Economy CF
+DefectDescription	Final Tesitng
+SupplierCode	123
+ProductSerial	Final Tesitng
+FeedbackNo	FANS-2018-00014
+Files	
+CCActingUser	Clover Sharepoint 1, DCR DCN Management Sytem User 2
+QAUser	Clover Sharepoint 1
+Month	September
+Year	2018
+ItemCode	250789
+ItemDescription	Speedster 600 mm Matt Brown CF
+ProductGroup	Economy CF, 
+ActivityDate=15/10/2018, 
+ActivityBy=19, 
+RequestID=197, 
+SectionName=Feedback Detail Section, 
+, 
+2018-10-15 13:31:28,549 [30] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2018-10-15 13:31:28,561 [35] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:28,561 [38] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:28,561 [41] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:28,561 [40] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="25"
+2018-10-15 13:31:28,561 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="33"
+2018-10-15 13:31:28,561 [39] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="34"
+2018-10-15 13:31:28,561 [37] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:28,561 [36] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:30,001 [7] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:30,001 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:30,516 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:30,516 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="31"
+2018-10-15 13:31:30,516 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:31,251 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="34"
+2018-10-15 13:31:31,251 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:31,251 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="33"
+2018-10-15 13:31:31,251 [40] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:31,755 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:31,755 [25] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-10-15 13:31:32,393 [19] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2018-10-15 13:31:34,863 [41] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="Clover Sharepoint 1"
+2018-10-15 13:31:34,863 [38] INFO  - WCF - Helper.GetNameUsingUserID, String="19"
+2018-10-15 13:31:34,863 [22] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="Clover Sharepoint 1"
+2018-10-15 13:31:34,863 [39] INFO  - WCF - Helper.GetNameUsingUserID, String="19"
+2018-10-15 13:31:56,441 [38] INFO  - WCF - Called Helper GetFormData, 
+2018-10-15 13:31:56,441 [10] INFO  - MVC - Begin Request http://localhost:5179/?Id=197, 
+2018-10-15 13:31:56,441 [22] INFO  - MVC - Start Feedback form and ID = 197, 
+2018-10-15 13:31:56,441 [39] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-10-15 13:31:58,189 [19] INFO  - WCF - Called Helper.GetCurrentUserRole and Role=Quality User, 
+2018-10-15 13:31:58,703 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,703 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,703 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,703 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,717 [44] INFO  - WCF - called Helper.GetFormData, 
+2018-10-15 13:31:58,719 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,718 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:31:58,726 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:31:58,719 [38] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-10-15 13:31:58,731 [38] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:31:58,717 [41] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,717 [39] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:31:58,718 [25] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:31:58,718 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:31:58,718 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,717 [42] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,723 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-10-15 13:31:58,724 [43] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:31:58,724 [44] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:31:58,729 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:31:58,739 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,733 [38] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:31:58,737 [25] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,734 [41] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,735 [39] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,738 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,741 [42] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,751 [38] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,742 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:58,744 [44] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:31:58,743 [43] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:58,746 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:31:58,749 [22] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,332 [44] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,333 [43] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,332 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,332 [41] INFO  - WCF - Helper.GetNameFromPersonField, Int32=31
+2018-10-15 13:31:59,333 [38] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,333 [40] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,332 [25] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,332 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,332 [22] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,334 [42] INFO  - WCF - Helper.GetNameFromPersonField, String="DCR DCN Management Sytem User 2"
+2018-10-15 13:31:59,581 [41] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,581 [47] INFO  - WCF - Helper.GetNameFromPersonField, Int32=33
+2018-10-15 13:31:59,581 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,581 [39] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,581 [43] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,581 [38] INFO  - WCF - Helper.GetNameFromPersonField, String="Navadiya Virendra"
+2018-10-15 13:31:59,581 [46] INFO  - WCF - Helper.GetNameFromPersonField, String="Udole Sachin"
+2018-10-15 13:31:59,581 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=34
+2018-10-15 13:31:59,813 [25] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,813 [42] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:31:59,813 [40] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:31:59,813 [41] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:32:00,096 [19] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-10-15 13:32:00,096 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-10-15 13:32:00,610 [19] INFO  - WCF - Helper.GetButtons for role 'Quality User', appName='Feedbacks', formName='Feedback Form', status='Submitted', other params={"CurrentFromLevel":"3"}, 
+2018-10-15 13:32:01,160 [18] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250789&_=1539590520820, 
+2018-10-15 13:32:01,455 [19] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/0d6779d93a954a3ba2ac4b6e6eb02865?version=2, 

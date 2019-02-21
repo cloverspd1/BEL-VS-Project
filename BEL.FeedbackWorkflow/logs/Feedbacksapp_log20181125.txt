@@ -1,0 +1,720 @@
+2018-11-25 22:43:58,597 [12] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 22:43:58,599 [11] INFO  - MVC - Application_Start_Done, 
+2018-11-25 22:44:06,914 [12] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 22:44:06,960 [11] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 22:44:06,960 [12] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 22:44:06,961 [9] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 22:44:07,023 [11] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 22:44:11,887 [9] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 22:44:11,916 [11] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-11-25 22:44:32,714 [12] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 22:44:35,073 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Admin"
+2018-11-25 22:44:35,074 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=9
+2018-11-25 22:44:35,087 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 22:44:35,087 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-11-25 22:44:35,088 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=20
+2018-11-25 22:44:35,088 [14] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 22:44:35,096 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2018-11-25 22:44:35,101 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2018-11-25 22:44:35,105 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-11-25 22:44:35,109 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-11-25 22:44:35,113 [11] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 22:44:35,117 [14] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 22:44:35,120 [12] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 22:44:35,125 [11] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 22:44:35,129 [14] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 22:44:35,133 [12] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 22:44:36,654 [12] INFO  - WCF - Helper.GetAllButtons, 
+2018-11-25 22:44:36,654 [11] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-11-25 22:44:51,134 [11] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 22:45:07,367 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/6dc6beeea48e4778a22cbdcf6f405f74?version=2, 
+2018-11-25 22:45:57,689 [12] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=234, 
+2018-11-25 22:46:19,710 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250234&_=1543166104299, 
+2018-11-25 22:46:38,866 [11] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=org+(1).pdf, 
+2018-11-25 22:46:52,477 [14] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","QAUserListCreator","QAUserCreator","QualityUserName","SampleComments","IsSiteCompleted","BNVoltage","ProtectionForVoltage","ENVoltage","ProductWiring","ENVoltageLUM","RNVoltage","LNVoltage","YNVoltage","powersupplier","CCActingUser","CCActingUserName","LUMUser","LUMUserName","ButtonCaption","X-Requested-With"], 
+2018-11-25 22:47:41,057 [17] INFO  - WCF - Feedbacks Current Value + 1 = 34, 
+2018-11-25 22:47:41,057 [18] INFO  - WCF - Feedbacks No is FANS-2018-00034, 
+2018-11-25 22:47:41,057 [19] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}
+2018-11-25 22:47:41,073 [17] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 22:47:41,073 [18] INFO  - WCF - Saving Actual Section Properties, 
+2018-11-25 22:47:41,089 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 22:47:45,351 [6] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-2018-274"
+2018-11-25 22:47:45,351 [16] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-11-25 22:47:45,352 [19] INFO  - WCF - Reference Number Generated 'Feedback Form-2018-274', 
+2018-11-25 22:47:45,351 [7] INFO  - WCF - Actual Section Properties Saved, Int32=274
+2018-11-25 22:47:45,352 [18] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-11-25 22:47:45,375 [17] INFO  - WCF - Started form level assignment, 
+2018-11-25 22:47:45,375 [16] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 22:47:45,377 [20] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 22:47:45,378 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 22:47:45,376 [6] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 22:47:45,384 [19] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 22:47:45,396 [7] INFO  - WCF - Tasks approvers Saved if any, 
+2018-11-25 22:47:45,411 [18] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='274' with values = {"ReferenceNo":"Feedback Form-2018-274","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":9,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"LastActionPerformed":"SendForward","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},"LastActionByRole":"Creator","PendingWith":"","ApprovalStatus":"Completed","Status":"Completed","FormLevel":"0|0","NextApprover":"","WorkflowStatus":"Completed"}, 
+2018-11-25 22:47:45,426 [17] INFO  - WCF - Tasks Saved if any, 
+2018-11-25 22:47:45,436 [16] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='274', 
+2018-11-25 22:47:45,447 [20] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='274', 
+2018-11-25 22:47:45,458 [21] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='274', 
+2018-11-25 22:47:45,471 [6] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='274', 
+2018-11-25 22:47:45,481 [19] INFO  - WCF - Set Viewer  Approver ID='9' and RequestId='274', 
+2018-11-25 22:47:45,497 [7] INFO  - WCF - Case Action Performed 'SendForward', 
+2018-11-25 22:47:45,510 [18] INFO  - WCF - End of form level assignment, 
+2018-11-25 22:47:45,530 [17] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Send Forward","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2018-11-25T22:47:45.2797932+05:30","IsEscalate":false,"IsReminder":true,"RequestID":274,"ApproveBy":"19","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":null,"ApproverName":"Clover Sharepoint 1","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-11-25T22:47:45.2797932+05:30","DueDate":"2018-12-04T22:47:45.2797932+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 22:47:45,539 [16] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":null,"ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":274,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 22:47:51,171 [12] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1854
+2018-11-25 22:47:51,281 [16] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Completed', 
+2018-11-25 22:47:51,281 [7] INFO  - WCF - Save Form Field Name='Status'='Completed', 
+2018-11-25 22:47:51,281 [20] INFO  - WCF - Helper.SaveAttachment FileName:org (1).pdf, FileSize:48caea67-f885-486b-aae3-53abf2e914c3.pdf, Status:New, 
+2018-11-25 22:47:53,701 [12] ERROR - Error While SaveData - List Name:,List ItemID:0 Message:Cannot complete this action.
+
+Please try again., StackTrace:    at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream)
+   at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQueryToServer(ChunkStringBuilder sb)
+   at Microsoft.SharePoint.Client.ClientRequest.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientRuntimeContext.ExecuteQuery()
+   at Microsoft.SharePoint.Client.ClientContext.ExecuteQuery()
+   at BEL.DataAccessLayer.BELDataAccessLayer.SaveAttachment(ClientContext context, List`1 files, ListItem& item) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1130
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1868
+   at BEL.DataAccessLayer.AsyncHelper.Call(Action`1 delegateFunction, Int32 taskDelay, Boolean isAsync) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\AsyncHelper.cs:line 70
+   at BEL.DataAccessLayer.BELDataAccessLayer.SaveDataInList(ClientContext context, Web web, Object actualSection, ListItem item, String listName, Dictionary`2 param, Dictionary`2 mailCustomValues, List`1 emailAttachments) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1836
+   at CallSite.Target(Closure , CallSite , BELDataAccessLayer , ClientContext , Web , Object , ListItem , String , Dictionary`2 , Dictionary`2 , List`1 )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute9[T0,T1,T2,T3,T4,T5,T6,T7,T8,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)
+   at BEL.DataAccessLayer.BELDataAccessLayer.SaveData(ClientContext context, Web web, ISection section, Dictionary`2 param, Dictionary`2 mailCustomValues, List`1 emailAttachments) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1077
+2018-11-25 22:47:53,722 [12] ERROR - Id: a9d9e5a1-7194-4197-820d-5d95522ea620
+2018-11-25 22:47:53,730 [12] ERROR - StatusCode: 200
+2018-11-25 22:47:53,738 [12] ERROR - Controller: 
+2018-11-25 22:47:53,746 [12] ERROR - Action: 
+2018-11-25 22:47:53,754 [12] ERROR - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.SaveBySection(ISection sectionDetails, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 255
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.SaveSection(ISection section, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 37
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.SaveFeedbacksDetailSection(FeedbacksDetailSection model) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 145
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-11-25 22:47:53,770 [12] ERROR - Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BEL.FeedbackWorkflow.BusinessLayer.FeedbacksBusinessLayer.SaveBySection(ISection sectionDetails, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\BusinessLayer\FeedbacksBusinessLayer.cs:line 255
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksBaseController.SaveSection(ISection section, Dictionary`2 objDict) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksBaseController.cs:line 37
+   at BEL.FeedbackWorkflow.Controllers.FeedbacksController.SaveFeedbacksDetailSection(FeedbacksDetailSection model) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Controllers\Feedbacks\FeedbacksController.cs:line 145
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-11-25 22:57:04,973 [28] INFO  - MVC - Application_Start_Done, 
+2018-11-25 22:57:04,995 [30] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 22:57:39,321 [30] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 22:57:39,353 [24] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 22:57:39,353 [30] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 22:57:39,353 [6] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 22:57:39,353 [28] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 22:57:43,964 [28] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-11-25 22:57:43,964 [30] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 22:58:11,061 [24] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 22:58:11,665 [19] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 22:58:11,665 [6] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 22:58:11,665 [28] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 22:58:11,665 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-11-25 22:58:11,665 [24] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 22:58:11,665 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 22:58:11,713 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 22:58:11,721 [24] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 22:58:11,725 [30] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Admin"
+2018-11-25 22:58:11,733 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=9
+2018-11-25 22:58:11,745 [24] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 22:58:11,757 [30] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-11-25 22:58:11,765 [18] INFO  - WCF - Helper.GetNameFromPersonField, Int32=20
+2018-11-25 22:58:11,773 [24] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2018-11-25 22:58:11,781 [30] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2018-11-25 22:58:11,785 [18] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-11-25 22:58:13,216 [30] INFO  - WCF - Helper.GetAllButtons, 
+2018-11-25 22:58:13,216 [24] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-11-25 22:58:31,672 [30] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 22:58:54,646 [22] ERROR - Id: 7d2564d3-1814-4cf0-8bd4-89187cb43d71
+2018-11-25 22:58:54,659 [22] ERROR - StatusCode: 200
+2018-11-25 22:58:54,665 [22] ERROR - Controller: 
+2018-11-25 22:58:54,673 [22] ERROR - Action: 
+2018-11-25 22:58:54,677 [22] ERROR - c:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Views\Feedbacks\_feedbacksDetailSection.cshtml(695): error CS1061: 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' does not contain a definition for 'QualityUserName' and no extension method 'QualityUserName' accepting a first argument of type 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' could be found (are you missing a using directive or an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Views\Feedbacks\_feedbacksDetailSection.cshtml(695): error CS1061: 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' does not contain a definition for 'QualityUserName' and no extension method 'QualityUserName' accepting a first argument of type 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP._Page_Views_Feedbacks_Index_cshtml.Execute() in c:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Views\Feedbacks\Index.cshtml:line 56
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+2018-11-25 22:58:54,697 [22] ERROR - c:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Views\Feedbacks\_feedbacksDetailSection.cshtml(695): error CS1061: 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' does not contain a definition for 'QualityUserName' and no extension method 'QualityUserName' accepting a first argument of type 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' could be found (are you missing a using directive or an assembly reference?)
+System.Web.HttpCompileException (0x80004005): c:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Views\Feedbacks\_feedbacksDetailSection.cshtml(695): error CS1061: 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' does not contain a definition for 'QualityUserName' and no extension method 'QualityUserName' accepting a first argument of type 'BEL.FeedbackWorkflow.Models.Feedbacks.FeedbacksDetailSection' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   at ASP._Page_Views_Feedbacks_Index_cshtml.Execute() in c:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.FeedbackWorkflow\Views\Feedbacks\Index.cshtml:line 56
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.StartPage.RunPage()
+   at System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-11-25 23:00:18,404 [10] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 23:00:24,703 [18] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 23:00:24,703 [35] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 23:00:24,703 [36] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 23:00:24,703 [10] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 23:00:24,703 [7] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 23:00:29,042 [7] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 23:00:33,157 [10] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 23:00:33,157 [37] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 23:00:33,157 [38] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 23:00:33,157 [35] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 23:00:33,157 [7] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 23:00:40,199 [7] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 23:00:40,227 [37] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 23:00:40,243 [38] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 23:00:48,793 [38] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 23:00:48,793 [36] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 23:00:48,805 [35] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 23:00:55,007 [18] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 23:01:00,249 [37] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 23:01:00,249 [24] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 23:01:00,249 [18] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 23:01:00,257 [37] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 23:01:00,269 [24] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 23:01:14,918 [18] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 23:01:14,918 [24] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 23:01:14,930 [35] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 23:01:15,767 [24] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/793860efaa254569ba500d5452541fe2?version=2, 
+2018-11-25 23:01:26,405 [18] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=12, 
+2018-11-25 23:01:28,235 [19] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=234, 
+2018-11-25 23:01:53,533 [17] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=34, 
+2018-11-25 23:01:53,884 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=345, 
+2018-11-25 23:01:57,373 [35] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=34, 
+2018-11-25 23:01:59,158 [35] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=234, 
+2018-11-25 23:02:00,690 [37] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250234&_=1543167075189, 
+2018-11-25 23:02:12,998 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=org+(1).pdf, 
+2018-11-25 23:03:14,522 [37] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","QAUserListCreator","QAUserCreator","QAUserCreatorName","SampleComments","IsSiteCompleted","BNVoltage","ProtectionForVoltage","ENVoltage","ProductWiring","ENVoltageLUM","RNVoltage","LNVoltage","YNVoltage","powersupplier","CCActingUser","CCActingUserName","LUMUser","LUMUserName","ButtonCaption","X-Requested-With"], 
+2018-11-25 23:04:28,691 [24] INFO  - WCF - Feedbacks Current Value + 1 = 34, 
+2018-11-25 23:04:29,346 [24] INFO  - WCF - Feedbacks No is FANS-2018-00034, 
+2018-11-25 23:04:31,644 [36] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}
+2018-11-25 23:06:15,062 [7] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:06:15,062 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:15,062 [36] INFO  - WCF - Saving Actual Section Properties, 
+2018-11-25 23:06:20,608 [36] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:20,608 [30] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:20,608 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:20,608 [7] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:06:20,608 [28] INFO  - WCF - Started form level assignment, 
+2018-11-25 23:06:20,608 [31] INFO  - WCF - Tasks approvers Saved if any, 
+2018-11-25 23:06:20,608 [22] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='275', 
+2018-11-25 23:06:20,608 [9] INFO  - WCF - Tasks Saved if any, 
+2018-11-25 23:06:20,608 [36] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='275', 
+2018-11-25 23:06:20,623 [30] INFO  - WCF - Set Viewer  Approver ID='9' and RequestId='275', 
+2018-11-25 23:06:20,627 [24] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='275', 
+2018-11-25 23:06:20,635 [7] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=NextApproval, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Approved","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2018-11-25T23:06:20.5291033+05:30","IsEscalate":false,"IsReminder":true,"RequestID":275,"ApproveBy":"19","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-11-25T23:06:20.5291033+05:30","DueDate":"2018-12-04T23:06:20.5291033+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":"","QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 23:06:20,639 [28] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='275', 
+2018-11-25 23:06:20,644 [31] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-11-25 23:06:20,644 [22] INFO  - WCF - Reference Number Generated 'Feedback Form-2018-275', 
+2018-11-25 23:06:20,659 [9] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='275' with values = {"ReferenceNo":"Feedback Form-2018-275","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":9,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"LastActionPerformed":"NextApproval","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},"LastActionByRole":"Creator","PendingWith":"CC Acting User","NextApprover":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":9,"LookupValue":null}],"FormLevel":"0|1","ApprovalStatus":"In Progress","Status":"Submitted","WorkflowStatus":"Pending With CC Acting User"}, 
+2018-11-25 23:06:20,659 [36] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-2018-275"
+2018-11-25 23:06:20,659 [30] INFO  - WCF - Actual Section Properties Saved, Int32=275
+2018-11-25 23:06:20,675 [24] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-11-25 23:06:20,675 [7] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, actionperformed=NextApproval, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":"","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":275,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 23:06:20,691 [28] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:06:20,691 [31] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:20,691 [22] INFO  - WCF - Case Action Performed 'NextApproval', 
+2018-11-25 23:06:20,706 [9] INFO  - WCF - End of form level assignment, 
+2018-11-25 23:06:25,429 [18] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1854
+2018-11-25 23:06:25,543 [30] INFO  - WCF - Helper.SaveAttachment FileName:org (1).pdf, FileSize:4f3973ae-8c2e-4c88-8493-f805dbb61551.pdf, Status:New, 
+2018-11-25 23:06:25,543 [9] INFO  - WCF - Save Form Field Name='Status'='Submitted', 
+2018-11-25 23:06:25,543 [7] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Pending With CC Acting User', 
+2018-11-25 23:06:29,358 [31] INFO  - WCF - Calling SetItemPermission -> itemid=275, listname=Feedbacks, {"19":"Read","9":"Contribute"}, 
+2018-11-25 23:06:29,358 [30] INFO  - WCF - Helper.SaveAttachment file saved, 
+2018-11-25 23:06:30,857 [30] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19, 
+2018-11-25 23:06:30,857 [7] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2018-11-25 23:06:30,857 [24] INFO  - WCF - item ResetRoleInheritance Called, 
+2018-11-25 23:06:30,857 [28] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2018-11-25 23:06:33,956 [36] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2018-11-25 23:06:35,137 [9] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 9, 
+2018-11-25 23:06:35,137 [36] INFO  - WCF - User Permission set for -> 19, 
+2018-11-25 23:06:35,656 [22] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Contribute), 
+2018-11-25 23:06:36,339 [28] INFO  - WCF - User Permission set for -> 9, 
+2018-11-25 23:06:39,690 [31] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2018-11-25 23:06:39,690 [30] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2018-11-25 23:06:39,690 [9] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:39,690 [36] INFO  - WCF - Calling Activity Log -> {"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":null,"ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}, 
+2018-11-25 23:06:39,690 [7] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=275, activityby=19, 
+2018-11-25 23:06:42,558 [31] INFO  - WCF - Activity Log Parameter Saved -> Activity= Submit, 
+Changes=IsSiteCompleted	False
+ProtectionForVoltage	False
+ProductWiring	False
+RNVoltage	
+YNVoltage	
+BNVoltage	
+ENVoltage	
+ENVoltageLUM	
+LNVoltage	
+powersupplier	
+ProposedBy	
+RequestDate	25/11/2018 23:04:14
+SampleProvidedDate	
+WorkflowStatus	Pending With CC Acting User
+Status	Submitted
+SampleProvided	
+SampleQuantity	
+SampleComments	
+
+Approved/Updated date	25/11/2018
+Approved/Updated time	11:06 PM
+Approver Comment	
+BusinessUnits	FANS
+FeedbackTitle	fgdjskfh
+Branch	Sion Office (6th Floor)
+ProductType	Premium CF
+DefectDescription	vbkdfjvh
+SupplierCode	123
+ProductSerial	kcnnvlf
+FeedbackNo	FANS-2018-00034
+Files	org (1).pdf
+CCActingUser	SharePoint Admin
+RegionalTrainer	
+LUMUserName	
+QAUserCreator	
+Month	November
+Year	2018
+ItemCode	250234
+ItemDescription	Regal Gold 1050 mm Ivory CF
+ProductGroup	Premium CF, 
+ActivityDate=25/11/2018, 
+ActivityBy=19, 
+RequestID=275, 
+SectionName=Feedback Detail Section, 
+, 
+2018-11-25 23:06:42,558 [28] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2018-11-25 23:06:42,558 [7] INFO  - WCF - Calling Activity Log -> Complete, 
+2018-11-25 23:06:42,574 [30] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:42,574 [36] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:44,447 [31] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:06:51,727 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:56,828 [7] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:06:59,161 [7] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2018-11-25 23:07:13,415 [22] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="SharePoint Admin"
+2018-11-25 23:07:13,415 [7] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="Clover Sharepoint 1"
+2018-11-25 23:07:13,416 [31] INFO  - WCF - Helper.GetNameUsingUserID, String="9"
+2018-11-25 23:07:13,420 [22] INFO  - WCF - Helper.GetNameUsingUserID, String="19"
+2018-11-25 23:07:35,339 [31] INFO  - WCF - Helper.GetEmailUsingUserID, String="19"
+2018-11-25 23:07:35,339 [11] INFO  - WCF - Helper.GetEmailUsingUserID, String="19"
+2018-11-25 23:07:35,339 [22] INFO  - WCF - Helper.GetEmailUsingUserID, String="9"
+2018-11-25 23:07:35,339 [7] INFO  - WCF - Helper.GetEmailUsingUserID got an user with email, String="cloversharepoint1@bajajelectricals.com"
+2018-11-25 23:07:35,339 [20] INFO  - WCF - Helper.GetEmailUsingUserID got an user with email, String="cloversharepoint1@bajajelectricals.com"
+2018-11-25 23:07:35,339 [12] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : ProductSerial, 
+2018-11-25 23:07:35,339 [13] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : Branch, 
+2018-11-25 23:07:35,339 [23] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : FeedbackTitle, 
+2018-11-25 23:07:35,347 [31] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : SupplierCode, 
+2018-11-25 23:07:35,355 [11] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : ProductType, 
+2018-11-25 23:07:35,363 [22] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : BusinessUnits, 
+2018-11-25 23:07:35,368 [7] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : ItemDescription, 
+2018-11-25 23:07:35,368 [20] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : ItemCode, 
+2018-11-25 23:07:35,383 [12] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : NextApprover, 
+2018-11-25 23:07:35,383 [13] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : RequestDate, 
+2018-11-25 23:07:35,399 [23] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : ProposedBy, 
+2018-11-25 23:07:35,399 [31] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : FeedbackNo, 
+2018-11-25 23:07:35,414 [11] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : FeedbackNo, 
+2018-11-25 23:07:35,414 [22] INFO  - WCF - Email Body Replacement Listname : Feedbacks , FieldName : FeedbackNo, 
+2018-11-25 23:07:35,430 [7] INFO  - WCF - Email Body Replacement Listname : Custom , FieldName : DefectDesc, 
+2018-11-25 23:07:35,438 [20] INFO  - WCF - Email Body Replacement Listname : Custom , FieldName : ItemLinkClickHere, 
+2018-11-25 23:07:49,027 [13] INFO  - WCF - Aync update Feedbacks Current value currentValue : 34 BusinessUnit : FANS, 
+2018-11-25 23:07:51,609 [7] INFO  - WCF - Update DCR No FANS-2018-00034, 
+2018-11-25 23:10:01,063 [8] INFO  - MVC - Application_Start_Done, 
+2018-11-25 23:10:01,075 [9] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 23:10:19,842 [8] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 23:10:19,870 [9] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 23:10:19,870 [10] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 23:10:19,870 [8] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 23:10:19,894 [5] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 23:10:28,968 [8] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-11-25 23:10:28,968 [9] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 23:10:50,195 [5] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 23:10:50,579 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 23:10:50,579 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-11-25 23:10:50,579 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 23:10:50,583 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=20
+2018-11-25 23:10:50,591 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2018-11-25 23:10:50,595 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2018-11-25 23:10:50,603 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-11-25 23:10:50,611 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-11-25 23:10:50,615 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 23:10:50,623 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 23:10:50,631 [9] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 23:10:50,639 [10] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 23:10:50,651 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 23:10:50,655 [9] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 23:10:50,663 [10] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Admin"
+2018-11-25 23:10:50,671 [5] INFO  - WCF - Helper.GetNameFromPersonField, Int32=9
+2018-11-25 23:10:51,766 [9] INFO  - WCF - Helper.GetAllButtons, 
+2018-11-25 23:10:51,766 [5] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-11-25 23:11:04,295 [9] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 23:11:23,308 [5] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/6348396a47994acb9915efd798604988?version=2, 
+2018-11-25 23:11:27,575 [10] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=234, 
+2018-11-25 23:11:46,441 [5] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250234&_=1543167682700, 
+2018-11-25 23:12:02,461 [5] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=org+(1).pdf, 
+2018-11-25 23:12:14,095 [16] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","QAUserListCreator","QualityUser","QualityUserName","SampleComments","IsSiteCompleted","BNVoltage","ProtectionForVoltage","ENVoltage","ProductWiring","ENVoltageLUM","RNVoltage","LNVoltage","YNVoltage","powersupplier","CCActingUser","CCActingUserName","LUMUser","LUMUserName","ButtonCaption","X-Requested-With"], 
+2018-11-25 23:12:48,053 [10] INFO  - WCF - Feedbacks Current Value + 1 = 35, 
+2018-11-25 23:12:48,732 [10] INFO  - WCF - Feedbacks No is FANS-2018-00035, 
+2018-11-25 23:12:52,861 [10] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form"}
+2018-11-25 23:13:24,027 [5] INFO  - WCF - Saving Actual Section Properties, 
+2018-11-25 23:13:24,027 [10] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:13:24,773 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:13:34,356 [10] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-11-25 23:13:38,075 [10] INFO  - WCF - Actual Section Properties Saved, Int32=276
+2018-11-25 23:13:39,965 [10] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-2018-276"
+2018-11-25 23:13:40,294 [10] INFO  - WCF - Reference Number Generated 'Feedback Form-2018-276', 
+2018-11-25 23:13:48,798 [36] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-11-25 23:14:03,996 [26] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='276', 
+2018-11-25 23:14:03,996 [34] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='276', 
+2018-11-25 23:14:03,996 [36] INFO  - WCF - Set Viewer  Approver ID='9' and RequestId='276', 
+2018-11-25 23:14:03,996 [35] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='276', 
+2018-11-25 23:14:04,619 [26] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='276', 
+2018-11-25 23:14:12,336 [26] INFO  - WCF - Tasks Saved if any, 
+2018-11-25 23:14:13,680 [26] INFO  - WCF - Tasks approvers Saved if any, 
+2018-11-25 23:14:20,420 [26] INFO  - WCF - Started form level assignment, 
+2018-11-25 23:14:33,996 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:14:38,261 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:14:53,829 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:14:58,585 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:02,857 [26] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":null,"ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 23:15:03,443 [26] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Send Forward","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2018-11-25T23:15:02.8573203+05:30","IsEscalate":false,"IsReminder":true,"RequestID":276,"ApproveBy":"19","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":null,"ApproverName":"Clover Sharepoint 1","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-11-25T23:15:02.8573203+05:30","DueDate":"2018-12-04T23:15:02.8573203+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":276,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 23:15:32,246 [26] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:32,246 [36] INFO  - WCF - End of form level assignment, 
+2018-11-25 23:15:32,246 [33] INFO  - WCF - Case Action Performed 'SendForward', 
+2018-11-25 23:15:32,258 [26] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='276' with values = {"ReferenceNo":"Feedback Form-2018-276","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":9,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"LastActionPerformed":"SendForward","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},"LastActionByRole":"Creator","PendingWith":"","ApprovalStatus":"Completed","Status":"Completed","FormLevel":"0|0","NextApprover":"","WorkflowStatus":"Completed"}, 
+2018-11-25 23:15:35,711 [9] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1854
+2018-11-25 23:15:35,838 [33] INFO  - WCF - Helper.SaveAttachment FileName:org (1).pdf, FileSize:b781d7cb-d5c1-4c12-85e8-c93019fe3ee5.pdf, Status:New, 
+2018-11-25 23:15:35,838 [21] INFO  - WCF - Save Form Field Name='Status'='Completed', 
+2018-11-25 23:15:35,838 [26] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Completed', 
+2018-11-25 23:15:38,337 [26] INFO  - WCF - Helper.SaveAttachment file saved, 
+2018-11-25 23:15:38,337 [21] INFO  - WCF - Calling SetItemPermission -> itemid=276, listname=Feedbacks, {"19,":"Read"}, 
+2018-11-25 23:15:39,036 [36] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19,, 
+2018-11-25 23:15:39,036 [21] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2018-11-25 23:15:39,036 [26] INFO  - WCF - item ResetRoleInheritance Called, 
+2018-11-25 23:15:39,036 [33] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2018-11-25 23:15:39,554 [33] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2018-11-25 23:15:39,914 [33] INFO  - WCF - User Permission set for -> 19,, 
+2018-11-25 23:15:41,432 [33] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2018-11-25 23:15:41,432 [21] INFO  - WCF - Calling Activity Log -> {"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, 
+2018-11-25 23:15:41,432 [26] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2018-11-25 23:15:41,452 [21] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=276, activityby=19, 
+2018-11-25 23:15:41,452 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:42,732 [26] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2018-11-25 23:15:42,732 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:42,732 [33] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:42,740 [26] INFO  - WCF - Calling Activity Log -> Complete, 
+2018-11-25 23:15:42,740 [21] INFO  - WCF - Activity Log Parameter Saved -> Activity= Submit, 
+Changes=IsSiteCompleted	False
+ProtectionForVoltage	False
+ProductWiring	False
+RNVoltage	
+YNVoltage	
+BNVoltage	
+ENVoltage	
+ENVoltageLUM	
+LNVoltage	
+powersupplier	
+ProposedBy	
+RequestDate	25/11/2018 23:12:40
+SampleProvidedDate	
+WorkflowStatus	Completed
+Status	Completed
+SampleProvided	
+SampleQuantity	
+SampleComments	
+
+Approved/Updated date	25/11/2018
+Approved/Updated time	11:15 PM
+Approver Comment	
+BusinessUnits	FANS
+FeedbackTitle	fdkjsfhjk
+Branch	Sion Office (6th Floor)
+ProductType	Premium CF
+DefectDescription	khfks
+SupplierCode	123
+ProductSerial	hfdfh
+FeedbackNo	FANS-2018-00035
+Files	org (1).pdf
+CCActingUser	SharePoint Admin
+RegionalTrainer	
+LUMUserName	
+QAUserCreator	Clover Sharepoint 1
+Month	November
+Year	2018
+ItemCode	250234
+ItemDescription	Regal Gold 1050 mm Ivory CF
+ProductGroup	Premium CF, 
+ActivityDate=25/11/2018, 
+ActivityBy=19, 
+RequestID=276, 
+SectionName=Feedback Detail Section, 
+, 
+2018-11-25 23:15:43,387 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:15:44,685 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:45,322 [21] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:15:45,935 [21] INFO  - WCF - Calling SaveAproverMatrix -> Complete, 
+2018-11-25 23:15:50,104 [26] INFO  - WCF - Aync update Feedbacks Current value currentValue : 35 BusinessUnit : FANS, 
+2018-11-25 23:15:50,104 [21] INFO  - WCF - Helper.GetNameUsingUserID got an user with name, String="Clover Sharepoint 1"
+2018-11-25 23:15:50,104 [33] INFO  - WCF - Helper.GetNameUsingUserID, String="19"
+2018-11-25 23:15:50,398 [21] INFO  - WCF - Update DCR No FANS-2018-00035, 
+2018-11-25 23:19:14,812 [23] INFO  - MVC - Begin Request http://localhost:5179/, 
+2018-11-25 23:19:14,812 [25] INFO  - MVC - Application_Start_Done, 
+2018-11-25 23:19:25,416 [21] INFO  - MVC - Start Feedback form and ID = 0, 
+2018-11-25 23:19:25,440 [25] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', 
+2018-11-25 23:19:25,440 [23] INFO  - WCF - Called Helper.IsGroupMember true, 
+2018-11-25 23:19:25,440 [21] INFO  - WCF - Helper GetFormData Condition passed for appname=Feedbacks, formNameFeedback Form, User Id=19, 
+2018-11-25 23:19:25,448 [25] INFO  - WCF - Called Helper GetFormData, 
+2018-11-25 23:19:29,495 [23] INFO  - WCF - Called Helper.GetEnableSectionNames {"Feedback Detail Section":true}, 
+2018-11-25 23:19:29,507 [25] INFO  - WCF - Get All SLA Matrix Data  from Sharepoint root Site, 
+2018-11-25 23:19:48,183 [21] INFO  - WCF - called Helper.GetFormData, 
+2018-11-25 23:19:48,650 [34] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 23:19:48,654 [28] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 23:19:48,674 [27] INFO  - WCF - Helper.GetNameFromPersonField, Int32=9
+2018-11-25 23:19:48,650 [32] INFO  - WCF - Helper.GetNameFromPersonField, Int32=25
+2018-11-25 23:19:48,650 [31] INFO  - WCF - Helper.GetNameFromPersonField, String="Clover Sharepoint 1"
+2018-11-25 23:19:48,650 [29] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 23:19:48,670 [20] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Notifications"
+2018-11-25 23:19:48,670 [17] INFO  - WCF - Helper.GetNameFromPersonField, Int32=22
+2018-11-25 23:19:48,650 [25] INFO  - WCF - Helper.GetNameFromPersonField, String="SharePoint Admin"
+2018-11-25 23:19:48,650 [21] INFO  - WCF - Helper.GetNameFromPersonField, Int32=19
+2018-11-25 23:19:48,666 [34] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 23:19:48,674 [28] INFO  - WCF - Helper.GetNameFromPersonField, Int32=27
+2018-11-25 23:19:48,650 [23] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-3"
+2018-11-25 23:19:48,686 [5] INFO  - WCF - Helper.GetNameFromPersonField, String="Mahadeshwar Pravin"
+2018-11-25 23:19:48,686 [26] INFO  - WCF - Helper.GetNameFromPersonField, Int32=20
+2018-11-25 23:19:48,686 [16] INFO  - WCF - Helper.GetNameFromPersonField, String="Collab App Support-2"
+2018-11-25 23:19:49,794 [32] INFO  - WCF - Get All Buttons from Sharepoint, 
+2018-11-25 23:19:49,794 [31] INFO  - WCF - Helper.GetAllButtons, 
+2018-11-25 23:19:59,884 [23] INFO  - WCF - Helper.GetButtons for role 'Creator', appName='Feedbacks', formName='Feedback Form', status='', other params={}, 
+2018-11-25 23:20:17,715 [31] INFO  - MVC - Begin Ajax Request http://localhost:5179/__browserLink/requestData/0001d13d7c32421aba033cf094c3107a?version=2, 
+2018-11-25 23:20:24,986 [28] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=234, 
+2018-11-25 23:20:36,454 [27] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=345, 
+2018-11-25 23:20:39,358 [28] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=34, 
+2018-11-25 23:20:41,015 [31] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetAllItems?q=456, 
+2018-11-25 23:20:43,484 [27] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/GetSKUInfo?itemCode=250456&_=1543168217019, 
+2018-11-25 23:21:00,196 [33] INFO  - MVC - Begin Ajax Request http://localhost:5179/Master/UploadFile?qqfile=org+(1).pdf, 
+2018-11-25 23:21:18,931 [28] INFO  - MVC - Begin Ajax Request http://localhost:5179/Feedbacks/SaveFeedbacksDetailSection?Length=9Form Data: ["ListDetails[0].ItemId","ListDetails[0].ListName","SectionName","ActionStatus","Status","ApproversList[0].ApplicationName","ApproversList[0].ApprovalDate","ApproversList[0].ApproveBy","ApproversList[0].Approver","ApproversList[0].ApproverName","ApproversList[0].AssignDate","ApproversList[0].Comments","ApproversList[0].Days","ApproversList[0].Division","ApproversList[0].DueDate","ApproversList[0].FillByRole","ApproversList[0].FormName","ApproversList[0].HiddenSection","ApproversList[0].ID","ApproversList[0].IsAutoApproval","ApproversList[0].IsEscalate","ApproversList[0].IsReminder","ApproversList[0].Levels","ApproversList[0].RequestID","ApproversList[0].Role","ApproversList[0].SectionName","ApproversList[0].Status","ApproversList[0].SubDivision","ApproversList[0].Title","ApproversList[0].IsOptional","ApproversList[1].ApplicationName","ApproversList[1].ApprovalDate","ApproversList[1].ApproveBy","ApproversList[1].Approver","ApproversList[1].ApproverName","ApproversList[1].AssignDate","ApproversList[1].Comments","ApproversList[1].Days","ApproversList[1].Division","ApproversList[1].DueDate","ApproversList[1].FillByRole","ApproversList[1].FormName","ApproversList[1].HiddenSection","ApproversList[1].ID","ApproversList[1].IsAutoApproval","ApproversList[1].IsEscalate","ApproversList[1].IsReminder","ApproversList[1].Levels","ApproversList[1].RequestID","ApproversList[1].Role","ApproversList[1].SectionName","ApproversList[1].Status","ApproversList[1].SubDivision","ApproversList[1].Title","ApproversList[1].IsOptional","CurrentApprover.ApplicationName","CurrentApprover.ApprovalDate","CurrentApprover.ApproveBy","CurrentApprover.Approver","CurrentApprover.AssignDate","CurrentApprover.Comments","CurrentApprover.Days","CurrentApprover.Division","CurrentApprover.DueDate","CurrentApprover.FillByRole","CurrentApprover.FormName","CurrentApprover.HiddenSection","CurrentApprover.ID","CurrentApprover.IsAutoApproval","CurrentApprover.IsEscalate","CurrentApprover.IsReminder","CurrentApprover.Levels","CurrentApprover.RequestID","CurrentApprover.Role","CurrentApprover.SectionName","CurrentApprover.Status","CurrentApprover.SubDivision","CurrentApprover.Title","CurrentApprover.IsOptional","RequestDate","ProposedBy","ProposedByName","FeedbackNo","WorkflowStatus","ItemCode","ItemDescription","BusinessUnits","ProductType","SupplierCode","Branch","FeedbackTitle","ProductSerial","DefectDescription","FileNameList","QAUserListCreator","QualityUser","QualityUserName","SampleComments","IsSiteCompleted","BNVoltage","ProtectionForVoltage","ENVoltage","ProductWiring","ENVoltageLUM","RNVoltage","LNVoltage","YNVoltage","powersupplier","CCActingUser","CCActingUserName","LUMUser","LUMUserName","ButtonCaption","X-Requested-With"], 
+2018-11-25 23:21:55,140 [31] INFO  - WCF - Feedbacks Current Value + 1 = 36, 
+2018-11-25 23:21:56,428 [31] INFO  - WCF - Feedbacks No is FANS-2018-00036, 
+2018-11-25 23:22:02,982 [31] INFO  - WCF - helper.SaveData, Dictionary`2={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True"}
+2018-11-25 23:22:21,542 [31] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:21,542 [27] INFO  - WCF - Saving Actual Section Properties, 
+2018-11-25 23:22:21,558 [35] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:22:23,739 [35] INFO  - WCF - Calling approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":null,"ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 23:22:23,739 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:22:23,739 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:23,739 [13] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:23,739 [27] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:23,739 [31] INFO  - WCF - Started form level assignment, 
+2018-11-25 23:22:23,739 [12] INFO  - WCF - Tasks approvers Saved if any, 
+2018-11-25 23:22:23,739 [30] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='277', 
+2018-11-25 23:22:23,739 [14] INFO  - WCF - Tasks Saved if any, 
+2018-11-25 23:22:23,739 [9] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='277', 
+2018-11-25 23:22:23,739 [8] INFO  - WCF - Set Viewer  Approver ID='9' and RequestId='277', 
+2018-11-25 23:22:23,739 [35] INFO  - WCF - Set Viewer  Approver ID='' and RequestId='277', 
+2018-11-25 23:22:23,739 [7] INFO  - WCF - Set Viewer  Approver ID='19' and RequestId='277', 
+2018-11-25 23:22:23,739 [37] INFO  - WCF - Saving Local Approver Matrix 'FeedbacksApprovalMatrix' 
+List=null, 
+2018-11-25 23:22:23,739 [38] INFO  - WCF - Reference Number Generated 'Feedback Form-2018-277', 
+2018-11-25 23:22:23,739 [39] INFO  - WCF - Helper.GenerateReferenceNo, String="Feedback Form-2018-277"
+2018-11-25 23:22:23,754 [40] INFO  - WCF - Actual Section Properties Saved, Int32=277
+2018-11-25 23:22:23,754 [41] INFO  - WCF - called approversDataFromList.UpdateStatusofApprovalMatrix => currlevel=0, previousLevel=-1, param={"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, actionperformed=SendForward, list=[{"ID":0,"Title":"Feedback Detail Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Feedback Detail Section","HiddenSection":"","Levels":"0","Role":"Creator","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Send Forward","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":"2018-11-25T23:22:23.6364291+05:30","IsEscalate":false,"IsReminder":true,"RequestID":277,"ApproveBy":"19","ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Acting User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Acting User Section","HiddenSection":"","Levels":"1","Role":"CC Acting User","Days":7.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"9","ApproverName":"SharePoint Admin","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Qaulity User Section","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"Qaulity User Section","HiddenSection":"","Levels":"3","Role":"Quality User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Quality Incharge User","Division":"","SubDivision":null,"Approver":null,"ApproverName":"Clover Sharepoint 1","Status":"Pending","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":"2018-11-25T23:22:23.6364291+05:30","DueDate":"2018-12-04T23:22:23.6364291+05:30","ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"Feedback Viewer","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"","HiddenSection":"","Levels":"-2","Role":"Viewer","Days":0.0,"IsAutoApproval":false,"FillByRole":"Creator","Division":"","SubDivision":null,"Approver":"19","ApproverName":null,"Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":false,"IsReminder":false,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null},{"ID":0,"Title":"CC Quality Incharge","ApplicationName":"Feedbacks","FormName":"Feedback Form","SectionName":"CC Quality Incharge Section","HiddenSection":"","Levels":"2","Role":"CC Quality Incharge User","Days":7.0,"IsAutoApproval":false,"FillByRole":"CC Acting User","Division":"","SubDivision":null,"Approver":"19","ApproverName":"Clover Sharepoint 1","Status":"Not Assigned","Comments":null,"QualityComments":null,"ImplementedRemark":null,"AssignDate":null,"DueDate":null,"ApprovalDate":null,"IsEscalate":true,"IsReminder":true,"RequestID":277,"ApproveBy":null,"ApproveByName":null,"IsOptional":false,"FormType":"Main","Files":null,"FileNameList":null,"ReasonForChange":null,"ReasonForDelay":null}], 
+2018-11-25 23:22:23,754 [42] INFO  - WCF - context.ExecuteQuery() Save Main List Item., 
+2018-11-25 23:22:23,770 [22] INFO  - WCF - Case Action Performed 'SendForward', 
+2018-11-25 23:22:23,770 [24] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:23,774 [13] INFO  - WCF - Helper.SaveFormFields in list 'Feedbacks' id='277' with values = {"ReferenceNo":"Feedback Form-2018-277","Creator":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCActingUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":9,"LookupValue":null}],"Viewer":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"CCQualityInchargeUser":[{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null}],"LastActionPerformed":"SendForward","LastActionBy":{"Email":null,"TypeId":"{c956ab54-16bd-4c18-89d2-996f57282a6f}","LookupId":19,"LookupValue":null},"LastActionByRole":"Creator","PendingWith":"","ApprovalStatus":"Completed","Status":"Completed","FormLevel":"0|0","NextApprover":"","WorkflowStatus":"Completed"}, 
+2018-11-25 23:22:23,782 [27] INFO  - WCF - End of form level assignment, 
+2018-11-25 23:22:26,357 [33] ERROR - Error While Save Fields FieldName:CCActingUser, MessageObject must implement IConvertible., StackTrace   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at BEL.DataAccessLayer.BELDataAccessLayer.<>c__DisplayClass46_0.<SaveDataInList>b__61(Object obj) in C:\Users\cloverspd1\Downloads\Synoverge-New\Synoverge\BEL.FeedbackWorkflow\BEL.DataAccessLayer\Common\BELDataAccessLayer.cs:line 1854
+2018-11-25 23:22:26,468 [12] INFO  - WCF - Save Form Field Name='WorkflowStatus'='Completed', 
+2018-11-25 23:22:26,468 [35] INFO  - WCF - Save Form Field Name='Status'='Completed', 
+2018-11-25 23:22:26,468 [40] INFO  - WCF - Helper.SaveAttachment FileName:org (1).pdf, FileSize:4c841eca-7543-40af-a719-8428cdb47281.pdf, Status:New, 
+2018-11-25 23:22:30,406 [42] INFO  - WCF - Helper.SaveAttachment file saved, 
+2018-11-25 23:22:30,406 [39] INFO  - WCF - Calling SetItemPermission -> itemid=277, listname=Feedbacks, {"19,":"Read"}, 
+2018-11-25 23:22:30,966 [37] INFO  - WCF - Get User Emails from RoleDefinitionBindingCollection -> 19,, 
+2018-11-25 23:22:30,966 [13] INFO  - WCF - item BreakRoleInheritance(false,true); Called, 
+2018-11-25 23:22:30,966 [24] INFO  - WCF - item ResetRoleInheritance Called, 
+2018-11-25 23:22:30,966 [31] INFO  - WCF - Condition PAssed (context != null && web != null && usersWithPermission != null && item != null), 
+2018-11-25 23:22:31,436 [7] INFO  - WCF - Adding collRoleDefinitionBindingAssignee -> web.RoleDefinitions.GetByName(Read), 
+2018-11-25 23:22:32,052 [22] INFO  - WCF - User Permission set for -> 19,, 
+2018-11-25 23:22:33,753 [39] INFO  - WCF - Called Activity Log Condition Passed-> listname=FeedbacksActivityLog, lookupid=277, activityby=19, 
+2018-11-25 23:22:33,753 [12] INFO  - WCF - Calling Activity Log -> {"UserID":"19","ActionPer":" Submit|NextApproval","Flag":"false","CreatorToQA":null,"CreatorToQAName":"Clover Sharepoint 1","ActivityLog":"FeedbacksActivityLog","ApplicationName":"Feedbacks","FormName":"Feedback Form","IsNewItem":"True","SendToLevel":"3"}, 
+2018-11-25 23:22:33,753 [35] INFO  - WCF - Calling SetItemPermission -> Complete, 
+2018-11-25 23:22:33,753 [42] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:33,753 [7] INFO  - WCF - Called SetItemPermission Permission Assigned ->True, 
+2018-11-25 23:22:34,605 [39] INFO  - WCF - Calling SaveAproverMatrix -> FeedbacksApprovalMatrix, 
+2018-11-25 23:22:34,605 [22] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:34,605 [12] INFO  - WCF - Calling Activity Log -> Complete, 
+2018-11-25 23:22:34,605 [37] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"
+2018-11-25 23:22:34,605 [35] INFO  - WCF - Activity Log Parameter Saved -> Activity= Submit, 
+Changes=IsSiteCompleted	False
+ProtectionForVoltage	False
+ProductWiring	False
+RNVoltage	
+YNVoltage	
+BNVoltage	
+ENVoltage	
+ENVoltageLUM	
+LNVoltage	
+powersupplier	
+ProposedBy	
+RequestDate	25/11/2018 23:21:49
+SampleProvidedDate	
+WorkflowStatus	Completed
+Status	Completed
+SampleProvided	
+SampleQuantity	
+SampleComments	
+
+Approved/Updated date	25/11/2018
+Approved/Updated time	11:22 PM
+Approver Comment	
+BusinessUnits	FANS
+FeedbackTitle	fgusdihkj
+Branch	Sion Office (6th Floor)
+ProductType	Economy CF
+DefectDescription	nbcjkdvh
+SupplierCode	123
+ProductSerial	hfijhdvk
+FeedbackNo	FANS-2018-00036
+Files	org (1).pdf
+CCActingUser	SharePoint Admin
+RegionalTrainer	
+LUMUserName	
+QualityUser	Clover Sharepoint 1
+Month	November
+Year	2018
+ItemCode	250456
+ItemDescription	Kassels MK II 1400 mm Brown C/F
+ProductGroup	Economy CF, 
+ActivityDate=25/11/2018, 
+ActivityBy=19, 
+RequestID=277, 
+SectionName=Feedback Detail Section, 
+, 
+2018-11-25 23:22:35,553 [8] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="9"
+2018-11-25 23:22:37,805 [30] INFO  - WCF - Helper.GetFieldUserValueFromPerson, String="19"

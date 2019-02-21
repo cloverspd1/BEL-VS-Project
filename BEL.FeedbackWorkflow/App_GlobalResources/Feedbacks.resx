@@ -141,6 +141,27 @@
   <data name="Error_DefectDescription" xml:space="preserve">
     <value>Defect Description is required (Max 1000  char.)</value>
   </data>
+  <data name="Error_BNVoltage" xml:space="preserve">
+    <value>Blue to Neutral Voltage is required (Interger/Decimal only.)</value>
+  </data>
+  <data name="Error_ENVoltage" xml:space="preserve">
+    <value>Earth to Neutral Voltage is required (Interger/Decimal only.)</value>
+  </data>
+  <data name="Error_ENVoltageLUM" xml:space="preserve">
+    <value>Earth to Neutral Voltage(LUM) is required (Interger/Decimal only.)</value>
+  </data>
+  <data name="Error_LNVoltage" xml:space="preserve">
+    <value>Line to neutral Voltage is required (Interger/Decimal only.)</value>
+  </data>
+  <data name="Error_powersupplier" xml:space="preserve">
+    <value>Power Supplier is required (Interger/Decimal only.)</value>
+  </data>
+  <data name="Error_RNVoltage" xml:space="preserve">
+    <value>Red to Neutral Voltage is required (Interger/Decimal only.)</value>
+  </data>
+  <data name="Error_YNVoltage" xml:space="preserve">
+    <value>Yellow to Neutral Voltage is required (Interger/Decimal only.)</value>
+  </data>
   <data name="Error_FeedbackTitle" xml:space="preserve">
     <value>Feedback Title is required (Max 255 Char.)</value>
   </data>
@@ -180,6 +201,7 @@
   <data name="Error_SupplierCode" xml:space="preserve">
     <value>Supplier Code is required (4 digit only).</value>
   </data>
+  
   <data name="Grid_Title_AssignDate" xml:space="preserve">
     <value>Assign Date</value>
   </data>
